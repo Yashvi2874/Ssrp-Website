@@ -1,0 +1,148 @@
+.App {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(6,3,10,1), rgba(6,3,11,1), rgba(2,4,14,1));
+
+
+   
+  }
+
+.star {
+  position: fixed;
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+  }
+.star1 {
+  margin-top: 30%; 
+  margin-left: 68%;
+  animation-name: twinkle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  }
+
+.star2 {
+   margin-top: 99%; 
+   margin-left: 32%;
+   
+   }
+
+.star3 {
+   margin-top: 59%; 
+   margin-left: 40%;
+  
+   }
+
+.star4 {
+   margin-top: 33%; 
+   margin-left: 17%;
+   
+   }
+
+.star5 {
+   margin-top: 87%; 
+   margin-left: 29%;
+   
+   }
+
+.star6 {
+   margin-top: 54%; 
+   margin-left: 89%;
+   
+   }
+
+.star7 {
+   margin-top: 76%; 
+   margin-left: 10%;
+   
+   }
+
+.star8 {
+   margin-top: 69%; 
+   margin-left: 69%;
+   
+   }
+
+.star9 {
+   margin-top: 20%; 
+   margin-left: 45%;
+   
+   }
+
+.star10 {
+    margin-top: 10%; 
+    margin-left: 60%;
+    
+    }
+
+.star11 {
+    margin-top: 15%; 
+    margin-left: 80%;
+    
+    }
+
+.star12 {
+    margin-top: 50%; 
+    margin-left: 70%;
+    
+    }
+
+.star13 {
+    margin-top: 60%; 
+    margin-left: 30%;
+    
+    }
+
+.star14 {
+    margin-top: 70%; 
+    margin-left: 40%;
+    
+    
+    }
+
+.star15 {
+    margin-top: 80%; 
+    margin-left: 50%;
+    
+        }
+
+.star16 {
+    margin-top: 20%; 
+    margin-left: 30%;
+    
+    }
+
+.star17 {
+    margin-top: 85%; 
+    margin-left: 80%;
+    
+    }
+
+.star18 {
+    margin-top: 50%; 
+    margin-left: 50%;
+    
+    }
+
+.star19 {
+    margin-top: 50%; 
+    margin-left: 10%;
+    
+    }
+
+.star20 {
+    margin-top: 42%; 
+    margin-left: 90%;
+  
+    
+    }
+
+
