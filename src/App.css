@@ -6,16 +6,10 @@
     left: 0;
     width: 100%;
     height: 100vh;
-
-
    
   }
 
   .logo{
-    display: block;
-    /* width: 80%;
-    height: 80%; */
-    /* Remove justify-content and align-items */
     position: absolute;
     top: 100%;
     left: 50%;
@@ -186,5 +180,19 @@
   
     
     }
+
+@media screen and (max-width: 768px) {
+  .section {
+    grid-template-columns: 100%; /* Display only one column */
+    text-align: center; /* Center text */
+  }
+  .image {
+    display: none; /* Hide image */
+  }
+  .title {
+    margin: 5% 0; /* Add margin to the text */
+  }
+  
+}
 
 
