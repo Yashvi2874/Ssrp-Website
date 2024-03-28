@@ -3,6 +3,8 @@ import './App.css';
 import Home from './Components/Home';
 import NavBar from './Components/Navbar';
 import About from './Components/About';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       </div>
       <Home />
       <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }

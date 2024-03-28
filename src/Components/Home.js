@@ -19,7 +19,6 @@ function Home() {
       </div>
       <div className='m-4'>
       <p className='Slogan'>From Dreams to Reality</p>
-      
         </div>
        
     </div>
