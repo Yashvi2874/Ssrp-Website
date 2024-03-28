@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    .ssrp-absolute {
+        top: 40%;
+        position: absolute;
+    }
+}
+.Slogan{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+
+}
