@@ -19,10 +19,7 @@ function Home() {
       </div>
       <div className='m-4'>
       <p className='Slogan'>From Dreams to Reality</p>
-      <section id = 'about'>
-        <h2>About Us</h2>
-        <p>SSRP is a student-led initiative at K.J. Somaiya College of Engineering, Mumbai. We aim to foster a culture of space research and innovation among students. Our goal is to provide a platform for students to work on real-world space projects and gain hands-on experience in the field of space technology.</p>
-      </section>
+      
         </div>
        
     </div>
