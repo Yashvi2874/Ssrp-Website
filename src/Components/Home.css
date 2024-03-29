@@ -4,13 +4,6 @@
         position: absolute;
     }
 }
-.Slogan{
-    font-size: 3rem;
-    font-weight: 500;
-    color: #fff;
-    text-align: center;
-
-}
 .typeit-text {
     font-size: 2em; /* Adjust size as needed */
     text-align: left;
@@ -18,6 +11,18 @@
   .typeit-text:nth-child(1) {
     font-size: 4em;
   }
+@media screen and (min-width: 510) {
+  .typeit-text:nth-child(1) {
+    font-size: 1.3em;
+  }
+}
+.Slogan{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+
+}
   .glow {
     border-radius: 50%;
     box-shadow: 
@@ -32,4 +37,3 @@
       0 0 90px #444544, 
       0 0 100px #444544;
   }
-  
