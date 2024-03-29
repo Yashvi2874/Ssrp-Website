@@ -12,7 +12,7 @@ const StarBackground = ({ children }) => {
     cameraRef.current = camera;
 
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, document.querySelector('.relative').clientHeight);
+    renderer.setSize(window.innerWidth, Math.min(document.querySelector('.relative').clientHeight, Math.max(document.body.scrollHeight, document.documentElement.scrollHeight)));
     containerRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer;
 
@@ -44,7 +44,7 @@ const StarBackground = ({ children }) => {
 
     const handleWindowResize = () => {
       const width = window.innerWidth;
-    const height = document.querySelector('.relative').clientHeight;
+      const height = Math.min(document.querySelector('.relative').clientHeight, Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
 
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
@@ -52,10 +52,17 @@ const StarBackground = ({ children }) => {
       renderer.setSize(width, height);
     };
 
+    const handleScroll = () => {
+      const height = Math.min(document.querySelector('.relative').clientHeight, Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
+      renderer.setSize(window.innerWidth, height);
+    };
+
     window.addEventListener('resize', handleWindowResize);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener('scroll', handleScroll);
       containerRef.current.removeChild(rendererRef.current.domElement);
     };
   }, []);
