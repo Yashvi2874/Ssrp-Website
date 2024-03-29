@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 1208px) {
     .ssrp-absolute {
         top: 40%;
         position: absolute;
@@ -18,3 +18,18 @@
   .typeit-text:nth-child(1) {
     font-size: 4em;
   }
+  .glow {
+    border-radius: 50%;
+    box-shadow: 
+      0 0 10px #c3cec3, 
+      0 0 20px #d6dcd6, 
+      0 0 30px #888a88, 
+      0 0 40px #444544, 
+      0 0 50px #444544, 
+      0 0 60px #444544, 
+      0 0 70px #444544, 
+      0 0 80px #444544, 
+      0 0 90px #444544, 
+      0 0 100px #444544;
+  }
+  

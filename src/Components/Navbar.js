@@ -17,17 +17,17 @@ function App() {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item mr-lg-5">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
+        <li class="nav-item mr-lg-6">
           <a class="nav-link active" aria-current="page" href="#">Projects</a>
         </li>
-        <li class="nav-item mr-lg-5">
+        <li class="nav-item mr-lg-6">
           <a class="nav-link active" aria-current="page" href="#">Community</a>
         </li>
-        <li class="nav-item mr-lg-5">
+        <li class="nav-item mr-lg-6">
           <a class="nav-link active" aria-current="page" href="#">Connections</a>
         </li>
-        <li class="nav-item mr-lg-5">
+        <li class="nav-item mr-lg-6">
           <a class="nav-link active mr-lg-5" href="#">Contact US</a>
         </li>
       
