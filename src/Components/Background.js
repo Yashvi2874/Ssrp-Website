@@ -4,10 +4,12 @@ import * as THREE from 'three';
 const StarBackground = ({ children }) => {
     const containerRef = useRef();
     const rendererRef = useRef();
+    const cameraRef = useRef();
 
     useEffect(() => {
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        cameraRef.current = camera;
 
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -29,39 +31,37 @@ const StarBackground = ({ children }) => {
         const starField = new THREE.Points(starsGeometry, starsMaterial);
         scene.add(starField);
 
-        
-        
-        
-
-        
-
         const animate = () => {
             requestAnimationFrame(animate);
 
             starField.rotation.x += 0.0005;
             starField.rotation.y += 0.0005;
 
-            
-
-            rendererRef.current.render(scene, camera);
+            rendererRef.current.render(scene, cameraRef.current);
         };
 
         animate();
 
-        const container = containerRef.current;
-        const rendererInstance = rendererRef.current;
+        const handleWindowResize = () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(width, height);
+        };
+
+        window.addEventListener('resize', handleWindowResize);
 
         return () => {
-            container.removeChild(rendererInstance.domElement);
+            window.removeEventListener('resize', handleWindowResize);
+            containerRef.current.removeChild(rendererRef.current.domElement);
         };
     }, []);
 
-    return (
-        
-            <div ref={containerRef}></div>
-            
-            
-    );
+    return <div ref={containerRef}></div>;
 };
 
 export default StarBackground;
+
