@@ -12,7 +12,7 @@ const StarBackground = ({ children }) => {
     cameraRef.current = camera;
 
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, document.querySelector('.relative').clientHeight);
     containerRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer;
 
