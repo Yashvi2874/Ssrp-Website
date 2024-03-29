@@ -11,3 +11,10 @@
     text-align: center;
 
 }
+.typeit-text {
+    font-size: 2em; /* Adjust size as needed */
+    text-align: left;
+  }
+  .typeit-text:nth-child(1) {
+    font-size: 4em;
+  }
