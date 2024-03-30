@@ -26,18 +26,18 @@ function About() {
 
         <div className="text4">
           <p className='item'>Why Sponsor Us?</p>
-          <p>We leverage both research and renowned competitions like IRC, CANSAT, and IROC-U. Sharing research findings expands knowledge and validates student contributions. Competitions hone problem-solving, but in-depth research propels space exploration. These projects push the boundaries of our cosmic understanding and drive cutting-edge technologies beyond space applications. By engaging in research, we not only solve present challenges but lay the groundwork for future innovation with lasting impact.</p>
+          <p>The Somaiya Space Research Project, established this year, is dedicated to pioneering advancements in space exploration through innovative research initiatives, with a primary focus on developing the StudentSAT( satellites developed by students). The team, comprised of passionate and determined individuals, is poised to make significant contributions to the global space community. Potential sponsors are invited to join the project as partners, playing a vital role in supporting its journey to push the boundaries of space exploration. By aligning with the project, sponsors have the opportunity to contribute to cutting-edge innovation and represent their company on an international stage. Together, they embark on a remarkable journey to shape the future of space exploration.</p>
         </div>
 
         <div className="text5">
           <p className='item'>
-            <img src={logo} alt='ssrp logo' />
+            <img className='about-img' src={logo} alt='ssrp logo' />
           </p>
         </div>
 
         <div className="text6">
           <p className='item'>
-          <img src={logo} alt='ssrp future goals images' />
+          <img className='about-img' src={logo} alt='ssrp future goals images' />
           </p>
         </div>
 
