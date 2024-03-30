@@ -45,6 +45,7 @@
     padding-left: 25px;
     font-weight: 500;
     color: #666;
+    
 }
 
 .contact-left textarea{
@@ -57,6 +58,7 @@
 } 
 .contact-inputs::placeholder{
     color : #a9a9a9;
+    
 }
     
 .contact-left button{
