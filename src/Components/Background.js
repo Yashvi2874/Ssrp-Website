@@ -17,7 +17,11 @@ const StarBackground = ({ children }) => {
     rendererRef.current = renderer;
 
     const starsGeometry = new THREE.BufferGeometry();
-    const starsMaterial = new THREE.PointsMaterial({ color: 0xffffff });
+    const starsMaterial = new THREE.PointsMaterial({ 
+      color: 0xffffff,
+      size: 2,
+      sizeAttenuation: false
+    });
 
     const positions = [];
     for (let i = 0; i < 10000; i++) {
