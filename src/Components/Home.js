@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import earth from './earth.png';
 import logo from './logo.png';
 import './Home.css';
@@ -20,7 +20,7 @@ function Home() {
       <div className='row justify-content-sm-center justify-content-lg-end m-3'>
           <div className='col-12 col-sm-4 logo_div' style={{ marginTop: '20%' }}>
             <img
-              className='logo img-fluid position-relative'
+              className='logo img-fluid position-relative glow'
               
               src={logo}
               alt='logo of team ssrp'
@@ -37,7 +37,7 @@ function Home() {
         </div>
       </div>
       <div className='m-4'>
-        <p className='Slogan'>From Dreams to Reality</p>
+        <p className='Slogan'>From classroom to Cosmos!!</p>
       </div>
     </div>
   );

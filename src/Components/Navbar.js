@@ -8,27 +8,27 @@ function App() {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixnav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixnav">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src='https://i.imgur.com/miZ2Zyz.png' style={{maxHeight: "50px", width: "auto", objectFit: "contain", marginRight: "10px"}}></img>
+      <img src='https://i.imgur.com/miZ2Zyz.png' style={{maxHeight: "50px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
       Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
-        <li class="nav-item mr-lg-6">
+        <li class="nav-item mr-lg-6 px-3">
           <a class="nav-link active" aria-current="page" href="#">Projects</a>
         </li>
-        <li class="nav-item mr-lg-6">
+        <li class="nav-item mr-lg-6 px-3">
           <a class="nav-link active" aria-current="page" href="#">Community</a>
         </li>
-        <li class="nav-item mr-lg-6">
+        <li class="nav-item mr-lg-6 px-3">
           <a class="nav-link active" aria-current="page" href="#">Connections</a>
         </li>
-        <li class="nav-item mr-lg-6">
-          <a class="nav-link active mr-lg-5" href="#">Contact US</a>
+        <li class="nav-item mr-lg-6 px-3">
+          <a class="nav-link active" aria-current="page" href="#">Contact US</a>
         </li>
       
        
