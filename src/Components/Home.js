@@ -20,7 +20,7 @@ function Home() {
       <div className='row justify-content-sm-center justify-content-lg-end m-3'>
           <div className='col-12 col-sm-4 logo_div' style={{ marginTop: '20%' }}>
             <img
-              className='logo img-fluid position-relative glow'
+              className='logo img-fluid position-relative'
               
               src={logo}
               alt='logo of team ssrp'
@@ -28,7 +28,7 @@ function Home() {
           </div>
           <div className='col-5 d-none d-sm-block'>
             <img
-              className='image img-fluid position-relative'
+              className='image img-fluid position-relative glow'
               style={{ width: '100%' }}
               src={earth}
               alt='earth'
