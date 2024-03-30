@@ -1,6 +1,5 @@
 import React from 'react';
 import earth from './earth.png';
-import logo from './logo.png';
 import './Home.css';
 import TypeIt from 'typeit-react';
 
@@ -18,14 +17,7 @@ function Home() {
       </div>
       <div className='mt-3'>
       <div className='row justify-content-sm-center justify-content-lg-end m-3'>
-          <div className='col-12 col-sm-4 logo_div' style={{ marginTop: '20%' }}>
-            <img
-              className='logo img-fluid position-relative'
-              
-              src={logo}
-              alt='logo of team ssrp'
-            />
-          </div>
+
           <div className='col-5 d-none d-sm-block'>
             <img
               className='image img-fluid position-relative glow'

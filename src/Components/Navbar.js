@@ -25,7 +25,7 @@ function App() {
           <a class="nav-link active" aria-current="page" href="#">Community</a>
         </li>
         <li class="nav-item mr-lg-6 px-3">
-          <a class="nav-link active" aria-current="page" href="#">Connections</a>
+          <a class="nav-link active" aria-current="page" href="#">Events</a>
         </li>
         <li class="nav-item mr-lg-6 px-3">
           <a class="nav-link active" aria-current="page" href="#">Contact US</a>
