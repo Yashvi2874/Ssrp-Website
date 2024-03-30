@@ -20,6 +20,7 @@ function About() {
 
         <div className="text3">
           <p className='item'>Our Collaborators</p>
+          <div className='Carousel'><ControlledCarousel /></div>
           <p className='collab'>KJSIT: KJ Somaiya Institute of Technology</p>
         </div>
 
@@ -30,23 +31,17 @@ function About() {
 
         <div className="text5">
           <p className='item'>
-            <img src={logo} alt='logo' />
+            <img src={logo} alt='ssrp logo' />
           </p>
         </div>
 
         <div className="text6">
           <p className='item'>
-          <img src={logo} alt='logo' />
+          <img src={logo} alt='ssrp future goals images' />
           </p>
         </div>
 
-        <div className="text7">
-          <p className='item'>
-            <ControlledCarousel /> 
-          </p>
-        </div>
-
-
+        
       </div>
         
     </div>
