@@ -5,7 +5,7 @@ import NavBar from './Components/Navbar';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import Project from './Components/Project';
+
 import StarBackground from './Components/Background';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
