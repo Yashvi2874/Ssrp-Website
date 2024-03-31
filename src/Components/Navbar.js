@@ -26,7 +26,7 @@ function App() {
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item mr-lg-6 px-3">
-          <a class="nav-link active" aria-current="page" href="#">Projects</a>
+          <a class="nav-link active" aria-current="page" href="/project">Projects</a>
         </li>
         <li class="nav-item mr-lg-6 px-3">
           <a class="nav-link active" aria-current="page" href="#">Community</a>
