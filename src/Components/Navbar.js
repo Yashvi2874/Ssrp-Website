@@ -1,6 +1,8 @@
 
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import Somaiya_Vidyavihar from './Trust_logo/Vidyavihar.png';
+import Somaiya_Vidyavihar_University from './Trust_logo/Group 5.png';
 function App() {
   return (
     <div className="App" style={{ width: "100vw" }}>
@@ -12,12 +14,17 @@ function App() {
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src='https://i.imgur.com/miZ2Zyz.png' style={{maxHeight: "50px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
-      Home</a>
+      <img src={Somaiya_Vidyavihar} style={{maxHeight: "50px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
+      <img src={Somaiya_Vidyavihar_University} style={{maxHeight: "50px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
+      <li class="nav-item mr-lg-6 px-3">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
         <li class="nav-item mr-lg-6 px-3">
           <a class="nav-link active" aria-current="page" href="#">Projects</a>
         </li>
