@@ -176,15 +176,30 @@
 
     // Load astronaut GLB model
     const gltfLoader = new THREE.GLTFLoader();
-    gltfLoader.load('/astronaut/astronaut.glb', function (gltf) {
-      astronaut = gltf.scene;
-      astronaut.position.set(10, 10, 0);
-
-      astronaut.scale.set(100, 80, 50); // Scale the astronaut model as needed
-      scene.add(astronaut);
-    }, undefined, function (error) {
-      console.error('An error occurred while loading the GLTF model:', error);
-    });
+gltfLoader.load('/astronaut/astronaut.glb', function (gltf) {
+  astronaut = gltf.scene;
+  astronaut.position.set(-30, -30, -30); // Set a reasonable position
+  astronaut.scale.set(30, 30, 30); // Ensure the scale is appropriate
+  
+  // Traverse through the model to handle materials
+  astronaut.traverse(function (child) {
+    if (child.isMesh) {
+      // Remove unsupported material properties
+      delete child.material.specularIntensity;
+      delete child.material.specularColor;
+      
+      // Handle texture loading errors
+      if (child.material.map) {
+        child.material.map.encoding = THREE.sRGBEncoding;
+        child.material.map.anisotropy = 16;
+      }
+    }
+  });
+  
+  scene.add(astronaut);
+}, undefined, function (error) {
+  console.error('An error occurred while loading the GLTF model:', error);
+});
 
     function randomPointSphere(radius) {
       let theta = 2 * Math.PI * Math.random();
