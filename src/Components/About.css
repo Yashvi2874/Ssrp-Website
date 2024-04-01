@@ -1,6 +1,7 @@
   .container {
     padding-top: 10px;
-    min-height: 100vh; /* Minimum height of the container */
+    min-height: 100vh;
+    width: 100%; /* Minimum height of the container */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto; /* Allow rows to adjust to content */
@@ -53,8 +54,8 @@
   }
 
   .about-img{
-    width: 100%;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
   }
 
   p {

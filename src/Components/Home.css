@@ -1,29 +1,36 @@
 @media screen and (min-width: 1208px) {
     .ssrp-absolute {
-        top: 40vh;
+        top: 20vh;
+
         position: absolute;
     }
 }
 .typeit-text {
-    font-size: 2em; /* Adjust size as needed */
+    font-size: 2rem; /* Adjust size as needed */
     text-align: left;
   }
   .typeit-text:nth-child(1) {
-    font-size: 4em;
+    font-size: 3rem;
+    font-weight: 500;
   }
-  @media screen and (min-width: 510px) {
-    .typeit-text #small-type {
-      font-size: 1.3em; /* Adjust size as needed */
-      text-align: left;
-    }
-  }
-.Slogan{
-    font-size: 1.2rem;
+
+  .Slogan{
+    font-size: 3rem;
     font-weight: 500;
     color: #fff;
     text-align: left;
 
 }
+  @media screen and (max-width: 510px) {
+    .typeit-text #small-type {
+      font-size: 1.3rem; /* Adjust size as needed */
+      text-align: left;
+    }
+    .Sloagan{
+      font-size: 1.3rem;
+    }
+  }
+
   .glow {
     border-radius: 50%;
     box-shadow: 
@@ -38,18 +45,3 @@
       0 0 90px #444544, 
       0 0 100px #444544;
   }
-.logo {
-  width: 100%;
-  margin-left: 50%;
-  z-index: 1;
-}
-
-.logo-div{
-  margin-top:20% ;
-}
-@media screen and (max-width: 575px) {
-  .logo {
-    width: auto;
-    margin-left: 0;
-  }
-}
