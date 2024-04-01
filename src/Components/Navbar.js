@@ -1,8 +1,8 @@
 
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import Somaiya_Vidyavihar from './Trust_logo/Vidyavihar.png';
-import Somaiya_Vidyavihar_University from './Trust_logo/Group 5.png';
+import Somaiya_Vidyavihar from './Trust_logo/somaiya white.png';
+import Somaiya_Vidyavihar_University from './Trust_logo/somaiya trust.png';
 function App() {
   return (
     <div className="App" style={{ width: "100vw" }}>
