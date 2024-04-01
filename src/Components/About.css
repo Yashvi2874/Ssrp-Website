@@ -1,7 +1,6 @@
   .container {
-    padding-top: 10px;
-    min-height: 100vh;
-    width: 100%; /* Minimum height of the container */
+    padding-top: 10vh;
+    min-height: 100vh; /* Minimum height of the container */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto; /* Allow rows to adjust to content */
@@ -111,6 +110,10 @@
       grid-row: 3; /* Position earth at the bottom */
     }
 
+    .about-img{
+      width: 100%;
+      height: auto;
+    }
     
 
     
