@@ -5,7 +5,7 @@ import NavBar from './Components/Navbar';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-
+import Team from './Components/Team';
 import StarBackground from './Components/Background';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -23,6 +23,7 @@ function App() {
                 <NavBar />
                 <Home />
                 <About />
+                <Team />
                 <Contact />
                 <Footer />
               </div>
