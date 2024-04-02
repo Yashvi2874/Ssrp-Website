@@ -6,7 +6,7 @@ import TypeIt from 'typeit-react';
 
 function Home() {
   return (
-    <div className='Home'>
+    <div className='Home' id='home'>
     <div className='text-center text-white m-4'>
       <div className='row justify-content-center ssrp-absolute'>
       <TypeIt className='typeit-text' options={{ strings: "SSRP", speed: 50, waitUntilVisible: true, cursor: false }} />

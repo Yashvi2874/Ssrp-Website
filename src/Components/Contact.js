@@ -3,7 +3,7 @@ import './Contact.css'
 import arrow from './arrow.png'
 function Contact() {
   return (
-    <div className='contact-container'>
+    <div className='contact-container' id='contact'>
         <form action="" class="contact-left">
             <div class="contact-left-title">
                 <h2 className='gradient-text'>Ignite the steller exchange 🔥 </h2>
