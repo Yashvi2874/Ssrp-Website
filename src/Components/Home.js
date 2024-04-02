@@ -22,7 +22,7 @@ function Home() {
           <div className='col-5 d-none d-sm-block'>
             <img
               className='image img-fluid position-relative glow'
-              style={{ width: '100%' }}
+              style={{ width: '80%' }}
               src={earth}
               alt='earth'
             />

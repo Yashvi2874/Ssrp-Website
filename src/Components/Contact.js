@@ -1,6 +1,5 @@
 import React from 'react'
 import './Contact.css'
-import Astronaut from './astronaut.png'
 import arrow from './arrow.png'
 function Contact() {
   return (
@@ -15,10 +14,7 @@ function Contact() {
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
             <button type="submit">Submit <img src={arrow} alt="arrow to submit" /></button>
         </form>
-        <div className='contact-right'>
-            <img src={Astronaut} alt="Astronaut" />
-        </div>
-    </div>
+      </div>
   )
 }
 
