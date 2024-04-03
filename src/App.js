@@ -30,9 +30,28 @@ function App() {
             </div>
           </div>
         } />
-        <Route path="/projects" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
-        <Route path="/project" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
-      </Routes>
+      
+        <Route path="/project" element={
+  <div className="App">
+    <div className="absolute">
+      <div className="relative">
+        <iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none', position:'absolute', top:'0' }} />
+        <NavBar style={{ position:'absolute', top:'0' }}/>
+      </div>
+    </div>
+  </div>
+} />
+        <Route path="/projects" element={
+  <div className="App">
+    <div className="absolute">
+      <div className="relative">
+        <iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none', position:'absolute', top:'0' }} />
+        <NavBar style={{ position:'absolute', top:'0' }}/>
+      </div>
+    </div>
+  </div>
+} />
+</Routes>
     </BrowserRouter>
   );
 }
