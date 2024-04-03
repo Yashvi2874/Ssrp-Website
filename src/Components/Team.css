@@ -8,8 +8,8 @@
     list-style: none;
   }
   
-  div.card-container {
-    height: 300px;
+  .card-container {
+    height: 50vh;
     width: 100%;
     perspective: 1000px;
     float: left;
@@ -89,7 +89,7 @@
   
   /* Enable animation */
   .marquee__content {
-    animation: scroll 20s linear infinite;
+    animation: scroll 10s linear infinite;
   }
   
   /* Pause on hover */
@@ -120,10 +120,8 @@
   
   /* Other page demo styles */
   .marquee__content > * {
-    height: 50vh;
-    width: 30vw;
-    max-width: 300px;
-    max-height: 300px;
+    height: 50%;
+    width: 50%;
     text-align: center;
   }
   
@@ -134,7 +132,7 @@
   .Team {
     padding: 2rem;
     width: 100%;
-    height: fit-contents;
+    height: 100vh;
     font-family: system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
