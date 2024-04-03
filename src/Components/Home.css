@@ -8,13 +8,18 @@
 .typeit-text {
     font-size: 2rem; /* Adjust size as needed */
     text-align: left;
+    font-family: 'Nulshock Rg';
+    src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
   }
   .typeit-text:nth-child(1) {
+    font-family: 'Dhalia bold';
+    src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
     font-size: 3rem;
     font-weight: 500;
-  }
-  .typeit-text {
-    font-family: Nulshock Rg;
   }
 
   .Slogan{
