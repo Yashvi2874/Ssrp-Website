@@ -19,13 +19,16 @@
   }
 
   .Carousel{
-    width: 65%;
+    width: 85%;
     height: auto;
     margin: 0 auto;
+
 }
   
   .text1 {
     grid-area: 1 / 1/ 2 / 2;
+    justify-content: center;
+    align-items: center;
   }
   
   .text6 {
@@ -33,7 +36,7 @@
   }
   
   .text3 {
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: 3 / 1 / 4 / 2;
   }
 
   .text4{
@@ -67,6 +70,8 @@
   .collab{
     text-align: center;
   }
+
+  
 
   
   @media screen and (max-width: 1208px) {
@@ -109,6 +114,8 @@
     .text6 {
       grid-row: 3; /* Position earth at the bottom */
     }
+
+
 
     .about-img{
       width: 50vw;
