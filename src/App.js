@@ -53,10 +53,21 @@ function App() {
 
         <Route path="/projects" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
         <Route path="/project" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
-        <Route path="/community" element={<Team />} />
+        <Route path="/community" element={
+        
+        <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <Team />
+              </div>
+            </div>
+          </div>} />
       </Routes>
     </BrowserRouter>
-  );
+          );
 }
 
 export default App;
