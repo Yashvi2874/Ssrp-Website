@@ -23,7 +23,6 @@ function App() {
                 <NavBar />
                 <Home />
                 <About />
-                <Team />
                 <Contact />
                 <Footer />
               </div>
@@ -52,6 +51,10 @@ function App() {
   </div>
 } />
 </Routes>
+        <Route path="/projects" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
+        <Route path="/project" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
+        <Route path="/community" element={<Team />} />
+      </Routes>
     </BrowserRouter>
   );
 }

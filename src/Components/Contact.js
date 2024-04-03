@@ -1,10 +1,9 @@
 import React from 'react'
 import './Contact.css'
-import Astronaut from './astronaut.png'
 import arrow from './arrow.png'
 function Contact() {
   return (
-    <div className='contact-container'>
+    <div className='contact-container' id='contact'>
         <form action="" class="contact-left">
             <div class="contact-left-title">
                 <h2 className='gradient-text'>Ignite the steller exchange 🔥 </h2>
@@ -15,10 +14,7 @@ function Contact() {
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
             <button type="submit">Submit <img src={arrow} alt="arrow to submit" /></button>
         </form>
-        <div className='contact-right'>
-            <img src={Astronaut} alt="Astronaut" />
-        </div>
-    </div>
+      </div>
   )
 }
 
