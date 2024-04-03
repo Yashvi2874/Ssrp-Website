@@ -1,5 +1,7 @@
 import React from 'react';
 import './Team.css'; // Make sure to import your CSS file
+import  Navbar from './Navbar';
+
 
 const Team = () => {
 
@@ -39,7 +41,10 @@ const Team = () => {
 
 
   return (
+    
     <div className='Team'>
+          
+          <Navbar/>
         <section className='Team_section'>
         <h1 className='Team-title'>Our Team</h1>
 

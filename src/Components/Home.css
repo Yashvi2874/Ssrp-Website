@@ -8,7 +8,7 @@
 .typeit-text {
     font-size: 2rem; /* Adjust size as needed */
     text-align: left;
-    font-family: 'Nulshock Rg';
+    font-family: 'Nulshock Rg' !important;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;

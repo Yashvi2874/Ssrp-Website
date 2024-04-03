@@ -43,7 +43,7 @@ function About() {
         <div className="text7">
         
           <div className='Carousel'><ControlledCarousel /></div>
-          <p className='collab'>KJSIT: KJ Somaiya Institute of Technology</p>
+          <p className='collab'>KJSIT: K.J. Somaiya Institute of Technology</p>
         </div>
 
         
