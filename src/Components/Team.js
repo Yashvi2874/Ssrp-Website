@@ -47,7 +47,7 @@ const Team = () => {
           <Navbar/>
         <section className='Team_section'>
         <h1 className='Team-title'>Our Team</h1>
-
+        <h1 className='Team-department'>Comps</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
             {teamMembers.map((member, index) => (
@@ -88,7 +88,133 @@ const Team = () => {
               </li>
             ))}
             </ul>
-        </div>
+          </div>
+          <h1 className='Team-department'>Comps</h1>
+        <div className="marquee marquee--hover-pause">
+            <ul className="marquee__content">
+            {teamMembers.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='department'>{member.department}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+
+            <ul aria-hidden="true" className="marquee__content">
+            {teamMembers.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='department'>{member.department}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+          </div>
+          <h1 className='Team-department'>Comps</h1>
+        <div className="marquee marquee--hover-pause">
+            <ul className="marquee__content">
+            {teamMembers.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='department'>{member.department}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+
+            <ul aria-hidden="true" className="marquee__content">
+            {teamMembers.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='department'>{member.department}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+          </div>
+          <h1 className='Team-department'>Comps</h1>
+        <div className="marquee marquee--hover-pause">
+            <ul className="marquee__content">
+            {teamMembers.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='department'>{member.department}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+
+            <ul aria-hidden="true" className="marquee__content">
+            {teamMembers.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='department'>{member.department}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+          </div>
         </section>
     </div>
   );
