@@ -1,6 +1,7 @@
 import React from 'react';
 import './Team.css'; // Make sure to import your CSS file
 import  Navbar from './Navbar';
+import StarBackground from './Background';
 
 
 const Team = () => {
@@ -42,9 +43,10 @@ const Team = () => {
 
   return (
     
+    <div className='Team_Page'>
+      <Navbar />
+      
     <div className='Team'>
-          
-          <Navbar/>
         <section className='Team_section'>
         <h1 className='Team-title'>Our Team</h1>
         <h1 className='Team-department'>Comps</h1>
@@ -216,6 +218,7 @@ const Team = () => {
             </ul>
           </div>
         </section>
+    </div>
     </div>
   );
 };
