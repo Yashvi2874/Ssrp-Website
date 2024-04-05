@@ -19,11 +19,11 @@ function Home() {
       </div> */}
       
       <div className='mt-3'>
-      <div className='row justify-content-sm-center justify-content-lg-end m-3'>
+      <div className='row justify-content-end m-3'>
 
-          <div className='col-5'>
+          <div className='col-5 earth-block'>
             <Canvas
-              className='image img-fluid position-relative' style={{width : '80%', height : 'auto'}}>
+              className='image img-fluid position-relative' style={{width : '100%', height : 'auto'}}>
                 <Experience />
               </Canvas>
 

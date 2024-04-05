@@ -1,4 +1,4 @@
-@media screen and (min-width: 1015px) {
+@media screen and (min-width: 768px) {
     .ssrp-absolute {
         top: 20vh;
 
@@ -29,7 +29,7 @@
     text-align: left;
 
 }
-  @media screen and (max-width: 510px) {
+  @media screen and (max-width: 768px) {
     .typeit-text #small-type {
       font-size: 1.3rem; /* Adjust size as needed */
       text-align: left;
@@ -52,4 +52,11 @@
       0 0 80px #444544, 
       0 0 90px #444544, 
       0 0 100px #444544;
+  }
+
+  @media screen and (max-width: 768px) {
+    .earth-block{
+      display: none;
+    }
+    
   }
