@@ -2,6 +2,8 @@ import React from 'react';
 import earth from './earth.png';
 import './Home.css';
 import TypeIt from 'typeit-react';
+import { Canvas } from '@react-three/fiber';
+import { Experience } from './Experience';
 
 
 function Home() {
@@ -16,16 +18,17 @@ function Home() {
       {/* <div className='row justify-content-center ssrp-absolute' style={{ marginTop: '4.5rem' }}>
         <h3 className='d-inline-block'></h3>
       </div> */}
+      
       <div className='mt-3'>
       <div className='row justify-content-sm-center justify-content-lg-end m-3'>
 
           <div className='col-5 d-none d-sm-block'>
-            <img
-              className='image img-fluid position-relative glow'
-              style={{ width: '80%' }}
-              src={earth}
-              alt='earth'
-            />
+            <Canvas
+              className='image img-fluid position-relative' style={{width : '80%', height : 'auto'}}>
+                <Experience />
+              </Canvas>
+
+
           </div>
         </div>
       </div>

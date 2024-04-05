@@ -1,7 +1,7 @@
 import React from 'react';
 import './Team.css'; // Make sure to import your CSS file
 import  Navbar from './Navbar';
-import StarBackground from './Background';
+
 
 
 const Team = () => {
