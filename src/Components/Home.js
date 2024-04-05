@@ -1,5 +1,4 @@
 import React from 'react';
-import earth from './earth.png';
 import './Home.css';
 import TypeIt from 'typeit-react';
 import { Canvas } from '@react-three/fiber';
@@ -22,7 +21,7 @@ function Home() {
       <div className='mt-3'>
       <div className='row justify-content-sm-center justify-content-lg-end m-3'>
 
-          <div className='col-5 d-none d-sm-block'>
+          <div className='col-5'>
             <Canvas
               className='image img-fluid position-relative' style={{width : '80%', height : 'auto'}}>
                 <Experience />
