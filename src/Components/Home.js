@@ -2,11 +2,16 @@ import React from 'react';
 import earth from './earth.png';
 import './Home.css';
 import TypeIt from 'typeit-react';
+import { Canvas } from '@react-three/fiber';
+import { Experience } from './Experience';
 
 
 function Home() {
   return (
     <div className='Home' id='home'>
+    <Canvas>
+    <Experience />
+      </Canvas>
     <div className='text-center text-white m-4'>
       <div className='row justify-content-center ssrp-absolute'>
       <TypeIt className='typeit-text' options={{ strings: "SSRP", speed: 50, waitUntilVisible: true, cursor: false }} />
