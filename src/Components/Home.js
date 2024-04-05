@@ -9,9 +9,6 @@ import { Experience } from './Experience';
 function Home() {
   return (
     <div className='Home' id='home'>
-    <Canvas>
-    <Experience />
-      </Canvas>
     <div className='text-center text-white m-4'>
       <div className='row justify-content-center ssrp-absolute'>
       <TypeIt className='typeit-text' options={{ strings: "SSRP", speed: 50, waitUntilVisible: true, cursor: false }} />
@@ -26,12 +23,12 @@ function Home() {
       <div className='row justify-content-sm-center justify-content-lg-end m-3'>
 
           <div className='col-5 d-none d-sm-block'>
-            <img
-              className='image img-fluid position-relative glow'
-              style={{ width: '80%' }}
-              src={earth}
-              alt='earth'
-            />
+            <Canvas
+              className='image img-fluid position-relative' style={{width : '80%', height : 'auto'}}>
+                <Experience />
+              </Canvas>
+
+
           </div>
         </div>
       </div>

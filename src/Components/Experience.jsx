@@ -5,10 +5,10 @@ import { Model } from './Earth_1_12756';
 export const Experience = () => {
     return (
         <>
-            <OrbitControls/>
-            <ambientLight intensity={3}/>
+            <OrbitControls enableZoom={false}/>
+            <ambientLight intensity={10}/>
             {/* <Office /> */}
-            <Model scale={[0.045, 0.045, 0.045]} position={[0, 0, 0]} />
+            <Model scale={[0.0060, 0.0060, 0.0060]} position={[0, 0, 0]} />
         </>
     );
 };
