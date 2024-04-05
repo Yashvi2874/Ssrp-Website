@@ -1,4 +1,4 @@
-@media screen and (min-width: 1208px) {
+@media screen and (min-width: 1015px) {
     .ssrp-absolute {
         top: 20vh;
 
@@ -6,7 +6,7 @@
     }
 }
 .typeit-text {
-    font-size: 2rem; /* Adjust size as needed */
+    font-size: 2vw; /* Adjust size as needed */
     text-align: left;
     font-family: 'Nulshock Rg' !important;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
@@ -18,12 +18,12 @@
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 500;
   }
 
   .Slogan{
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 500;
     color: #fff;
     text-align: left;
