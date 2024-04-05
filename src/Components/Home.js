@@ -23,7 +23,7 @@ function Home() {
 
           <div className='col-5 earth-block'>
             <Canvas
-              className='image img-fluid position-relative' style={{width : '100%', height : 'auto'}}>
+              className='image img-fluid position-relative' style={{width : '50vw', height : '80vh'}}>
                 <Experience />
               </Canvas>
 
