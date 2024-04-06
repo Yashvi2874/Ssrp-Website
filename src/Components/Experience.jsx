@@ -6,10 +6,10 @@ import { EarthModel } from "./Earthtrial";
 export const Experience = () => {
     return (
         <>
-            <OrbitControls/>
-            <ambientLight intensity={5}/>
+            <OrbitControls enableZoom={false} autoRotate={true}/>
+            <ambientLight intensity={2}/>
             {/* <Office /> */}
-            <EarthModel scale={[3, 3, 3]}/>
+            <EarthModel scale={[2.8, 2.8, 2.8]}/>
         </>
     );
 };
