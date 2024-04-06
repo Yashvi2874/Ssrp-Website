@@ -144,7 +144,7 @@
   }
   
   .Team-title {
-    font-size: 4rem;
+    font-size: 5vw;
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
@@ -177,12 +177,12 @@
   }
 
   .Team-head{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    max-height: 70vh;
     margin-top: 1rem;
   }
   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
