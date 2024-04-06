@@ -35,6 +35,7 @@ function App() {
     <div className="absolute">
       <div className="relative">
         <iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none', position:'absolute', top:'0' }} />
+        
         <NavBar style={{ position:'absolute', top:'0' }}/>
       </div>
     </div>

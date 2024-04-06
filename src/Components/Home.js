@@ -21,10 +21,11 @@ function Home() {
       <div className='row justify-content-end m-3'>
 
           <div className='col-5 earth-block'>
-            <Canvas
+            {/* <Canvas
               className='image img-fluid position-relative' style={{width : '50vw', height : '80vh'}}>
                 <Experience />
-              </Canvas>
+              </Canvas> */}
+              <iframe src='https://my.spline.design/photorealearth-c1a8103f9a96c7c5a3f84a4e50469c16/' style={{ width: '48vw', height: '80vh' }}/>
 
 
           </div>
