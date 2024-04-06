@@ -1,14 +1,15 @@
 import { OrbitControls } from "@react-three/drei";
-import { Model } from './Earth_1_12756';
+// import { Model } from './Earth_1_12756';
+import { EarthModel } from "./Earthtrial";
 // import { Office } from './Office';
 
 export const Experience = () => {
     return (
         <>
-            <OrbitControls enableZoom={false}/>
-            <ambientLight intensity={10}/>
+            <OrbitControls/>
+            <ambientLight intensity={5}/>
             {/* <Office /> */}
-            <Model scale={[0.0060, 0.0060, 0.0060]} position={[0, 0, 0]} />
+            <EarthModel scale={[3, 3, 3]}/>
         </>
     );
 };
