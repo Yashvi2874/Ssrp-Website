@@ -55,8 +55,8 @@
   }
 
   .about-img{
-    width: fit-content;
-    height: fit-content;
+    width: 70%;
+    height: auto;
   }
 
   p {
@@ -117,7 +117,7 @@
 
 
     .about-img{
-      width: 50vw;
+      width: 50%;
       height: auto;
     }
 
