@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import logo from './logo.png';
+import future_goals from './futuregoals.png';
 import ControlledCarousel from './Collaborators_slider';
 
 
@@ -36,7 +37,7 @@ function About() {
 
         <div className="text6">
           <p className='item'>
-          <img className='about-img' src={logo} alt='ssrp future goals images' />
+          <img className='about-img' src={future_goals} alt='ssrp future goals images' />
           </p>
         </div>
 
