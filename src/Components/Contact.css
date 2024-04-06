@@ -1,6 +1,6 @@
 
 .contact-container{
-    max-height: 100vh;
+    max-height: 120vh;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -90,4 +90,14 @@
     align-items: center;
     margin-top: 20px;
     color: white;
+}
+
+.head-contact{
+    margin-top: 1.5vw;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
 }

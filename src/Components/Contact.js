@@ -40,6 +40,13 @@ export default function Contact() {
             <button type="submit">Submit <img src={arrow} alt="arrow to submit" /></button>
         </form>
         <span className='verification'>{result}</span>
+        <div className="head-contact">
+          <h4>Rishikesh Bhintade</h4>
+          <h4><span class="material-symbols-outlined">call</span> +917056103520</h4>
+          <h4><span class="material-symbols-outlined" style={ {margin: '5'}}>mail</span><a href="mailto:ssrp.somaiya.edu" style = {{color:'white'}}>ssrp.somaiya.edu</a></h4>
+
+        </div>
       </div>
+      
   );
 }
