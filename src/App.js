@@ -37,7 +37,7 @@ function App() {
         {/* <iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none', position:'absolute', top:'0' }} /> */}
         <iframe src='https://my.spline.design/nikeairmax90celebrationwithmousehover-c178495a3c275c3ea49c65ee42476664/' title="Space Page" style={{ width: '100%', height: '100vh', border: 'none', position:'relative', top:'0' }}></iframe>
         {/* <NavBar style={{ position:'absolute', top:'0' }}/> */}
-        <div style={{background : 'black', position: 'absolute' , bottom: '0', right: '0', height: '10vh', width: '12vw'}}></div>
+        {/* <div style={{background : 'black', position: 'absolute' , bottom: '0', right: '0', height: '10vh', width: '14vw'}}></div> */}
       </div>
         
     </div>
