@@ -57,6 +57,7 @@ function App() {
         <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '100vh', border: 'none', position:'relative', top:'0' }}></iframe>
         {/* <NavBar style={{ position:'absolute', top:'0' }}/> */}
         {/* <div style={{background : 'black', position: 'absolute' , bottom: '0', right: '0', height: '10vh', width: '14vw'}}></div> */}
+        <Footer />
       </div>
         
     </div>

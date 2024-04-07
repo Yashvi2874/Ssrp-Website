@@ -6,7 +6,7 @@
   font-family: "Marcellus", serif;
     font-weight: 400;
     font-style: normal;
-    /*overflow-x: hidden; */
+   
 }
 body {
     margin: 0;
@@ -18,7 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: radial-gradient(circle, #0f1121 0%, #1b2735 100%);
   
-
+   overflow-x: hidden;
 }
 
  ::-webkit-scrollbar{
