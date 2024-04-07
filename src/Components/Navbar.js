@@ -23,7 +23,7 @@ function App() {
     <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
         <li class="nav-item mr-lg-6 px-3">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item mr-lg-6 px-3">
           <a class="nav-link active" aria-current="page" href="/project">Projects</a>
@@ -35,7 +35,7 @@ function App() {
           <a class="nav-link active" aria-current="page" href="#">Events</a>
         </li>
         <li class="nav-item mr-lg-6 px-3">
-          <a class="nav-link active" aria-current="page" href="#contact">Contact US</a>
+          <a class="nav-link active" aria-current="page" href="/contact">Contact US</a>
         </li>
       </ul>
     </div>

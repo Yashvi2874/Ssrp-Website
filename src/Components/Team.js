@@ -6,35 +6,29 @@ import  Navbar from './Navbar';
 
 const Team = () => {
 
-    const teamMembers = [
+    const Comps = [
         {
           name: 'Johnny Depp',
-          department: 'CEO',
           image: 'https://dummyimage.com/300'
         },
         {
           name: 'Alia bhatt',
-          department: 'CTO',
           image: 'https://dummyimage.com/300'
         },
         {
             name: 'Yo Yo Honey Singh',
-            department: 'CEO',
             image: 'https://dummyimage.com/300'
           },
           {
             name: 'Rahul Gandhi',
-            department: 'CTO',
             image: 'https://dummyimage.com/300'
           },
           {
             name: 'Narendra Modi',
-            department: 'CEO',
             image: 'https://dummyimage.com/300'
           },
           {
             name: 'Amit Shah',
-            department: 'CTO',
             image: 'https://dummyimage.com/300'
           }
         // Add more team members as needed
@@ -76,7 +70,7 @@ const Team = () => {
         <h1 className='Team-department'>Comps</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -86,7 +80,6 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
                       </div>
                     </div>
                   </div>
@@ -96,7 +89,7 @@ const Team = () => {
             </ul>
 
             <ul aria-hidden="true" className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -106,7 +99,6 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
                       </div>
                     </div>
                   </div>
@@ -118,7 +110,7 @@ const Team = () => {
           <h1 className='Team-department'>Comps</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -128,7 +120,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
+                        
                       </div>
                     </div>
                   </div>
@@ -138,7 +130,7 @@ const Team = () => {
             </ul>
 
             <ul aria-hidden="true" className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -148,7 +140,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
+                        
                       </div>
                     </div>
                   </div>
@@ -160,7 +152,7 @@ const Team = () => {
           <h1 className='Team-department'>Comps</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -170,7 +162,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
+                        
                       </div>
                     </div>
                   </div>
@@ -180,7 +172,7 @@ const Team = () => {
             </ul>
 
             <ul aria-hidden="true" className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -190,7 +182,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
+                        
                       </div>
                     </div>
                   </div>
@@ -202,7 +194,7 @@ const Team = () => {
           <h1 className='Team-department'>Comps</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -212,7 +204,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
+                        
                       </div>
                     </div>
                   </div>
@@ -222,7 +214,7 @@ const Team = () => {
             </ul>
 
             <ul aria-hidden="true" className="marquee__content">
-            {teamMembers.map((member, index) => (
+            {Comps.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -232,7 +224,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        <p className='department'>{member.department}</p>
+                        
                       </div>
                     </div>
                   </div>
