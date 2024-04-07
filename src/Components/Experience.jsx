@@ -9,7 +9,7 @@ export const Experience = () => {
             <OrbitControls enableZoom={false} autoRotate={true}/>
             <ambientLight intensity={10}/>
             {/* <Office /> */}
-            <Model scale={[0.006, 0.006, 0.006]}/>
+            <Model scale={[0.005, 0.005, 0.005]}/>
         </>
     );
 };
