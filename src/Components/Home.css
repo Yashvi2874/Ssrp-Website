@@ -1,4 +1,4 @@
-@media screen and (min-width: 1208px) {
+@media screen and (min-width: 768px) {
     .ssrp-absolute {
         top: 20vh;
 
@@ -6,31 +6,36 @@
     }
 }
 .typeit-text {
-    font-size: 2rem; /* Adjust size as needed */
+    font-size: 4vw; /* Adjust size as needed */
     text-align: left;
+    font-family: 'Nulshock Rg' !important;
+    src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
   }
   .typeit-text:nth-child(1) {
-    font-size: 3rem;
+    font-family: 'Dhalia bold';
+    src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8vw;
     font-weight: 500;
-  }
-  .typeit-text {
-    font-family: Nulshock Rg;
   }
 
   .Slogan{
-    font-size: 3rem;
+    font-size: 4.5vw;
     font-weight: 500;
     color: #fff;
     text-align: left;
 
 }
-  @media screen and (max-width: 510px) {
+  @media screen and (max-width: 768px) {
     .typeit-text #small-type {
-      font-size: 1.3rem; /* Adjust size as needed */
+      font-size: 1vw; /* Adjust size as needed */
       text-align: left;
     }
     .Sloagan{
-      font-size: 1.3rem;
+      font-size: 1vw;
     }
   }
 
@@ -47,4 +52,11 @@
       0 0 80px #444544, 
       0 0 90px #444544, 
       0 0 100px #444544;
+  }
+
+  @media screen and (max-width: 768px) {
+    .earth-block{
+      display: none;
+    }
+    
   }

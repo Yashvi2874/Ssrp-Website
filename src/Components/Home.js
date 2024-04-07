@@ -1,31 +1,33 @@
 import React from 'react';
-import earth from './earth.png';
 import './Home.css';
-import TypeIt from 'typeit-react';
+import { Canvas } from '@react-three/fiber';
+import { Experience } from './Experience';
 
 
 function Home() {
   return (
-    <div className='Home'>
+    <div className='Home' id='home'>
     <div className='text-center text-white m-4'>
       <div className='row justify-content-center ssrp-absolute'>
-      <TypeIt className='typeit-text' options={{ strings: "SSRP", speed: 50, waitUntilVisible: true, cursor: false }} />
-<TypeIt className='typeit-text' id='small-type' options={{ strings: "Somaiya Space Research Project", speed: 30, waitUntilVisible: true, cursor: false }} />
+      <div className='typeit-text'>SSRP</div>
+      <div className='typeit-text' id='small-type'>Somaiya Space Research Project</div>
       <p className='Slogan'>Launching dreams into orbits</p>
       </div>
       {/* <div className='row justify-content-center ssrp-absolute' style={{ marginTop: '4.5rem' }}>
         <h3 className='d-inline-block'></h3>
       </div> */}
+      
       <div className='mt-3'>
-      <div className='row justify-content-sm-center justify-content-lg-end m-3'>
+      <div className='row justify-content-end m-3'>
 
-          <div className='col-5 d-none d-sm-block'>
-            <img
-              className='image img-fluid position-relative glow'
-              style={{ width: '100%' }}
-              src={earth}
-              alt='earth'
-            />
+          <div className='col-5 earth-block'>
+            <Canvas
+              className='image img-fluid position-relative' style={{width : '50vw', height : '80vh'}}>
+                <Experience />
+              </Canvas>
+              {/* <iframe src='https://my.spline.design/photorealearth-c1a8103f9a96c7c5a3f84a4e50469c16/' style={{ width: '48vw', height: '80vh' }}/> */}
+
+
           </div>
         </div>
       </div>

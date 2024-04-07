@@ -14,12 +14,12 @@ function Footer() {
         <footer>
             <a href="#" target="_blank"><img className="social-media-img" src={facebook} alt="Facebook" /></a>
             <a href="#" target="_blank"><img className="social-media-img" src={github} alt="GitHub" /></a>
-            <a href="#" target="_blank"><img className="social-media-img" src={instagram} alt="Instagram" /></a>
+            <a href="https://www.instagram.com/team_ssrp/" target="_blank"><img className="social-media-img" src={instagram} alt="Instagram" /></a>
  
             <a href="#"><img className="ssrp-logo-img" src={ssrp} alt="SSRP logo" /></a>
  
-            <a href="#" target="_blank"><img className="social-media-img" src={linkedin} alt="LinkedIn" /></a>
-            <a href="#" target="_blank"><img className="social-media-img" src={twitter} alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/company/somaiya-space-research-project-ssrp/" target="_blank"><img className="social-media-img" src={linkedin} alt="LinkedIn" /></a>
+            <a href="https://twitter.com/team_ssrp" target="_blank"><img className="social-media-img" src={twitter} alt="Twitter" /></a>
             <a href="#" target="_blank"><img className="social-media-img" src={youtube} alt="YouTube" /></a>
         </footer>
     </div>

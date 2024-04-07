@@ -11,3 +11,8 @@
 .stars{
     height: 100%;
 }
+
+Canvas{
+    height: 300px;
+    width: 100px;
+}

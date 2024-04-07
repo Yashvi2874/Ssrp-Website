@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import logo from './logo.png';
+import future_goals from './futuregoals.png';
 import ControlledCarousel from './Collaborators_slider';
 
 
@@ -20,8 +21,7 @@ function About() {
 
         <div className="text3">
           <p className='item'>Our Collaborators</p>
-          <div className='Carousel'><ControlledCarousel /></div>
-          <p className='collab'>KJSIT: KJ Somaiya Institute of Technology</p>
+          <p>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we're set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
         </div>
 
         <div className="text4">
@@ -37,8 +37,14 @@ function About() {
 
         <div className="text6">
           <p className='item'>
-          <img className='about-img' src={logo} alt='ssrp future goals images' />
+          <img className='about-img' src={future_goals} alt='ssrp future goals images' />
           </p>
+        </div>
+
+        <div className="text7">
+        
+          <div className='Carousel'><ControlledCarousel /></div>
+          <p className='collab'>KJSIT: K.J. Somaiya Institute of Technology</p>
         </div>
 
         
