@@ -16,10 +16,10 @@
 
 .text-container {
   color: silver;
-  font-size: 15vw;
+  font-size: 8vw;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 0 50px rgba(255, 46, 196, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 50px rgba(240, 240, 17, 0.979), 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin: 0;
   padding: 0;
   position: absolute;
@@ -39,16 +39,16 @@
 
 .ball-big {
   position: relative;
-  width: 15vw;
-  height: 15vw; 
+  width: 8vw;
+  height: 8vw; 
   animation: rotator 3s ease-in-out infinite;
   transform-style: preserve-3d;
 }
 
 .plane {
   position: absolute;
-  width: 15vw;
-  height: 15vw;
+  width: 8vw;
+  height: 8vw;
   border-radius: 50%;
   background-color: white;
   opacity: .3;
