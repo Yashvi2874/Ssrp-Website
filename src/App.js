@@ -83,6 +83,21 @@ function App() {
               </div>
             </div>
           </div>} />
+
+        <Route path="/contact" element={
+          <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar />
+                <Contact />
+                <Footer />
+              </div>
+            </div>
+          </div>
+        } />
       </Routes>
     </BrowserRouter>
           );
