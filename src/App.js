@@ -86,6 +86,7 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <Team />
+                <Footer />
               </div>
             </div>
           </div>} />
