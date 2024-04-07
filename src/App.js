@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import Home from './Components/Home';
 import NavBar from './Components/Navbar';
 import About from './Components/About';
@@ -8,8 +8,22 @@ import Footer from './Components/Footer';
 import Team from './Components/Team';
 import StarBackground from './Components/Background';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Loading from './Components/Loading';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 5 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <BrowserRouter>
       <Routes>
