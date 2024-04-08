@@ -42,7 +42,7 @@ const Team = () => {
       
     <div className='Team'>
         <section className='Team_section'>
-        <h1 className='Team-title'>Our Team</h1>
+        <h1 className='Team-title'>Our Community</h1>
         <div className='Team-head'>
         <div className="flip-box">
           <div className="flip-box-inner">
