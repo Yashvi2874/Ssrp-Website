@@ -4,6 +4,10 @@ import  Navbar from './Navbar';
 import Founder_image from './Community/Head/Rishikesh_Bhintade.jpg';
 import Associate_Head_image from './Community/Head/Riaan_jain.jpg';
 import Operations_Head_image from './Community/Head/Tanisha_Mukherjee.jpg';
+//import Computer_Systems_Member_1 from './Community/Computer_Systems/Yashasvi_Gupta.jpg';
+import Computer_Systems_Member_2 from './Community/Members/Comps/Om_Thanage.jpeg';
+import Computer_Systems_Member_3 from './Community/Members/Comps/Piyush_Chaudhary.jpg';
+import Computer_Systems_Member_4 from './Community/Members/Comps/Tanmay_Goraksha.jpg';
 
 
 
@@ -17,17 +21,17 @@ const Team = () => {
         },
         {
           name: 'Om Thanage',
-          image: 'https://dummyimage.com/300',
+          image: Computer_Systems_Member_2,
           description: 'Web Dev & ODHS'
         },
         {
             name: 'Piyush Chaudhary',
-            image: 'https://dummyimage.com/300',
+            image: Computer_Systems_Member_3,
             description: 'Web Dev & ODHS'
           },
           {
             name: 'Tanmay Goraksha',
-            image: 'https://dummyimage.com/300',
+            image: Computer_Systems_Member_4,
             description: 'Web Dev & ODHS'
           },
           {
@@ -125,12 +129,12 @@ const Team = () => {
       const Mechanical = [
         {
           name: 'Rishikesh Bhintade',
-          image:{Founder_image}, 
+          image: Founder_image, 
           description: 'Head'
         },
         {
           name: 'Riaan Jain',
-          image: {Associate_Head_image},
+          image: Associate_Head_image,
           description: 'Structures'
         },
         {
@@ -179,7 +183,7 @@ const Team = () => {
         },
         {
           name: 'Tanisha Mukherjee',
-          image: './Community/Head/Tanisha_Mukherjee.jpg',
+          image: Operations_Head_image,
           description: 'Operations Manager'
         },
         {
