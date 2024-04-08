@@ -13,6 +13,8 @@
   .card-container {
     width: 20vw;
     height: 20vw;
+    min-height: 200px;
+    min-width: 200px;
     aspect-ratio: 1/1;
     perspective: 1000px;
     float: left;
@@ -95,7 +97,7 @@
   
   /* Enable animation */
   .marquee__content {
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
   }
   
   /* Pause on hover */

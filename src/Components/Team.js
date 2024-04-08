@@ -13,7 +13,7 @@ const Team = () => {
         {
           name: 'Yashasvi Gupta',
           image: 'https://dummyimage.com/300',
-          description: 'Web Dev'
+          description: 'Web Dev Head'
         },
         {
           name: 'Om Thanage',
@@ -51,29 +51,221 @@ const Team = () => {
             description : 'ODHS'
           },
           {
-            name : 'Rohan K K',
-            image : 'https://dummyimage.com/300',
-            description : 'ROS, IP'
-          },
-          {
             name: 'Mit Mhatre',
             image: 'https://dummyimage.com/300',
             description: 'ROS, IP'
           },
           {
-            name: 'Rohan K K',
+            name: 'Yash Mahajan',
             image: 'https://dummyimage.com/300',
             description: 'ROS, IP'
           },
           {
-            name: 'Rohan K K',
+            name: 'Tanil Sheth',
             image: 'https://dummyimage.com/300',
             description: 'ROS, IP'
           },
           {
-            name: 'Rohan K K',
+            name: 'Aditi Agarwal',
             image: 'https://dummyimage.com/300',
             description: 'ROS, IP'
+          }
+        // Add more team members as needed
+      ];
+
+      const Electronics = [
+        {
+          name: 'Lakshya Aswani',
+          image: 'https://dummyimage.com/300',
+          description: 'Electronics Head'
+        },
+        {
+          name: 'Aaditya Chavan',
+          image: 'https://dummyimage.com/300',
+          description: 'Avionics'
+        },
+        {
+            name: 'Arnav Vinod',
+            image: 'https://dummyimage.com/300',
+            description: 'Avionics'
+          },
+          {
+            name: 'Siddarth Patel',
+            image: 'https://dummyimage.com/300',
+            description: 'Avionics'
+          },
+          {
+            name: 'Abhinav Suresh',
+            image: 'https://dummyimage.com/300',
+            description: 'Avionics'
+          },
+          {
+            name: 'Soham Redkar',
+            image: 'https://dummyimage.com/300',
+            description: 'Avionics'
+          },
+          {
+            name: 'Aarohi Mishra',
+            image: 'https://dummyimage.com/300',
+            description: 'Communication'
+          },
+          {
+            name : 'Arupta Kamble',
+            image : 'https://dummyimage.com/300',
+            description : 'Communication'
+          },
+          {
+            name: 'Siya Naulakha',
+            image: 'https://dummyimage.com/300',
+            description: 'Communication'
+          }
+        // Add more team members as needed
+      ];
+
+      const Mechanical = [
+        {
+          name: 'Rishikesh Bhintade',
+          image:{Founder_image}, 
+          description: 'Head'
+        },
+        {
+          name: 'Riaan Jain',
+          image: {Associate_Head_image},
+          description: 'Structures'
+        },
+        {
+            name: 'Ishan Kakad',
+            image: 'https://dummyimage.com/300',
+            description: 'Structures'
+          },
+          {
+            name: 'Yash Bagwe',
+            image: 'https://dummyimage.com/300',
+            description: 'Structures'
+          },
+          {
+            name: 'Aditya Patel',
+            image: 'https://dummyimage.com/300',
+            description: 'Propulsions'
+          },
+          {
+            name: 'Aashta Shah',
+            image: 'https://dummyimage.com/300',
+            description: 'Propulsions'
+          },
+          {
+            name: 'Debarpan Dasgupta',
+            image: 'https://dummyimage.com/300',
+            description: 'Propulsions'
+          },
+          {
+            name : 'Rabiya Darvesh',
+            image : 'https://dummyimage.com/300',
+            description : 'Recovery'
+          },
+          {
+            name: 'Mridul Bindal',
+            image: 'https://dummyimage.com/300',
+            description: 'Recovery'
+          }
+        // Add more team members as needed
+      ];
+
+      const Business = [
+        {
+          name: 'Vidita Hassani',
+          image: 'https://dummyimage.com/300',
+          description: 'Business Head'
+        },
+        {
+          name: 'Tanisha Mukherjee',
+          image: './Community/Head/Tanisha_Mukherjee.jpg',
+          description: 'Operations Manager'
+        },
+        {
+            name: 'Aayushi Wani',
+            image: 'https://dummyimage.com/300',
+            description: 'Creative Executive'
+          },
+          {
+            name: 'Akshita Shetty',
+            image: 'https://dummyimage.com/300',
+            description: 'Creative'
+          },
+          {
+            name: 'Vruddhi Mule',
+            image: 'https://dummyimage.com/300',
+            description: 'Creative'
+          },
+          {
+            name: 'Sameer Morya',
+            image: 'https://dummyimage.com/300',
+            description: 'Creative'
+          },
+          {
+            name: 'Charu Malp',
+            image: 'https://dummyimage.com/300',
+            description: 'Creative'
+          },
+          {
+            name : 'Likhita Reddy',
+            image : 'https://dummyimage.com/300',
+            description : 'Creative'
+          },
+          {
+            name: 'Aniket Iyer',
+            image: 'https://dummyimage.com/300',
+            description: 'Logistics Head'
+          },
+          {
+            name: 'Aditi Gupta',
+            image: 'https://dummyimage.com/300',
+            description: 'Logistics'
+          },
+          {
+            name: 'Tanrini Bambolkar',
+            image: 'https://dummyimage.com/300',
+            description: 'Logistics'
+          },
+          {
+            name: 'Vraj Patel',
+            image: 'https://dummyimage.com/300',
+            description: 'Logistics'
+          },
+          {
+            name: 'Minit Shah',
+            image: 'https://dummyimage.com/300',
+            description: 'Marketing Executive'
+          },
+          {
+            name: 'Shrusti Vora',
+            image: 'https://dummyimage.com/300',
+            description: 'Jt Marketing Executive'
+          },
+          {
+            name: 'Joyeeta Basu',
+            image: 'https://dummyimage.com/300',
+            description: 'Marketing and Publicity'
+          },
+          {
+            name: 'Varun Shah',
+            image: 'https://dummyimage.com/300',
+            description: 'Marketing and Publicity'
+          },
+          {
+            name: 'Anusha Sarkar',
+            image: 'https://dummyimage.com/300',
+            description: 'Marketing and Publicity'
+          },
+          {
+            name: 'Rishi Shanbhag',
+            image: 'https://dummyimage.com/300',
+            description: 'Marketing and Publicity'
+          },
+          {
+            name: 'Mann Dutiya',
+            image: 'https://dummyimage.com/300',
+            description: 'Marketing and Publicity'
           }
         // Add more team members as needed
       ];
@@ -167,7 +359,7 @@ const Team = () => {
           <h1 className='Team-department'>Electronics</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
-            {Comps.map((member, index) => (
+            {Electronics.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -177,7 +369,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
@@ -187,7 +379,7 @@ const Team = () => {
             </ul>
 
             <ul aria-hidden="true" className="marquee__content">
-            {Comps.map((member, index) => (
+            {Electronics.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -197,7 +389,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
@@ -209,7 +401,7 @@ const Team = () => {
           <h1 className='Team-department'>Mechanical</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
-            {Comps.map((member, index) => (
+            {Mechanical.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -219,7 +411,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
@@ -229,7 +421,7 @@ const Team = () => {
             </ul>
 
             <ul aria-hidden="true" className="marquee__content">
-            {Comps.map((member, index) => (
+            {Mechanical.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -239,7 +431,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
@@ -251,7 +443,7 @@ const Team = () => {
           <h1 className='Team-department'>Business</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
-            {Comps.map((member, index) => (
+            {Business.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -261,7 +453,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
@@ -271,7 +463,7 @@ const Team = () => {
             </ul>
 
             <ul aria-hidden="true" className="marquee__content">
-            {Comps.map((member, index) => (
+            {Business.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">
@@ -281,7 +473,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
-                        
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
