@@ -11,28 +11,69 @@ const Team = () => {
 
     const Comps = [
         {
-          name: 'Johnny Depp',
-          image: 'https://dummyimage.com/300'
+          name: 'Yashasvi Gupta',
+          image: 'https://dummyimage.com/300',
+          description: 'Web Dev'
         },
         {
-          name: 'Alia bhatt',
-          image: 'https://dummyimage.com/300'
+          name: 'Om Thanage',
+          image: 'https://dummyimage.com/300',
+          description: 'Web Dev & ODHS'
         },
         {
-            name: 'Yo Yo Honey Singh',
-            image: 'https://dummyimage.com/300'
+            name: 'Piyush Chaudhary',
+            image: 'https://dummyimage.com/300',
+            description: 'Web Dev & ODHS'
           },
           {
-            name: 'Rahul Gandhi',
-            image: 'https://dummyimage.com/300'
+            name: 'Tanmay Goraksha',
+            image: 'https://dummyimage.com/300',
+            description: 'Web Dev & ODHS'
           },
           {
-            name: 'Narendra Modi',
-            image: 'https://dummyimage.com/300'
+            name: 'Swarni Chouhan',
+            image: 'https://dummyimage.com/300',
+            description: 'Web Dev & ODHS'
           },
           {
-            name: 'Amit Shah',
-            image: 'https://dummyimage.com/300'
+            name: 'Siya Nair',
+            image: 'https://dummyimage.com/300',
+            description: 'Web Dev & ODHS'
+          },
+          {
+            name: 'Attharv Jain',
+            image: 'https://dummyimage.com/300',
+            description: 'Web Dev & ODHS'
+          },
+          {
+            name : 'Yash Sheth',
+            image : 'https://dummyimage.com/300',
+            description : 'ODHS'
+          },
+          {
+            name : 'Rohan K K',
+            image : 'https://dummyimage.com/300',
+            description : 'ROS, IP'
+          },
+          {
+            name: 'Mit Mhatre',
+            image: 'https://dummyimage.com/300',
+            description: 'ROS, IP'
+          },
+          {
+            name: 'Rohan K K',
+            image: 'https://dummyimage.com/300',
+            description: 'ROS, IP'
+          },
+          {
+            name: 'Rohan K K',
+            image: 'https://dummyimage.com/300',
+            description: 'ROS, IP'
+          },
+          {
+            name: 'Rohan K K',
+            image: 'https://dummyimage.com/300',
+            description: 'ROS, IP'
           }
         // Add more team members as needed
       ];
@@ -94,6 +135,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
@@ -113,6 +155,7 @@ const Team = () => {
                     <div className="card-back">
                       <div className="card-back-content">
                         <h2 className='name'>{member.name}</h2>
+                        <p className='description'>{member.description}</p>
                       </div>
                     </div>
                   </div>
