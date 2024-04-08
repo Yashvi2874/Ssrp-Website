@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className='Home' id='home'>
     <div className='text-center text-white m-4'>
-      <Canvas className='image img-fluid position-absolute earth-block' style={{width : '100vw', height : '80vh'}}>
+      <Canvas className='image img-fluid position-absolute earth-block' style={{width : '100vw', height : '90vh'}}>
       <Astronaut />
       </Canvas>
       <div className='column justify-content-center ssrp-absolute'>
@@ -26,7 +26,7 @@ function Home() {
           
           <div className='col-5 earth-block'>
             <Canvas
-              className='image img-fluid position-relative' style={{width : '50vw', height : '82vh'}}>
+              className='image img-fluid position-relative' style={{width : '50vw', height : '85vh'}}>
                 <Experience />
                 
               </Canvas>
