@@ -47,8 +47,8 @@
   .text5{
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .text2{
@@ -62,8 +62,7 @@
   .about-img{
     width: 65%;
     height: auto;
-    min-width: 350px;
-    min-height: 100%;
+    min-width: 300px;
   }
 
   p {
@@ -117,6 +116,9 @@
 
     .text6 {
       grid-row: 3; /* Position earth at the bottom */
+    }
+    .text7 {
+      grid-row: 5; /* Position earth at the bottom */
     }
 
 

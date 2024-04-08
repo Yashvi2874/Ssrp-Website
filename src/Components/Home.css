@@ -38,6 +38,12 @@
       font-size: 1vw;
     }
   }
+@media screen and (min-width: 1100px) {
+  .par{
+    display: inline;
+  }
+  
+}
 
   .glow {
     border-radius: 50%;
@@ -54,9 +60,17 @@
       0 0 100px #444544;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     .earth-block{
       display: none;
     }
+
     
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .astro-block{
+      display: none;
+    }
   }
