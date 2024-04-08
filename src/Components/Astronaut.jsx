@@ -6,9 +6,9 @@ const Astronaut = () => {
     <>
 
     <OrbitControls enableZoom={false}/>
-    <directionalLight position={[50, 50, 50]} intensity={3} />
+    <directionalLight position={[50, 50, 50]} intensity={2} />
         
-    <Astro position={[0, -1.5, 2.8]} scale={[0.8,0.8,0.8]} />
+    <Astro position={[0, -0.75, 4]} scale={[0.4,0.4,0.4]} />
 
     </>
    ); 

@@ -6,7 +6,7 @@
     }
 }
 .typeit-text {
-    font-size: 4vw; /* Adjust size as needed */
+    font-size: 3vw; /* Adjust size as needed */
     text-align: left;
     font-family: 'Nulshock Rg' !important;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
@@ -23,7 +23,7 @@
   }
 
   .Slogan{
-    font-size: 4.5vw;
+    font-size: 3vw;
     font-weight: 500;
     color: #fff;
     text-align: left;
