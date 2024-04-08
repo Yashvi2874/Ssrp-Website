@@ -12,6 +12,23 @@
     text-align: justify !important;
     text-justify: inter-word !important;
 }
+
+/* code for transparent background  */
+
+.carousel .list .item:first-child > img{
+    mask-image: linear-gradient(to right, transparent 0%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%,transparent 50%, black 100%);
+}
+
+.carousel .list .item:not(:first-child) {
+    display: none;
+}
+.list , .carousel, body{
+    background: transparent;
+}
+
+/* code for transparent background end  */
+
 </style>
 <body>
 
