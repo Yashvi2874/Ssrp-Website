@@ -2,6 +2,7 @@
     width: 100vw;
     position: absolute;
     top: 0;
+    z-index: 3;
 }
 .relative{
     position:relative;

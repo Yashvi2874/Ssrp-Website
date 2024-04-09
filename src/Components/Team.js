@@ -8,6 +8,49 @@ import Operations_Head_image from './Community/Head/Tanisha_Mukherjee.jpg';
 import Computer_Systems_Member_2 from './Community/Members/Comps/Om_Thanage.jpeg';
 import Computer_Systems_Member_3 from './Community/Members/Comps/Piyush_Chaudhary.jpg';
 import Computer_Systems_Member_4 from './Community/Members/Comps/Tanmay_Goraksha.jpg';
+// import Computer_Systems_Member_5 from './Community/Members/Comps/Swarni_Chouhan.jpg';
+// import Computer_Systems_Member_6 from './Community/Members/Comps/Siya_Nair.jpg';
+// import Computer_Systems_Member_7 from './Community/Members/Comps/Yash_Sheth.jpg';
+import Computer_Systems_Member_8 from './Community/Members/Comps/Mit_Mhatre.jpg';
+import Computer_Systems_Member_9 from './Community/Members/Comps/Yash_Mahajan.jpg';
+// import Computer_Systems_Member_10 from './Community/Members/Comps/Tanil_Sheth.jpg';
+// import Computer_Systems_Member_11 from './Community/Members/Comps/Aditi_Agarwal.jpg';
+// import Electronics_Member_1 from './Community/Members/Electronics/Lakshya_Aswani.jpg';
+// import Electronics_Member_2 from './Community/Members/Electronics/Aaditya_Chavan.jpg';
+// import Electronics_Member_3 from './Community/Members/Electronics/Arnav_Vinod.jpg';
+// import Electronics_Member_4 from './Community/Members/Electronics/Siddarth_Patel.jpg';
+// import Electronics_Member_5 from './Community/Members/Electronics/Abhinav_Suresh.jpg';
+// import Electronics_Member_6 from './Community/Members/Electronics/Soham_Redkar.jpg';
+// import Electronics_Member_7 from './Community/Members/Electronics/Aarohi_Mishra.jpg';
+// import Electronics_Member_8 from './Community/Members/Electronics/Arupta_Kamble.jpg';
+// import Electronics_Member_9 from './Community/Members/Electronics/Siya_Naulakha.jpg';
+// import Mechanical_Member_1 from './Community/Members/Mechanical/Riaan_Jain.jpg';
+// import Mechanical_Member_2 from './Community/Members/Mechanical/Ishan_Kakad.jpg';
+// import Mechanical_Member_3 from './Community/Members/Mechanical/Yash_Bagwe.jpg';
+// import Mechanical_Member_4 from './Community/Members/Mechanical/Aditya_Patel.jpg';
+// import Mechanical_Member_5 from './Community/Members/Mechanical/Aashta_Shah.jpg';
+// import Mechanical_Member_6 from './Community/Members/Mechanical/Debarpan_Dasgupta.jpg';
+// import Mechanical_Member_7 from './Community/Members/Mechanical/Rabiya_Darvesh.jpg';
+// import Mechanical_Member_8 from './Community/Members/Mechanical/Mridul_Bindal.jpg';
+// import Business_Member_1 from './Community/Members/Business/Vidita_Hassani.jpg';
+// import Business_Member_2 from './Community/Members/Business/Tanisha_Mukherjee.jpg';
+// import Business_Member_3 from './Community/Members/Business/Aayushi_Wani.jpg';
+// import Business_Member_4 from './Community/Members/Business/Akshita_Shetty.jpg';
+// import Business_Member_5 from './Community/Members/Business/Vruddhi_Mule.jpg';
+// import Business_Member_6 from './Community/Members/Business/Sameer_Morya.jpg';
+// import Business_Member_7 from './Community/Members/Business/Charu_Malp.jpg';
+// import Business_Member_8 from './Community/Members/Business/Likhita_Reddy.jpg';
+// import Business_Member_9 from './Community/Members/Business/Aniket_Iyer.jpg';
+// import Business_Member_10 from './Community/Members/Business/Aditi_Gupta.jpg';
+// import Business_Member_11 from './Community/Members/Business/Tanrini_Bambolkar.jpg';
+// import Business_Member_12 from './Community/Members/Business/Vraj_Patel.jpg';
+// import Business_Member_13 from './Community/Members/Business/Minit_Shah.jpg';
+// import Business_Member_14 from './Community/Members/Business/Shrusti_Vora.jpg';
+// import Business_Member_15 from './Community/Members/Business/Joyeeta_Basu.jpg';
+// import Business_Member_16 from './Community/Members/Business/Varun_Shah.jpg';
+// import Business_Member_17 from './Community/Members/Business/Anusha_Sarkar.jpg';
+// import Business_Member_18 from './Community/Members/Business/Rishi_Shanbhag.jpg';
+// import Business_Member_19 from './Community/Members/Business/Mann_Dutiya.jpg';
 
 
 
@@ -51,12 +94,12 @@ const Team = () => {
           },
           {
             name: 'Mit Mhatre',
-            image: 'https://dummyimage.com/300',
+            image: Computer_Systems_Member_8,
             description: 'ROS, IP'
           },
           {
             name: 'Yash Mahajan',
-            image: 'https://dummyimage.com/300',
+            image: Computer_Systems_Member_9,
             description: 'ROS, IP'
           },
           {
