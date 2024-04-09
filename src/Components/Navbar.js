@@ -1,11 +1,19 @@
+import React, { useEffect } from 'react';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import Somaiya_Vidyavihar from './Trust_logo/somaiya white.png';
 import Somaiya_Vidyavihar_University from './Trust_logo/somaiya trust.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 function App() {
+  useEffect(()=>{
+    AOS.init({duration:"2000"});
+
+  },[]);
   return (
-    <div className='main2'>
+    <div className='main2' data-aos="fade-down">
       <div className="App" style={{ width: "100vw" }}>
    
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
@@ -43,7 +51,7 @@ function App() {
           </div>
         </nav>
 
-        <style>
+        {/* <style>
           {`
             .main2 {
               animation: fade-up 3s;
@@ -60,7 +68,7 @@ function App() {
               }
             }
           `}
-        </style>
+        </style> */}
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         
