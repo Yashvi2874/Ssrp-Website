@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './About.css';
 import logo from './logo.png';
-import future_goals from './futuregoals.png';
+import future_goals from './futuregoalsnew.png';
 import ControlledCarousel from './Collaborators_slider';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -32,9 +32,9 @@ function About() {
           <p>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we're set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
         </div>
 
-        <div className="text4" data-aos="fade-down-right">
-          <p className='item'>Why Sponsor Us?</p>
-          <p>The Somaiya Space Research Project, established this year, is dedicated to pioneering advancements in space exploration through innovative research initiatives, with a primary focus on developing the StudentSAT( satellites developed by students). The team, comprised of passionate and determined individuals, is poised to make significant contributions to the global space community. Potential sponsors are invited to join the project as partners, playing a vital role in supporting its journey to push the boundaries of space exploration. By aligning with the project, sponsors have the opportunity to contribute to cutting-edge innovation and represent their company on an international stage. Together, they embark on a remarkable journey to shape the future of space exploration.</p>
+        <div className="text4" >
+          <p className='item' data-aos="fade-down-right">Why Sponsor Us?</p>
+          <p data-aos="fade-down-left">The Somaiya Space Research Project, established this year, is dedicated to pioneering advancements in space exploration through innovative research initiatives, with a primary focus on developing the StudentSAT( satellites developed by students). The team, comprised of passionate and determined individuals, is poised to make significant contributions to the global space community. Potential sponsors are invited to join the project as partners, playing a vital role in supporting its journey to push the boundaries of space exploration. By aligning with the project, sponsors have the opportunity to contribute to cutting-edge innovation and represent their company on an international stage. Together, they embark on a remarkable journey to shape the future of space exploration.</p>
         </div>
 
         <div className="text5">
