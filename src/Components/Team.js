@@ -32,7 +32,7 @@ import Electronics_Member_9 from './Community/Members/Electronics/Siya_Naulakha.
 // import Mechanical_Member_6 from './Community/Members/Mechanical/Debarpan_Dasgupta.jpg';
 // import Mechanical_Member_7 from './Community/Members/Mechanical/Rabiya_Darvesh.jpg';
 // import Mechanical_Member_8 from './Community/Members/Mechanical/Mridul_Bindal.jpg';
-// import Business_Member_1 from './Community/Members/Business/Vidita_Hassani.jpg';
+import Business_Member_1 from './Community/Members/Business/Vidita_Hassani.jpg';
 // import Business_Member_2 from './Community/Members/Business/Tanisha_Mukherjee.jpg';
 // import Business_Member_3 from './Community/Members/Business/Aayushi_Wani.jpg';
 // import Business_Member_4 from './Community/Members/Business/Akshita_Shetty.jpg';
@@ -44,13 +44,13 @@ import Electronics_Member_9 from './Community/Members/Electronics/Siya_Naulakha.
 // import Business_Member_10 from './Community/Members/Business/Aditi_Gupta.jpg';
 // import Business_Member_11 from './Community/Members/Business/Tanrini_Bambolkar.jpg';
 // import Business_Member_12 from './Community/Members/Business/Vraj_Patel.jpg';
-// import Business_Member_13 from './Community/Members/Business/Minit_Shah.jpg';
-// import Business_Member_14 from './Community/Members/Business/Shrusti_Vora.jpg';
-// import Business_Member_15 from './Community/Members/Business/Joyeeta_Basu.jpg';
-// import Business_Member_16 from './Community/Members/Business/Varun_Shah.jpg';
-// import Business_Member_17 from './Community/Members/Business/Anusha_Sarkar.jpg';
-// import Business_Member_18 from './Community/Members/Business/Rishi_Shanbhag.jpg';
-// import Business_Member_19 from './Community/Members/Business/Mann_Dutiya.jpg';
+// import Marketing_Member_1 from './Community/Members/Business/Minit_Shah.jpg';
+// import Marketing_Member_2 from './Community/Members/Business/Shrusti_Vora.jpg';
+// import Marketing_Member_3 from './Community/Members/Business/Joyeeta_Basu.jpg';
+// import Marketing_Member_4 from './Community/Members/Business/Varun_Shah.jpg';
+// import Marketing_Member_5 from './Community/Members/Business/Anusha_Sarkar.jpg';
+// import Marketing_Member_6 from './Community/Members/Business/Rishi_Shanbhag.jpg';
+// import Marketing_Member_7 from './Community/Members/Business/Mann_Dutiya.jpg';
 
 
 
@@ -206,7 +206,7 @@ const Team = () => {
       const Business = [
         {
           name: 'Vidita Hassani',
-          image: 'https://dummyimage.com/300',
+          image: Business_Member_1,
           description: 'Business Head'
         },
         {
