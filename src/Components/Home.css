@@ -5,24 +5,34 @@
         position: absolute;
     }
 }
+
+@font-face {
+  font-family: 'nulshock bd'; /* Replace with your font's name */
+  src: url('./fonts/nulshock bd.ttf') format('truetype'); /* Replace with the actual path to your .ttf file */
+}
+@font-face {
+  font-family: 'dahlia-regular'; /* Replace with your font's name */
+  src: url('./fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .ttf file */
+}
 .typeit-text {
-    font-size: 3vw; /* Adjust size as needed */
+    font-size: 1.6vw; /* Adjust size as needed */
     text-align: left;
-    font-family: 'Nulshock Rg' !important;
+    font-family: 'Nulshock bd' !important;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   .typeit-text:nth-child(1) {
-    font-family: 'Dhalia bold';
+    font-family: 'dahlia-regular';
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 500;
   }
 
-  .Slogan{
+  .Slogan ,.ssrp{
+    font-family: 'dahlia-regular';
     font-size: 3vw;
     font-weight: 500;
     color: #fff;
