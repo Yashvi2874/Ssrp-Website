@@ -10,6 +10,7 @@ import ssrp from './socialmedia_images/logo.png'
 
 function Footer() {
   return (
+    
     <div>
         <footer>
             <a href="#" target="_blank"><img className="social-media-img" src={facebook} alt="Facebook" /></a>

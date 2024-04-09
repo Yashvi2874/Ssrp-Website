@@ -21,7 +21,41 @@
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    /* animation: fade-up 5s; */
   }
+
+
+  .main1{
+    animation: fade-up 8s;
+
+
+  }
+  
+
+
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translate(30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
   .typeit-text:nth-child(1) {
     font-family: 'dahlia-regular';
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
@@ -29,6 +63,7 @@
     font-style: normal;
     font-size: 6vw;
     font-weight: 500;
+    
   }
 
   .Slogan ,.ssrp{
