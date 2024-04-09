@@ -8,7 +8,7 @@ const Astronaut = () => {
     <OrbitControls enableZoom={false}/>
     <directionalLight position={[50, 50, 50]} intensity={2} />
         
-    <Astro position={[0.4, -3.4, 0]} scale={[2,2,2]} />
+    <Astro position={[1, -3.4, 0]} scale={[1.8,1.8,1.8]} />
 
     </>
    ); 
