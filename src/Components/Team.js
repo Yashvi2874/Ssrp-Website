@@ -45,11 +45,6 @@ const Team = () => {
             description: 'Web Dev & ODHS'
           },
           {
-            name: 'Attharv Jain',
-            image: 'https://dummyimage.com/300',
-            description: 'Web Dev & ODHS'
-          },
-          {
             name : 'Yash Sheth',
             image : 'https://dummyimage.com/300',
             description : 'ODHS'
