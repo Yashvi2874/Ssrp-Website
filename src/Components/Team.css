@@ -196,6 +196,9 @@
 .flip-box {
   background-color: transparent;
   width: 20vw;
+  height: 20vw;
+  min-width: 200px;
+  min-height: 200px;
   aspect-ratio: 1/1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -254,4 +257,9 @@
     overflow-x: hidden;
   }
 
+  @media screen and (max-width: 768px){
+    .Team-head{
+      flex-direction: column;
+    }
+  }
   
