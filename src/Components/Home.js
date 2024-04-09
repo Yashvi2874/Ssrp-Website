@@ -10,10 +10,13 @@ function Home() {
     <div className='Home' id='home'>
     <div className='text-center text-white m-4'>
       
+
+      <div className='main1'>
       <div className='column justify-content-center ssrp-absolute'>
       <div className='typeit-text'>SSRP</div>
       <div className='typeit-text' id='small-type'>Somaiya Space Research Project</div>
       <p className='Slogan'>Launching dreams into orbits</p>
+      </div>
       </div>
       {/* <div className='row justify-content-center ssrp-absolute' style={{ marginTop: '4.5rem' }}>
         <h3 className='d-inline-block'></h3>

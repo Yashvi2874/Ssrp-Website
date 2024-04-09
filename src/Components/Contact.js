@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Contact.css'
 import arrow from './arrow.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 export default function Contact() {
   const [result, setResult] = React.useState("");
 
@@ -26,21 +29,27 @@ export default function Contact() {
       setResult(data.message);
     }
   };
+
+  useEffect(()=>{
+    AOS.init({duration:"2000"});
+
+  },[]);
+
   return (
-    <div className='contact-container' id='contact'>
+    <div className='contact-container' id='contact' >
         <form onSubmit={onSubmit} className="contact-left">
             <div className="contact-left-title">
-                <h2 className='gradient-text'>Ignite the steller exchange 🔥 </h2>
+                <h2 className='gradient-text' data-aos="fade-right">Ignite the steller exchange 🔥 </h2>
                 <hr />
             </div>
-            <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required></input>
-            <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required></input>
-            <input type="number" name="number" placeholder="Your Mobile No" className="contact-inputs" required></input>
-            <textarea name="message" placeholder="Your Purpose of Contact" className="contact-inputs" required></textarea>
-            <button type="submit">Submit <img src={arrow} alt="arrow to submit" /></button>
+            <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-left"></input>
+            <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required data-aos="fade-right"></input>
+            <input type="number" name="number" placeholder="Your Mobile No" className="contact-inputs" required data-aos="fade-left"></input>
+            <textarea name="message" placeholder="Your Purpose of Contact" className="contact-inputs" required data-aos="fade-right"></textarea>
+            <button type="submit" data-aos="fade-down-right">Submit <img src={arrow} alt="arrow to submit" /></button>
         </form>
         <span className='verification'>{result}</span>
-        <div className="head-contact">
+        <div className="head-contact" data-aos="fade-down-left">
           <h4>Rishikesh Bhintade</h4>
           <h4><span class="material-symbols-outlined">call</span> +917056103520</h4>
           <h4><span class="material-symbols-outlined" style={ {margin: '5'}}>mail</span><a href="mailto:ssrp.somaiya.edu" style = {{color:'white'}}>ssrp.somaiya.edu</a></h4>
