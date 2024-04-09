@@ -8,14 +8,14 @@
 .typeit-text {
     font-size: 3vw; /* Adjust size as needed */
     text-align: left;
-    font-family: 'Nulshock Rg' !important;
+    font-family: 'Dhalia bold' !important;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   .typeit-text:nth-child(1) {
-    font-family: 'Dhalia bold';
-    src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
+    font-family: 'NulshockRg-Bold' !important;
+    src: url('./fonts/nulshock/NulshockRg-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 8vw;
