@@ -33,9 +33,9 @@ function App() {
               <StarBackground />
             </div>
             <div className="absolute">
-            <NavBar />
+            
               <div className="relative">
-                
+              <NavBar />
                 <Home />
                 <About />
                 <Contact />

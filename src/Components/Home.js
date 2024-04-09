@@ -37,7 +37,7 @@ function Home() {
           </div> */}
         </div>
           <Canvas
-              className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'-2vh', right:'-43vw'}}>
+              className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'6vh', right:'-43vw'}}>
                 <Experience />
           </Canvas>
       </div>
