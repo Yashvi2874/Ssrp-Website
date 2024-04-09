@@ -8,8 +8,8 @@ import Operations_Head_image from './Community/Head/Tanisha_Mukherjee.jpg';
 import Computer_Systems_Member_2 from './Community/Members/Comps/Om_Thanage.jpeg';
 import Computer_Systems_Member_3 from './Community/Members/Comps/Piyush_Chaudhary.jpg';
 import Computer_Systems_Member_4 from './Community/Members/Comps/Tanmay_Goraksha.jpg';
-// import Computer_Systems_Member_5 from './Community/Members/Comps/Swarni_Chouhan.jpg';
-// import Computer_Systems_Member_6 from './Community/Members/Comps/Siya_Nair.jpg';
+import Computer_Systems_Member_5 from './Community/Members/Comps/Swarni_Chouhan.jpg';
+import Computer_Systems_Member_6 from './Community/Members/Comps/Siya_Nair.png';
 // import Computer_Systems_Member_7 from './Community/Members/Comps/Yash_Sheth.jpg';
 import Computer_Systems_Member_8 from './Community/Members/Comps/Mit_Mhatre.jpg';
 import Computer_Systems_Member_9 from './Community/Members/Comps/Yash_Mahajan.jpg';
@@ -23,7 +23,7 @@ import Computer_Systems_Member_9 from './Community/Members/Comps/Yash_Mahajan.jp
 // import Electronics_Member_6 from './Community/Members/Electronics/Soham_Redkar.jpg';
 // import Electronics_Member_7 from './Community/Members/Electronics/Aarohi_Mishra.jpg';
 // import Electronics_Member_8 from './Community/Members/Electronics/Arupta_Kamble.jpg';
-// import Electronics_Member_9 from './Community/Members/Electronics/Siya_Naulakha.jpg';
+import Electronics_Member_9 from './Community/Members/Electronics/Siya_Naulakha.jpg';
 // import Mechanical_Member_1 from './Community/Members/Mechanical/Riaan_Jain.jpg';
 // import Mechanical_Member_2 from './Community/Members/Mechanical/Ishan_Kakad.jpg';
 // import Mechanical_Member_3 from './Community/Members/Mechanical/Yash_Bagwe.jpg';
@@ -32,7 +32,7 @@ import Computer_Systems_Member_9 from './Community/Members/Comps/Yash_Mahajan.jp
 // import Mechanical_Member_6 from './Community/Members/Mechanical/Debarpan_Dasgupta.jpg';
 // import Mechanical_Member_7 from './Community/Members/Mechanical/Rabiya_Darvesh.jpg';
 // import Mechanical_Member_8 from './Community/Members/Mechanical/Mridul_Bindal.jpg';
-// import Business_Member_1 from './Community/Members/Business/Vidita_Hassani.jpg';
+import Business_Member_1 from './Community/Members/Business/Vidita_Hassani.jpg';
 // import Business_Member_2 from './Community/Members/Business/Tanisha_Mukherjee.jpg';
 // import Business_Member_3 from './Community/Members/Business/Aayushi_Wani.jpg';
 // import Business_Member_4 from './Community/Members/Business/Akshita_Shetty.jpg';
@@ -44,13 +44,13 @@ import Computer_Systems_Member_9 from './Community/Members/Comps/Yash_Mahajan.jp
 // import Business_Member_10 from './Community/Members/Business/Aditi_Gupta.jpg';
 // import Business_Member_11 from './Community/Members/Business/Tanrini_Bambolkar.jpg';
 // import Business_Member_12 from './Community/Members/Business/Vraj_Patel.jpg';
-// import Business_Member_13 from './Community/Members/Business/Minit_Shah.jpg';
-// import Business_Member_14 from './Community/Members/Business/Shrusti_Vora.jpg';
-// import Business_Member_15 from './Community/Members/Business/Joyeeta_Basu.jpg';
-// import Business_Member_16 from './Community/Members/Business/Varun_Shah.jpg';
-// import Business_Member_17 from './Community/Members/Business/Anusha_Sarkar.jpg';
-// import Business_Member_18 from './Community/Members/Business/Rishi_Shanbhag.jpg';
-// import Business_Member_19 from './Community/Members/Business/Mann_Dutiya.jpg';
+// import Marketing_Member_1 from './Community/Members/Business/Minit_Shah.jpg';
+// import Marketing_Member_2 from './Community/Members/Business/Shrusti_Vora.jpg';
+// import Marketing_Member_3 from './Community/Members/Business/Joyeeta_Basu.jpg';
+// import Marketing_Member_4 from './Community/Members/Business/Varun_Shah.jpg';
+// import Marketing_Member_5 from './Community/Members/Business/Anusha_Sarkar.jpg';
+// import Marketing_Member_6 from './Community/Members/Business/Rishi_Shanbhag.jpg';
+// import Marketing_Member_7 from './Community/Members/Business/Mann_Dutiya.jpg';
 
 
 
@@ -79,12 +79,12 @@ const Team = () => {
           },
           {
             name: 'Swarni Chouhan',
-            image: 'https://dummyimage.com/300',
+            image: Computer_Systems_Member_5,
             description: 'Web Dev & ODHS'
           },
           {
             name: 'Siya Nair',
-            image: 'https://dummyimage.com/300',
+            image: Computer_Systems_Member_6,
             description: 'Web Dev & ODHS'
           },
           {
@@ -158,23 +158,13 @@ const Team = () => {
           },
           {
             name: 'Siya Naulakha',
-            image: 'https://dummyimage.com/300',
+            image: Electronics_Member_9,
             description: 'Communication'
           }
         // Add more team members as needed
       ];
 
       const Mechanical = [
-        {
-          name: 'Rishikesh Bhintade',
-          image: Founder_image, 
-          description: 'Head'
-        },
-        {
-          name: 'Riaan Jain',
-          image: Associate_Head_image,
-          description: 'Structures'
-        },
         {
             name: 'Ishan Kakad',
             image: 'https://dummyimage.com/300',
@@ -216,13 +206,8 @@ const Team = () => {
       const Business = [
         {
           name: 'Vidita Hassani',
-          image: 'https://dummyimage.com/300',
+          image: Business_Member_1,
           description: 'Business Head'
-        },
-        {
-          name: 'Tanisha Mukherjee',
-          image: Operations_Head_image,
-          description: 'Operations Manager'
         },
         {
             name: 'Aayushi Wani',
@@ -273,44 +258,49 @@ const Team = () => {
             name: 'Vraj Patel',
             image: 'https://dummyimage.com/300',
             description: 'Logistics'
-          },
-          {
-            name: 'Minit Shah',
-            image: 'https://dummyimage.com/300',
-            description: 'Marketing Executive'
-          },
-          {
-            name: 'Shrusti Vora',
-            image: 'https://dummyimage.com/300',
-            description: 'Jt Marketing Executive'
-          },
-          {
-            name: 'Joyeeta Basu',
-            image: 'https://dummyimage.com/300',
-            description: 'Marketing and Publicity'
-          },
-          {
-            name: 'Varun Shah',
-            image: 'https://dummyimage.com/300',
-            description: 'Marketing and Publicity'
-          },
-          {
-            name: 'Anusha Sarkar',
-            image: 'https://dummyimage.com/300',
-            description: 'Marketing and Publicity'
-          },
-          {
-            name: 'Rishi Shanbhag',
-            image: 'https://dummyimage.com/300',
-            description: 'Marketing and Publicity'
-          },
-          {
-            name: 'Mann Dutiya',
-            image: 'https://dummyimage.com/300',
-            description: 'Marketing and Publicity'
           }
+          
         // Add more team members as needed
       ];
+
+      const Marketing = [
+        {
+          name: 'Minit Shah',
+          image: 'https://dummyimage.com/300',
+          description: 'Marketing Executive'
+        },
+        {
+          name: 'Shrusti Vora',
+          image: 'https://dummyimage.com/300',
+          description: 'Jt Marketing Executive'
+        },
+        {
+          name: 'Joyeeta Basu',
+          image: 'https://dummyimage.com/300',
+          description: 'Marketing and Publicity'
+        },
+        {
+          name: 'Varun Shah',
+          image: 'https://dummyimage.com/300',
+          description: 'Marketing and Publicity'
+        },
+        {
+          name: 'Anusha Sarkar',
+          image: 'https://dummyimage.com/300',
+          description: 'Marketing and Publicity'
+        },
+        {
+          name: 'Rishi Shanbhag',
+          image: 'https://dummyimage.com/300',
+          description: 'Marketing and Publicity'
+        },
+        {
+          name: 'Mann Dutiya',
+          image: 'https://dummyimage.com/300',
+          description: 'Marketing and Publicity'
+        }
+      ];
+        
 
 
   return (
@@ -506,6 +496,48 @@ const Team = () => {
 
             <ul aria-hidden="true" className="marquee__content">
             {Business.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='description'>{member.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+          </div>
+          <h1 className='Team-department'>Marketing</h1>
+        <div className="marquee marquee--hover-pause">
+            <ul className="marquee__content">
+            {Marketing.map((member, index) => (
+              <li key={index}>
+                <div className="card-container">
+                  <div className="card-content">
+                    <div className="card-front">
+                        <img src={member.image} alt={member.name} className='team-member-image' />
+                    </div>
+                    <div className="card-back">
+                      <div className="card-back-content">
+                        <h2 className='name'>{member.name}</h2>
+                        <p className='description'>{member.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+            </ul>
+
+            <ul aria-hidden="true" className="marquee__content">
+            {Marketing.map((member, index) => (
               <li key={index}>
                 <div className="card-container">
                   <div className="card-content">

@@ -11,7 +11,7 @@ export function Astro(props) {
   const { nodes, materials, animations } = useGLTF('./models/final_astro.glb')
   const { actions,names } = useAnimations(animations, group)
   useEffect(() => {
-    actions[names[3]].reset().fadeIn(0.5).play();
+    actions[names[3]].reset().play();
   },[]);
   return (
     <group ref={group} {...props} dispose={null}>
