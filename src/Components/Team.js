@@ -1,6 +1,5 @@
 import React from 'react';
 import './Team.css'; // Make sure to import your CSS file
-import  Navbar from './Navbar';
 import Founder_image from './Community/Head/Rishikesh_Bhintade.jpg';
 import Associate_Head_image from './Community/Head/Riaan_jain.jpg';
 import Operations_Head_image from './Community/Head/Tanisha_Mukherjee.jpg';
@@ -306,7 +305,6 @@ const Team = () => {
   return (
     
     <div className='Team_Page'>
-      <Navbar />
       
     <div className='Team'>
         <section className='Team_section'>

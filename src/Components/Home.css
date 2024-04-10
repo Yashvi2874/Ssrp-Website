@@ -125,7 +125,12 @@
   }
 
   @media screen and (max-width: 768px) {
-    .astro-block{
-      display: none;
+    .astro-block {
+      width: 50vw;
+      height: 30vh;
+    }
+  
+    .earth-block {
+      right: -40vw;
     }
   }

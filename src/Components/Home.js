@@ -25,7 +25,7 @@ function Home() {
       <div className='mt-0'>
         
       <div className='row justify-content-end m-3 par'>
-          <div className='col-lg-12 col-7'>
+          <div className='col-lg-12 col-md-7 col-sm-18 row-sm-3'>
           <Canvas className='image img-fluid position-relative astro-block' style={{width : '100vw', height : '90vh'}}>
             <Astronaut />
           </Canvas>
