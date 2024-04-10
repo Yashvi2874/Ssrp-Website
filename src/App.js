@@ -65,22 +65,24 @@ function App() {
 } />
         <Route path="/projects" element={
   <div className="App">
-  <div className="stars">
-    <StarBackground />
-  </div>
-  <div className="absolute">
-    <div className="relative">
-      <NavBar />
-      
-      <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '85vh', border: 'none', position:'relative', top:'0' }}></iframe>
-      
-      <Footer />
+    <div className="stars">
+      <StarBackground />
     </div>
-      
+    <div className="absolute">
+      <div className="relative">
+        <NavBar />
+        
+        <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '85vh', border: 'none', position:'relative', top:'0' }}></iframe>
+        
+        <Footer />
+      </div>
+        
+    </div>
   </div>
-</div>
 } />
 
+        <Route path="/projects" element={<iframe src="/space.html" title="Space Page" style={{ width: '120vw', height: '100vh', border: 'none' }} />} />
+        <Route path="/project" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
         <Route path="/community" element={
         
         <div className="App">

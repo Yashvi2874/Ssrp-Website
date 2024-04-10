@@ -1,10 +1,10 @@
-footer
+.Footer
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
-    width: 75%;
+    height: 15vh;
+    width: 100vw;
     margin: auto;
     border-top: 1px solid #212121;
 }

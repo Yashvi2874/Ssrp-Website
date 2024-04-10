@@ -17,8 +17,7 @@ function Footer() {
   },[]);
   return (
     
-    <div>
-        <footer  >
+    <div className='Footer'>
          
             <a href="#" target="_blank"><img className="social-media-img" src={facebook} alt="Facebook" /></a>
             <a href="#" target="_blank"><img className="social-media-img" src={github} alt="GitHub" /></a>
@@ -30,7 +29,6 @@ function Footer() {
             <a href="https://twitter.com/team_ssrp" target="_blank"><img className="social-media-img" src={twitter} alt="Twitter" /></a>
             <a href="#" target="_blank"><img className="social-media-img" src={youtube} alt="YouTube" /></a>
                   
-        </footer>
     </div>
   )
 }
