@@ -5,7 +5,6 @@ import future_goals from './futuregoalsnew.png';
 import ControlledCarousel from './Collaborators_slider';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Aos from 'aos';
 
 
 function About() {

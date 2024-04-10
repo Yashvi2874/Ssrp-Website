@@ -15,7 +15,7 @@
   src: url('./fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .ttf file */
 }
 .typeit-text {
-    font-size: 1.6vw; /* Adjust size as needed */
+    font-size: 1.2rem; /* Adjust size as needed */
     text-align: left;
     font-family: 'Nulshock bd' !important;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
@@ -43,6 +43,13 @@
     opacity: 1;
     transform: translateY(0px) scale(1);
   }
+}
+
+@media screen and (max-width: 768px) {
+  .typeit-text {
+    font-size: 3vw; /* Adjust size as needed */
+  }
+  
 }
 
 

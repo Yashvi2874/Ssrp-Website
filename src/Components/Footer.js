@@ -9,7 +9,6 @@ import youtube from './socialmedia_images/youtube.svg'
 import ssrp from './socialmedia_images/logo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Aos from 'aos';
 
 function Footer() {
   useEffect(()=>{
