@@ -46,7 +46,7 @@ export default function Contact() {
             <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required data-aos="fade-left"></input>
             <input type="number" name="number" placeholder="Your Mobile No" className="contact-inputs" required data-aos="fade-right"></input>
             <textarea name="message" placeholder="Your Purpose of Contact" className="contact-inputs" required data-aos="fade-left"></textarea>
-            <button type="submit" data-aos="fade-right">Submit <img src={arrow} alt="arrow to submit" /></button>
+            <button type="submit" data-aos="fade-right" className='button'>Submit <img src={arrow} alt="arrow to submit" /></button>
         </form>
         <span className='verification'>{result}</span>
         <div className="head-contact" data-aos="fade-up">
