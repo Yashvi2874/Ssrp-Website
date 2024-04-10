@@ -49,6 +49,11 @@
   .typeit-text {
     font-size: 3vw; /* Adjust size as needed */
   }
+
+  .astro-block{
+    height: 40vh  !important;
+    width: 100vw  !important;
+  }
   
 }
 
