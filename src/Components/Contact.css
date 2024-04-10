@@ -101,3 +101,49 @@
     color: white;
     
 }
+
+.button {
+	display: inline-block;
+
+	padding: 15px 0;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-weight: 600;
+
+	position: relative;
+
+	margin: 10px 5px 0 5px;
+/* 
+	transition: 2s all ease-in-out color; */
+}
+
+.button::before {
+	content: " ";
+	display: block;
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	left: 0;
+	top: -97px;
+	background: #faf8f8;
+	border-radius: 100%;
+	z-index: -10;
+	transform: scale(0);
+    transition: color 0.5s ease;
+
+	-webkit-transition: 0.4s ease-in-out transform;
+	-o-transition: 0.4s ease-in-out transform;
+	-ms-transition: 0.4s ease-in-out transform;
+	-moz-transition: 0.4s ease-in-out transform;
+	transition: 0.4s ease-in-out transform;
+}
+
+.button:hover {
+	color: #5b5757;
+}
+
+.button:hover::before {
+	transform: scale(1.5);
+}
