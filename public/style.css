@@ -30,10 +30,10 @@ a{
 }
 .carousel .list .item .content{
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 1140px;
     max-width: 80%;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -151,7 +151,7 @@ a{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent .5s 1s linear 1 forwards;
+    animation: showContent .5s .3s linear 1 forwards;
 }
 @keyframes showContent{
     to{
@@ -229,7 +229,7 @@ a{
 
 .carousel.next .time,
 .carousel.prev .time{
-    animation: runningTime 3s linear 1 forwards;
+    animation: runningTime 1s linear 1 forwards;
 }
 @keyframes runningTime{
     from{ width: 100%}
@@ -274,7 +274,7 @@ a{
 .carousel.prev .list .item:nth-child(2) .content .des,
 .carousel.prev .list .item:nth-child(2) .content .buttons
 {
-    animation: contentOut 1.5s linear 1 forwards!important;
+    animation: contentOut .4s linear .3 forwards!important;
 }
 
 @keyframes contentOut{
