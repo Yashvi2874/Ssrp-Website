@@ -51,9 +51,11 @@ function App() {
     <div className="stars">
       <StarBackground />
     </div>
-    <div className="absolute">
-      <div className="relative">
+    <div className="absolute" style={{zIndex:'1'}}>
         <NavBar />
+        </div>
+    <div className="absolute" style={{zIndex:'0', minHeight:'100vh'}}>
+      <div className="relative">
         
         <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '85vh', border: 'none', position:'relative', top:'0' }}></iframe>
         
