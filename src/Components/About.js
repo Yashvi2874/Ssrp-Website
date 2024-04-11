@@ -60,7 +60,7 @@ function About() {
           <p className='item'>Our Collaborators</p>
         </div>
 
-        <div className='text10' data-aos="fade-right">
+        <div className='text10'>
           <p className='item'>What is SSRP?</p>
         </div>
 
