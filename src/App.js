@@ -55,9 +55,9 @@ function App() {
         <NavBar />
         </div>
     <div className="absolute" style={{zIndex:'0', minHeight:'100vh'}}>
-      <div className="relative">
+      <div className="relative" style={{height:'100vh',overflow:'hidden'}}>
         
-        <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '85vh', border: 'none', position:'relative', top:'0' }}></iframe>
+        <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '90vh', border: 'none', position:'relative', top:'0' }}></iframe>
         
         <Footer />
       </div>
