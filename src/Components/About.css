@@ -79,13 +79,22 @@
     text-align: center;
   }
 
+  /* .text8, .text9{
+    display: none;
+  } */
+
+  @media screen and (min-width: 768px){
+    .text8, .text9, .text10{
+      display: none;
+    }
+  }
   
 
   
   @media screen and (max-width: 768px) {
     .container {
       grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto auto auto; /* Adjust rows to accommodate content */
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto; /* Adjust rows to accommodate content */
     }
   
     .text1,
@@ -94,35 +103,47 @@
     .text4,
     .text5,
     .text6,
-    .text7{
+    .text7,
+    .text8,
+    .text9,
+    .text10{
       grid-column: 1; /* Adjust to span all columns */
     }
   
     .text1 {
-      grid-row: 2; /* Position text1 at the top */
+      grid-row: 3; /* Position text1 at the top */
     }
   
     .text2 {
-      grid-row: 4; /* Position text2 below text1 */
+      grid-row: 6; /* Position text2 below text1 */
     }
   
     .text3 {
-      grid-row: 6; /* Position earth at the bottom */
+      grid-row: 9; /* Position earth at the bottom */
     }
 
     .text4 {
-      grid-row: 7; /* Position earth at the bottom */
+      grid-row: 10; /* Position earth at the bottom */
     }
 
     .text5 {
-      grid-row: 1; /* Position earth at the bottom */
+      grid-row: 2; /* Position earth at the bottom */
     }
 
     .text6 {
-      grid-row: 3; /* Position earth at the bottom */
+      grid-row: 5; /* Position earth at the bottom */
     }
     .text7 {
-      grid-row: 5; /* Position earth at the bottom */
+      grid-row: 8; /* Position earth at the bottom */
+    }
+    .text8{
+      grid-row: 4;
+    }
+    .text9{
+      grid-row: 7;
+    }
+    .text10{
+      grid-row: 1;
     }
 
 
@@ -143,6 +164,18 @@
 
     p{
       font-size: 3vw;
+    }
+
+    .text3 .item{
+      display: none;
+    }
+
+    .text2 .item{
+      display: none;
+    }
+
+    .text1 .item{
+      display: none;
     }
     
 
