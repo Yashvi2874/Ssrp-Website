@@ -53,6 +53,16 @@ function About() {
           <div className='Carousel' data-aos="fade-left"><ControlledCarousel /></div>
           <p className='collab' data-aos="fade-left">KJSIT: K.J. Somaiya Institute of Technology</p>
         </div>
+        <div className='text8' data-aos="fade-left">
+          <p className='item'>Future Goals</p>
+        </div>
+        <div className='text9' data-aos="fade-right">
+          <p className='item'>Our Collaborators</p>
+        </div>
+
+        <div className='text10' data-aos="fade-right">
+          <p className='item'>What is SSRP?</p>
+        </div>
 
         
       </div>
