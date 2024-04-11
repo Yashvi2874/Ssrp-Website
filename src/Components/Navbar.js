@@ -21,7 +21,7 @@ function App() {
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixnav">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand target" href="#">
               <img src='https://i.imgur.com/miZ2Zyz.png' style={{maxHeight: "30px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
               <img src={Somaiya_Vidyavihar} style={{maxHeight: "30px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
               <img src={Somaiya_Vidyavihar_University} style={{maxHeight: "30px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
@@ -31,19 +31,19 @@ function App() {
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
-                <li class="nav-item mr-lg-6 px-3">
+                <li class="nav-item mr-lg-6 px-3 target">
                   <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
-                <li class="nav-item mr-lg-6 px-3">
+                <li class="nav-item mr-lg-6 px-3 target">
                   <a class="nav-link active" aria-current="page" href="/project">Projects</a>
                 </li>
-                <li class="nav-item mr-lg-6 px-3">
+                <li class="nav-item mr-lg-6 px-3 target">
                   <a class="nav-link active" aria-current="page" href="/community">Community</a>
                 </li>
-                <li class="nav-item mr-lg-6 px-3">
+                <li class="nav-item mr-lg-6 px-3 target">
                   <a class="nav-link active" aria-current="page" href="#">Events</a>
                 </li>
-                <li class="nav-item mr-lg-6 px-3">
+                <li class="nav-item mr-lg-6 px-3 target">
                   <a class="nav-link active" aria-current="page" href="/contact">Contact US</a>
                 </li>
               </ul>
