@@ -21,7 +21,7 @@ function App() {
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixnav">
           <div class="container-fluid">
-            <a class="navbar-brand target" href="#">
+            <a class="navbar-brand" href="#">
               <img src='https://i.imgur.com/miZ2Zyz.png' style={{maxHeight: "30px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
               <img src={Somaiya_Vidyavihar} style={{maxHeight: "30px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
               <img src={Somaiya_Vidyavihar_University} style={{maxHeight: "30px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
