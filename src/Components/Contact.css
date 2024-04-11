@@ -141,6 +141,7 @@
 
 .button:hover {
 	color: black;
+    font-weight: 10000;
 }
 
 .button:hover::before {
