@@ -10,7 +10,7 @@ function Home() {
     <div className='Home' id='home'>
     <div className='text-center text-white m-4'>
       
-
+      <div className='main1'>
       <div className='column justify-content-center ssrp-absolute'>
       <div className='typeit-text'>SSRP</div>
       <div className='typeit-text' id='small-type'>Somaiya Space Research Project</div>
@@ -43,6 +43,7 @@ function Home() {
       {/* <div className='m-4'>
         <p className='Slogan'>Launching dreams into orbits</p>
       </div> */}
+    </div>
     </div>
   );
 }
