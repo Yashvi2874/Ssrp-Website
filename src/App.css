@@ -16,4 +16,5 @@
 Canvas{
     height: 100vh;
     width: 120vw;
+    overflow-x: hidden;
 }
