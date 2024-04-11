@@ -175,9 +175,10 @@
 
   .Team-department{
     color: whitesmoke;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
+    font-size: 5vw;
   }
 
   .Team-head{
@@ -186,8 +187,8 @@
     gap: 3rem;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
@@ -222,6 +223,8 @@
   border-radius: 6%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  justify-content: center;
+    align-items: center;
 
 }
 
@@ -240,6 +243,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .head-photo{
@@ -252,8 +256,21 @@
   .Team_Page{
     overflow-x: hidden;
   }
+  .flip-box-inner .flip-box-back h2,p{
+    font-size: 2vw;
+    text-align: center;
+    
+  }
 
-  @media screen and (max-width: 768px){
+  .card-back-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .card-back-content .name,.department{
+    font-size: 2vw;
+    text-align: center;
   }
   
