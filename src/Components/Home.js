@@ -12,7 +12,7 @@ function Home() {
       
       <div className='main1'>
       <div className='column justify-content-center ssrp-absolute'>
-      <div className='typeit-text'>SSRP</div>
+      <div className='title'>SSRP</div>
       <div className='typeit-text' id='small-type'>Somaiya Space Research Project</div>
       <p className='Slogan'>Launching dreams into orbits</p>
       </div>
