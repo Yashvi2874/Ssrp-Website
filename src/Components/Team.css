@@ -144,7 +144,7 @@
   }
   
   .Team-title {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
@@ -178,14 +178,13 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .Team-head{
     display: flex;
     flex-direction: row;
-    gap: 3rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -256,10 +255,10 @@
   .Team_Page{
     overflow-x: hidden;
   }
-  .flip-box-inner .flip-box-back h2,p{
-    font-size: 2vw;
+
+  .name, .description{
+    font-size: 1.5vw;
     text-align: center;
-    
   }
 
   .card-back-content{
@@ -272,5 +271,33 @@
   .card-back-content .name,.department{
     font-size: 2vw;
     text-align: center;
+  }
+
+  @media screen and (max-width: 768px){
+    .Team-title{
+      font-size: 6vw;
+    }
+    .Team-department{
+      font-size: 6vw;
+    }
+    .name, .description{
+      font-size: 3vw;
+    }
+    .card-back-content .name,.department{
+      font-size: 4vw;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px){
+    .card-container{
+      max-height: 200px;
+      max-width: 200px;
+    }
+
+    .flip-box{
+      max-height: 300px;
+      max-width: 300px;
+    }
   }
   
