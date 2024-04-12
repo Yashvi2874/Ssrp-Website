@@ -95,3 +95,18 @@
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
 }
+
+@media screen and (max-width: 768px){
+  .text-container {
+    font-size: 30vw;
+  }
+  .ball-big {
+    width: 30vw;
+    height: 30vw;
+  }
+  .plane {
+    width: 30vw;
+    height: 30vw;
+  }
+  
+}
