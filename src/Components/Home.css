@@ -45,7 +45,8 @@
   }
 }
   .title {
-    font-family: 'dahlia-regular';
+    font-family: 'Nulshock bd' !important;
+    text-align: left;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
