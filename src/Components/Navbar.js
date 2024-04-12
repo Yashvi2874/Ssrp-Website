@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
+import './NavBar.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import Somaiya_Vidyavihar from './Trust_logo/somaiya white.png';
 import Somaiya_Vidyavihar_University from './Trust_logo/somaiya trust.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Aos from 'aos';
+
 
 function App() {
   useEffect(()=>{
@@ -22,9 +23,9 @@ function App() {
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixnav">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              <img src='https://i.imgur.com/miZ2Zyz.png' style={{maxHeight: "35px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
-              <img src={Somaiya_Vidyavihar} style={{maxHeight: "35px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
-              <img src={Somaiya_Vidyavihar_University} style={{maxHeight: "35px", width: "auto", objectFit: "contain", marginRight: "10px", padding: "3px"}}></img>
+              <img className='navbar-logo'src='https://i.imgur.com/miZ2Zyz.png'></img>
+              <img className='navbar-logo'src={Somaiya_Vidyavihar}></img>
+              <img className='navbar-logo'src={Somaiya_Vidyavihar_University}></img>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
