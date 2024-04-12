@@ -154,7 +154,7 @@
     }
 
     .item{
-      font-size: 8.5vw;
+      font-size: 8vw;
     }
 
     .Carousel{
@@ -162,8 +162,8 @@
       height: auto;
   }
 
-    p{
-      font-size: 3vw;
+    .about-text{
+      font-size: 4vw;
     }
 
     .text3 .item{

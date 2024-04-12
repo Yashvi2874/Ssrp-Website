@@ -256,10 +256,10 @@
   .Team_Page{
     overflow-x: hidden;
   }
-  .flip-box-inner .flip-box-back h2,p{
-    font-size: 2vw;
+
+  .name, .description{
+    font-size: 1.5vw;
     text-align: center;
-    
   }
 
   .card-back-content{

@@ -18,17 +18,17 @@ function About() {
       <div className='container'>
         <div className="text1" data-aos="fade-right">
           <p className='item'>What is SSRP?</p>
-          <p>The Somaiya Space Research Project (SSRP), a new student-led initiative at KJ Somaiya College of Engineering (established January 16, 2024), focuses on developing and launching a satellite, the KJSCE StudentSAT, while also conducting research projects to advance space exploration.. We combine research projects on space exploration with participation in competitions like Spaceport America International Rover Challenge and CANSAT. Through this, we strive to make a mark in space research.</p>
+          <p className='about-text'>The Somaiya Space Research Project (SSRP), a new student-led initiative at KJ Somaiya College of Engineering (established January 16, 2024), focuses on developing and launching a satellite, the KJSCE StudentSAT, while also conducting research projects to advance space exploration.. We combine research projects on space exploration with participation in competitions like Spaceport America International Rover Challenge and CANSAT. Through this, we strive to make a mark in space research.</p>
         </div>
 
-        <div className="text2" data-aos="fade-left">
+        <div className='text2' data-aos="fade-left">
           <p className='item'>Future Goals</p>
-          <p>We leverage both research and renowned competitions like IRC, CANSAT, and IROC-U. Sharing research findings expands knowledge and validates student contributions. Competitions hone problem-solving, but in-depth research propels space exploration. These projects push the boundaries of our cosmic understanding and drive cutting-edge technologies beyond space applications. By engaging in research, we not only solve present challenges but lay the groundwork for future innovation with lasting impact.</p>
+          <p className='about-text'>We leverage both research and renowned competitions like IRC, CANSAT, and IROC-U. Sharing research findings expands knowledge and validates student contributions. Competitions hone problem-solving, but in-depth research propels space exploration. These projects push the boundaries of our cosmic understanding and drive cutting-edge technologies beyond space applications. By engaging in research, we not only solve present challenges but lay the groundwork for future innovation with lasting impact.</p>
         </div>
 
         <div className="text3" data-aos="fade-right">
           <p className='item'>Our Collaborators</p>
-          <p>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we're set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
+          <p className='about-text'>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we're set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
         </div>
 
         <div className="text4" >
