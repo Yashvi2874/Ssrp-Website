@@ -256,10 +256,6 @@
     overflow-x: hidden;
   }
 
-  .name, .description{
-    font-size: 1.5vw;
-    text-align: center;
-  }
 
   .card-back-content{
     display: flex;
@@ -268,25 +264,14 @@
     align-items: center;
   }
 
-  .card-back-content .name,.department{
+  .card-back-content .name,.description{
     font-size: 2vw;
     text-align: center;
   }
 
-  @media screen and (max-width: 768px){
-    .Team-title{
-      font-size: 6vw;
-    }
-    .Team-department{
-      font-size: 6vw;
-    }
-    .name, .description{
-      font-size: 3vw;
-    }
-    .card-back-content .name,.department{
-      font-size: 4vw;
-    }
-    
+  .flip-box-back h2, .flip-box-back p{
+    font-size: 2vw;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px){
@@ -299,5 +284,13 @@
       max-height: 300px;
       max-width: 300px;
     }
+
+    .flip-box-back h2, .flip-box-back p{
+      font-size: 2rem;
+    }
+    .card-back-content .name,.description{
+      font-size: 1.5rem;
+    }
   }
+  
   
