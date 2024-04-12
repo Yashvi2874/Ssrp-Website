@@ -10,14 +10,23 @@ import Team from './Components/Team';
 import StarBackground from './Components/Background';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './Components/Loading';
-
+import AOS from 'aos';
 function App() {
+  const [isAbsolute, setIsAbsolute] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  const toggleAbsolute = () => {
+    setIsAbsolute(!isAbsolute);
+  };
+
+  useEffect(()=>{
+    AOS.init({duration:"2000"});
+  },[]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 5 seconds
+    }, 2000); // 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -51,12 +60,15 @@ function App() {
     <div className="stars">
       <StarBackground />
     </div>
-    <div className="absolute" style={{zIndex:'1'}}>
-        <NavBar />
-        </div>
+    {/* {!isAbsolute ? <div className="absolute" style={{zIndex:'1'}}><NavBar toggleAbsolute={toggleAbsolute}/></div> : <></>} */}
+   
     <div className="absolute" style={{zIndex:'0', minHeight:'100vh'}}>
       <div className="relative" style={{height:'100vh',overflow:'hidden'}}>
-        
+   {/* {!isAbsolute ? <div className="absolute" style={{zIndex:'1'}}> : <></>} */}
+    <div className={!isAbsolute ? "absolute" : ""} style={{zIndex:'1'}}>
+   <NavBar toggleAbsolute={toggleAbsolute}/>
+    </div>
+      {/* {isAbsolute ? <div style={{zIndex:'1'}}><NavBar toggleAbsolute={toggleAbsolute}/></div> : <></>} */}
         <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '90vh', border: 'none', position:'relative', top:'0' }}></iframe>
         
         <Footer />
