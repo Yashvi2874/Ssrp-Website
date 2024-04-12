@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-function App() {
+function App({ toggleAbsolute }) {
   useEffect(()=>{
     AOS.init({duration:"2000"});
 
@@ -27,7 +27,7 @@ function App() {
               <img className='navbar-logo'src={Somaiya_Vidyavihar}></img>
               <img className='navbar-logo'src={Somaiya_Vidyavihar_University}></img>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  onClick={toggleAbsolute} data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
