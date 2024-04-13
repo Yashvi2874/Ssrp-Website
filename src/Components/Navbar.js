@@ -22,10 +22,10 @@ function App({ toggleAbsolute }) {
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixnav">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img className='navbar-logo'src='https://i.imgur.com/miZ2Zyz.png'></img>
-              <img className='navbar-logo'src={Somaiya_Vidyavihar}></img>
-              <img className='navbar-logo'src={Somaiya_Vidyavihar_University}></img>
+            <a class="navbar-brand" href="/">
+              <img className='navbar-logo'src='https://i.imgur.com/miZ2Zyz.png'alt='Ssrp-logo'></img>
+              <img className='navbar-logo'src={Somaiya_Vidyavihar} alt='Somaiya_Vidyavihar'></img>
+              <img className='navbar-logo'src={Somaiya_Vidyavihar_University} alt='Somaiya_Vidyavihar_University'></img>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  onClick={toggleAbsolute} data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
