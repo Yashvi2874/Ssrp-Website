@@ -15,7 +15,7 @@
   src: url('./fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .ttf file */
 }
 .typeit-text {
-    font-size: 1.2rem; /* Adjust size as needed */
+    font-size: 2vw; /* Adjust size as needed */
     text-align: left;
     font-family: 'Nulshock bd' !important;
     src: url('./fonts/dahlia-font/dahlia-bold.woff') format('woff');

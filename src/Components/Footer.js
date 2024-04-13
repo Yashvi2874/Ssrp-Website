@@ -20,7 +20,7 @@ function Footer() {
     <div className='Footer'>
          
             <a href="#" target="_blank"><img className="social-media-img" src={facebook} alt="Facebook" /></a>
-            <a href="#" target="_blank"><img className="social-media-img" src={github} alt="GitHub" /></a>
+            <a href="https://github.com/SOMAIYA-SPACE-RESEARCH-PROJECT" target="_blank"><img className="social-media-img" src={github} alt="GitHub" /></a>
             <a href="https://www.instagram.com/team_ssrp/" target="_blank"><img className="social-media-img" src={instagram} alt="Instagram" /></a>
  
             <a href="#"><img className="ssrp-logo-img" src={ssrp} alt="SSRP logo" /></a>
