@@ -309,7 +309,7 @@ const Team = () => {
             <div className="flip-box-front">
               <img  className='head-photo' src={Associate_Head_image} alt="Riaan Jain" />
             </div>
-            <div class="flip-box-back">
+            <div className="flip-box-back">
               <h2>Riaan Jain</h2>
               <p>Associate Director</p>
             </div>
@@ -320,7 +320,7 @@ const Team = () => {
             <div className="flip-box-front">
               <img  className='head-photo' src={Founder_image} alt="Rishikesh Bhintade" />
             </div>
-            <div class="flip-box-back">
+            <div className="flip-box-back">
               <h2>Rishikesh Bhintade</h2>
               <p>Founder & Project Director</p>
             </div>
@@ -331,7 +331,7 @@ const Team = () => {
             <div className="flip-box-front">
               <img  className='head-photo' src={Operations_Head_image} alt="Tanisha Mukherjee" />
             </div>
-            <div class="flip-box-back">
+            <div className="flip-box-back">
               <h2>Tanisha Mukherjee</h2>
               <p>Operations Director</p>
             </div>
