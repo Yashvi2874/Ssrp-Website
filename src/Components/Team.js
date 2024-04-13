@@ -9,9 +9,8 @@ import Computer_Systems_Member_3 from './Community/Members/Comps/Piyush_Chaudhar
 import Computer_Systems_Member_4 from './Community/Members/Comps/Tanmay_Goraksha.jpg';
 import Computer_Systems_Member_5 from './Community/Members/Comps/Swarni_Chouhan.jpg';
 import Computer_Systems_Member_6 from './Community/Members/Comps/Siya_Nair.png';
-// import Computer_Systems_Member_7 from './Community/Members/Comps/Yash_Sheth.jpg';
-import Computer_Systems_Member_8 from './Community/Members/Comps/Mit_Mhatre.jpg';
-import Computer_Systems_Member_9 from './Community/Members/Comps/Yash_Mahajan.jpg';
+import Computer_Systems_Member_7 from './Community/Members/Comps/Mit_Mhatre.jpg';
+import Computer_Systems_Member_8 from './Community/Members/Comps/Yash_Mahajan.jpg';
 // import Computer_Systems_Member_10 from './Community/Members/Comps/Tanil_Sheth.jpg';
 // import Computer_Systems_Member_11 from './Community/Members/Comps/Aditi_Agarwal.jpg';
 // import Electronics_Member_1 from './Community/Members/Electronics/Lakshya_Aswani.jpg';
@@ -87,18 +86,13 @@ const Team = () => {
             description: 'Web Dev & ODHS'
           },
           {
-            name : 'Yash Sheth',
-            image : 'https://dummyimage.com/300',
-            description : 'ODHS'
-          },
-          {
             name: 'Mit Mhatre',
-            image: Computer_Systems_Member_8,
+            image: Computer_Systems_Member_7,
             description: 'ROS, IP'
           },
           {
             name: 'Yash Mahajan',
-            image: Computer_Systems_Member_9,
+            image: Computer_Systems_Member_8,
             description: 'ROS, IP'
           },
           {
