@@ -1,9 +1,9 @@
-  .container {
+  .container-about {
     min-height: 100vh; /* Minimum height of the container */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto; /* Allow rows to adjust to content */
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     /* background: linear-gradient(rgba(6,3,10,1), rgb(20, 10, 37), rgba(2,4,14,1)); */
   }
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 1rem;
     text-align: left;
   }
 
@@ -92,9 +92,10 @@
 
   
   @media screen and (max-width: 768px) {
-    .container {
+    .container-about {
       grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto auto auto auto auto auto auto; /* Adjust rows to accommodate content */
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+      padding: 1rem; /* Adjust rows to accommodate content */
     }
   
     .text1,
