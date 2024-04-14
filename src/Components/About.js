@@ -15,7 +15,7 @@ function About() {
 
   return (
     <div className='About'>
-      <div className='container'>
+      <div className='container-about'>
         <div className="text1" data-aos="fade-right">
           <p className='item'>What is SSRP?</p>
           <p className='about-text'>The Somaiya Space Research Project (SSRP), a new student-led initiative at KJ Somaiya College of Engineering (established January 16, 2024), focuses on developing and launching a satellite, the KJSCE StudentSAT, while also conducting research projects to advance space exploration.. We combine research projects on space exploration with participation in competitions like Spaceport America International Rover Challenge and CANSAT. Through this, we strive to make a mark in space research.</p>
