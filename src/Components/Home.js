@@ -14,7 +14,7 @@ function Home() {
       <div className='column justify-content-center ssrp-absolute'>
       <div className='title'>SSRP</div>
       <div className='typeit-text' id='small-type'>Somaiya Space Research Project</div>
-      <p className='Slogan'>Launching dreams into orbits</p>
+      <section className='Slogan'>Launching dreams into orbits</section>
       </div>
       </div>
       {/* <div className='row justify-content-center ssrp-absolute' style={{ marginTop: '4.5rem' }}>
