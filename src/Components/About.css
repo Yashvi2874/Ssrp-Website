@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    text-align: left;
+    text-align: center;
   }
 
   .Carousel{
@@ -73,6 +73,8 @@
     font-size: 1.2rem;
     text-align: justify;
     color: white;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
 
   .collab{
