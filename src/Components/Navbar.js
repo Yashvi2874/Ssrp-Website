@@ -33,7 +33,7 @@ function App({ toggleAbsolute }) {
             <div className="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
                 <li className="nav-item mr-lg-6 px-3 target">
-                  <a className="nav-link active" aria-current="page" href="/">Home</a>
+                  <a className="nav-link active" aria-current="page" href="/home">Home</a>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target">
                   <a className="nav-link active" aria-current="page" href="/project">Projects</a>
