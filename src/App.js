@@ -37,7 +37,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={
+        <Route path="/" element={
           <div className="App">
             <div className="stars">
               <StarBackground />
