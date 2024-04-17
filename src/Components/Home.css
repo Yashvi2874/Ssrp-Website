@@ -1,8 +1,7 @@
 @media screen and (min-width: 768px) {
     .ssrp-absolute {
-        top: 20vh;
 
-        position: absolute;
+        position: relative;
     }
 }
 
@@ -68,6 +67,8 @@
     display: inline;
   }
   .astro-block{
+    position: fixed;
+    top: -40vh;
     justify-content: end;
   }
   
@@ -87,7 +88,7 @@
       0 0 100px #444544;
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     .earth-block{
       display: none;
     }
@@ -102,7 +103,7 @@
     }
   
     .astro-block{
-      height: 40vh  !important;
+      height: 60vh  !important;
       width: 100vw  !important;
     }
 
