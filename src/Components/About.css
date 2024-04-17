@@ -85,7 +85,7 @@
     display: none;
   } */
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 769px){
     .text8, .text9, .text10{
       display: none;
     }
