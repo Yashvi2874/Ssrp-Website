@@ -92,6 +92,10 @@
     .earth-block{
       display: none;
     }
+    .astro-block{
+      height: 40vh  !important;
+      width: 100vw  !important;
+    }
 
     
     
