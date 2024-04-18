@@ -3,7 +3,7 @@ import './Team.css';
 import Founder_image from './Community/Head/Rishikesh_Bhintade.jpg';
 import Associate_Head_image from './Community/Head/Riaan_jain.jpg';
 import Operations_Head_image from './Community/Head/Tanisha_Mukherjee.jpg';
-//import Computer_Systems_Member_1 from './Community/Computer_Systems/Yashasvi_Gupta.jpg';
+import Computer_Systems_Member_1 from './Community/Members/Comps/Yashvi_Gupta.jpg';
 import Computer_Systems_Member_2 from './Community/Members/Comps/Om_Thanage.jpeg';
 import Computer_Systems_Member_3 from './Community/Members/Comps/Piyush_Chaudhary.jpg';
 import Computer_Systems_Member_4 from './Community/Members/Comps/Tanmay_Goraksha.jpg';
@@ -45,7 +45,7 @@ import Business_Member_10 from './Community/Members/Business/Tarini_Bambolkar.jp
 import Marketing_Member_4 from './Community/Members/Business/Varun_Shah.jpg';
 import Marketing_Member_5 from './Community/Members/Business/Anusha_Sarkar.jpg';
 // import Marketing_Member_6 from './Community/Members/Business/Rishi_Shanbhag.jpg';
-// import Marketing_Member_7 from './Community/Members/Business/Mann_Dutiya.jpg';
+import Marketing_Member_7 from './Community/Members/Business/Mann_Dutiya.jpg';
 
 
 
@@ -53,8 +53,8 @@ const Team = () => {
 
     const Comps = [
         {
-          name: 'Yashasvi Gupta',
-          image: 'https://dummyimage.com/300',
+          name: 'Yashsvi Gupta',
+          image: Computer_Systems_Member_1,
           description: 'Web Dev Head'
         },
         {
@@ -281,7 +281,7 @@ const Team = () => {
         },
         {
           name: 'Mann Dutiya',
-          image: 'https://dummyimage.com/300',
+          image: Marketing_Member_7,
           description: 'Marketing and Publicity'
         }
       ];
