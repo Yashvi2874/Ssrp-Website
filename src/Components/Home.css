@@ -68,7 +68,7 @@
   }
   .astro-block{
     position: fixed;
-    top: -40vh;
+    top: -40vh !important;
     justify-content: end;
   }
   

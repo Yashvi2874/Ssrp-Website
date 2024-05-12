@@ -2,9 +2,8 @@ import React, {Suspense} from 'react';
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
 import { Experience } from './Experience';
-import Loading from './Loading';
-const Astronaut = React.lazy(()=> import("./Astronaut"));
-
+//const Astronaut = React.lazy(()=> import("./Astronaut"));
+import Astronaut  from './Astronaut';
 
 function Home() {
   return (
@@ -26,7 +25,7 @@ function Home() {
         
       <div className='row justify-content-end m-3 par'>
           <div className='col-lg-10 col-md-8 col-sm-10 row-sm-3'>
-          <Suspense fallback={<Loading/>}>
+          <Suspense fallback={<div>Loading...</div>}>
           <Canvas className='image img-fluid position-relative astro-block' style={{width : '100vw', height : '90vh'}}>
             <Astronaut />
           </Canvas>
