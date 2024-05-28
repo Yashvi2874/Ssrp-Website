@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './About.css';
-import logo from './logo.png';
-import future_goals from './futuregoalsnew.png';
+import logo from '../../assests/images/about_images/logo.png';
+import future_goals from '../../assests/images/about_images/futuregoalsnew.png';
 import ControlledCarousel from './Collaborators_slider';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

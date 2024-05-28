@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import './NavBar.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import Somaiya_Vidyavihar from './Trust_logo/somaiya white.png';
-import Somaiya_Vidyavihar_University from './Trust_logo/somaiya trust.png';
+import Somaiya_Vidyavihar from '../../assests/images/Trust_logo/somaiya white.png';
+import Somaiya_Vidyavihar_University from '../../assests/images/Trust_logo/somaiya trust.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

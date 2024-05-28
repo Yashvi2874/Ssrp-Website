@@ -1,9 +1,9 @@
 import React from 'react'; 
 import 'bootstrap/dist/css/bootstrap.css'; 
 import Carousel from 'react-bootstrap/Carousel';
-import '../App.css'
-import kjsit1 from './Collaborators/kjsit image 1.jpg';
-import kjsit2 from './Collaborators/kjsit image 2.jpg';
+import '../../App.css'
+import kjsit1 from '../../assests/images/about_images/Collaborators/kjsit image 1.jpg';
+import kjsit2 from '../../assests/images/about_images/Collaborators/kjsit image 2.jpg';
 
 export default function Collaborators_slider() { 
 return ( 
