@@ -1,15 +1,15 @@
 //import { SpeedInsights } from "@vercel/speed-insights/react";
 import './App.css';
 import React, { useState, useEffect} from 'react';
-import Home from './Components/Home';
-import NavBar from './Components/Navbar';
-import About from './Components/About';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
-import Team from './Components/Team';
-import StarBackground from './Components/Background';
+import Home from './containers/home/Home';
+import NavBar from './containers/navbar/Navbar';
+import About from './containers/about/About';
+import Contact from './containers/contact_us/Contact';
+import Footer from './containers/footer/Footer';
+import Team from './containers/team/Team';
+import StarBackground from './components/background/Background';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Loading from './Components/Loading';
+import Loading from './components/loading/Loading';
 import AOS from 'aos';
 function App() {
   const [isAbsolute, setIsAbsolute] = useState(false);

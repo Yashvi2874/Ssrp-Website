@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import './Footer.css'
-import facebook from './socialmedia_images/facebook.svg'
-import github from './socialmedia_images/github.svg'
-import instagram from './socialmedia_images/instagram.svg'
-import linkedin from './socialmedia_images/linkedin.svg'
-import twitter from './socialmedia_images/twitter.svg'
-import youtube from './socialmedia_images/youtube.svg'
-import ssrp from './socialmedia_images/logo.png'
+import facebook from '../../assests/images/socialmedia_images/github.svg'
+import github from '../../assests/images/socialmedia_images/github.svg'
+import instagram from '../../assests/images/socialmedia_images/instagram.svg'
+import linkedin from '../../assests/images/socialmedia_images/linkedin.svg'
+import twitter from '../../assests/images/socialmedia_images/twitter.svg'
+import youtube from '../../assests/images/socialmedia_images/youtube.svg'
+import ssrp from '../../assests/images/socialmedia_images/logo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

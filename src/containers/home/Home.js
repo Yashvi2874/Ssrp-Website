@@ -1,9 +1,9 @@
 import React, {Suspense} from 'react';
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
-import { Experience } from './Experience';
+import { Experience } from '../../components/earth/Experience';
 //const Astronaut = React.lazy(()=> import("./Astronaut"));
-import Astronaut  from './Astronaut';
+import Astronaut  from '../../components/astronaut/Astronaut';
 
 function Home() {
   return (
