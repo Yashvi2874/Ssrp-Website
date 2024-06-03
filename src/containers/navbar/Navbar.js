@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './NavBar.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import logo from '../../assests/images/about_images/logo.png';
 import Somaiya_Vidyavihar from '../../assests/images/Trust_logo/somaiya white.png';
 import Somaiya_Vidyavihar_University from '../../assests/images/Trust_logo/somaiya trust.png';
 import AOS from 'aos';
@@ -23,7 +24,7 @@ function App({ toggleAbsolute }) {
         <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              <img className='navbar-logo'src='https://i.imgur.com/miZ2Zyz.png'alt='Ssrp-logo'></img>
+              <img className='navbar-logo'src={logo} alt='Ssrp-logo'></img>
               <img className='navbar-logo'src={Somaiya_Vidyavihar} alt='Somaiya_Vidyavihar'></img>
               <img className='navbar-logo'src={Somaiya_Vidyavihar_University} alt='Somaiya_Vidyavihar_University'></img>
             </a>
