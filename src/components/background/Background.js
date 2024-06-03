@@ -38,8 +38,8 @@ const StarBackground = ({ children }) => {
     const animate = () => {
       requestAnimationFrame(animate);
 
-      starField.rotation.x += 0.0005;
-      starField.rotation.y += 0.0005;
+      starField.rotation.x += 0.0002;
+      starField.rotation.y += 0.0002;
 
       rendererRef.current.render(scene, cameraRef.current);
     };

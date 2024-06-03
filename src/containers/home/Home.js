@@ -25,28 +25,20 @@ function Home() {
         
       <div className='row justify-content-end m-3 par'>
           <div className='col-lg-10 col-md-8 col-sm-10 row-sm-3'>
-          <Suspense fallback={<div>Loading...</div>}>
-          <Canvas className='image img-fluid position-relative astro-block' style={{width : '100vw', height : '90vh'}}>
-            <Astronaut />
-          </Canvas>
-          </Suspense>
-              {/* <iframe src='https://my.spline.design/photorealearth-c1a8103f9a96c7c5a3f84a4e50469c16/' style={{ width: '48vw', height: '80vh' }}/> */}
-            </div>
-            {/* <div className='col-2'>
-            
-          
-          </div> */}
-        </div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Canvas
-              className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'6vh', right:'-43vw'}}>
-                <Experience />
-          </Canvas>
-        </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+            <Canvas className='image img-fluid position-relative astro-block' style={{width : '100vw', height : '90vh'}}>
+              <Astronaut />
+            </Canvas>
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Canvas
+                  className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'6vh', right:'-43vw'}}>
+                    <Experience />
+              </Canvas>
+            </Suspense>
+          </div>
       </div>
-      {/* <div className='m-4'>
-        <p className='Slogan'>Launching dreams into orbits</p>
-      </div> */}
+    </div>
     </div>
     </div>
   );

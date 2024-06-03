@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './Footer.css'
-import facebook from '../../assests/images/socialmedia_images/github.svg'
+import facebook from '../../assests/images/socialmedia_images/facebook.svg'
 import github from '../../assests/images/socialmedia_images/github.svg'
 import instagram from '../../assests/images/socialmedia_images/instagram.svg'
 import linkedin from '../../assests/images/socialmedia_images/linkedin.svg'
