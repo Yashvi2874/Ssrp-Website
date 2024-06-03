@@ -6,7 +6,6 @@ import Operations_Head_image from '../../assests/images/Community/Head/Tanisha_M
 import Computer_Systems_Member_1 from '../../assests/images/Community/Members/Comps/Yashvi_Gupta.jpg';
 import Computer_Systems_Member_2 from '../../assests/images/Community/Members/Comps/Om_Thanage.jpeg';
 import Computer_Systems_Member_3 from '../../assests/images/Community/Members/Comps/Piyush_Chaudhary.jpg';
-import Computer_Systems_Member_4 from '../../assests/images/Community/Members/Comps/Tanmay_Goraksha.jpg';
 import Computer_Systems_Member_5 from '../../assests/images/Community/Members/Comps/Swarni_Chouhan.jpg';
 import Computer_Systems_Member_6 from '../../assests/images/Community/Members/Comps/Siya_Nair.png';
 import Computer_Systems_Member_7 from '../../assests/images/Community/Members/Comps/Mit_Mhatre.jpg';
@@ -53,7 +52,7 @@ const Team = () => {
 
     const Comps = [
         {
-          name: 'Yashsvi Gupta',
+          name: 'Yashasvi Gupta',
           image: Computer_Systems_Member_1,
           description: 'Web Dev Head'
         },
@@ -65,11 +64,6 @@ const Team = () => {
         {
             name: 'Piyush Chaudhary',
             image: Computer_Systems_Member_3,
-            description: 'Web Dev & ODHS'
-          },
-          {
-            name: 'Tanmay Goraksha',
-            image: Computer_Systems_Member_4,
             description: 'Web Dev & ODHS'
           },
           {

@@ -93,8 +93,14 @@
       display: none;
     }
     .astro-block{
-      height: 40vh  !important;
+      height: 60vh  !important;
       width: 100vw  !important;
+      margin-top: -15rem;
+      margin-left: 8rem;
+      margin-bottom: 4rem;
+    }
+    .justify-content-end{
+      justify-content: end;
     }
 
     
@@ -109,6 +115,7 @@
     .astro-block{
       height: 60vh  !important;
       width: 100vw  !important;
+      margin: 0;
     }
 
     .title{

@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto; /* Allow rows to adjust to content */
     padding: 1rem;
-    margin: 0;
+    margin-top: -15rem;
     /* background: linear-gradient(rgba(6,3,10,1), rgb(20, 10, 37), rgba(2,4,14,1)); */
   }
   
@@ -89,6 +89,9 @@
     .text8, .text9, .text10{
       display: none;
     }
+    .container-about{
+      margin-top: -12rem;
+    }
   }
   
 
@@ -98,6 +101,7 @@
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
       padding: 1rem; /* Adjust rows to accommodate content */
+      margin-top: 0;
     }
   
     .text1,
