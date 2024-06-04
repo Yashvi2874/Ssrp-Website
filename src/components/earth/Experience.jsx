@@ -8,7 +8,6 @@ export const Experience = () => {
         <>
             <OrbitControls enableZoom={false} autoRotate={true} autoRotateSpeed={0.6} enableRotate={false}/>
             <ambientLight intensity={2}/>
-            {/* <Office /> */}
             <EarthModel position = {[0,0,0]}scale={[2.5, 2.5, 2.5]}/>
         </>
     );

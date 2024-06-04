@@ -4,6 +4,7 @@ import React, { useState, useEffect} from 'react';
 import Home from './containers/home/Home';
 import NavBar from './containers/navbar/Navbar';
 import About from './containers/about/About';
+import Project from './containers/projects/Projects';
 import Contact from './containers/contact_us/Contact';
 import Footer from './containers/footer/Footer';
 import Team from './containers/team/Team';
@@ -107,6 +108,21 @@ function App() {
               <div className="relative">
                 <NavBar/>
                 <Team />
+                <Footer />
+              </div>
+            </div>
+          </div>} />
+
+          <Route path="/testproject" element={
+        
+        <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar/>
+                <Project />
                 <Footer />
               </div>
             </div>
