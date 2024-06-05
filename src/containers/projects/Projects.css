@@ -3,14 +3,15 @@
     color: white;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    
 
 }
 
 .project-container{
     min-height: 100vh;
-    padding: 10rem;
+    padding: 10vw;
     padding-top: 0;
+    
 
 }
 
@@ -21,41 +22,26 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
+    cursor: pointer;
 }
 
 .project-title{
-    font-size: 4rem;
+    font-size: 4vw;
     color: white;
-    margin-left: 5rem;
+    margin-left: 5vw;
+    font-weight: bolder;
 }
 
-.project-description{
-    font-size: 2rem;
+.project-author{
+    font-size: 4vw;
     color: white;
     text-align: right;
-    margin-right: 5rem;
+    margin-right: 5vw;
 }
-
-.border-top{
-    border-top: 10px solid white;
-}
-
-/* .pop-up-box{
-    position: fixed;
-    top :10%;
-    width: 40%;
-    height: 40%;
-    background-color: rgba(254, 27, 27, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    text-align: center;
-} */
 
 .popup-content {
     padding: 20px;
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 5px;
   }
   
@@ -63,6 +49,22 @@
     margin-top: 0;
   }
   
-  .popup-content p {
+  .popup-content img {
     margin: 0;
+    width: 100%;
+    height: auto;
   }
+
+  .project-link{
+    text-decoration: none;
+    border: none;
+    color: black;
+  }
+
+  .project-link:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    cursor: pointer;
+    color: blue;
+  }
+  

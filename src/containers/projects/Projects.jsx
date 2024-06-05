@@ -1,22 +1,71 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import './Projects.css';
+import Project_1_img from '../../assests/images/project_images/img1.jpg';
+import Project_2_img from '../../assests/images/project_images/img2.jpg';
+import Project_3_img from '../../assests/images/project_images/img3.jpg';
+import Project_4_img from '../../assests/images/project_images/img4.jpg';
+import Project_5_img from '../../assests/images/project_images/img5.jpg';
+import Project_6_img from '../../assests/images/project_images/img6.jpg';
+import Project_7_img from '../../assests/images/project_images/img7.jpeg';
+import Project_8_img from '../../assests/images/project_images/img8.jpg';
+import Project_9_img from '../../assests/images/project_images/img9.jpg';
+
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Project 1 description',
-    details: 'More details about Project 1...',
+    title: 'Student SAT',
+    author: 'SSRP',
+    image: Project_1_img,
+    url: 'https://www.google.com'
   },
   {
-    title: 'Project 2',
-    description: 'Project 2 description',
-    details: 'More details about Project 2...',
+    title: 'GROUND STATION',
+    author: 'SSRP',
+    image: Project_2_img,
+    url: 'https://www.google.com'
   },
   {
-    title: 'Project 3',
-    description: 'Project 3 description',
-    details: 'More details about Project 3...',
+    title: 'CANSAT',
+    author: 'SSRP',
+    image: Project_3_img,
+    url: 'https://www.google.com'
+  },
+  {
+    title: 'SPACEPORT AMERICA',
+    author: 'SSRP',
+    image: Project_4_img,
+    url: 'https://www.google.com'
+  },
+  {
+    title: 'INTERNATIONAL ROVER CHALLENGE',
+    author: 'SSRP',
+    image: Project_5_img,
+    url: 'https://www.google.com'
+  },
+  {
+    title: 'BALLOON SAT',
+    author: 'SSRP',
+    image: Project_6_img,
+    url: 'https://www.google.com'
+  },
+  {
+    title: 'ALL SKY CAMERA',
+    author: 'SSRP',
+    image: Project_7_img,
+    url: 'https://www.google.com'
+  },
+  {
+    title: 'TELESCOPE',
+    author: 'SSRP',
+    image: Project_8_img,
+    url: 'https://www.google.com'
+  },
+  {
+    title: 'FESTIVAL',
+    author: 'SSRP',
+    image: Project_9_img,
+    url: 'https://www.google.com'
   },
   // Add more projects as needed
 ];
@@ -41,25 +90,35 @@ const Project = () => {
                 onMouseMove={handleMouseMove}
               >
                 <div className='project-title'>{project.title}</div>
-                <div className='project-description'>{project.description}</div>
+                <div className='project-author'>{project.author}</div>
               </div>
             }
             position="center center"
             on="hover"
             closeOnDocumentClick
-            mouseEnterDelay={100}
-            mouseLeaveDelay={100}
+            mouseEnterDelay={0}
+            mouseLeaveDelay={0}
             arrow={false}
             contentStyle={{
-              width: '200px',
+              display: 'flex',
+              flexDirection: 'column',
+              maxHeight: '24vw',
+              maxWidth: '24vw',
               textAlign: 'center',
-              position: 'absolute',
-              transform: `translate(${cursorPosition.x - 100}px, ${cursorPosition.y - 50}px) translate(-50%, -50%)`
+              position: 'fixed',
+              top: `${cursorPosition.y}px`,
+              left: `${cursorPosition.x}px`,
+              transform: 'translate(-50%, -50%, -50%, -50%)',
+              pointerEvents: 'none',
+              transition: 'top 0.1s ease, left 0.1s ease'
             }}
           >
             <div className='popup-content'>
               <h2>{project.title}</h2>
-              <p>{project.details}</p>
+              <img src={project.image} alt={project.title} className='project-image' />
+              <a href={project.url} className='project-link'>
+                <div>View Project</div>
+              </a>
             </div>
           </Popup>
         ))}
