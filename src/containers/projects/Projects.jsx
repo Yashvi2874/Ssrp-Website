@@ -1,95 +1,35 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Popup from 'reactjs-popup';
 import './Projects.css';
-import Project_1_img from '../../assests/images/project_images/img1.jpg';
-import Project_2_img from '../../assests/images/project_images/img2.jpg';
-import Project_3_img from '../../assests/images/project_images/img3.jpg';
-import Project_4_img from '../../assests/images/project_images/img4.jpg';
-import Project_5_img from '../../assests/images/project_images/img5.jpg';
-import Project_6_img from '../../assests/images/project_images/img6.jpg';
-import Project_7_img from '../../assests/images/project_images/img7.jpeg';
-import Project_8_img from '../../assests/images/project_images/img8.jpg';
-import Project_9_img from '../../assests/images/project_images/img9.jpg';
-
-
-const projects = [
-  {
-    title: 'Student SAT',
-    author: 'SSRP',
-    image: Project_1_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'GROUND STATION',
-    author: 'SSRP',
-    image: Project_2_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'CANSAT',
-    author: 'SSRP',
-    image: Project_3_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'SPACEPORT AMERICA',
-    author: 'SSRP',
-    image: Project_4_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'INTERNATIONAL ROVER CHALLENGE',
-    author: 'SSRP',
-    image: Project_5_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'BALLOON SAT',
-    author: 'SSRP',
-    image: Project_6_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'ALL SKY CAMERA',
-    author: 'SSRP',
-    image: Project_7_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'TELESCOPE',
-    author: 'SSRP',
-    image: Project_8_img,
-    url: 'https://www.google.com'
-  },
-  {
-    title: 'FESTIVAL',
-    author: 'SSRP',
-    image: Project_9_img,
-    url: 'https://www.google.com'
-  },
-  // Add more projects as needed
-];
+import Projects from './Projects_details.jsx';
 
 const Project = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const navigate = useNavigate();
 
   const handleMouseMove = (e) => {
     setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleProjectClick = (id) => {
+    navigate(`/project/${id}`);
   };
 
   return (
     <div className='project-container'>
       <h1 className='project-heading'>Projects</h1>
       <section className='projects'>
-        {projects.map((project, index) => (
+        {Projects.map((project) => (
           <Popup
-            key={index}
+            key={project.id}
             trigger={
               <div
                 className='project-content'
                 onMouseMove={handleMouseMove}
+                onClick={() => handleProjectClick(project.id)}
               >
-                <img src={project.image} alt={project.title} className='project-image' />
+                <img src={project.image} alt={project.title} />
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
               </div>
@@ -97,21 +37,23 @@ const Project = () => {
             position="center center"
             on="hover"
             closeOnDocumentClick
-            mouseEnterDelay={0}
-            mouseLeaveDelay={0}
+            mouseEnterDelay={100}
+            mouseLeaveDelay={100}
             arrow={false}
             contentStyle={{
               display: 'flex',
               flexDirection: 'column',
               maxHeight: 'auto',
-              maxWidth: '24vw',
+              maxWidth: '28vw',
               textAlign: 'center',
               position: 'fixed',
               top: `${cursorPosition.y}px`,
               left: `${cursorPosition.x}px`,
-              transform: 'translate(-50%, -50%, -50%, -50%)',
+              transform: 'translate(-50%, -50%, -50%)',
+              transition: 'top 0.5s ease-out, left 0.5s ease-out',
               pointerEvents: 'none',
-              transition: 'top 0.1s ease, left 0.1s ease'
+              animation: 'fadein 1s',
+              
             }}
           >
             <div className='popup-content'>
