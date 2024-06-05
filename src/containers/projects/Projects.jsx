@@ -89,6 +89,7 @@ const Project = () => {
                 className='project-content'
                 onMouseMove={handleMouseMove}
               >
+                <img src={project.image} alt={project.title} className='project-image' />
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
               </div>
