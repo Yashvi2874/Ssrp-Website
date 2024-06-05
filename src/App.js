@@ -56,29 +56,29 @@ function App() {
           </div>
         } />
       
-        <Route path="/project" element={
+        {/* <Route path="/project" element={
   <div className="App">
     <div className="stars">
       <StarBackground />
     </div>
     {/* {!isAbsolute ? <div className="absolute" style={{zIndex:'1'}}><NavBar toggleAbsolute={toggleAbsolute}/></div> : <></>} */}
    
-    <div className="absolute" style={{zIndex:'0', minHeight:'100vh'}}>
-      <div className="relative" style={{height:'100vh',overflow:'hidden'}}>
+    {/* <div className="absolute" style={{zIndex:'0', minHeight:'100vh'}}>
+      <div className="relative" style={{height:'100vh',overflow:'hidden'}}> */}
    {/* {!isAbsolute ? <div className="absolute" style={{zIndex:'1'}}> : <></>} */}
-    <div className={!isAbsolute ? "absolute" : ""} style={{zIndex:'1'}}>
+    {/* <div className={!isAbsolute ? "absolute" : ""} style={{zIndex:'1'}}>
    <NavBar toggleAbsolute={toggleAbsolute}/>
-    </div>
+    </div> */}
       {/* {isAbsolute ? <div style={{zIndex:'1'}}><NavBar toggleAbsolute={toggleAbsolute}/></div> : <></>} */}
-        <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '90vh', border: 'none', position:'relative', top:'0' }}></iframe>
+        {/* <iframe src='/project.html' title="Projects page" style={{ width: '100%', height: '90vh', border: 'none', position:'relative', top:'0' }}></iframe>
         
         <Footer />
       </div>
         
     </div>
-  </div>
-} />
-        <Route path="/projects" element={
+  </div> */}
+{/* } /> */}
+        {/* <Route path="/projects" element={
   <div className="App">
     <div className="stars">
       <StarBackground />
@@ -94,10 +94,10 @@ function App() {
         
     </div>
   </div>
-} />
+} /> */} 
 
-        <Route path="/projects" element={<iframe src="/space.html" title="Space Page" style={{ width: '120vw', height: '100vh', border: 'none' }} />} />
-        <Route path="/project" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} />
+        {/* <Route path="/projects" element={<iframe src="/space.html" title="Space Page" style={{ width: '120vw', height: '100vh', border: 'none' }} />} />
+        <Route path="/project" element={<iframe src="/space.html" title="Space Page" style={{ width: '100%', height: '100vh', border: 'none' }} />} /> */}
         <Route path="/community" element={
         
         <div className="App">
@@ -113,7 +113,22 @@ function App() {
             </div>
           </div>} />
 
-          <Route path="/testproject" element={
+          <Route path="/project" element={
+        
+        <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar/>
+                <Project />
+                <Footer />
+              </div>
+            </div>
+          </div>} />
+
+          <Route path="/projects" element={
         
         <div className="App">
             <div className="stars">
