@@ -50,7 +50,7 @@ const Project = () => {
               top: `${cursorPosition.y}px`,
               left: `${cursorPosition.x}px`,
               transform: 'translate(-50%, -50%, -50%)',
-              transition: 'top 0.5s ease-out, left 0.5s ease-out',
+              transition: 'top 0.2s ease-out, left 0.2s ease-out',
               pointerEvents: 'none',
               animation: 'fadein 1s',
               
@@ -59,9 +59,8 @@ const Project = () => {
             <div className='popup-content'>
               <div className='project-title' style={{color:'black', margin:'0', fontSize:'3vw'}}>{project.title}</div>
               <img src={project.image} alt={project.title} className='project-image' />
-              <a href={project.url} className='project-link'>
-                <div>View Project</div>
-              </a>
+              <div className='project-link'
+              onClick={()=> handleProjectClick(project.id)}>View Project</div>
             </div>
           </Popup>
         ))}
