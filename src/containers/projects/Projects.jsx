@@ -104,14 +104,14 @@ const Project = () => {
               display: 'flex',
               flexDirection: 'column',
               maxHeight: 'auto',
-              maxWidth: '24vw',
+              maxWidth: '28vw',
               textAlign: 'center',
               position: 'fixed',
               top: `${cursorPosition.y}px`,
               left: `${cursorPosition.x}px`,
               transform: 'translate(-50%, -50%, -50%, -50%)',
               pointerEvents: 'none',
-              transition: 'top 0.1s ease, left 0.1s ease'
+              animation: 'fadein 1s',
             }}
           >
             <div className='popup-content'>
