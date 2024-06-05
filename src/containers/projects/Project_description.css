@@ -101,12 +101,16 @@
     .details-title, .details-section-heading{
         margin: 2rem;
         animation: fade-in 0.5s ease-in-out forwards;
+        font-size: 2rem;
     }
     .details-title{
         margin-top: 2rem;
     }
-    .text{
+    .text, .details-link{
         font-size: 1rem;
+    }
+    .details-link{
+        margin: 0;
     }
   }
   

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Popup from 'reactjs-popup';
 import './Projects.css';
 import Projects from './Projects_details.jsx';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -16,6 +18,11 @@ const Project = () => {
     navigate(`/project/${id}`);
   };
 
+  useEffect(()=>{
+    AOS.init({duration:"2000"});
+
+  },[]);
+
   return (
     <div className='project-container'>
       <h1 className='project-heading'>Projects</h1>
@@ -28,8 +35,9 @@ const Project = () => {
                 className='project-content'
                 onMouseMove={handleMouseMove}
                 onClick={() => handleProjectClick(project.id)}
+                data-aos="fade-up"
               >
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title}/>
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
               </div>
@@ -56,7 +64,7 @@ const Project = () => {
               
             }}
           >
-            <div className='popup-content'>
+            <div className='popup-content' data-aos="fade-in">
               <div className='project-title' style={{color:'black', margin:'0', fontSize:'3vw'}}>{project.title}</div>
               <img src={project.image} alt={project.title} className='project-image' />
               <div className='project-link'
