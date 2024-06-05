@@ -102,7 +102,7 @@ const Project = () => {
             contentStyle={{
               display: 'flex',
               flexDirection: 'column',
-              maxHeight: '24vw',
+              maxHeight: 'auto',
               maxWidth: '24vw',
               textAlign: 'center',
               position: 'fixed',
@@ -114,7 +114,7 @@ const Project = () => {
             }}
           >
             <div className='popup-content'>
-              <h2>{project.title}</h2>
+              <div className='project-title' style={{color:'black', margin:'0', fontSize:'3vw'}}>{project.title}</div>
               <img src={project.image} alt={project.title} className='project-image' />
               <a href={project.url} className='project-link'>
                 <div>View Project</div>
