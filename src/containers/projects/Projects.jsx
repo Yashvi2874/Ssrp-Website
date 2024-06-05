@@ -89,6 +89,7 @@ const Project = () => {
                 className='project-content'
                 onMouseMove={handleMouseMove}
               >
+                <img src={project.image} alt={project.title} className='project-image' />
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
               </div>
@@ -102,7 +103,7 @@ const Project = () => {
             contentStyle={{
               display: 'flex',
               flexDirection: 'column',
-              maxHeight: '24vw',
+              maxHeight: 'auto',
               maxWidth: '24vw',
               textAlign: 'center',
               position: 'fixed',
@@ -114,7 +115,7 @@ const Project = () => {
             }}
           >
             <div className='popup-content'>
-              <h2>{project.title}</h2>
+              <div className='project-title' style={{color:'black', margin:'0', fontSize:'3vw'}}>{project.title}</div>
               <img src={project.image} alt={project.title} className='project-image' />
               <a href={project.url} className='project-link'>
                 <div>View Project</div>
