@@ -73,6 +73,7 @@
     border: none;
     color: black;
     max-width: 20vw;
+    text-align: center;
   }
 
   .project-link:hover{
