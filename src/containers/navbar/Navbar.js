@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './NavBar.css';
-//import 'jquery/dist/jquery.min.js';
-//import 'bootstrap/dist/js/bootstrap.min.js';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import logo from '../../assests/images/about_images/logo.png';
 import Somaiya_Vidyavihar from '../../assests/images/Trust_logo/somaiya white.png';
 import Somaiya_Vidyavihar_University from '../../assests/images/Trust_logo/somaiya trust.png';
