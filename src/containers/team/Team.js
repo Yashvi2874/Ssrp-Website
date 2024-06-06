@@ -17,7 +17,6 @@ import Electronics_Member_2 from '../../assests/images/Community/Members/Electro
 import Electronics_Member_3 from '../../assests/images/Community/Members/Electronics/Arnav_Vinod.png';
 // import Electronics_Member_4 from './Community/Members/Electronics/Siddarth_Patel.jpg';
 // import Electronics_Member_5 from './Community/Members/Electronics/Abhinav_Suresh.jpg';
-// import Electronics_Member_6 from './Community/Members/Electronics/Soham_Redkar.jpg';
 import Electronics_Member_7 from '../../assests/images/Community/Members/Electronics/Aarohi_Mishra.jpg';
 import Electronics_Member_8 from '../../assests/images/Community/Members/Electronics/Arupta_Kamble.jpeg';
 import Electronics_Member_9 from '../../assests/images/Community/Members/Electronics/Siya_Naulakha.jpg';
@@ -37,14 +36,12 @@ import Business_Member_7 from '../../assests/images/Community/Members/Business/L
 import Business_Member_8 from '../../assests/images/Community/Members/Business/Aniket_Iyer.jpg';
 // import Business_Member_9 from '../../assests/images/Community/Members/Business/Aditi_Gupta.jpg';
 import Business_Member_10 from '../../assests/images/Community/Members/Business/Tarini_Bambolkar.jpeg';
-// import Business_Member_11 from '../../assests/images/Community/Members/Business/Vraj_Patel.jpg';
 // import Marketing_Member_1 from '../../assests/images/Community/Members/Business/Minit_Shah.jpg';
 // import Marketing_Member_2 from '../../assests/images/Community/Members/Business/Shrusti_Vora.jpg';
 // import Marketing_Member_3 from '../../assests/images/Community/Members/Business/Joyeeta_Basu.jpg';
 import Marketing_Member_4 from '../../assests/images/Community/Members/Business/Varun_Shah.jpg';
 import Marketing_Member_5 from '../../assests/images/Community/Members/Business/Anusha_Sarkar.jpg';
 // import Marketing_Member_6 from '../../assests/images/Community/Members/Business/Rishi_Shanbhag.jpg';
-import Marketing_Member_7 from '../../assests/images/Community/Members/Business/Mann_Dutiya.jpg';
 
 
 
@@ -79,7 +76,7 @@ const Team = () => {
           {
             name: 'Mit Mhatre',
             image: Computer_Systems_Member_7,
-            description: 'ROS, IP'
+            description: 'ROS, IP Head'
           },
           {
             name: 'Yash Mahajan',
@@ -122,11 +119,6 @@ const Team = () => {
           },
           {
             name: 'Abhinav Suresh',
-            image: 'https://dummyimage.com/300',
-            description: 'Avionics'
-          },
-          {
-            name: 'Soham Redkar',
             image: 'https://dummyimage.com/300',
             description: 'Avionics'
           },
@@ -191,7 +183,7 @@ const Team = () => {
         {
             name: 'Aayushi Wani',
             image: 'https://dummyimage.com/300',
-            description: 'Creative Executive'
+            description: 'Creative Head'
           },
           {
             name: 'Akshita Shetty',
@@ -233,11 +225,6 @@ const Team = () => {
             image: Business_Member_10,
             description: 'Logistics'
           },
-          {
-            name: 'Vraj Patel',
-            image: 'https://dummyimage.com/300',
-            description: 'Logistics'
-          }
           
         // Add more team members as needed
       ];
@@ -246,7 +233,7 @@ const Team = () => {
         {
           name: 'Minit Shah',
           image: 'https://dummyimage.com/300',
-          description: 'Marketing Executive'
+          description: 'Marketing Head'
         },
         {
           name: 'Shrusti Vora',
@@ -273,11 +260,6 @@ const Team = () => {
           image: 'https://dummyimage.com/300',
           description: 'Marketing and Publicity'
         },
-        {
-          name: 'Mann Dutiya',
-          image: Marketing_Member_7,
-          description: 'Marketing and Publicity'
-        }
       ];
         
 
