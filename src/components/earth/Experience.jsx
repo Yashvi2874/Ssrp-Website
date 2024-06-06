@@ -6,7 +6,7 @@ import { EarthModel } from "./Compressed_earth";
 export const Experience = () => {
     return (
         <>
-            <OrbitControls enableZoom={false} autoRotate={true} autoRotateSpeed={0.6} enableRotate={false}/>
+            <OrbitControls enableZoom={false} autoRotate={true} autoRotateSpeed={0.3} enableRotate={false}/>
             <ambientLight intensity={2}/>
             <EarthModel position = {[0,0,0]}scale={[2.5, 2.5, 2.5]}/>
         </>

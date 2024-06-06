@@ -1,5 +1,5 @@
 .project-heading{
-    font-size: 5vw;
+    font-size: 4vw;
     color: white;
     text-align: center;
     margin-top: 2rem;
@@ -25,7 +25,7 @@
     border-bottom: 5px solid white;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 20vh;
     max-height: fit-content;
     cursor: pointer;
 }
@@ -37,14 +37,14 @@
 }
 
 .project-title{
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: white;
     margin-left: 5vw;
     font-weight: bolder;
 }
 
 .project-author{
-    font-size: 4vw;
+    font-size: 3vw;
     color: white;
     text-align: right;
     margin-right: 5vw;

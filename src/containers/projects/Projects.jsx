@@ -65,7 +65,7 @@ const Project = () => {
             }}
           >
             <div className='popup-content' data-aos="fade-in">
-              <div className='project-title' style={{color:'black', margin:'0', fontSize:'3vw'}}>{project.title}</div>
+              <div className='project-title' style={{color:'black', margin:'0'}}>{project.title}</div>
               <img src={project.image} alt={project.title} className='project-image' />
               <div className='project-link'
               onClick={()=> handleProjectClick(project.id)}>View Project</div>
