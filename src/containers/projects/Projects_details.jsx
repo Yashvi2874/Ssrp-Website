@@ -11,7 +11,7 @@ import Project_9_img from '../../assests/images/project_images/img9.jpg';
 const Projects = [
     {
       id: 1,
-      title: 'Student SAT',
+      title: 'STUDENT SAT',
       author: 'SSRP',
       image: Project_1_img,
       url: '/project/{id}',
