@@ -40,6 +40,7 @@ const Project = () => {
                 <img src={project.image} alt={project.title}/>
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
+                <div className='project-help-user'>Click to Know More!!!</div>
               </div>
             }
             position="center center"
