@@ -10,8 +10,8 @@ import Computer_Systems_Member_5 from '../../assests/images/Community/Members/Co
 import Computer_Systems_Member_6 from '../../assests/images/Community/Members/Comps/Siya_Nair.png';
 import Computer_Systems_Member_7 from '../../assests/images/Community/Members/Comps/Mit_Mhatre.jpg';
 import Computer_Systems_Member_8 from '../../assests/images/Community/Members/Comps/Yash_Mahajan.jpg';
-// import Computer_Systems_Member_10 from '../../assests/images/Community/Members/Comps/Tanil_Sheth.jpg';
-// import Computer_Systems_Member_11 from '../../assests/images/Community/Members/Comps/Aditi_Agarwal.jpg';
+import Computer_Systems_Member_9 from '../../assests/images/Community/Members/Comps/Tanil_Sheth.jpg';
+import Computer_Systems_Member_10 from '../../assests/images/Community/Members/Comps/Aditi_Agrawal.jpg';
 import Electronics_Member_1 from '../../assests/images/Community/Members/Electronics/Lakshya_Aswani.jpg';
 import Electronics_Member_2 from '../../assests/images/Community/Members/Electronics/Aaditya_Chavan.png';
 import Electronics_Member_3 from '../../assests/images/Community/Members/Electronics/Arnav_Vinod.png';
@@ -27,7 +27,7 @@ import Mechanical_Member_4 from '../../assests/images/Community/Members/Mechanic
 import Mechanical_Member_5 from '../../assests/images/Community/Members/Mechanical/Debarpan_Dasgupta.png';
 import Mechanical_Member_6 from '../../assests/images/Community/Members/Mechanical/Rabiya_Darvesh.jpg';
 import Business_Member_1 from '../../assests/images/Community/Members/Business/Vidita_Hassani.jpg';
-// import Business_Member_2 from '../../assests/images/Community/Members/Business/Aayushi_Wani.jpg';
+import Business_Member_2 from '../../assests/images/Community/Members/Business/Aayushi_Wani.jpg';
 import Business_Member_3 from '../../assests/images/Community/Members/Business/Akshita_Shetty.jpg';
 import Business_Member_4 from '../../assests/images/Community/Members/Business/Vruddhi_Mule.jpg';
 // import Business_Member_5 from '../../assests/images/Community/Members/Business/Sameer_Morya.jpg';
@@ -85,12 +85,12 @@ const Team = () => {
           },
           {
             name: 'Tanil Sheth',
-            image: 'https://dummyimage.com/300',
+            image: Computer_Systems_Member_9,
             description: 'ROS, IP'
           },
           {
-            name: 'Aditi Agarwal',
-            image: 'https://dummyimage.com/300',
+            name: 'Aditi Agrawal',
+            image: Computer_Systems_Member_10,
             description: 'ROS, IP'
           }
         // Add more team members as needed
@@ -182,7 +182,7 @@ const Team = () => {
         },
         {
             name: 'Aayushi Wani',
-            image: 'https://dummyimage.com/300',
+            image: Business_Member_2,
             description: 'Creative Head'
           },
           {
