@@ -14,12 +14,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
 function App() {
-  const [isAbsolute, setIsAbsolute] = useState(false);
+  //const [isAbsolute, setIsAbsolute] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const toggleAbsolute = () => {
-    setIsAbsolute(!isAbsolute);
-  };
+  //const toggleAbsolute = () => {
+    //setIsAbsolute(!isAbsolute);
+  //};
 
   useEffect(()=>{
     AOS.init({duration:"2000"});
@@ -68,6 +68,21 @@ function App() {
               <div className="relative">
                 <NavBar/>
                 <Team />
+                <Footer />
+              </div>
+            </div>
+          </div>} />
+
+          <Route path="/events" element={
+        
+        <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar/>
+                <div style={{color: 'white', display:'block', height:'83vh', fontSize:'4rem', width:'100vw',  textAlign:'center', alignContent:'center'}}> Events Page Launching Soon</div>
                 <Footer />
               </div>
             </div>
