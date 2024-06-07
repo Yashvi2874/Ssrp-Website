@@ -40,7 +40,7 @@ const Project = () => {
                 <img src={project.image} alt={project.title}/>
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
-                <div className='project-help-user'>Click to Know More!!!</div>
+                <div className='project-help-user'>Click to Know More</div>
               </div>
             }
             position="center center"
@@ -69,7 +69,7 @@ const Project = () => {
               <div className='project-title' style={{color:'black', margin:'0'}}>{project.title}</div>
               <img src={project.image} alt={project.title} className='project-image' />
               <div className='project-link'
-              onClick={()=> handleProjectClick(project.id)}>View Project</div>
+              onClick={()=> handleProjectClick(project.id)}>View More</div>
             </div>
           </Popup>
         ))}

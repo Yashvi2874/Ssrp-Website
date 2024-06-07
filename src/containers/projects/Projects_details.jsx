@@ -4,9 +4,6 @@ import Project_3_img from '../../assests/images/project_images/img3.jpg';
 import Project_4_img from '../../assests/images/project_images/img4.jpg';
 import Project_5_img from '../../assests/images/project_images/img5.jpg';
 import Project_6_img from '../../assests/images/project_images/img6.jpg';
-import Project_7_img from '../../assests/images/project_images/img7.jpeg';
-import Project_8_img from '../../assests/images/project_images/img8.jpg';
-import Project_9_img from '../../assests/images/project_images/img9.jpg';
 
 const Projects = [
     {
@@ -68,36 +65,6 @@ const Projects = [
       description: 'Experiment involves a meteorological balloon ascending to 50 km above sea level. Equipped with a UV sensor, it measures UV levels across regions to assess ozone levels.',
       objective: 'To gather ozone level data, attach a camera for topographic views, and establish ground station communication.',
       outcomes: "Explores satellite propulsion methods while collecting data in Earth's atmosphere."
-    },
-    {
-      id:7,
-      title: 'ALL SKY CAMERA',
-      author: 'SSRP',
-      image: Project_7_img,
-      url: '/project/{id}',
-      description: 'The All Sky camera is an apparatus which will be assembled by SSRP and will provide a 360 view of the night sky.',
-      objective: 'To take a video record of the night sky which will allow us to record the different positions of the celestial bodies and how they differ each night.',
-      outcomes: 'Study pictures to analyze irregularities in orbit, advancing understanding of celestial body influence on space.'
-    },
-    {
-      id:8,
-      title: 'TELESCOPE',
-      author: 'SSRP',
-      image: Project_8_img,
-      url: '/project/{id}',
-      description: 'Stargazing, fundamental to any astronomy club, promotes astronomy among amateurs and enthusiasts. A high-quality telescope enhances this experience.',
-      objective: 'To study various astronomical bodies, including rare cosmic phenomena and potentially discover new ones and drive advancements in astronomy and spark curiosity about the cosmos.',
-      outcomes: 'Advance knowledge in astronomy, astrophysics, and cosmology, foster interest in astronomy and space science and promote astrophotography, imaging, data analysis, and optics, enabling hands-on engagement with astronomy.'
-    },
-    {
-      id:9,
-      title: 'FESTIVAL',
-      author: 'SSRP',
-      image: Project_9_img,
-      url: '/project/{id}',
-      description: 'The festival serves to showcase our project, promote astronomy to a broad audience including amateurs and enthusiasts on an inter-collegiate level, expand our community and research opportunities, and raise awareness.',
-      objective: 'To Instill curiosity about the cosmos in young minds, generate interest and establish contacts and engage potential sponsors and raise funds.',
-      outcomes: 'Impart knowledge about astronomy, learning experience for the project and sponsor recognition for continued operations, awareness spreading, and accelerated research.'
     },
     // Add more projects as needed
   ];
