@@ -20,7 +20,7 @@
 .project-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 5px solid white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.477);
     justify-content: center;
     align-items: center;
     height: 20vh;
@@ -43,7 +43,7 @@
 }
 
 .project-author{
-    font-size: 3vw;
+    font-size: 1.5rem;
     color: white;
     text-align: right;
     margin-right: 5vw;
@@ -117,6 +117,7 @@
 
     .project-title, .project-author{
         margin: 0;
+        margin-bottom: 2rem;
         animation: fade-in 0.5s ease-in-out forwards;
     }
     .project-author{
@@ -125,7 +126,6 @@
     }
 
     .project-help-user{
-      display: block;
       font-size: 1rem;
       color: white;
       text-align: center;
@@ -134,7 +134,7 @@
 
     .project-title{
         margin-top: 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .popup-content:hover, .popup-content, #popup-root{
         display: none;
@@ -142,6 +142,22 @@
 
     .project-container{
       padding-bottom: 0;
+    }
+    .custom-cursor {
+      width: 48px; /* Diameter of the circle */
+      height: 48px; /* Diameter of the circle */
+      border-radius: 50%;
+      background-color: black; /* Change this to any color you want */
+      position: absolute;
+      pointer-events: none; /* Prevents the cursor div from interfering with hover */
+      transform: translate(-50%, -50%);
+      transition: background-color 0.3s ease, transform 0.1s ease;
+      z-index: 10000; /* Ensure the cursor is on top */
+    }
+    
+    /* Hide the default cursor when hovering over .popup-content */
+    .popup-content:hover {
+      cursor: none;
     }
   }
   

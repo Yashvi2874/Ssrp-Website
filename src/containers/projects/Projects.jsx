@@ -23,6 +23,8 @@ const Project = () => {
 
   },[]);
 
+  
+
   return (
     <div className='project-container'>
       <h1 className='project-heading'>Projects</h1>
@@ -40,7 +42,6 @@ const Project = () => {
                 <img src={project.image} alt={project.title}/>
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
-                <div className='project-help-user'>Click to Know More</div>
               </div>
             }
             position="center center"
@@ -61,7 +62,6 @@ const Project = () => {
               transform: 'translate(-50%, -50%, -50%)',
               transition: 'top 0.2s ease-out, left 0.2s ease-out',
               pointerEvents: 'none',
-              animation: 'fadein 1s',
               
             }}
           >
