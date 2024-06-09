@@ -29,7 +29,7 @@
 }
 
 .project-content:hover{
-    background-color: #fff;
+    background-color: #272525;
     transition: 0.5s;
     border-bottom: 5px solid #7d7979a2;
 }
@@ -50,6 +50,7 @@
 }
 
 .popup-content {
+    text-align: center;
     padding: 10px;
     background-color: #fff;
     border-radius: 0px;
@@ -68,7 +69,6 @@
   }
 
   .project-link{
-    align-items: center;
     text-decoration: none;
     border: none;
     color: rgb(11, 10, 10);
