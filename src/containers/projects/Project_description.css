@@ -17,7 +17,6 @@
 .details-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
     align-items: center;
     height: 100%;
     max-height: fit-content;
@@ -32,6 +31,7 @@
 
 
 .details-title, .details-section-heading{
+    align-items: center;
     font-size: 4vw;
     color: white;
     font-weight: bolder;
@@ -65,15 +65,15 @@
     text-decoration: underline;
     font-weight: bolder;
     cursor: pointer;
-    color: blue;
+    color: rgb(244, 246, 247);
   }
 
   .details-content img{
     display: block;
-    width: 48vw;
-    height: auto;
+    width: 36vw;
+    height: 36vw;
     animation: fade-in 0.5s ease-in-out forwards;
-    margin: 2rem;
+    margin: 6rem;
   }
   
   
