@@ -68,10 +68,20 @@
 
   .project-link{
     text-decoration: none;
-    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 5vw;
+    width: 5vw;
+    background-color: aqua;
     color: black;
     max-width: 20vw;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
 
   .project-link:hover{
@@ -85,14 +95,6 @@
     display: none;
   }
 
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   @media screen and (max-width: 1024px){
     .project-heading{
@@ -140,17 +142,6 @@
 
     .project-container{
       padding-bottom: 0;
-    }
-    .custom-cursor {
-      width: 48px; /* Diameter of the circle */
-      height: 48px; /* Diameter of the circle */
-      border-radius: 50%;
-      background-color: black; /* Change this to any color you want */
-      position: absolute;
-      pointer-events: none; /* Prevents the cursor div from interfering with hover */
-      transform: translate(-50%, -50%);
-      transition: background-color 0.3s ease, transform 0.1s ease;
-      z-index: 10000; /* Ensure the cursor is on top */
     }
     
     /* Hide the default cursor when hovering over .popup-content */
