@@ -132,7 +132,6 @@ const ProjectDescription = () => {
           <div className='details-section-heading'>Outcomes</div>
           <div className='details-outcomes text'>{project.outcomes}</div>
         </div>
-        <a href={'/project'} className='details-link'>Go Back to Projects Page</a>
       </div>
     </div>
   );
