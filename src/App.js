@@ -11,6 +11,7 @@ import Footer from './containers/footer/Footer';
 import Team from './containers/team/Team';
 import StarBackground from './components/background/Background';
 import NotFound from './components/Not found page/NotFound';
+import TeamNew from './containers/team_new/TeamNew';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
@@ -162,6 +163,20 @@ function App() {
               <div className="relative">
                 <NavBar />
                 <iframe src='/projectnew.html' title="testpage" style={{width:'100%', height:'120vh'}} />
+                <Footer />
+              </div>
+            </div>
+          </div>
+        } />
+        <Route path="/teamNew" element={
+          <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar />
+                <TeamNew />
                 <Footer />
               </div>
             </div>
