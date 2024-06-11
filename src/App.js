@@ -67,7 +67,6 @@ function App() {
             </div>
             <div className="absolute">
               <div className="relative">
-                <NavBar/>
                 <Team />
                 <Footer />
               </div>

@@ -8,7 +8,7 @@ const StarBackground = ({ children }) => {
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 800);
     cameraRef.current = camera;
 
     const renderer = new THREE.WebGLRenderer();
@@ -24,7 +24,7 @@ const StarBackground = ({ children }) => {
     });
 
     const positions = [];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 800; i++) {
       const x = THREE.MathUtils.randFloatSpread(2000);
       const y = THREE.MathUtils.randFloatSpread(2000);
       const z = THREE.MathUtils.randFloatSpread(2000);
