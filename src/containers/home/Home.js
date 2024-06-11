@@ -74,12 +74,12 @@ function Home() {
         
       <div className='row justify-content-end m-3 par'>
           <div className='col-lg-10 col-md-8 col-sm-10 row-sm-3'>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='astro-block image img-fluid position-relative' style={{width : '100vw', height : '90vh'}}>Loading...</div>}>
             <Canvas className='image img-fluid position-relative astro-block' style={{width : '100vw', height : '90vh'}}>
               <Astronaut />
             </Canvas>
             </Suspense>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'6vh', right:'-43vw'}}>Loading...</div>}>
               <Canvas
                   className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'6vh', right:'-43vw'}}>
                     <Experience />

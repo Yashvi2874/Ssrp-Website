@@ -20,7 +20,7 @@
 .project-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 5px solid white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.477);
     justify-content: center;
     align-items: center;
     height: 20vh;
@@ -29,12 +29,13 @@
 }
 
 .project-content:hover{
-    background-color: #2e2c2c;
+    background-color: #272525;
     transition: 0.5s;
     border-bottom: 5px solid #7d7979a2;
 }
 
 .project-title{
+  align-items: center;
     font-size: 2.5vw;
     color: white;
     margin-left: 5vw;
@@ -42,16 +43,17 @@
 }
 
 .project-author{
-    font-size: 3vw;
+    font-size: 1.5rem;
     color: white;
     text-align: right;
     margin-right: 5vw;
 }
 
 .popup-content {
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 0px;
   }
   
   .popup-content .project-title {
@@ -61,38 +63,40 @@
   
   .popup-content img {
     margin: 0;
-    width: 100%;
-    max-width: 20vw;
-    height: auto;
+    width: 70%;
+    max-width: 35vw;
+    height: 70%;
   }
 
   .project-link{
     text-decoration: none;
-    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 5vw;
+    width: 5vw;
+    background-color: aqua;
     color: black;
     max-width: 20vw;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
 
   .project-link:hover{
     text-decoration: underline;
     font-weight: bolder;
     cursor: pointer;
-    color: blue;
+    color: rgb(10, 11, 11);
   }
 
   .project-content img, .project-help-user{
     display: none;
   }
 
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   @media screen and (max-width: 1024px){
     .project-heading{
@@ -115,6 +119,7 @@
 
     .project-title, .project-author{
         margin: 0;
+        margin-bottom: 2rem;
         animation: fade-in 0.5s ease-in-out forwards;
     }
     .project-author{
@@ -123,7 +128,6 @@
     }
 
     .project-help-user{
-      display: block;
       font-size: 1rem;
       color: white;
       text-align: center;
@@ -132,7 +136,7 @@
 
     .project-title{
         margin-top: 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .popup-content:hover, .popup-content, #popup-root{
         display: none;
@@ -140,6 +144,11 @@
 
     .project-container{
       padding-bottom: 0;
+    }
+    
+    /* Hide the default cursor when hovering over .popup-content */
+    .popup-content:hover {
+      cursor: none;
     }
   }
   

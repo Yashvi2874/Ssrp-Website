@@ -43,7 +43,7 @@ function App({ toggleAbsolute }) {
                   <a className="nav-link active" aria-current="page" href="/community">Community</a>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target">
-                  <a className="nav-link active" aria-current="page" href="#">Events</a>
+                  <a className="nav-link active" aria-current="page" href="/events">Events</a>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target">
                   <a className="nav-link active" aria-current="page" href="/contact">Contact US</a>
