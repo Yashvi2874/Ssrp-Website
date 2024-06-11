@@ -52,7 +52,7 @@ function App({ toggleAbsolute }) {
             </div>
           </div>
         </nav>
-        
+
         {/* <style>
           {`
             .main2 {
