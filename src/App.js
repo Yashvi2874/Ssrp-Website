@@ -15,6 +15,7 @@ import TeamNew from './containers/team_new/TeamNew';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
+
 function App() {
   //const [isAbsolute, setIsAbsolute] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -35,14 +36,18 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  
+
   if (loading) {
     return <Loading />;
   }
   return (
     <BrowserRouter>
+    
       <Routes>
         <Route path="/" element={
           <div className="App">
+
             <div className="stars">
               <StarBackground />
             </div>
