@@ -60,7 +60,7 @@ function App() {
         } />
       
         
-        <Route path="/community" element={
+      <Route path="/community" element={
         
         <div className="App">
             <div className="stars">
@@ -74,37 +74,7 @@ function App() {
             </div>
           </div>} />
 
-          <Route path="/events" element={
-        
-        <div className="App">
-            <div className="stars">
-              <StarBackground />
-            </div>
-            <div className="absolute">
-              <div className="relative">
-                <NavBar/>
-                <div style={{color: 'white', display:'block', height:'83vh', fontSize:'4rem', width:'100vw',  textAlign:'center', alignContent:'center'}}> Events Page Launching Soon</div>
-                <Footer />
-              </div>
-            </div>
-          </div>} />
-
-          <Route path="/project" element={
-        
-        <div className="App">
-            <div className="stars">
-              <StarBackground />
-            </div>
-            <div className="absolute">
-              <div className="relative">
-                <NavBar/>
-                <Project />
-                <Footer />
-              </div>
-            </div>
-          </div>} />
-
-          <Route path="/projects" element={
+      <Route path="/project" element={
         
         <div className="App">
             <div className="stars">
@@ -148,12 +118,8 @@ function App() {
             </div>
           </div>
         } />
-<<<<<<< HEAD
 
-<Route path="/testevent" element={
-=======
-        <Route path="/testpage" element={
->>>>>>> 8950f80796391847b51c021963bcf15e16421dc7
+<Route path="/events" element={
           <div className="App">
             <div className="stars">
               <StarBackground />
@@ -161,33 +127,13 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar />
-<<<<<<< HEAD
                 <Event />
-=======
-                <iframe src='/projectnew.html' title="testpage" style={{width:'100%', height:'120vh'}} />
->>>>>>> 8950f80796391847b51c021963bcf15e16421dc7
                 <Footer />
               </div>
             </div>
           </div>
         } />
-<<<<<<< HEAD
-=======
-        <Route path="*" element={
-          <div className="App">
-          <div className="stars">
-            <StarBackground />
-          </div>
-          <div className="absolute">
-            <div className="relative">
-              <NavBar />
-              <NotFound />
-              <Footer />
-            </div>
-          </div>
-        </div>
-        } />
->>>>>>> 8950f80796391847b51c021963bcf15e16421dc7
+
       </Routes>
     </BrowserRouter>
           );

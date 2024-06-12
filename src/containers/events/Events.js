@@ -1,18 +1,17 @@
 import React from 'react';
-import img1 from '../../assests/images/project_images/img5.jpg';
 import './Events.css'
 import './page.module.scss'
 import styles from './page.module.scss'
 import gsap from 'gsap';
 import { useRef } from 'react';
-import i1 from '../../assests/images/project_images/img1.jpg'
+import i1 from '../../assests/images/project_images/img1.png'
 import i2 from '../../assests/images/project_images/img2.jpg'
-import i3 from '../../assests/images/project_images/img3.jpg'
-import i4 from '../../assests/images/project_images/img4.jpg'
-import i5 from '../../assests/images/project_images/img5.jpg'
+import i3 from '../../assests/images/project_images/img3.png'
+import i4 from '../../assests/images/project_images/img4.png'
+import i5 from '../../assests/images/project_images/img5.avif'
 import i6 from '../../assests/images/project_images/img6.jpg'
-import i8 from '../../assests/images/project_images/img8.jpg'
-import i9 from '../../assests/images/project_images/img9.jpg' 
+import i8 from '../../assests/images/project_images/img01.png'
+import i9 from '../../assests/images/project_images/img4.png' 
 
 export{
     i1,
