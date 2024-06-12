@@ -13,6 +13,7 @@ import StarBackground from './components/background/Background';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
+import Event from './containers/events/Events';
 function App() {
   const [isAbsolute, setIsAbsolute] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -127,6 +128,21 @@ function App() {
               <div className="relative">
                 <NavBar />
                 <Contact />
+                <Footer />
+              </div>
+            </div>
+          </div>
+        } />
+
+<Route path="/testevent" element={
+          <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar />
+                <Event />
                 <Footer />
               </div>
             </div>
