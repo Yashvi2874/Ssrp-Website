@@ -1,8 +1,8 @@
-import Project_1_img from '../../assests/images/project_images/img1.jpg';
+import Project_1_img from '../../assests/images/project_images/img1.png';
 import Project_2_img from '../../assests/images/project_images/img2.jpg';
-import Project_3_img from '../../assests/images/project_images/img3.jpg';
-import Project_4_img from '../../assests/images/project_images/img4.jpg';
-import Project_5_img from '../../assests/images/project_images/img5.jpg';
+import Project_3_img from '../../assests/images/project_images/img3.png';
+import Project_4_img from '../../assests/images/project_images/img4.png';
+import Project_5_img from '../../assests/images/project_images/img5.avif';
 import Project_6_img from '../../assests/images/project_images/img6.jpg';
 
 const Projects = [

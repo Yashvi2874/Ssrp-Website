@@ -1,8 +1,11 @@
 import React from 'react';
-import './Team.css'; 
+import './Team.css';
+import Navbar from '../navbar/Navbar.js'; 
+import group_img from '../../assests/images/Community/Team.jpg';
 import Founder_image from '../../assests/images/Community/Head/Rishikesh_Bhintade.jpg';
 import Associate_Head_image from '../../assests/images/Community/Head/Riaan_jain.jpg';
 import Operations_Head_image from '../../assests/images/Community/Head/Tanisha_Mukherjee.jpg';
+import Associate_Operations_image from '../../assests/images/Community/Head/Aniket_Iyer.jpg';
 import Computer_Systems_Member_1 from '../../assests/images/Community/Members/Comps/Yashvi_Gupta.jpg';
 import Computer_Systems_Member_2 from '../../assests/images/Community/Members/Comps/Om_Thanage.jpeg';
 import Computer_Systems_Member_3 from '../../assests/images/Community/Members/Comps/Piyush_Chaudhary.jpg';
@@ -33,7 +36,6 @@ import Business_Member_4 from '../../assests/images/Community/Members/Business/V
 // import Business_Member_5 from '../../assests/images/Community/Members/Business/Sameer_Morya.jpg';
 import Business_Member_6 from '../../assests/images/Community/Members/Business/Charu_Malp.jpg';
 import Business_Member_7 from '../../assests/images/Community/Members/Business/Likhita_Reddy.jpg';
-import Business_Member_8 from '../../assests/images/Community/Members/Business/Aniket_Iyer.jpg';
 // import Business_Member_9 from '../../assests/images/Community/Members/Business/Aditi_Gupta.jpg';
 import Business_Member_10 from '../../assests/images/Community/Members/Business/Tarini_Bambolkar.jpeg';
 // import Marketing_Member_1 from '../../assests/images/Community/Members/Business/Minit_Shah.jpg';
@@ -210,11 +212,7 @@ const Team = () => {
             image : Business_Member_7,
             description : 'Creative'
           },
-          {
-            name: 'Aniket Iyer',
-            image: Business_Member_8,
-            description: 'Logistics Head'
-          },
+
           {
             name: 'Aditi Gupta',
             image: 'https://dummyimage.com/300',
@@ -266,11 +264,24 @@ const Team = () => {
 
   return (
     
+    
     <div className='Team_Page'>
       
     <div className='Team'>
         <section className='Team_section'>
-        <h1 className='Team-title'>Our Community</h1>
+        
+        <div className='team-container'>
+          
+            <img src={group_img}  className='team-image' alt='XYZ'/>
+            <div className='team-overlay'>
+            <div className='navbar'><Navbar/></div>
+            <h1 className='team-heading'>Our Team</h1>
+            <description className='team-description'>With the strength of 30+ students we focus on developing and launching a satellite, the KJSCE StudentSAT, while also combining research projects on space exploration with participation in competitions like Spaceport America, International Rover Challenge and CANSAT.</description>
+            <description className='team-description'>Meet the Team</description>
+            <div className='arrow-down'> ↓ </div>
+        </div>
+        </div>
+        <h1 className='Team-department'>Projects Leads</h1>
         <div className='Team-head'>
         <div className="flip-box">
           <div className="flip-box-inner">
@@ -305,8 +316,19 @@ const Team = () => {
             </div>
           </div>
         </div>
+        <div className="flip-box">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Associate_Operations_image} alt="Rishikesh Bhintade" />
+            </div>
+            <div className="flip-box-back">
+              <h2>Aniket Iyer</h2>
+              <p>Associate Operations Director</p>
+            </div>
+          </div>
         </div>
-        <h1 className='Team-department'>Computer Systems</h1>
+        </div>
+       <h1 className='Team-department'>Computer Systems</h1>
         <div className="marquee marquee--hover-pause">
             <ul className="marquee__content">
             {Comps.map((member, index) => (

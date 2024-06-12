@@ -23,6 +23,8 @@ const Project = () => {
 
   },[]);
 
+  
+
   return (
     <div className='project-container'>
       <h1 className='project-heading'>Projects</h1>
@@ -40,7 +42,6 @@ const Project = () => {
                 <img src={project.image} alt={project.title}/>
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
-                <div className='project-help-user'>Click to Know More</div>
               </div>
             }
             position="center center"
@@ -60,8 +61,7 @@ const Project = () => {
               left: `${cursorPosition.x}px`,
               transform: 'translate(-50%, -50%, -50%)',
               transition: 'top 0.2s ease-out, left 0.2s ease-out',
-              pointerEvents: 'none',
-              animation: 'fadein 1s',
+              pointerEvents: 'true',
               
             }}
           >
@@ -69,7 +69,7 @@ const Project = () => {
               <div className='project-title' style={{color:'black', margin:'0'}}>{project.title}</div>
               <img src={project.image} alt={project.title} className='project-image' />
               <div className='project-link'
-              onClick={()=> handleProjectClick(project.id)}>View More</div>
+              onClick={()=> handleProjectClick(project.id)}>View</div>
             </div>
           </Popup>
         ))}
