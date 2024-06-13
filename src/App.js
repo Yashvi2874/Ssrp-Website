@@ -15,6 +15,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
 
+import Event from './containers/events/Events';
+
 function App() {
   //const [isAbsolute, setIsAbsolute] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -60,7 +62,7 @@ function App() {
         } />
       
         
-        <Route path="/community" element={
+      <Route path="/community" element={
         
         <div className="App">
             <div className="stars">
@@ -105,6 +107,7 @@ function App() {
           </div>} />
 
           <Route path="/projects" element={
+
         
         <div className="App">
             <div className="stars">
@@ -148,7 +151,8 @@ function App() {
             </div>
           </div>
         } />
-        <Route path="/testpage" element={
+
+<Route path="/events" element={
           <div className="App">
             <div className="stars">
               <StarBackground />
@@ -156,26 +160,13 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar />
-                <iframe src='/projectnew.html' title="testpage" style={{width:'100%', height:'120vh'}} />
+                <Event />
                 <Footer />
               </div>
             </div>
           </div>
         } />
-        <Route path="*" element={
-          <div className="App">
-          <div className="stars">
-            <StarBackground />
-          </div>
-          <div className="absolute">
-            <div className="relative">
-              <NavBar />
-              <NotFound />
-              <Footer />
-            </div>
-          </div>
-        </div>
-        } />
+
       </Routes>
     </BrowserRouter>
           );
