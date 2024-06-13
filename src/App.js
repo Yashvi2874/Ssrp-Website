@@ -85,7 +85,7 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar/>
-                <div style={{color: 'white', display:'block', height:'83vh', fontSize:'4rem', width:'100vw',  textAlign:'center', alignContent:'center'}}> Events Page Launching Soon</div>
+                <Event />
                 <Footer />
               </div>
             </div>
@@ -152,20 +152,8 @@ function App() {
           </div>
         } />
 
-<Route path="/events" element={
-          <div className="App">
-            <div className="stars">
-              <StarBackground />
-            </div>
-            <div className="absolute">
-              <div className="relative">
-                <NavBar />
-                <Event />
-                <Footer />
-              </div>
-            </div>
-          </div>
-        } />
+
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
     </BrowserRouter>
