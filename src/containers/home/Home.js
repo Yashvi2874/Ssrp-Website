@@ -1,67 +1,18 @@
-import React, {Suspense,useEffect, useState } from 'react';
+import React, {Suspense} from 'react';
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
 import { Experience } from '../../components/earth/Experience';
 //const Astronaut = React.lazy(()=> import("./Astronaut"));
 import Astronaut  from '../../components/astronaut/Astronaut';
-import {motion} from 'framer-motion';
-import { TbBrandFramerMotion } from 'react-icons/tb';
 
 function Home() {
-
-  //cursor part
-  const[mousePosition , setMousePosition]=useState({
-    x:0,
-    y:0
-  })
-  const[cursorVariant,setCursorVariant]=useState("default");
-
-  useEffect(() =>{
-    const mouseMove =e => {
-       setMousePosition({
-        x:e.clientX,
-        y:e.clientY
-       })
-    }
-
-    window.addEventListener("mousemove",mouseMove);
-
-    return () =>{ 
-      window.removeEventListener("mousemove",mouseMove);
-    }
-  }, []);
-
-  const variants={
-    default:{
-      x:mousePosition.x-15,
-      y: mousePosition.y-15
-    },
-    text: {
-      height :70,
-      width :70,
-      x:mousePosition.x-35,
-      y: mousePosition.y-35,
-      backgroundColor: "white",
-      mixBlendMode:"difference"
-    }
-  }
-
-  const textEnter =() => setCursorVariant("text");
-  const textLeave =() => setCursorVariant("default")
-  //end
-
   return (
     <div className='Home' id='home'>
-      <motion.div className="cursor"
-              variants={variants}
-              animate={cursorVariant}
-      />
-      
     <div className='text-center text-white m-4'>
       
       <div className='main1'>
       <div className='column justify-content-center ssrp-absolute'>
-      <div onMouseEnter={textEnter} onMouseLeave={textLeave} className='title'>SSRP</div>
+      <div className='title'>SSRP</div>
       <div className='typeit-text' id='small-type'>Somaiya Space Research Project</div>
       <section className='Slogan'>Launching dreams into orbits</section>
       </div>

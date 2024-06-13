@@ -1,11 +1,3 @@
-*{
-  cursor: none
-}
-
-.Home{
-  display: flex;
-}
-
 @media screen and (min-width: 768px) {
     .ssrp-absolute {
 
@@ -34,8 +26,11 @@
 
   .main1{
     animation: fade-up 8s;
-    animation: glow 4s ease-in-out infinite;
+    
+
   }
+  
+
 
 @keyframes fade-up{
   0%{
@@ -48,14 +43,6 @@
     transform: translateY(0px) scale(1);
   }
 }
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 7px #e5d633;
-    }
-    to {
-      text-shadow: 0 0 7px #e5d633, 0 0 7px #e5d633;
-    }
-  }
   .title {
     font-family: 'Nulshock bd' !important;
     text-align: left;
@@ -64,7 +51,7 @@
     font-style: normal;
     font-size: 6vw;
     font-weight: 500;
-
+    
   }
 
   .Slogan{
@@ -167,16 +154,4 @@
   .target:hover:after { 
     width: 100%; 
     left: 0; 
-  }
-  
-  .cursor{
-    background-color : white ;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    pointer-events: none;
   }
