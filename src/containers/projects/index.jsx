@@ -1,11 +1,10 @@
-import styles from './style.module.scss'
+import styles from './ostyle.module.scss'
 import { useState, useEffect, useRef } from 'react';
 import Project from './components/project';
 import {  motion } from 'framer-motion';
 import gsap from 'gsap';
 import { Img } from 'react-image';
 import '../oldprojects/Projects.css';
-import { useNavigate } from 'react-router-dom';
 
 
 
@@ -127,10 +126,6 @@ export default function Home() {
     moveItems(x, y)
     setModal({active, index})
   }
-  const navigate = useNavigate();
-  const handleProjectClick = (id) => {
-    navigate(`/project/${id}`);
-  };
 
   return (
   <div className="project-container">
@@ -139,7 +134,7 @@ export default function Home() {
     <div className={styles.body}>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} author={project.author} manageModal={manageModal} key={index}/>
+          return <Project index={index} title={project.title} author={project.author} manageModal={manageModal} image={project.src} key={index}/>
         })
       }
     </div>
