@@ -4,8 +4,8 @@ import React, { useState, useEffect} from 'react';
 import Home from './containers/home/Home';
 import NavBar from './containers/navbar/Navbar';
 import About from './containers/about/About';
-import Project from './containers/projects/Projects';
-import ProjectDescription from './containers/projects/Project_description';
+import Projects from './containers/projects/index';
+import ProjectDescription from './containers/oldprojects/Project_description';
 import Contact from './containers/contact_us/Contact';
 import Footer from './containers/footer/Footer';
 import Team from './containers/team/Team';
@@ -14,7 +14,9 @@ import NotFound from './components/Not found page/NotFound';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
+
 import Event from './containers/events/Events';
+
 function App() {
   //const [isAbsolute, setIsAbsolute] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -74,7 +76,7 @@ function App() {
             </div>
           </div>} />
 
-      <Route path="/project" element={
+          <Route path="/events" element={
         
         <div className="App">
             <div className="stars">
@@ -83,7 +85,38 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar/>
-                <Project />
+                <div style={{color: 'white', display:'block', height:'83vh', fontSize:'4rem', width:'100vw',  textAlign:'center', alignContent:'center'}}> Events Page Launching Soon</div>
+                <Footer />
+              </div>
+            </div>
+          </div>} />
+
+          <Route path="/project" element={
+        
+        <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar/>
+                <Projects />
+                <Footer />
+              </div>
+            </div>
+          </div>} />
+
+          <Route path="/projects" element={
+
+        
+        <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <NavBar/>
+                <Projects />
                 <Footer />
               </div>
             </div>
