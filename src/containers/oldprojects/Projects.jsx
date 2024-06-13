@@ -30,48 +30,47 @@ const Project = () => {
       <h1 className='project-heading'>Projects</h1>
       <section className='projects'>
         {Projects.map((project) => (
-          <Popup
+          <div
             key={project.id}
             trigger={
               <div
                 className='project-content'
-                onMouseMove={handleMouseMove}
-                onClick={() => handleProjectClick(project.id)}
+                // onMouseMove={handleMouseMove}
+                // onClick={() => handleProjectClick(project.id)}
                 data-aos="fade-up"
               >
                 <img src={project.image} alt={project.title}/>
                 <div className='project-title'>{project.title}</div>
                 <div className='project-author'>{project.author}</div>
               </div>
-            }
-            position="center center"
-            on="hover"
-            closeOnDocumentClick
-            mouseEnterDelay={100}
-            mouseLeaveDelay={100}
-            arrow={false}
-            contentStyle={{
-              display: 'flex',
-              flexDirection: 'column',
-              maxHeight: 'auto',
-              maxWidth: '28vw',
-              textAlign: 'center',
-              position: 'fixed',
-              top: `${cursorPosition.y}px`,
-              left: `${cursorPosition.x}px`,
-              transform: 'translate(-50%, -50%, -50%)',
-              transition: 'top 0.2s ease-out, left 0.2s ease-out',
-              pointerEvents: 'true',
+            }></div>
+          //   position="center center"
+          //   on="hover"
+          //   closeOnDocumentClick
+          //   mouseEnterDelay={100}
+          //   mouseLeaveDelay={100}
+          //   arrow={false}
+          //   contentStyle={{
+          //     display: 'flex',
+          //     flexDirection: 'column',
+          //     maxHeight: 'auto',
+          //     maxWidth: '28vw',
+          //     textAlign: 'center',
+          //     position: 'fixed',
+          //     top: `${cursorPosition.y}px`,
+          //     left: `${cursorPosition.x}px`,
+          //     transform: 'translate(-50%, -50%, -50%)',
+          //     transition: 'top 0.2s ease-out, left 0.2s ease-out',
+          //     pointerEvents: 'true',
               
-            }}
-          >
-            <div className='popup-content' data-aos="fade-in">
-              <div className='project-title' style={{color:'black', margin:'0'}}>{project.title}</div>
-              <img src={project.image} alt={project.title} className='project-image' />
-              <div className='project-link'
-              onClick={()=> handleProjectClick(project.id)}>View</div>
-            </div>
-          </Popup>
+          //   }}
+          // >
+          //   <div className='popup-content' data-aos="fade-in">
+          //     <div className='project-title' style={{color:'black', margin:'0'}}>{project.title}</div>
+          //     <img src={project.image} alt={project.title} className='project-image' />
+          //     <div className='project-link'
+          //     onClick={()=> handleProjectClick(project.id)}>View</div>
+          //   </div>
         ))}
       </section>
     </div>

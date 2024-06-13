@@ -14,18 +14,7 @@ import i8 from '../../assests/images/project_images/img01.png'
 import i9 from '../../assests/images/project_images/img4.png' 
 import i10 from '../../assests/images/events_images/Image_10.jpg'
 
-export{
-    i1,
-    i2,
-    i3,
-    i4,
-    i5,
-    i6,
-    i8,
-    i9,
-    i10
-
-}
+export{    i1,    i2,    i3,    i4,    i5,    i6,    i8,    i9,    i10}
 
 
 function Event() {
@@ -92,7 +81,7 @@ function Event() {
   
       
   
-      if(xForce != 0 || yForce != 0){
+      if(xForce !== 0 || yForce !== 0){
   
         requestAnimationFrame(animate);
   
@@ -122,7 +111,7 @@ function Event() {
 
             src={i10}
 
-            //alt='image'
+            alt='eventone'
 
             width={150}
 
@@ -132,7 +121,7 @@ function Event() {
 
             src={i2}
 
-            //alt='image'
+            alt='eventtwo'
 
             width={300}
 
@@ -142,7 +131,7 @@ function Event() {
 
             src={i2}
 
-            //alt='image'
+            alt='eventthree'
 
             width={225}
 
@@ -159,7 +148,7 @@ function Event() {
 
             src={i2}
 
-           // alt='image'
+           alt='eventfour'
 
             width={250}
 
@@ -169,7 +158,7 @@ function Event() {
 
             src={i6}
 
-            //alt='image'
+            alt='eventfive'
 
             width={200}
 
@@ -179,7 +168,7 @@ function Event() {
 
             src={i8}
 
-            //alt='image'
+            alt='eventsix'
 
             width={225}
 
@@ -193,7 +182,7 @@ function Event() {
 
             src={i3}
 
-            //alt='image'
+            alt='eventseven'
 
             width={150}
 
@@ -203,7 +192,7 @@ function Event() {
 
             src={i5}
 
-            //alt='image'
+            alt='eventeight'
 
             width={200}
 
@@ -211,7 +200,6 @@ function Event() {
 
       </div>
 
-      ...
 
     </main>
     </main>
@@ -220,34 +208,6 @@ function Event() {
   
 
 }
- 
-/*{
-    return(
-        <div className='Event' id='event'>
-    <div className='text-center text-white m-4'></div>
-    <div className='typeit-text' id='small-type'>Our Events</div>
 
-    <div className="event-container">
-        <div className="event-title">
-            <div>Astrogazing</div>
-        </div>
-        <div className="event-imgs">
-            <img src={img1} alt="logo" className="img-fluid" />
-        </div>
-        <div className='event-title'> 19th APRIL, y2024 </div>
-        <div className="event-title">
-            <div>Upcoming Events</div>
-        </div>
-        <div className="event-imgs">
-            <img src={img1} alt="logo" className="img-fluid" />
-        </div>
-        <div className="event-title"> Home </div>
-
-
-    </div>  
-      </div>  
-      
-    );
-}*/
 
 export default Event;
