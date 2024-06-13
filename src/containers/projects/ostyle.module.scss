@@ -1,13 +1,13 @@
 .projects{
     display: flex;
+
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
 
     .body{
-        max-width: 1400px;
         width: 100%;
-        display: flex;
+        display: block;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -68,9 +68,4 @@
     
 }
 
-@media screen and (max-width: 1024px){
-    .projects{
-        display: none;
-    }
-}
 
