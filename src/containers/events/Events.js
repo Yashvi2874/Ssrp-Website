@@ -152,7 +152,7 @@ function Event() {
 
       <div ref={plane2} className={styles.plane}>
         <div className ='Name'>
-          <h1>Our Events</h1>
+          <h1>Astro-Chronicles</h1>
           </div>
 
           <img 
