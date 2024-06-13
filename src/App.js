@@ -4,8 +4,8 @@ import React, { useState, useEffect} from 'react';
 import Home from './containers/home/Home';
 import NavBar from './containers/navbar/Navbar';
 import About from './containers/about/About';
-import Project from './containers/projects/Projects';
-import ProjectDescription from './containers/projects/Project_description';
+import Projects from './containers/projects/index';
+//import ProjectDescription from './containers/projects/Project_description';
 import Contact from './containers/contact_us/Contact';
 import Footer from './containers/footer/Footer';
 import Team from './containers/team/Team';
@@ -15,6 +15,7 @@ import TeamNew from './containers/team_new/TeamNew';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
+import ProjectDescription from './containers/oldprojects/Project_description';
 
 function App() {
   //const [isAbsolute, setIsAbsolute] = useState(false);
@@ -104,7 +105,7 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar/>
-                <Project />
+                <Projects />
                 <Footer />
               </div>
             </div>
@@ -119,7 +120,7 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar/>
-                <Project />
+                <Projects />
                 <Footer />
               </div>
             </div>
