@@ -35,16 +35,16 @@
           filter: brightness(0.7);
           img{
               &:nth-of-type(1){
-                  left:90%;
-                  top: 70%;
+                  left:80%;
+                  top: 50%;
               }
               &:nth-of-type(2){
-                  left: 5%;
-                  top: 65%;
+                  left: 12%;
+                  top: 50%;
               }
               &:nth-of-type(3){
                   left: 35%;
-                  top: 0%;
+                  top: 10%;
               }
           }
       }
@@ -52,12 +52,12 @@
           filter: brightness(0.6);
           img{
               &:nth-of-type(1){
-                  left: 5%;
-                  top: 10%;
+                  left: 8%;
+                  top: 24%;
               }
               &:nth-of-type(2){
-                  left: 80%;
-                  top: 5%;
+                  left: 78%;
+                  top: 25%;
               }
               &:nth-of-type(3){
                   left: 60%;
@@ -69,12 +69,12 @@
           filter: brightness(0.5);
           img{
               &:nth-of-type(1){
-                  left: 65%;
+                  left: 58%;
                   top: 2.5%;
               }
               &:nth-of-type(2){
                   left: 40%;
-                  top: 75%;
+                  top: 55%;
               }
           }
       }

@@ -7,7 +7,7 @@
   }
 
   .card img {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-bottom: 10px;
   }
@@ -17,15 +17,15 @@
     grid-template-columns: 1fr 1fr 1fr;
     width:100vw;
     height: 100vh;
-    grid-template-rows: repeat(1fr 100vh);
+    grid-template-rows: repeat(0.5fr 50vh);
     justify-content: center;
     align-items: center;
   }
 
   .event-imgs img{
-    height: 20vh;
-    width: 20vw;
-    rotate: 20deg;
+    height: 10vh;
+    width: 10vw;
+    rotate: 10deg;
     
   }
 
@@ -42,3 +42,17 @@
     color: white;
     text-align: center;
   }
+
+  .Name{
+    text-align: center;
+    vertical-align:middle;
+    position: relative;
+    color: white;
+    height: 100vh;
+    margin: auto;
+    align-self: center;
+    margin-top: 15rem;
+
+  }
+
+ 

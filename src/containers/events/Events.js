@@ -12,6 +12,7 @@ import i5 from '../../assests/images/project_images/img5.avif'
 import i6 from '../../assests/images/project_images/img6.jpg'
 import i8 from '../../assests/images/project_images/img01.png'
 import i9 from '../../assests/images/project_images/img4.png' 
+import i10 from '../../assests/images/events_images/Image_10.jpg'
 
 export{
     i1,
@@ -22,6 +23,7 @@ export{
     i6,
     i8,
     i9,
+    i10
 
 }
 
@@ -76,11 +78,11 @@ function Event() {
   
       yForce = lerp(yForce, 0, easing);
   
-      gsap.set(plane1.current, {x: `+=${xForce}`, y: `+=${yForce}`})
+      gsap.set(plane1.current, {x: `+=${xForce*0.2}`, y: `+=${yForce*0.2}`})
   
-      gsap.set(plane2.current, {x: `+=${xForce * 0.5}`, y: `+=${yForce * 0.5}`})
+      gsap.set(plane2.current, {x: `+=${xForce * 0.3}`, y: `+=${yForce * 0.3}`})
   
-      gsap.set(plane3.current, {x: `+=${xForce * 0.25}`, y: `+=${yForce * 0.25}`})
+      gsap.set(plane3.current, {x: `+=${xForce * 0.1}`, y: `+=${yForce * 0.1}`})
   
   
   
@@ -118,11 +120,11 @@ function Event() {
 
           <img 
 
-            src={i1}
+            src={i10}
 
             //alt='image'
 
-            width={300}
+            width={150}
 
           />
 
@@ -138,7 +140,7 @@ function Event() {
 
           <img 
 
-            src={i9}
+            src={i2}
 
             //alt='image'
 
@@ -149,10 +151,13 @@ function Event() {
       </div>
 
       <div ref={plane2} className={styles.plane}>
+        <div className ='Name'>
+          <h1>Our Events</h1>
+          </div>
 
           <img 
 
-            src={i4}
+            src={i2}
 
            // alt='image'
 
