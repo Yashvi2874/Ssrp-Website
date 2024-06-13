@@ -15,7 +15,7 @@ export default function Index({index, title, author, manageModal}) {
         onClick={() => handleProjectClick(index+1)}
         onMouseLeave={(e) => {manageModal(false, index, e.clientX, e.clientY)}} className={styles.project}>
             <div className='project-title'>{title}</div>
-            <p>{author}</p>
+            <div className='project-author'>{author}</div>
         </div>
     )
 }

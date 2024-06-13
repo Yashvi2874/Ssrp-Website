@@ -96,12 +96,12 @@ export default function Home() {
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
 
-  let xMoveContainer = useRef(null);
-  let yMoveContainer = useRef(null);
-  let xMoveCursor = useRef(null);
-  let yMoveCursor = useRef(null);
-  let xMoveCursorLabel = useRef(null);
-  let yMoveCursorLabel = useRef(null);
+  const xMoveContainer = useRef(null);
+  const yMoveContainer = useRef(null);
+  const xMoveCursor = useRef(null);
+  const yMoveCursor = useRef(null);
+  const xMoveCursorLabel = useRef(null);
+  const yMoveCursorLabel = useRef(null);
 
   useEffect( () => {
     //Move Container
@@ -165,26 +165,6 @@ export default function Home() {
         <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
     </>
   </main>
-  <section className='projects'>
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            trigger={
-              <div
-                className='project-content'
-                onClick={() => handleProjectClick(project.id)}
-                data-aos="fade-up"
-              >
-                <img src={project.image} alt={project.title}/>
-                <div className='project-title'>{project.title}</div>
-                <div className='project-author'>{project.author}</div>
-              </div>
-              
-            }
-            >
-          </div>
-        ))}
-      </section>
   </div>
   )
 }
