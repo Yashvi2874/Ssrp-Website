@@ -14,6 +14,8 @@ import NotFound from './components/Not found page/NotFound';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
+//import Lenis from 'lenis';
+
 function App() {
   //const [isAbsolute, setIsAbsolute] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -21,6 +23,38 @@ function App() {
   //const toggleAbsolute = () => {
     //setIsAbsolute(!isAbsolute);
   //};
+
+  /*useEffect( () => {
+
+    (
+
+      async () => {
+
+          const LocomotiveScroll = (await import('locomotive-scroll')).default
+
+          const locomotiveScroll = new LocomotiveScroll();
+
+      }
+
+    )()
+
+  }, [])*/
+
+ /* useEffect( () => {
+  
+    const lenis = new Lenis()
+  
+      function raf(time) {
+  
+        lenis.raf(time)
+  
+        requestAnimationFrame(raf)
+  
+      }
+  
+    requestAnimationFrame(raf)
+  
+  }, [])*/
 
   useEffect(()=>{
     AOS.init({duration:"2000"});

@@ -1,13 +1,3 @@
-/* Marquee styles */
-:root {
-    --first-color: #999999;
-    --second-color: #020f21;
-  }
-
-  ul{
-    list-style: none;
-  }
-
 .team-container{
     display: flex;
     flex-direction: column;
@@ -16,8 +6,10 @@
     align-items: center;
 }
 
-.TeamNew{
-  height: fit-content;
+.team-heading{
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bolder;
 }
 
 .team-description{
@@ -26,11 +18,8 @@
   margin-bottom: 5vh;
   font-size: 1.5rem;
 }
-
-.team-heading{
-    font-size: 5rem;
-    color: #fff;
-    font-weight: bolder;
+.arrow-down{
+  font-size: 90px;
 }
 
 .navbar{
@@ -60,8 +49,8 @@
 }
   
   .card-container {
-    width: 20vw;
-    height: 20vw;
+    width: 17vw;
+    height: 17vw;
     aspect-ratio: 1/1;
     perspective: 1000px;
     float: left;
@@ -70,13 +59,9 @@
       position: relative;
       height: 100%;
       width: 100%;
-      
-      transform-style: preserve-3d;
-      transition: transform 1s linear 10ms;
     }
   
-    & div.card-front,
-    div.card-back {
+    & div.card-front {
       position: absolute;
       height: 100%;
       width: 100%;
@@ -86,15 +71,7 @@
       -webkit-backface-visibility: hidden;
       
     }
-    & div.card-front {
-      background-color: var(--first-color);
-    }
-    & div.card-back {
-      background-color: var(--second-color);
-      transform: rotateY(180deg);
-      
-
-    }
+  
     & div.card-front .team-member-image{
       width: 100%;
       height: 100%;
@@ -105,79 +82,6 @@
     content: "";
     display: table;
     clear: both;
-  }
-  div.card-container:hover div.card-content {
-    transform: rotateY(180deg);
-  }
-  .marquee {
-    --gap: 1rem;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: var(--gap);
-  }
-  
-  .marquee__content {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-around;
-    gap: var(--gap);
-    min-width: 100%;
-  }
-  
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - var(--gap)));
-    }
-  }
-  
-  /* Pause animation when reduced-motion is set */
-  @media (prefers-reduced-motion: reduce) {
-    .marquee__content {
-      animation-play-state: paused !important;
-    }
-  }
-  
-  /* Enable animation */
-  .marquee__content {
-    animation: scroll 20s linear infinite;
-  }
-  
-  /* Pause on hover */
-  .marquee--hover-pause:hover .marquee__content {
-    animation-play-state: paused;
-  }
-  
-  /* Attempt to size parent based on content. Keep in mind that the parent width is equal to both content containers that stretch to fill the parent. */
-  .marquee--fit-content {
-    max-width: fit-content;
-  }
-  
-  /* A fit-content sizing fix: Absolute position the duplicate container. This will set the size of the parent wrapper to a single child container. Shout out to Olavi's article that had this solution 👏 @link: https://olavihaapala.fi/2021/02/23/modern-marquee.html  */
-  .marquee--pos-absolute .marquee__content:last-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  @keyframes scroll-abs {
-    from {
-      transform: translateX(calc(100% + var(--gap)));
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  
-  /* Other page demo styles */
-  .marquee__content > * {
-    height: 50%;
-    width: 50%;
-    text-align: center;
   }
   
   .Team {
@@ -190,10 +94,6 @@
     font-family: system-ui, sans-serif;
     font-size: 1rem;
   }
-
-  .arrow {
-    font-size: 90px;
-}
 
   .text-box {
     width: 100%;
@@ -234,18 +134,21 @@
   }
 
   .Team-department{
+    position: relative;
     border-block-end: 2px solid #d278f3a2; 
     writing-mode: horizontal-tb;
     color: whitesmoke;
     margin-left: 20rem;
     margin-right: 20rem;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     text-align: center;
     font-size: 4vw;
   }
 
-  .Team-head{
+  .Team-head, .Team-Members{
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -253,13 +156,14 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  
+  /* The flip box container - set the width and height to whatever you want. */
 .flip-box {
   background-color: transparent;
-  width: 20vw;
-  height: 20vw;
+  width: 16vw;
+  height: 16vw;
   aspect-ratio: 1/1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-bottom: 6rem;
 }
 
 /* This container is needed to position the front and back side */
@@ -272,41 +176,29 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg); 
+/* name of the members */
+.name{
+  margin-top: 1rem;
+  align-items: center;
+  color: #fff;
 }
 
-/* Position the front and back side */
-.flip-box-front,
-.flip-box-back {
+.designation{
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #a2a0a0ad;
+  margin-bottom: 2rem;
+}
+
+/* Position the front side */
+.flip-box-front {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  justify-content: center;
-    align-items: center;
-
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #13315c;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: #020f21;
-  color: white;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .head-photo{
@@ -315,25 +207,12 @@
   border-radius: 50%;
 }
 
-
-  .Team_Page{
-    overflow-x: hidden;
-  }
-
-
-  .card-back-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-back-content .name,.description{
+   .name,.description{
     font-size: 2vw;
     text-align: center;
   }
 
-  .flip-box-back h2, .flip-box-back p{
+ h2{
     font-size: 2vw;
     text-align: center;
   }
@@ -349,10 +228,10 @@
       max-width: 300px;
     }
 
-    .flip-box-back h2, .flip-box-back p{
+   h2{
       font-size: 2rem;
     }
-    .card-back-content .name,.description{
+    .name,.description{
       font-size: 1.5rem;
     }
   }

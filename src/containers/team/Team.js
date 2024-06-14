@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Team.css';
 import Navbar from '../navbar/Navbar.js'; 
 import group_img from '../../assests/images/Community/Team.jpg';
@@ -12,7 +12,6 @@ import Computer_Systems_Member_3 from '../../assests/images/Community/Members/Co
 import Computer_Systems_Member_5 from '../../assests/images/Community/Members/Comps/Swarni_Chouhan.jpg';
 import Computer_Systems_Member_6 from '../../assests/images/Community/Members/Comps/Siya_Nair.png';
 import Computer_Systems_Member_7 from '../../assests/images/Community/Members/Comps/Mit_Mhatre.jpg';
-import Computer_Systems_Member_8 from '../../assests/images/Community/Members/Comps/Yash_Mahajan.jpg';
 import Computer_Systems_Member_9 from '../../assests/images/Community/Members/Comps/Tanil_Sheth.jpg';
 import Computer_Systems_Member_10 from '../../assests/images/Community/Members/Comps/Aditi_Agrawal.jpg';
 import Electronics_Member_1 from '../../assests/images/Community/Members/Electronics/Lakshya_Aswani.jpg';
@@ -29,6 +28,7 @@ import Mechanical_Member_3 from '../../assests/images/Community/Members/Mechanic
 import Mechanical_Member_4 from '../../assests/images/Community/Members/Mechanical/Aastha_Shah.jpeg';
 import Mechanical_Member_5 from '../../assests/images/Community/Members/Mechanical/Debarpan_Dasgupta.png';
 import Mechanical_Member_6 from '../../assests/images/Community/Members/Mechanical/Rabiya_Darvesh.jpg';
+import Mechanical_Member_7 from '../../assests/images/Community/Members/Comps/Yash_Mahajan.jpg';
 import Business_Member_1 from '../../assests/images/Community/Members/Business/Vidita_Hassani.jpg';
 import Business_Member_2 from '../../assests/images/Community/Members/Business/Aayushi_Wani.jpg';
 import Business_Member_3 from '../../assests/images/Community/Members/Business/Akshita_Shetty.jpg';
@@ -45,222 +45,15 @@ import Marketing_Member_4 from '../../assests/images/Community/Members/Business/
 import Marketing_Member_5 from '../../assests/images/Community/Members/Business/Anusha_Sarkar.jpg';
 // import Marketing_Member_6 from '../../assests/images/Community/Members/Business/Rishi_Shanbhag.jpg';
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Team = () => {
 
-    const Comps = [
-        {
-          name: 'Yashasvi Gupta',
-          image: Computer_Systems_Member_1,
-          description: 'Web Dev Head'
-        },
-        {
-          name: 'Om Thanage',
-          image: Computer_Systems_Member_2,
-          description: 'Web Dev & ODHS'
-        },
-        {
-            name: 'Piyush Chaudhary',
-            image: Computer_Systems_Member_3,
-            description: 'Web Dev & ODHS'
-          },
-          {
-            name: 'Swarni Chouhan',
-            image: Computer_Systems_Member_5,
-            description: 'Web Dev & ODHS'
-          },
-          {
-            name: 'Siya Nair',
-            image: Computer_Systems_Member_6,
-            description: 'Web Dev & ODHS'
-          },
-          {
-            name: 'Mit Mhatre',
-            image: Computer_Systems_Member_7,
-            description: 'ROS, IP Head'
-          },
-          {
-            name: 'Yash Mahajan',
-            image: Computer_Systems_Member_8,
-            description: 'ROS, IP'
-          },
-          {
-            name: 'Tanil Sheth',
-            image: Computer_Systems_Member_9,
-            description: 'ROS, IP'
-          },
-          {
-            name: 'Aditi Agrawal',
-            image: Computer_Systems_Member_10,
-            description: 'ROS, IP'
-          }
-        // Add more team members as needed
-      ];
+  useEffect(()=>{
+    AOS.init({duration:"2000"});
 
-      const Electronics = [
-        {
-          name: 'Lakshya Aswani',
-          image: Electronics_Member_1,
-          description: 'Electronics Head'
-        },
-        {
-          name: 'Aaditya Chavan',
-          image: Electronics_Member_2,
-          description: 'Avionics'
-        },
-        {
-            name: 'Arnav Vinod',
-            image: Electronics_Member_3,
-            description: 'Avionics'
-          },
-          {
-            name: 'Siddarth Patel',
-            image: 'https://dummyimage.com/300',
-            description: 'Avionics'
-          },
-          {
-            name: 'Abhinav Suresh',
-            image: 'https://dummyimage.com/300',
-            description: 'Avionics'
-          },
-          {
-            name: 'Aarohi Mishra',
-            image: Electronics_Member_7,
-            description: 'Communication'
-          },
-          {
-            name : 'Arupta Kamble',
-            image : Electronics_Member_8,
-            description : 'Communication'
-          },
-          {
-            name: 'Siya Naulakha',
-            image: Electronics_Member_9,
-            description: 'Communication'
-          }
-        // Add more team members as needed
-      ];
-
-      const Mechanical = [
-        {
-            name: 'Ishan Kakad',
-            image: Mechanical_Member_1,
-            description: 'Structures'
-          },
-          {
-            name: 'Yash Bagwe',
-            image: Mechanical_Member_2,
-            description: 'Structures'
-          },
-          {
-            name: 'Aditya Patel',
-            image: Mechanical_Member_3,
-            description: 'Propulsions'
-          },
-          {
-            name: 'Aasth Shah',
-            image: Mechanical_Member_4,
-            description: 'Propulsions'
-          },
-          {
-            name: 'Debarpan Dasgupta',
-            image: Mechanical_Member_5,
-            description: 'Propulsions'
-          },
-          {
-            name : 'Rabiya Darvesh',
-            image : Mechanical_Member_6,
-            description : 'Recovery'
-          }
-        // Add more team members as needed
-      ];
-
-      const Business = [
-        {
-          name: 'Vidita Hassani',
-          image: Business_Member_1,
-          description: 'Business Head'
-        },
-        {
-            name: 'Aayushi Wani',
-            image: Business_Member_2,
-            description: 'Creative Head'
-          },
-          {
-            name: 'Akshita Shetty',
-            image: Business_Member_3,
-            description: 'Creative'
-          },
-          {
-            name: 'Vruddhi Mule',
-            image: Business_Member_4,
-            description: 'Creative'
-          },
-          {
-            name: 'Sameer Morya',
-            image: 'https://dummyimage.com/300',
-            description: 'Creative'
-          },
-          {
-            name: 'Charu Malp',
-            image: Business_Member_6,
-            description: 'Creative'
-          },
-          {
-            name : 'Likhita Reddy',
-            image : Business_Member_7,
-            description : 'Creative'
-          },
-
-          {
-            name: 'Aditi Gupta',
-            image: 'https://dummyimage.com/300',
-            description: 'Logistics'
-          },
-          {
-            name: 'Tarini Bambolkar',
-            image: Business_Member_10,
-            description: 'Logistics'
-          },
-          
-        // Add more team members as needed
-      ];
-
-      const Marketing = [
-        {
-          name: 'Minit Shah',
-          image: 'https://dummyimage.com/300',
-          description: 'Marketing Head'
-        },
-        {
-          name: 'Shrusti Vora',
-          image: 'https://dummyimage.com/300',
-          description: 'Jt Marketing Executive'
-        },
-        {
-          name: 'Joyeeta Basu',
-          image: 'https://dummyimage.com/300',
-          description: 'Marketing and Publicity'
-        },
-        {
-          name: 'Varun Shah',
-          image: Marketing_Member_4,
-          description: 'Marketing and Publicity'
-        },
-        {
-          name: 'Anusha Sarkar',
-          image: Marketing_Member_5,
-          description: 'Marketing and Publicity'
-        },
-        {
-          name: 'Rishi Shanbhag',
-          image: 'https://dummyimage.com/300',
-          description: 'Marketing and Publicity'
-        },
-      ];
-        
-
+  },[]);
 
   return (
     
@@ -270,278 +63,444 @@ const Team = () => {
     <div className='Team'>
         <section className='Team_section'>
         
-        <div className='team-container'>
-          
+        <div className='team-container'> 
             <img src={group_img}  className='team-image' alt='XYZ'/>
             <div className='team-overlay'>
             <div className='navbar'><Navbar/></div>
-            <h1 className='team-heading'>Our Team</h1>
-            <description className='team-description'>With the strength of 30+ students we focus on developing and launching a satellite, the KJSCE StudentSAT, while also combining research projects on space exploration with participation in competitions like Spaceport America, International Rover Challenge and CANSAT.</description>
-            <description className='team-description'>Meet the Team</description>
-            <div className='arrow-down'> ↓ </div>
+            <h1 className='team-heading'  data-aos="zoom-in">Our Team</h1>
+            <description className='team-description'  data-aos="zoom-in">With the strength of 30+ students we focus on developing and launching a satellite, the KJSCE StudentSAT, while also combining research projects on space exploration with participation in competitions like Spaceport America, International Rover Challenge and CANSAT.</description>
+            <description className='team-description'  data-aos="zoom-in">Meet the Team</description>
+            <div className='arrow-down'  data-aos="fade-down"> ↓ </div>
         </div>
         </div>
-        <h1 className='Team-department'>Projects Leads</h1>
+        <h1 className='Team-department' data-aos="zoom-in">Projects Leads</h1>
         <div className='Team-head'>
-        <div className="flip-box">
+        <div className="flip-box" data-aos="slide-right">
           <div className="flip-box-inner">
             <div className="flip-box-front">
               <img  className='head-photo' src={Associate_Head_image} alt="Riaan Jain" />
             </div>
-            <div className="flip-box-back">
-              <h2>Riaan Jain</h2>
-              <p>Associate Director</p>
-            </div>
           </div>
+          <h2 className='name'>Riaan Jain</h2>
+          <h5 className='designation'>Associate Director</h5>
         </div>
-        <div className="flip-box">
+        <div className="flip-box" data-aos="slide-up">
           <div className="flip-box-inner">
             <div className="flip-box-front">
               <img  className='head-photo' src={Founder_image} alt="Rishikesh Bhintade" />
             </div>
-            <div className="flip-box-back">
-              <h2>Rishikesh Bhintade</h2>
-              <p>Founder & Project Director</p>
-            </div>
           </div>
+          <h2 className='name'>Rishikesh Bhintade</h2>
+          <h5 className='designation'>Founder & Project Director</h5>
         </div>
-        <div className="flip-box">
+        <div className="flip-box" data-aos="slide-up">
           <div className="flip-box-inner">
             <div className="flip-box-front">
               <img  className='head-photo' src={Operations_Head_image} alt="Tanisha Mukherjee" />
             </div>
-            <div className="flip-box-back">
-              <h2>Tanisha Mukherjee</h2>
-              <p>Operations Director</p>
-            </div>
           </div>
-        </div>
-        <div className="flip-box">
+          <h2 className='name'>Tanisha Mukherjee</h2>
+          <h5 className='designation'>Operations Director</h5>
+        </div> 
+        <div className="flip-box"  data-aos="slide-left">
           <div className="flip-box-inner">
             <div className="flip-box-front">
               <img  className='head-photo' src={Associate_Operations_image} alt="Rishikesh Bhintade" />
             </div>
-            <div className="flip-box-back">
-              <h2>Aniket Iyer</h2>
-              <p>Associate Operations Director</p>
+          </div>
+          <h2 className='name'>Aniket Iyer</h2>
+          <h5 className='designation'>Associate Operations Director</h5>
+        </div>
+        </div>
+
+        <h1 className='Team-department' data-aos="zoom-in">Computer Systems</h1>
+        <div className='Team-head'>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_1} alt="Yashasvi Gupta" />
             </div>
           </div>
+          <h2 className='name'>Yashasvi Gupta</h2>
+          <h5 className='designation'>Web-Dev Executive</h5>
         </div>
         </div>
-       <h1 className='Team-department'>Computer Systems</h1>
-        <div className="marquee marquee--hover-pause">
-            <ul className="marquee__content">
-            {Comps.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
-
-            <ul aria-hidden="true" className="marquee__content">
-            {Comps.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_2} alt="Om Thanage" />
+            </div>
           </div>
-          <h1 className='Team-department'>Electronics</h1>
-        <div className="marquee marquee--hover-pause">
-            <ul className="marquee__content">
-            {Electronics.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
-
-            <ul aria-hidden="true" className="marquee__content">
-            {Electronics.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
+          <h2 className='name'>Om Thanage</h2>
+          <h5 className='designation'>Web-Dev & ODHS</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_3} alt="Piyush Chaudhary" />
+            </div>
           </div>
-          <h1 className='Team-department'>Mechanical</h1>
-        <div className="marquee marquee--hover-pause">
-            <ul className="marquee__content">
-            {Mechanical.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
-
-            <ul aria-hidden="true" className="marquee__content">
-            {Mechanical.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
+          <h2 className='name'>Piyush Chaudhary</h2>
+          <h5 className='designation'>Web-Dev & ODHS</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_5} alt="Swarni Chouhan" />
+            </div>
           </div>
-          <h1 className='Team-department'>Business</h1>
-        <div className="marquee marquee--hover-pause">
-            <ul className="marquee__content">
-            {Business.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
-
-            <ul aria-hidden="true" className="marquee__content">
-            {Business.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
+          <h2 className='name'>Swarni Chouhan</h2>
+          <h5 className='designation'>Web-Dev & ODHS</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_6} alt="Siya Nair" />
+            </div>
           </div>
-          <h1 className='Team-department'>Marketing</h1>
-        <div className="marquee marquee--hover-pause">
-            <ul className="marquee__content">
-            {Marketing.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
-
-            <ul aria-hidden="true" className="marquee__content">
-            {Marketing.map((member, index) => (
-              <li key={index}>
-                <div className="card-container">
-                  <div className="card-content">
-                    <div className="card-front">
-                        <img src={member.image} alt={member.name} className='team-member-image' />
-                    </div>
-                    <div className="card-back">
-                      <div className="card-back-content">
-                        <h2 className='name'>{member.name}</h2>
-                        <p className='description'>{member.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-            </ul>
+          <h2 className='name'>Siya Nair</h2>
+          <h5 className='designation'>Web-Dev & ODHS</h5>
+        </div>
+        </div>
+        <div className='Team-head'>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_7} alt="Mit Mhatre" />
+            </div>
           </div>
+          <h2 className='name'>Mit Mhatre</h2>
+          <h5 className='designation'>ROS & IP Executive</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_10} alt="Aditi Agrawal" />
+            </div>
+          </div>
+          <h2 className='name'>Aditi Agrawal</h2>
+          <h5 className='designation'>ROS & IP</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Computer_Systems_Member_9} alt="Tanil Sheth" />
+            </div>
+          </div>
+          <h2 className='name'>Tanil Sheth</h2>
+          <h5 className='designation'>ROS & IP</h5>
+        </div>
+        </div>
+
+        <h1 className='Team-department' data-aos="zoom-in">Mechanical Systems</h1>
+        <div className='Team-head'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Mechanical_Member_1} alt="Ishan Kakad" />
+            </div>
+          </div>
+          <h2 className='name'>Ishan Kakad</h2>
+          <h5 className='designation'>Mechanical Executive</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Mechanical_Member_3} alt="Aditya Patel" />
+            </div>
+          </div>
+          <h2 className='name'>Aditya Patel</h2>
+          <h5 className='designation'>Mechanical Executive</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Mechanical_Member_2} alt="Yash Bagwe" />
+            </div>
+          </div>
+          <h2 className='name'>Yash Bagwe</h2>
+          <h5 className='designation'>Mechanical Executive</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Mechanical_Member_7} alt="Yash Mahajan" />
+            </div>
+          </div>
+          <h2 className='name'>Yash Mahajan</h2>
+          <h5 className='designation'>Structures</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Mechanical_Member_4} alt="Aastha Shah" />
+            </div>
+          </div>
+          <h2 className='name'>Aastha Shah</h2>
+          <h5 className='designation'>Propulsions</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Mechanical_Member_5} alt="Debarpan Dasgupta" />
+            </div>
+          </div>
+          <h2 className='name'>Debarpan Dasgupta</h2>
+          <h5 className='designation'>Propulsions</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Mechanical_Member_6} alt="Rabiya Darvesh" />
+            </div>
+          </div>
+          <h2 className='name'>Rabiya Darvesh</h2>
+          <h5 className='designation'>Recovery</h5>
+        </div>
+        </div>
+
+        <h1 className='Team-department' data-aos="zoom-in">Electronics Systems</h1>
+        <div className='Team-head'>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Electronics_Member_1} alt="Lakshya Aswani" />
+            </div>
+          </div>
+          <h2 className='name'>Lakshya Aswani</h2>
+          <h5 className='designation'>Electronics Executive</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Electronics_Member_2} alt="Aaditya Chavan" />
+            </div>
+          </div>
+          <h2 className='name'>Aaditya Chavan</h2>
+          <h5 className='designation'>Avionics</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Electronics_Member_3} alt="Arnav Vinod" />
+            </div>
+          </div>
+          <h2 className='name'>Arnav Vinod</h2>
+          <h5 className='designation'>Avionics</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Siddarth Patel" />
+            </div>
+          </div>
+          <h2 className='name'>Siddarth Patel</h2>
+          <h5 className='designation'>Avionics</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Abhinav Suresh" />
+            </div>
+          </div>
+          <h2 className='name'>Abhinav Suresh</h2>
+          <h5 className='designation'>Avionics</h5>
+        </div>
+        </div>
+        <div className='Team-head'>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Electronics_Member_9} alt="Siya Naulakha" />
+            </div>
+          </div>
+          <h2 className='name'>Siya Naulakha</h2>
+          <h5 className='designation'>Embedded Programming Executive</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Electronics_Member_7} alt="Aarohi Mishra" />
+            </div>
+          </div>
+          <h2 className='name'>Aarohi Mishra</h2>
+          <h5 className='designation'>Communication</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Electronics_Member_8} alt="Arupta Kamble" />
+            </div>
+          </div>
+          <h2 className='name'>Arupta Kamble</h2>
+          <h5 className='designation'>Communication</h5>
+        </div>
+        </div>
+
+        <h1 className='Team-department' data-aos="zoom-in">Creative Team</h1>
+        <div className='Team-head'>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Business_Member_2} alt="Aayushi Wani" />
+            </div>
+          </div>
+          <h2 className='name'>Aayushi Wani</h2>
+          <h5 className='designation'>Creative Executive</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Business_Member_3} alt="Akshita Shetty" />
+            </div>
+          </div>
+          <h2 className='name'>Akshita Shetty</h2>
+          <h5 className='designation'>Creative</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Business_Member_4} alt="Vruddhi Mule" />
+            </div>
+          </div>
+          <h2 className='name'>Vruddhi Mule</h2>
+          <h5 className='designation'>Creative</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Business_Member_7} alt="Likhita Reddy" />
+            </div>
+          </div>
+          <h2 className='name'>Likhita Reddy</h2>
+          <h5 className='designation'>Creative</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Sameer Morya" />
+            </div>
+          </div>
+          <h2 className='name'>Sameer Morya</h2>
+          <h5 className='designation'>Creative</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Business_Member_6} alt="Charu Malp" />
+            </div>
+          </div>
+          <h2 className='name'>Charu Malp</h2>
+          <h5 className='designation'>Creative</h5>
+        </div>
+        </div>
+         
+        <h1 className='Team-department' data-aos="zoom-in">Business and Marketing</h1>
+        <div className='Team-head'>
+        <div className="flip-box" data-aos="slide-up">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Business_Member_1} alt="Vidita Hassani" />
+            </div>
+          </div>
+          <h2 className='name'>Vidita Hassani</h2>
+          <h5 className='designation'>Business Executive</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Aditi Gupta" />
+            </div>
+          </div>
+          <h2 className='name'>Aditi Gupta</h2>
+          <h5 className='designation'>Logistics</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Business_Member_10} alt="Tarini Bambolkar" />
+            </div>
+          </div>
+          <h2 className='name'>Tarini Bambolkar</h2>
+          <h5 className='designation'>Logistics</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Minit Shah" />
+            </div>
+          </div>
+          <h2 className='name'>Minit Shah</h2>
+          <h5 className='designation'>Marketing Executive</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Shrushti Vora" />
+            </div>
+          </div>
+          <h2 className='name'>Shrusti Vora</h2>
+          <h5 className='designation'>Jt. Marketing Executive</h5>
+        </div>
+        </div>
+        <div className='Team-Members'>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Joyeeta Basu" />
+            </div>
+          </div>
+          <h2 className='name'>Joyeeta Basu</h2>
+          <h5 className='designation'>Marketing and Publicity</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-right">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Marketing_Member_4} alt="Varun Shah" />
+            </div>
+          </div>
+          <h2 className='name'>Varun Shah</h2>
+          <h5 className='designation'>Marketing and Publicity</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={Marketing_Member_5} alt="Anusha Sarkar" />
+            </div>
+          </div>
+          <h2 className='name'>Anusha Sarkar</h2>
+          <h5 className='designation'>Marketing and Publicity</h5>
+        </div>
+        <div className="flip-box" data-aos="slide-left">
+          <div className="flip-box-inner">
+            <div className="flip-box-front">
+              <img  className='head-photo' src={'https://dummyimage.com/300'} alt="Rishi Shanbhag" />
+            </div>
+          </div>
+          <h2 className='name'>Rishi Shanbhag</h2>
+          <h5 className='designation'>Marketing and Publicity</h5>
+        </div>
+        </div>
+        
         </section>
     </div>
     </div>
   );
 };
-
+// Add more team members as needed
 export default Team;

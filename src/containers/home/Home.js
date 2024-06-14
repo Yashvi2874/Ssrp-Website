@@ -1,20 +1,81 @@
-import React, {Suspense} from 'react';
+import React, {Suspense, useEffect, useState} from 'react';
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
 import { Experience } from '../../components/earth/Experience';
 //const Astronaut = React.lazy(()=> import("./Astronaut"));
 import Astronaut  from '../../components/astronaut/Astronaut';
+import { motion } from 'framer-motion';
 
 function Home() {
+
+//cursor part
+const[mousePosition , setMousePosition]=useState({
+  x:0,
+  y:0
+})
+const[cursorVariant,setCursorVariant]=useState("default");
+
+useEffect(() =>{
+  const mouseMove =e => {
+     setMousePosition({
+      x:e.clientX,
+      y:e.clientY
+     })
+  }
+
+  window.addEventListener("mousemove",mouseMove);
+
+  return () =>{ 
+    window.removeEventListener("mousemove",mouseMove);
+  }
+}, []);
+
+const variants={
+  default:{
+    x:mousePosition.x-20,
+    y: mousePosition.y-20
+  },
+  text: {
+    height :100,
+    width :100,
+    x:mousePosition.x-50,
+    y: mousePosition.y-50,
+    backgroundColor: "white",
+    mixBlendMode:"difference"
+  }
+}
+
+const textEnter =() => setCursorVariant("text");
+const textLeave =() => setCursorVariant("default")
+  //end
+
   return (
     <div className='Home' id='home'>
     <div className='text-center text-white m-4'>
       
       <div className='main1'>
       <div className='column justify-content-center ssrp-absolute'>
-      <div className='title'>SSRP</div>
-      <div className='typeit-text' id='small-type'>Somaiya Space Research Project</div>
-      <section className='Slogan'>Launching dreams into orbits</section>
+      <div onMouseEnter={textEnter} onMouseLeave={textLeave} className='title'>SSRP
+      <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}
+      />
+      </div>
+      <div onMouseEnter={textEnter} onMouseLeave={textLeave} className='typeit-text' id='small-type'>Somaiya Space Research Project
+      <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}
+      />
+      </div>
+      <section onMouseEnter={textEnter} onMouseLeave={textLeave} className='Slogan'>Launching dreams into orbits
+      <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}
+      />
+      </section>
       </div>
       </div>
       {/* <div className='row justify-content-center ssrp-absolute' style={{ marginTop: '4.5rem' }}>

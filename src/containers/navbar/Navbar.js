@@ -56,7 +56,7 @@ function App({ toggleAbsolute }) {
         {/* <style>
           {`
             .main2 {
-              animation: fade-up 3s;
+              animation: fade-up 1s;
             }
 
             @keyframes fade-up {

@@ -1,3 +1,6 @@
+.Home{
+  cursor:none;
+}
 @media screen and (min-width: 768px) {
     .ssrp-absolute {
 
@@ -13,6 +16,7 @@
   font-family: 'dahlia-regular'; /* Replace with your font's name */
   src: url('../../assests/fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .ttf file */
 }
+
 .typeit-text {
     font-size: 2vw; /* Adjust size as needed */
     text-align: left;
@@ -23,15 +27,10 @@
     /* animation: fade-up 5s; */
   }
 
-
   .main1{
-    animation: fade-up 8s;
-    
-
+    animation: fade-up 7s;
   }
   
-
-
 @keyframes fade-up{
   0%{
     opacity: 0;
@@ -60,7 +59,6 @@
     font-weight: 500;
     color: #fff;
     text-align: left;
-
 }
 @media screen and (min-width: 1100px) {
   .par{
@@ -128,6 +126,18 @@
     .Slogan{
       font-size: 6vw;
     }
+  }
+
+  .cursor{
+    background-color : white ;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    pointer-events: none;
   }
 
   .target {
