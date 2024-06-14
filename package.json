@@ -53,7 +53,13 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/jquery": "^3.5.29",
-    "react-router-dom": "^6.22.3"
+    "css-loader": "^7.1.2",
+    "postcss-loader": "^8.1.1",
+    "react-router-dom": "^6.22.3",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^14.2.1",
+    "source-map-loader": "^5.0.0",
+    "style-loader": "^4.0.0"
   },
   "description": "SSRP TEST",
   "main": "index.js",
