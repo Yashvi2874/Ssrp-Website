@@ -5,7 +5,9 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-weight: bolder;
-    
+    border-bottom: 2px solid #d278f3a2;
+    margin-left: 25rem;
+    margin-right: 25rem;
 
 }
 
@@ -116,7 +118,8 @@
   @media screen and (max-width: 1024px){
     .project-heading{
       align-items: center;
-        font-size: 2.5rem;
+      font-size: 2.5rem;
+      margin: 2rem;
     }
     .project-content{
         display: flex;
