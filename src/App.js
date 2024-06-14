@@ -4,8 +4,8 @@ import React, { useState, useEffect} from 'react';
 import Home from './containers/home/Home';
 import NavBar from './containers/navbar/Navbar';
 import About from './containers/about/About';
-import Project from './containers/projects/Projects';
-import ProjectDescription from './containers/projects/Project_description';
+import Projects from './containers/projects/index';
+import ProjectDescription from './containers/oldprojects/Project_description';
 import Contact from './containers/contact_us/Contact';
 import Footer from './containers/footer/Footer';
 import Team from './containers/team/Team';
@@ -14,7 +14,8 @@ import NotFound from './components/Not found page/NotFound';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from './components/loading/Loading';
 import AOS from 'aos';
-//import Lenis from 'lenis';
+
+import Event from './containers/events/Events';
 
 function App() {
   //const [isAbsolute, setIsAbsolute] = useState(false);
@@ -23,38 +24,6 @@ function App() {
   //const toggleAbsolute = () => {
     //setIsAbsolute(!isAbsolute);
   //};
-
-  /*useEffect( () => {
-
-    (
-
-      async () => {
-
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-
-          const locomotiveScroll = new LocomotiveScroll();
-
-      }
-
-    )()
-
-  }, [])*/
-
- /* useEffect( () => {
-  
-    const lenis = new Lenis()
-  
-      function raf(time) {
-  
-        lenis.raf(time)
-  
-        requestAnimationFrame(raf)
-  
-      }
-  
-    requestAnimationFrame(raf)
-  
-  }, [])*/
 
   useEffect(()=>{
     AOS.init({duration:"2000"});
@@ -93,7 +62,7 @@ function App() {
         } />
       
         
-        <Route path="/community" element={
+      <Route path="/community" element={
         
         <div className="App">
             <div className="stars">
@@ -116,7 +85,7 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar/>
-                <div style={{color: 'white', display:'block', height:'83vh', fontSize:'4rem', width:'100vw',  textAlign:'center', alignContent:'center'}}> Events Page Launching Soon</div>
+                <Event />
                 <Footer />
               </div>
             </div>
@@ -131,13 +100,14 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar/>
-                <Project />
+                <Projects />
                 <Footer />
               </div>
             </div>
           </div>} />
 
           <Route path="/projects" element={
+
         
         <div className="App">
             <div className="stars">
@@ -146,7 +116,7 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <NavBar/>
-                <Project />
+                <Projects />
                 <Footer />
               </div>
             </div>
@@ -181,34 +151,10 @@ function App() {
             </div>
           </div>
         } />
-        <Route path="/testpage" element={
-          <div className="App">
-            <div className="stars">
-              <StarBackground />
-            </div>
-            <div className="absolute">
-              <div className="relative">
-                <NavBar />
-                <iframe src='/projectnew.html' title="testpage" style={{width:'100%', height:'120vh'}} />
-                <Footer />
-              </div>
-            </div>
-          </div>
-        } />
-        <Route path="*" element={
-          <div className="App">
-          <div className="stars">
-            <StarBackground />
-          </div>
-          <div className="absolute">
-            <div className="relative">
-              <NavBar />
-              <NotFound />
-              <Footer />
-            </div>
-          </div>
-        </div>
-        } />
+
+
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
     </BrowserRouter>
           );
