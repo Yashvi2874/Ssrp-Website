@@ -51,7 +51,7 @@ function App() {
             <div className="absolute">
             
               <div className="relative">
-              <NavBar />
+                <NavBar />
                 <Home />
                 <About />
                 <Contact />

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './NavBar.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -7,6 +7,7 @@ import Somaiya_Vidyavihar from '../../assests/images/Trust_logo/somaiya white.pn
 import Somaiya_Vidyavihar_University from '../../assests/images/Trust_logo/somaiya trust.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 
 
 function App({ toggleAbsolute }) {
@@ -14,6 +15,46 @@ function App({ toggleAbsolute }) {
     AOS.init({duration:"2000"});
 
   },[]);
+
+  //cursor part
+const[mousePosition , setMousePosition]=useState({
+  x:0,
+  y:0
+})
+const[cursorVariant,setCursorVariant]=useState("default");
+
+useEffect(() =>{
+  const mouseMove =e => {
+     setMousePosition({
+      x:e.clientX,
+      y:e.clientY
+     })
+  }
+
+  window.addEventListener("mousemove",mouseMove);
+
+  return () =>{ 
+    window.removeEventListener("mousemove",mouseMove);
+  }
+}, []);
+
+const variants={
+  default:{
+    x:mousePosition.x-20,
+    y: mousePosition.y-20
+  },
+  text: {
+    height :100,
+    width :100,
+    x:mousePosition.x-50,
+    y: mousePosition.y-50,
+    backgroundColor: "white",
+    mixBlendMode:"difference"
+  }
+}
+
+const textEnter =() => setCursorVariant("text");
+const textLeave =() => setCursorVariant("default")
   return (
     <div className='main2' data-aos="fade-down">
       <div className="App" style={{ width: "100vw" }}>
@@ -33,19 +74,24 @@ function App({ toggleAbsolute }) {
             </button>
             <div className="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
-                <li className="nav-item mr-lg-6 px-3 target">
+                <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <motion.div className="cursor1"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}
+      />
                   <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
-                <li className="nav-item mr-lg-6 px-3 target">
+                <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <a className="nav-link active" aria-current="page" href="/project">Projects</a>
                 </li>
-                <li className="nav-item mr-lg-6 px-3 target">
+                <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <a className="nav-link active" aria-current="page" href="/community">Community</a>
                 </li>
-                <li className="nav-item mr-lg-6 px-3 target">
+                <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <a className="nav-link active" aria-current="page" href="/events">Events</a>
                 </li>
-                <li className="nav-item mr-lg-6 px-3 target">
+                <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <a className="nav-link active" aria-current="page" href="/contact">Contact US</a>
                 </li>
               </ul>
