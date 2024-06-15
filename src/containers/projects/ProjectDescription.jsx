@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
-import Projects from './Projects_details'; // Ensure you export the projects array to use it here
-import './Project_description.css';
+import Projects from './ProjectsDetails'; // Ensure you export the projects array to use it here
+import './ProjectDescription.css';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 

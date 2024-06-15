@@ -1,45 +1,24 @@
 //import { SpeedInsights } from "@vercel/speed-insights/react";
 import './App.css';
-import React, { useState, useEffect} from 'react';
-import Home from './containers/home/Home';
-import NavBar from './containers/navbar/Navbar';
-import About from './containers/about/About';
-import Projects from './containers/projects/index';
-import ProjectDescription from './containers/projects/Project_description';
-import Contact from './containers/contact_us/Contact';
-import Footer from './containers/footer/Footer';
-import Team from './containers/team/Team';
+import React, { useEffect} from 'react';
+import ProjectPage from './pages/project/ProjectPage'
 import StarBackground from './components/background/Background';
 import NotFound from './components/Not found page/NotFound';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Loading from './components/loading/Loading';
 import AOS from 'aos';
-
-import Event from './containers/events/Events';
+import ContactPage from './pages/contact/ContactPage';
+import HomePage from './pages/home/HomePage';
+import TeamPage from './pages/team/TeamPage';
+import EventPage from './pages/events/EventPage';
+import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
 
 function App() {
-  //const [isAbsolute, setIsAbsolute] = useState(false);
-  const [loading, setLoading] = useState(true);
-
-  //const toggleAbsolute = () => {
-    //setIsAbsolute(!isAbsolute);
-  //};
-
-  useEffect(()=>{
-    AOS.init({duration:"2000"});
-  },[]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // 2 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if(loading){
-    return <Loading />;
-  }
+    
+    useEffect(()=>{
+      AOS.init({duration:"2000"});
+    },[]);
+    
+    
 
   
   return (
@@ -53,11 +32,7 @@ function App() {
             <div className="absolute">
             
               <div className="relative">
-                <NavBar />
-                <Home />
-                <About />
-                <Contact />
-                <Footer />
+                <HomePage />
               </div>
             </div>
           </div>
@@ -72,8 +47,7 @@ function App() {
             </div>
             <div className="absolute">
               <div className="relative">
-                <Team />
-                <Footer />
+                <TeamPage />
               </div>
             </div>
           </div>} />
@@ -86,9 +60,7 @@ function App() {
             </div>
             <div className="absolute">
               <div className="relative">
-                <NavBar/>
-                <Event />
-                <Footer />
+                <EventPage />
               </div>
             </div>
           </div>} />
@@ -101,9 +73,7 @@ function App() {
             </div>
             <div className="absolute">
               <div className="relative">
-                <NavBar/>
-                <Projects />
-                <Footer />
+                <ProjectPage />
               </div>
             </div>
           </div>} />
@@ -117,9 +87,7 @@ function App() {
             </div>
             <div className="absolute">
               <div className="relative">
-                <NavBar/>
-                <Projects />
-                <Footer />
+                <ProjectPage />
               </div>
             </div>
           </div>} />
@@ -131,9 +99,7 @@ function App() {
             </div>
             <div className="absolute">
               <div className="relative">
-                <NavBar/>
-                <ProjectDescription />
-                <Footer />
+                <ProjectDescriptionPage />
               </div>
             </div>
           </div>
@@ -146,9 +112,7 @@ function App() {
             </div>
             <div className="absolute">
               <div className="relative">
-                <NavBar />
-                <Contact />
-                <Footer />
+                <ContactPage />
               </div>
             </div>
           </div>

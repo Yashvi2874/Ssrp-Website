@@ -5,9 +5,7 @@ import { Experience } from '../../components/earth/Experience';
 //const Astronaut = React.lazy(()=> import("./Astronaut"));
 import Astronaut  from '../../components/astronaut/Astronaut';
 import { motion } from 'framer-motion';
-import Loading from '../../components/loading/Loading';
-import About from '../about/About';
-import Contact from '../contact_us/Contact';
+
 
 function Home() {
 
@@ -18,16 +16,12 @@ const[mousePosition , setMousePosition]=useState({
 })
 const[cursorVariant,setCursorVariant]=useState("default");
 
-const[loading, setLoading]=useState(true);
+
 
 
 
 
 useEffect(() =>{
-
-  setTimeout(() => {
-    setLoading(false);
-  }, 2000);
   
 
   
@@ -45,10 +39,6 @@ useEffect(() =>{
     window.removeEventListener("mousemove",mouseMove);
   }
 }, []);
-
-if(loading){
-  return <Loading />;
-}
 
 const variants={
   default:{
@@ -132,8 +122,6 @@ const textLeave =() => setCursorVariant("default")
       </div>
     </div>
     </div>
-    <About />
-    <Contact />
     </div>
   );
 }
