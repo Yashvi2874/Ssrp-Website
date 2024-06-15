@@ -5,7 +5,7 @@ import Home from './containers/home/Home';
 import NavBar from './containers/navbar/Navbar';
 import About from './containers/about/About';
 import Projects from './containers/projects/index';
-import ProjectDescription from './containers/oldprojects/Project_description';
+import ProjectDescription from './containers/projects/Project_description';
 import Contact from './containers/contact_us/Contact';
 import Footer from './containers/footer/Footer';
 import Team from './containers/team/Team';
@@ -37,9 +37,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) {
-    return <Loading />;
-  }
+  
   return (
     <BrowserRouter>
       <Routes>
