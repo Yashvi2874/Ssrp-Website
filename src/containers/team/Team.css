@@ -230,6 +230,12 @@ h2 {
   text-align: center;
 }
 
+  @media screen and (min-width: 768px){
+    
+    .card-container{
+      max-height: 200px;
+      max-width: 200px;
+    }
 @media screen and (min-width: 768px) {
   .card-container {
     max-height: 200px;
@@ -241,14 +247,64 @@ h2 {
     max-width: 300px;
   }
 
-  h2 {
-    font-size: 2rem;
+   h2{
+      font-size: 2rem;
+    }
+    .name,.description{
+      font-size: 1.5rem;
+    }
   }
 
-  .name,
-  .description {
-    font-size: 1.5rem;
+  @media screen and (max-width: 768px){
+  
+  .team-image{
+    max-height: 300px;
+    max-width: 500px;
   }
+  .Team-department{
+    margin-top: 2vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 3vw;
+    font-size: 6vw;
+    text-align: center;
+  }
+  .team-heading{
+    margin-top: 2vw;
+    font-size: 8vw;
+    text-align: center;
+  }
+  .arrow-down{
+    font-size: 5vw;
+  }
+  .team-description{
+    margin-top: 3vw;
+    margin-bottom:3vw ;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .name{
+    font-size: 2vw;
+    margin-top: 0.5vw;
+  text-align: center;
+  margin-bottom: 0.5vw;
+  }
+  .designation{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+  text-align: center;
+  color: #a2a0a0ad;
+  margin-bottom: 0.5vw;
+  }
+  .flip-box{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .Team-head{
+margin-top:3vw ;
+  }
+}
+  
 }
 
 /* New CSS for hover effect */
