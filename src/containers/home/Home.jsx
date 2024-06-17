@@ -1,8 +1,7 @@
 import React, {Suspense, useEffect, useState} from 'react';
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
-import { Experience } from '../../components/earth/Experience';
-//const Astronaut = React.lazy(()=> import("./Astronaut"));
+import { Earth } from '../../components/earth/Earth';
 import Astronaut  from '../../components/astronaut/Astronaut';
 import { motion } from 'framer-motion';
 
@@ -16,17 +15,8 @@ const[mousePosition , setMousePosition]=useState({
 })
 const[cursorVariant,setCursorVariant]=useState("default");
 
-
-
-
-
-
 useEffect(() =>{
-  
-
-  
-
-  const mouseMove =e => {
+  const mouseMove = (e) => {
      setMousePosition({
       x:e.clientX,
       y:e.clientY
@@ -56,8 +46,7 @@ const variants={
 }
 
 const textEnter =() => setCursorVariant("text");
-const textLeave =() => setCursorVariant("default")
-  //end
+const textLeave =() => setCursorVariant("default");
 
   return (
     <div className='Home' id='home'>
@@ -98,9 +87,6 @@ const textLeave =() => setCursorVariant("default")
       </section>
       </div>
       </div>
-      {/* <div className='row justify-content-center ssrp-absolute' style={{ marginTop: '4.5rem' }}>
-        <h3 className='d-inline-block'></h3>
-      </div> */}
       
       <div className='mt-0'>
         
@@ -115,7 +101,7 @@ const textLeave =() => setCursorVariant("default")
             <Suspense fallback={<div className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'6vh', right:'-48vw'}}>Loading...</div>}>
               <Canvas
                   className='image img-fluid position-absolute earth-block' style={{width : '90%', height : '120vh', top:'6vh', right:'-48vw'}}>
-                    <Experience />
+                    <Earth />
               </Canvas>
             </Suspense>
           </div>

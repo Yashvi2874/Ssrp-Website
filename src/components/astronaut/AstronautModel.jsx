@@ -6,13 +6,13 @@ Command: npx gltfjsx@6.2.16 public/models/final_astro.glb
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
-export default function Astro(props) {
+export default function AstronautModel(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('./models/final_astro.glb')
+  const { nodes, materials, animations } = useGLTF('./assets/models/astro.glb')
   const { actions, names } = useAnimations(animations, group)
   useEffect(() => {
     actions[names[3]].reset().play();
-  },[]);
+  },[actions, names]);
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
@@ -76,4 +76,4 @@ export default function Astro(props) {
   )
 }
 
-useGLTF.preload('./models/final_astro.glb')
+useGLTF.preload('./assets/models/astro.glb')

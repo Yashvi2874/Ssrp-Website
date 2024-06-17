@@ -1,33 +1,35 @@
-.team-container{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    justify-content: start;
-    align-items: center;
+.team-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: start;
+  align-items: center;
 }
 
-.team-heading{
+.team-heading {
   font-size: 5rem;
   color: #fff;
   font-weight: bolder;
 }
 
-.team-description{
-  margin-top: 5vh ;
+.team-description {
+  margin-top: 5vh;
   width: 70vw;
   margin-bottom: 5vh;
   font-size: 1.5rem;
 }
-.arrow-down{
+
+.arrow-down {
   font-size: 90px;
 }
 
-.navbar{
+.navbar {
   position: absolute;
   flex-direction: row;
   padding-top: 0%;
 }
-.team-overlay{
+
+.team-overlay {
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -42,128 +44,137 @@
   padding: 5px;
 }
 
-.team-image{
+.team-image {
   width: 100vw;
   height: 100vh;
   display: flex;
 }
-  
-  .card-container {
-    width: 17vw;
-    height: 17vw;
-    aspect-ratio: 1/1;
-    perspective: 1000px;
-    float: left;
-  
-    & div.card-content {
-      position: relative;
-      height: 100%;
-      width: 100%;
-    }
-  
-    & div.card-front {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-      backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      
-    }
-  
-    & div.card-front .team-member-image{
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-  }
-  div.card-container::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .Team {
-    box-sizing: border-box;
-  }
-  
-  .Team {
-    width: 100%;
-    height: auto;
-    font-family: system-ui, sans-serif;
-    font-size: 1rem;
-  }
 
-  .text-box {
-    width: 100%;
-    color: #fff;
-    position:relative;
-    text-align: center;
+.card-container {
+  width: 17vw;
+  height: 17vw;
+  aspect-ratio: 1/1;
+  perspective: 1000px;
+  float: left;
 }
-  
-  .Team-title {
-    font-size: 4vw;
-    font-weight: 600;
-    line-height: 1.2;
-    text-align: center;
-    color: whitesmoke;
-  }
-  
-  .Team_section {
-    margin-block: 2rem;
-    margin-top: 0;
-  }
-  
-  .Team_section > * + * {
-    margin-block-start: 0.5rem;
-  }
 
-  .card-back{
-    background-color: var(--second-color);
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.card-container div.card-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-  .name,.description,.department{
-    color: whitesmoke;
-    text-align: center;
-  }
+.card-container div.card-front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
 
-  .Team-department{
-    position: relative;
-    border-block-end: 2px solid #d278f3a2; 
-    writing-mode: horizontal-tb;
-    color: whitesmoke;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    text-align: center;
-    font-size: 4vw;
-  }
+.card-container div.card-front .team-member-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 
-  .Team-head, .Team-Members{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  /* The flip box container - set the width and height to whatever you want. */
+.card-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Team {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+}
+
+.text-box {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.Team-title {
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.Team_section {
+  margin-block: 2rem;
+  margin-top: 0;
+}
+
+.Team_section > * + * {
+  margin-block-start: 0.5rem;
+}
+
+.card-back {
+  background-color: var(--second-color);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name,
+.description,
+.department {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.Team-department {
+  position: relative;
+  writing-mode: horizontal-tb;
+  color: whitesmoke;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+.Team-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.Team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* The flip box container - set the width and height to whatever you want. */
 .flip-box {
   background-color: transparent;
   width: 16vw;
-  height: 16vw;
   aspect-ratio: 1/1;
-  margin-bottom: 6rem;
 }
 
 /* This container is needed to position the front and back side */
@@ -177,17 +188,18 @@
 }
 
 /* name of the members */
-.name{
+.name {
   margin-top: 1rem;
   align-items: center;
   color: #fff;
 }
 
-.designation{
+.designation {
   margin-top: 0.5rem;
   text-align: center;
   color: #a2a0a0ad;
   margin-bottom: 2rem;
+  font-size: 2vw;
 }
 
 /* Position the front side */
@@ -198,42 +210,73 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-
 }
 
-.head-photo{
+.head-photo {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-   .name,.description{
-    font-size: 2vw;
-    text-align: center;
+.name,
+.description {
+  font-size: 2vw;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2vw;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    max-height: 200px;
+    max-width: 200px;
   }
 
- h2{
-    font-size: 2vw;
-    text-align: center;
+  .flip-box {
+    max-height: 300px;
+    max-width: 300px;
   }
 
-  @media screen and (min-width: 768px){
-    .card-container{
-      max-height: 200px;
-      max-width: 200px;
-    }
-
-    .flip-box{
-      max-height: 300px;
-      max-width: 300px;
-    }
-
-   h2{
-      font-size: 2rem;
-    }
-    .name,.description{
-      font-size: 1.5rem;
-    }
+  h2 {
+    font-size: 2rem;
   }
-  
-  
+
+  .name,
+  .description {
+    font-size: 1.5rem;
+  }
+}
+
+/* New CSS for hover effect */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.flip-box:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.hover-icons i {
+  color: white;
+  font-size: 24px; /* Adjust the size as needed */
+}

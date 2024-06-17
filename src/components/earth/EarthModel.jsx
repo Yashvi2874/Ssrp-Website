@@ -7,7 +7,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function EarthModel(props) {
-  const { nodes, materials } = useGLTF('./models/compressed_earth.glb')
+  const { nodes, materials } = useGLTF('./assets/models/earth.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Sphere.geometry} material={materials.Material} />
@@ -16,4 +16,4 @@ export function EarthModel(props) {
   )
 }
 
-useGLTF.preload('./models/compressed_earth.glb')
+useGLTF.preload('./assets/models/earth.glb')

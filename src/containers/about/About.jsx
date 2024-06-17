@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import './About.css';
-import logo from '../../assests/images/about_images/logo.png';
-import future_goals from '../../assests/images/about_images/futuregoalsnew.png';
 import ControlledCarousel from './Collaborators_slider';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -38,13 +36,13 @@ function About() {
 
         <div className="text5">
           <p className='item'>
-            <img className='about-img' src={logo} alt='ssrp logo' data-aos="fade-left" />
+            <img className='about-img' src='/assets/images/about_images/logo.png' alt='ssrp logo' data-aos="fade-left" />
           </p>
         </div>
 
         <div className="text6">
           <p className='item'>
-          <img className='about-img' src={future_goals} alt='ssrp future goals images' data-aos="fade-right" />
+          <img className='about-img' src='/assets/images/about_images/futuregoalsnew.png' alt='ssrp future goals images' data-aos="fade-right" />
           </p>
         </div>
 

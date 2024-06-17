@@ -4,17 +4,7 @@ import './page.module.scss'
 import styles from './page.module.scss'
 import gsap from 'gsap';
 import { useRef } from 'react';
-import i1 from '../../assests/images/project_images/img1.png'
-import i2 from '../../assests/images/project_images/img2.jpg'
-import i3 from '../../assests/images/project_images/img3.png'
-import i4 from '../../assests/images/project_images/img4.png'
-import i5 from '../../assests/images/project_images/img5.avif'
-import i6 from '../../assests/images/project_images/img6.jpg'
-import i8 from '../../assests/images/project_images/img01.png'
-import i9 from '../../assests/images/project_images/img4.png' 
-import i10 from '../../assests/images/events_images/Image_10.jpg'
 
-export{    i1,    i2,    i3,    i4,    i5,    i6,    i8,    i9,    i10}
 
 
 function Event() {
@@ -109,7 +99,7 @@ function Event() {
 
           <img 
 
-            src={i10}
+            src='/assets/images/project_images/img1.png'
 
             alt='eventone'
 
@@ -119,7 +109,7 @@ function Event() {
 
            <img 
 
-            src={i2}
+            src='/assets/images/project_images/img2.png'
 
             alt='eventtwo'
 
@@ -129,7 +119,7 @@ function Event() {
 
           <img 
 
-            src={i2}
+            src='/assets/images/project_images/img3.png'
 
             alt='eventthree'
 
@@ -146,7 +136,7 @@ function Event() {
 
           <img 
 
-            src={i2}
+            src='/assets/images/project_images/img4.png'
 
            alt='eventfour'
 
@@ -156,7 +146,7 @@ function Event() {
 
            <img 
 
-            src={i6}
+            src='/assets/images/project_images/img5.png'
 
             alt='eventfive'
 
@@ -166,7 +156,7 @@ function Event() {
 
           <img 
 
-            src={i8}
+            src='/assets/images/project_images/img6.png'
 
             alt='eventsix'
 
@@ -180,7 +170,7 @@ function Event() {
 
           <img 
 
-            src={i3}
+            src='/assets/images/project_images/img7.png'
 
             alt='eventseven'
 
@@ -190,7 +180,7 @@ function Event() {
 
            <img 
 
-            src={i5}
+            src= '/assets/images/project_images/img8.png'
 
             alt='eventeight'
 

@@ -1,9 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
-// import { Model } from './Earth_1_12756';
-import { EarthModel } from "./Compressed_earth";
-// import { Office } from './Office';
+import { EarthModel } from "./EarthModel";
 
-export const Experience = () => {
+export const Earth = () => {
     return (
         <>
             <OrbitControls enableZoom={false} autoRotate={true} autoRotateSpeed={0.3} enableRotate={false}/>

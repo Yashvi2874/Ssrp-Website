@@ -12,18 +12,18 @@
 
 @font-face {
   font-family: 'nulshock bd'; /* Replace with your font's name */
-  src: url('../../assests/fonts/nulshock bd.ttf') format('truetype'); /* Replace with the actual path to your .ttf file */
+  src: url('/public/assets/fonts/nulshock\ bd.ttf') format('truetype'); /* Replace with the actual path to your .ttf file */
 }
 @font-face {
   font-family: 'dahlia-regular'; /* Replace with your font's name */
-  src: url('../../assests/fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .ttf file */
+  src: url('/public/assets/fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .ttf file */
 }
 
 .typeit-text {
     font-size: 2vw; /* Adjust size as needed */
     text-align: left;
     font-family: 'Nulshock bd' !important;
-    src: url('../../assests/fonts/dahlia-font/dahlia-bold.woff') format('woff');
+    src: url('/public/assets/fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     /* animation: fade-up 5s; */
@@ -51,7 +51,7 @@
   .title {
     font-family: 'Nulshock bd' !important;
     text-align: left;
-    src: url('../../assests/fonts/dahlia-font/dahlia-bold.woff') format('woff');
+    src: url('/public/assets/fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 6vw;

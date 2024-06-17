@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './NavBar.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import logo from '../../assests/images/about_images/logo.png';
-import Somaiya_Vidyavihar from '../../assests/images/Trust_logo/somaiya white.png';
-import Somaiya_Vidyavihar_University from '../../assests/images/Trust_logo/somaiya trust.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
@@ -65,9 +62,9 @@ const textLeave =() => setCursorVariant("default")
         <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              <img className='navbar-logo'src={logo} alt='Ssrp-logo'></img>
-              <img className='navbar-logo'src={Somaiya_Vidyavihar} alt='Somaiya_Vidyavihar'></img>
-              <img className='navbar-logo'src={Somaiya_Vidyavihar_University} alt='Somaiya_Vidyavihar_University'></img>
+              <img className='navbar-logo'src='/assets/images/about_images/logo.png' alt='Ssrp-logo'></img>
+              <img className='navbar-logo'src='/assets/images/Trust_logo/somaiya white.png' alt='Somaiya_Vidyavihar'></img>
+              <img className='navbar-logo'src='/assets/images/Trust_logo/somaiya trust.png' alt='Somaiya_Vidyavihar_University'></img>
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"  onClick={toggleAbsolute} data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
