@@ -4,7 +4,7 @@ import Project from './components/project';
 import {  motion } from 'framer-motion';
 import gsap from 'gsap';
 import { Img } from 'react-image';
-import '../oldprojects/Projects.css';
+import '../projects/Projects.css';
 
 
 
