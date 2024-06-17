@@ -1,6 +1,13 @@
 SSRP WEBSITE
 
 Creating a website with Create React App
+We have used React, node.js, 3js, Css, Html
+
+Home Page - All crucial information about Somaiya Space Research Project.
+Projects Page - Details about all the projects SSRP is working on.
+Community Page - About the team members.
+Events Page - Mentioned all successful events.
+Contact Us Section to ignite the stellar exchange.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
