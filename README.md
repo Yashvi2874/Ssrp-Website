@@ -3,7 +3,7 @@
 
 <h3 align='center'>This website is created using</h3><br/>
 <p align="center">
-  <a href="https://reactjs.org/docs/getting-started.html" target="_blank">
+  <a href="https://react.dev/" target="_blank">
   <img src="https://skillicons.dev/icons?i=react" alt="React" />
 </a>
 <a href="https://nodejs.org/en/docs/" target="_blank">
@@ -24,7 +24,7 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
   <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
 </a>
-<a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">
+<a href="https://getbootstrap.com/" target="_blank">
   <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" />
 </a>
 
