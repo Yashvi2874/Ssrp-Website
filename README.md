@@ -3,9 +3,31 @@
 
 <h3 align='center'>This website is created using</h3><br/>
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nodejs,js,threejs,blender,html,css,bootstrap" />
-  </a>
+  <a href="https://reactjs.org/docs/getting-started.html" target="_blank">
+  <img src="https://skillicons.dev/icons?i=react" alt="React" />
+</a>
+<a href="https://nodejs.org/en/docs/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+</a>
+<a href="https://threejs.org/docs/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=threejs" alt="Three.js" />
+</a>
+<a href="https://docs.blender.org/manual/en/latest/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=blender" alt="Blender" />
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+  <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+  <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+</a>
+<a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" />
+</a>
+
 </p>
 
 # Content
