@@ -135,6 +135,7 @@
 }
 
 .Team-department {
+  border-bottom: 2px solid #d278f3a2;
   position: relative;
   writing-mode: horizontal-tb;
   color: whitesmoke;
@@ -230,36 +231,11 @@ h2 {
   text-align: center;
 }
 
-  @media screen and (min-width: 768px){
-    
-    .card-container{
-      max-height: 200px;
-      max-width: 200px;
-    }
-@media screen and (min-width: 768px) {
-  .card-container {
-    max-height: 200px;
-    max-width: 200px;
-  }
-
-  .flip-box {
-    max-height: 300px;
-    max-width: 300px;
-  }
-
-   h2{
-      font-size: 2rem;
-    }
-    .name,.description{
-      font-size: 1.5rem;
-    }
-  }
-
-  @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
   
   .team-image{
-    max-height: 300px;
-    max-width: 500px;
+    max-height: 55vh;
+    max-width: 100vw;
   }
   .Team-department{
     margin-top: 2vw;
@@ -278,8 +254,8 @@ h2 {
     font-size: 5vw;
   }
   .team-description{
-    margin-top: 3vw;
-    margin-bottom:3vw ;
+    margin-top: 2vw;
+    margin-bottom:2vw ;
     font-size: 2vw;
     text-align: center;
   }
@@ -304,8 +280,25 @@ h2 {
 margin-top:3vw ;
   }
 }
-  
-}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .flip-box {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+   h2{
+      font-size: 2rem;
+    }
+    .name,.description{
+      font-size: 1.5rem;
+    }
+  }
 
 /* New CSS for hover effect */
 .hover-overlay {

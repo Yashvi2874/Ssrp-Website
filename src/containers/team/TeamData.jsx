@@ -13,7 +13,7 @@ const teamSections = [
           name: "Rishikesh Bhintade",
           designation: "Founder & Project Director",
           img: "/assets/images/Community/Head/Rishikesh_Bhintade.jpg",
-          animation: "slide-right"
+          animation: "slide-up"
         },
         {
           name: "Tanisha Mukherjee",

@@ -47,6 +47,9 @@ function App({ toggleAbsolute }) {
                   <a className="nav-link active" aria-current="page" href="/events">Events</a>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                  <a className="nav-link active" aria-current="page" href="/croudfunding">Croud-Funding</a>
+                </li>
+                <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <a className="nav-link active" aria-current="page" href="/contact">Contact US</a>
                 </li>
               </ul>
