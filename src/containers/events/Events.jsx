@@ -4,6 +4,8 @@ import './page.module.scss'
 import styles from './page.module.scss'
 import gsap from 'gsap';
 import { useRef } from 'react';
+import { motion } from 'framer-motion';
+import { useCursorContext } from '../../components/cursor/CursorContext';
 
 
 
@@ -48,6 +50,8 @@ function Event() {
   
   
     const lerp = (start, target, amount) => start * (1 - amount) +target * amount;
+
+    const { cursorVariant, variants} = useCursorContext();
   
   
   
@@ -92,8 +96,13 @@ function Event() {
     return (
 
       <main onMouseMove={(e) => {manageMouseMove(e)}} className={styles.main}>
+        <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}/>
 
     <main className={styles.main}>
+    
 
       <div ref={plane1} className={styles.plane}>
 

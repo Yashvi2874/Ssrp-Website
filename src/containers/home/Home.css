@@ -1,7 +1,6 @@
-*{
-  cursor: none;
+.home{
+  cursor: pointer;
 }
-
 .cursor{
   background-color: white;
   height: 10px;

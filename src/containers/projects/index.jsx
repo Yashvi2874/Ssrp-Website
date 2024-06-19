@@ -5,6 +5,7 @@ import {  motion } from 'framer-motion';
 import gsap from 'gsap';
 import { Img } from 'react-image';
 import '../projects/Projects.css';
+import { useCursorContext } from '../../components/cursor/CursorContext';
 
 
 
@@ -126,10 +127,15 @@ export default function Home() {
     moveItems(x, y)
     setModal({active, index})
   }
+  const { cursorVariant, variants, textEnter, textLeave} = useCursorContext();
 
   return (
   <div className="project-container">
-    <h1 className='project-heading'>Projects</h1>
+     <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}/>
+    <h1 className='project-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Projects</h1>
   <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
     <div className={styles.body}>
       {

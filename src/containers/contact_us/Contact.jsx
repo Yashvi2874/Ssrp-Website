@@ -3,11 +3,12 @@ import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   const [result, setResult] = useState("");
   const [textareaRows, setTextareaRows] = useState(1);
-  const { textEnter, textLeave } = useCursorContext();
+  const { variants, cursorVariant, textEnter, textLeave } = useCursorContext();
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -47,6 +48,10 @@ export default function Contact() {
 
   return (
     <div className='contact-container' id='contact'>
+      <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}/>
       <form onSubmit={onSubmit} className="contact-left">
         <div className="contact-left-title">
           <h2 className='gradient-text' data-aos="fade-down" onMouseEnter={textEnter} onMouseLeave={textLeave}>Ignite the stellar exchange 🔥</h2>
