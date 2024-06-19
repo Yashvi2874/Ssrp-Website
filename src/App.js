@@ -11,17 +11,22 @@ import HomePage from './pages/home/HomePage';
 import TeamPage from './pages/team/TeamPage';
 import EventPage from './pages/events/EventPage';
 import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
+import { CursorProvider } from './components/cursor/CursorContext';
 
 function App() {
     
     useEffect(()=>{
       AOS.init({duration:"2000"});
     },[]);
+
+
+    
     
     
 
   
   return (
+    <CursorProvider >
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
@@ -123,6 +128,7 @@ function App() {
 
       </Routes>
     </BrowserRouter>
+    </CursorProvider>
           );
 }
 
