@@ -4,11 +4,13 @@ import { Canvas } from '@react-three/fiber';
 import { Earth } from '../../components/earth/Earth';
 import Astronaut  from '../../components/astronaut/Astronaut';
 import { useCursorContext } from '../../components/cursor/CursorContext';
+import { motion } from 'framer-motion';
 
 
 function Home() {
 
-  const { textEnter, textLeave } = useCursorContext();
+  const { cursorVariant, variants, textEnter, textLeave } = useCursorContext();
+
 
   return (
     <div className='Home' id='home'>
@@ -17,6 +19,10 @@ function Home() {
     <div className='text-center text-white m-4'>
       <div className='main1'>
       <div className='column justify-content-center ssrp-absolute'>
+      <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}/>
       <div className='title1'>
       
         <div className='title' onMouseEnter={textEnter} onMouseLeave={textLeave}>

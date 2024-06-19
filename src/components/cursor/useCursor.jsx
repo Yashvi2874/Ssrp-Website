@@ -21,8 +21,8 @@ const useCursor = () => {
 
   const variants = {
     default: {
-      x: mousePosition.x - 5,
-      y: mousePosition.y - 5
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10
     },
     text: {
       height: 100,

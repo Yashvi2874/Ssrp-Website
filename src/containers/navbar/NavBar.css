@@ -1,25 +1,23 @@
 
-
-.navbar-logo {
-    max-height: 35px;
-    width: auto;
-    object-fit: contain;
-    margin-right: 10px;
-    padding: 3px;
-  }
- 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px){
     .navbar-logo {
-        max-height: 60px;
-        width: auto;
+        max-height: 40px;
+        width: fit-content;
         object-fit: contain;
         margin-right: 10px;
         padding: 3px;
-    }
-    
-
+      }
 }
 
+ 
+    .navbar-logo {
+        max-height: 40px;
+        width: auto;
+        object-fit: contain;
+        padding: 3px;
+    }
+
+
 .nav-item{
-    font-size: 0.9rem;
+    font-size: 1vw;
 }

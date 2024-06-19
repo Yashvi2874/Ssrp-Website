@@ -5,7 +5,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import teamSections from './TeamData';
 import { useCursorContext } from '../../components/cursor/CursorContext';
-import { motion } from 'framer-motion';
 
 function Team() {
 
@@ -13,7 +12,7 @@ function Team() {
     AOS.init({ duration: 2000 });
   }, []);
 
-  const { cursorVariant, variants, textEnter, textLeave } = useCursorContext();
+  const { textEnter, textLeave } = useCursorContext();
 
   const renderMembers = (members, executives) => {
     return (
