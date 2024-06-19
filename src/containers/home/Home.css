@@ -1,10 +1,10 @@
-.home{
-  cursor: pointer;
+*{
+  cursor: none;
 }
 .cursor{
   background-color: white;
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   position: fixed;
   z-index: 0;
@@ -131,6 +131,10 @@
       height: 60vh  !important;
       width: 100vw  !important;
       margin: 0;
+    }
+
+    .cursor{
+      display: none;
     }
 
     .title{
