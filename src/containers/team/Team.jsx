@@ -4,12 +4,16 @@ import Navbar from '../navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import teamSections from './TeamData';
+import { useCursorContext } from '../../components/cursor/CursorContext';
+import { motion } from 'framer-motion';
 
 function Team() {
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
+  const { cursorVariant, variants, textEnter, textLeave } = useCursorContext();
 
   const renderMembers = (members, executives) => {
     return (
@@ -68,7 +72,8 @@ function Team() {
             <img src='/assets/images/Community/Team.jpg' className='team-image' alt='XYZ' />
             <div className='team-overlay'>
               <div className='navbar'><Navbar /></div>
-              <h1 className='team-heading' data-aos="zoom-in">Our Team</h1>
+              
+              <h1 className='team-heading' data-aos="zoom-in"> <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Team</div></h1>
               <div className='team-description' data-aos="zoom-in">
                 With the strength of 30+ students we focus on developing and launching a satellite, the KJSCE StudentSAT, while also combining research projects on space exploration with participation in competitions like Spaceport America, International Rover Challenge and CANSAT.
               </div>
@@ -78,7 +83,7 @@ function Team() {
           </div>
           {teamSections.map((section, index) => (
             <div key={index} className="team-member-container">
-              <div className='Team-department' data-aos="zoom-in">{section.title}</div>
+              <div className='Team-department' data-aos="zoom-in" onMouseEnter={textEnter} onMouseLeave={textLeave}>{section.title}</div>
               <div className='Team-Members'>
                 {renderMembers(section.members, section.executive)}
               </div>

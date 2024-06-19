@@ -146,10 +146,10 @@ export default function Home() {
                 const { src, color } = project
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
                     <Img 
-                    src={`/project_images/${src}`}
+                    src={`/assets/images/project_images/${src}`}
                     width={300}
                     height={0}
-                    alt="image"
+                    alt={project.title}
                     />
                 </div>
                 })

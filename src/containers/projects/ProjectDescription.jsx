@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
-import Projects from './ProjectsDetails'; // Ensure you export the projects array to use it here
+import { motion } from 'framer-motion';   
+import Projects from './ProjectsDetails';
 import './ProjectDescription.css';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import { useCursorContext } from '../../components/cursor/CursorContext';
+
 
 const ProjectDescription = () => {
   const { projectId } = useParams();
   const [loading, setLoading] = useState(true);
   const [project, setProject] = useState(false);
   const [contentVisible, setContentVisible] = useState(false); // State to control content visibility
+  const { cursorVariant, variants, textEnter, textLeave } = useCursorContext();
 
   useEffect(() => {
-    // AOS.init({
-    //   duration: 2000
-    // });
     const foundProject = Projects.find(p => p.id === parseInt(projectId));
 
     if (foundProject) {
@@ -50,9 +48,14 @@ const ProjectDescription = () => {
 
   return (
     <div className='details-container'>
+      <motion.div className="cursor"
+        variants={variants}
+        animate={cursorVariant}
+        transition={{ type: "tween", ease: "backOut", duration:0}}
+      />
       <motion.div className='details-bg'
         initial={{ opacity: 0, y: 0 }} // Initial animation state
-        animate={{ opacity: 1, y: -1000, transition:{duration:'0.5'} }} // Animation when component appears
+        animate={{ opacity: 1, y: -1000, transition:{duration:'0.6'} }} // Animation when component appears
         exit={{ opacity: 0, y: 0 }}
         onAnimationComplete={() => setContentVisible(true)} // Set content visible after bg animation completes
       ></motion.div>
@@ -62,14 +65,14 @@ const ProjectDescription = () => {
           animate={{ opacity: 1, y: 0 }} // Animation when component appears
           exit={{ opacity: 0, y: 100 }} // Animation when component exits
         >
-          <img src={project.image} alt={project.title} />
+          <img src={`/assets/images/project_images/${project.src}`} alt={project.title} />
           <div className='details'>
-            <div className='details-title'>{project.title}</div>
-            <div className='details-section-heading'>Description</div>
+            <div className='details-title' onMouseEnter={textEnter} onMouseLeave={textLeave}>{project.title}</div>
+            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
             <div className='details-description text'>{project.description}</div>
-            <div className='details-section-heading'>Objective</div>
-            <div className='details-objectives text'>{project.objective}</div>
-            <div className='details-section-heading'>Outcomes</div>
+            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>
+            <div className='details-objectives text' >{project.objective}</div>
+            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Outcomes</div>
             <div className='details-outcomes text'>{project.outcomes}</div>
           </div>
         </motion.div>

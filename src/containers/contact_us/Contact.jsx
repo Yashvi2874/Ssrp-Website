@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useCursorContext } from '../../components/cursor/CursorContext';
 
 export default function Contact() {
   const [result, setResult] = useState("");
   const [textareaRows, setTextareaRows] = useState(1);
+  const { textEnter, textLeave } = useCursorContext();
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -47,7 +49,7 @@ export default function Contact() {
     <div className='contact-container' id='contact'>
       <form onSubmit={onSubmit} className="contact-left">
         <div className="contact-left-title">
-          <h2 className='gradient-text' data-aos="fade-down">Ignite the stellar exchange 🔥</h2>
+          <h2 className='gradient-text' data-aos="fade-down" onMouseEnter={textEnter} onMouseLeave={textLeave}>Ignite the stellar exchange 🔥</h2>
           <hr />
         </div>
         <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-right" />

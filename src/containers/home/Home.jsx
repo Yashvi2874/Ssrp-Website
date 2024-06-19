@@ -1,86 +1,37 @@
-import React, {Suspense, useEffect, useState} from 'react';
+import React, {Suspense} from 'react';
 import './Home.css';
 import { Canvas } from '@react-three/fiber';
 import { Earth } from '../../components/earth/Earth';
 import Astronaut  from '../../components/astronaut/Astronaut';
-import { motion } from 'framer-motion';
+import { useCursorContext } from '../../components/cursor/CursorContext';
 
 
 function Home() {
 
-//cursor part
-const[mousePosition , setMousePosition]=useState({
-  x:0,
-  y:0
-})
-const[cursorVariant,setCursorVariant]=useState("default");
-
-useEffect(() =>{
-  const mouseMove = (e) => {
-     setMousePosition({
-      x:e.clientX,
-      y:e.clientY
-     })
-  }
-
-  window.addEventListener("mousemove",mouseMove);
-
-  return () =>{ 
-    window.removeEventListener("mousemove",mouseMove);
-  }
-}, []);
-
-const variants={
-  default:{
-    x:mousePosition.x-5,
-    y: mousePosition.y+5
-  },
-  text: {
-    height :100,
-    width :100,
-    x:mousePosition.x-50,
-    y: mousePosition.y-50,
-    backgroundColor: "white",
-    mixBlendMode:"difference"
-  }
-}
-
-const textEnter =() => setCursorVariant("text");
-const textLeave =() => setCursorVariant("default");
+  const { textEnter, textLeave } = useCursorContext();
 
   return (
     <div className='Home' id='home'>
+      
       
     <div className='text-center text-white m-4'>
       <div className='main1'>
       <div className='column justify-content-center ssrp-absolute'>
       <div className='title1'>
+      
         <div className='title' onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <motion.div className="cursor"
-              variants={variants}
-              animate={cursorVariant}
-              transition={{ type: "tween", ease: "backOut", duration:0}}
-            />
             SSRP
         </div>
       
       </div>
       <div className='typeit-text1' id='small-type'>
         <div className='typeit-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>
-        <motion.div className="cursor"
-              variants={variants}
-              animate={cursorVariant}
-              transition={{ type: "tween", ease: "backOut", duration:0}}
-            />
           Somaiya Space Research Project</div>
       
       </div>
       <section className='Slogan1'>
         <div onMouseEnter={textEnter} onMouseLeave={textLeave} className='Slogan'>
-      <motion.div className="cursor"
-              variants={variants}
-              animate={cursorVariant}
-              transition={{ type: "tween", ease: "backOut", duration:0}}/>
+      
         Launching dreams into orbits
         </div>
       

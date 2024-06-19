@@ -20,7 +20,7 @@ function HomePage() {
         return <Loading />;
       }
   return (
-    <>
+    <>  
         <Navbar />
         <Home />
         <About />

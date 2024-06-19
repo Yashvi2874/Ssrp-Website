@@ -14,7 +14,7 @@ export default function Index({index, title, author, image, manageModal}) {
         onClick={() => handleProjectClick(index+1)}
         onMouseLeave={(e) => {manageModal(false, index, e.clientX, e.clientY)}} className="project">
             <div className='project-content'>
-            <img alt={title}  src={`/project_images/${image}`} />
+            <img alt={title}  src={`/assets/images/project_images/${image}`} />
             <div className='project-title'>{title}</div>
             <div className='project-author'>{author}</div>
             </div>

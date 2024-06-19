@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import './NavBar.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { motion } from 'framer-motion';
+import { useCursorContext } from '../../components/cursor/CursorContext';
 
 
 function App({ toggleAbsolute }) {
@@ -13,48 +13,11 @@ function App({ toggleAbsolute }) {
 
   },[]);
 
-  //cursor part
-const[mousePosition , setMousePosition]=useState({
-  x:0,
-  y:0
-})
-const[cursorVariant,setCursorVariant]=useState("default");
-
-useEffect(() =>{
-  const mouseMove =e => {
-     setMousePosition({
-      x:e.clientX,
-      y:e.clientY
-     })
-  }
-
-  window.addEventListener("mousemove",mouseMove);
-
-  return () =>{ 
-    window.removeEventListener("mousemove",mouseMove);
-  }
-}, []);
-
-const variants={
-  default:{
-    x:mousePosition.x-20,
-    y: mousePosition.y-20
-  },
-  text: {
-    height :100,
-    width :100,
-    x:mousePosition.x-50,
-    y: mousePosition.y-50,
-    backgroundColor: "white",
-    mixBlendMode:"difference"
-  }
-}
-
-const textEnter =() => setCursorVariant("text");
-const textLeave =() => setCursorVariant("default")
+  const { textEnter, textLeave } = useCursorContext();
   return (
     <div className='main2' data-aos="fade-down">
       <div className="App" style={{ width: "100vw" }}>
+      
    
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous"></link>
 
@@ -72,11 +35,6 @@ const textLeave =() => setCursorVariant("default")
             <div className="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
                 <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                <motion.div className="cursor1"
-              variants={variants}
-              animate={cursorVariant}
-              transition={{ type: "tween", ease: "backOut", duration:0}}
-      />
                   <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
@@ -95,25 +53,6 @@ const textLeave =() => setCursorVariant("default")
             </div>
           </div>
         </nav>
-
-        {/* <style>
-          {`
-            .main2 {
-              animation: fade-up 1s;
-            }
-
-            @keyframes fade-up {
-              0% {
-                opacity: 0;
-                transform: translate(30px) scale(0.9);
-              }
-              100% {
-                opacity: 1;
-                transform: translateY(0px) scale(1);
-              }
-            }
-          `}
-        </style> */}
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></script>
         
