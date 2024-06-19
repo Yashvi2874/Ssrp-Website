@@ -6,6 +6,8 @@ import Footer from '../../containers/footer/Footer';
 
 function ProjectPage() {
     const[loading, setLoading]=useState(true);
+
+
     useEffect(() =>{
     
       setTimeout(() => {
