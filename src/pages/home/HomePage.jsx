@@ -3,7 +3,6 @@ import Navbar from '../../containers/navbar/Navbar';
 import Footer from '../../containers/footer/Footer';
 import Loading from '../../components/loading/Loading';
 import Home from '../../containers/home/Home';
-import About from '../../containers/about/About';
 import Contact from '../../containers/contact_us/Contact';
 
 
@@ -23,7 +22,6 @@ function HomePage() {
     <>  
         <Navbar />
         <Home />
-        <About />
         <Contact />
         <Footer />
     </>
