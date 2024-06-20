@@ -57,8 +57,8 @@ export default function Contact() {
           <h2 className='gradient-text' data-aos="fade-down" onMouseEnter={textEnter} onMouseLeave={textLeave}>Ignite the stellar exchange 🔥</h2>
           <hr />
         </div>
-        <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-right" />
-        <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required data-aos="fade-left" />
+        <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-right"  onMouseEnter={textEnter} onMouseLeave={textLeave}/>
+        <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required data-aos="fade-left" onMouseEnter={textEnter} onMouseLeave={textLeave} />
         <input 
           type="text" 
           name="number" 
@@ -70,6 +70,7 @@ export default function Contact() {
           pattern="\d{10}" 
           maxLength={10}
           onInput={handleNumberInputChange}
+          onMouseEnter={textEnter} onMouseLeave={textLeave}
         />
         <textarea
           name="message"
@@ -79,6 +80,7 @@ export default function Contact() {
           rows={textareaRows}
           onChange={handleTextareaChange}
           data-aos="fade-left"
+          onMouseEnter={textEnter} onMouseLeave={textLeave}
         ></textarea>
         <button type="submit" data-aos="fade-right" className='button'>Submit 🡲</button>
       </form>
