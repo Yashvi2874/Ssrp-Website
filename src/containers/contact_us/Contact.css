@@ -89,6 +89,10 @@
         width: 65vw;
     }
 
+    .contact-left-title h2{
+        font-size: 8vw;
+    }
+
 }
 
 .verification{

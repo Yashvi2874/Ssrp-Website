@@ -88,7 +88,7 @@ export default function Contact() {
       <div className="head-contact" data-aos="fade-up">
         <h4>Rishikesh Bhintade</h4>
         <h4><span className="material-symbols-outlined">call</span> +917056103520</h4>
-        <h4><span className="material-symbols-outlined" style={{ margin: '5' }}>mail</span><a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a></h4>
+        <h4><span className="material-symbols-outlined">mail</span><a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a></h4>
       </div>
     </div>
   );
