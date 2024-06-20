@@ -8,7 +8,17 @@
     border-bottom: 2px solid #d278f3a2;
     margin-left: 25rem;
     margin-right: 25rem;
-
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 3px #f4f005af;
+  }
+  to {
+    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 4px #f4f005af;
+}
 }
 
 .project-loading{

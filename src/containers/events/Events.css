@@ -18,6 +18,34 @@
     margin-bottom: 10px;
   }
 
+  .eventname{
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 3px #f4f005af;
+    }
+    to {
+      text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 4px #f4f005af;
+  }
+  }
+
+  h1{
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 3px #f4f005af;
+    }
+    to {
+      text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 4px #f4f005af;
+  }
+  }
+
   .event-container {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;

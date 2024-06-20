@@ -8,6 +8,7 @@ import { useCursorContext } from '../../components/cursor/CursorContext';
 
 function Team() {
 
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -26,8 +27,16 @@ function Team() {
                     <img className='head-photo' src={executive.img} alt={executive.name} />
                     <div className="hover-overlay">
                       <div className="hover-icons">
-                        <i className="fas fa-info-circle">LinkedIn</i>
-                        <i className="fas fa-user-circle">Instagram</i>
+                        <i className="fas fa-info-circle">
+                          <a href={executive.linkedIn} target="_blank" rel="noopener noreferrer">
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                          </a>
+                        </i>
+                        <i className="fas fa-user-circle">
+                          <a href={executive.Github} target="_blank" rel="noopener noreferrer">
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
+                          </a>
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -47,8 +56,16 @@ function Team() {
                     <img className='head-photo' src={member.img} alt={member.name} />
                     <div className="hover-overlay">
                       <div className="hover-icons">
-                        <i className="fas fa-info-circle">LinkedIn</i>
-                        <i className="fas fa-user-circle">Instagram</i>
+                        <i className="fas fa-info-circle">
+                          <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                          </a>
+                        </i>
+                        <i className="fas fa-user-circle">
+                          <a href={member.Github} target="_blank" rel="noopener noreferrer">
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
+                          </a>
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -72,7 +89,9 @@ function Team() {
             <div className='team-overlay'>
               <div className='navbar'><Navbar /></div>
               
-              <h1 className='team-heading' data-aos="zoom-in"> <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Team</div></h1>
+              <h1 className='team-heading' data-aos="zoom-in">
+                <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Team</div>
+              </h1>
               <div className='team-description' data-aos="zoom-in">
                 With the strength of 30+ students we focus on developing and launching a satellite, the KJSCE StudentSAT, while also combining research projects on space exploration with participation in competitions like Spaceport America, International Rover Challenge and CANSAT.
               </div>

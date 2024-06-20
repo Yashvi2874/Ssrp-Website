@@ -16,10 +16,11 @@
 
  
     .navbar-logo {
-        max-height: 40px;
+        max-height: 50px;
         width: auto;
         object-fit: contain;
-        padding: 3px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 
 
