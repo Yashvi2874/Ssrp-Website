@@ -12,6 +12,7 @@
   left: 0;
   pointer-events: none;
 }
+
 @media screen and (min-width: 768px) {
     .ssrp-absolute {
 
@@ -41,8 +42,19 @@
   }
 
   .main1{
-    animation: fade-up 7s;
+  animation: fade-up 7s;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 3px #f4f005af;
   }
+  to {
+    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 4px #f4f005af;
+}
+}
   
 @keyframes fade-up{
   0%{
