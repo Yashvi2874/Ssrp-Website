@@ -46,7 +46,7 @@ const teamSections = [
           designation: "Web-Dev Executive",
           img: "/assets/images/Community/Members/Comps/Yashasvi_Gupta.jpg",
           animation: "slide-up",
-          linkedIn: "https://www.linkedin.com/in/yashasvi-gupta-1230b423a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          linkedIn: "https://www.linkedin.com/in/gupta-yashasvi/",
           Github:"https://github.com/Yashvi2874/"
         }
       ],
@@ -56,8 +56,8 @@ const teamSections = [
           designation: "Web-Dev & ODHS",
           img: "/assets/images/Community/Members/Comps/Om_Thanage.jpeg",
           animation: "slide-right",
-          linkedIn: "",
-          Github:""
+          linkedIn: "https://www.linkedin.com/in/omthanage/",
+          Github:"https://github.com/Om-Thanage"
         },
         {
           name: "Piyush Chaudhary",
@@ -237,8 +237,8 @@ const teamSections = [
           designation: "Embedded Programming Executive",
           img: "/assets/images/Community/Members/Electronics/Siya_Naulakha.jpg",
           animation: "slide-up",
-          linkedIn: "",
-          Github:""
+          linkedIn: "http://www.linkedin.com/in/siya-naulakha/",
+          Github:"https://github.com/siyanaulakha"
         }
       ],
       members: [
