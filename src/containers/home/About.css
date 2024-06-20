@@ -162,6 +162,13 @@
     }
     .text10{
       grid-row: 1;
+      
+    }
+
+    .text8, .text9, .text10{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
 
