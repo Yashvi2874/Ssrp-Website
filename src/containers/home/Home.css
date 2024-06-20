@@ -89,7 +89,7 @@
     color: #fff;
     text-align: left;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1025px) {
   .par{
     display: inline;
   }
@@ -115,7 +115,7 @@
       0 0 100px #444544;
   }
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1024px) {
     .earth-block{
       display: none;
     }
