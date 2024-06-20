@@ -20,6 +20,6 @@
     width: 120vw;
 } */
 
-a{
+a, input, textarea{
     cursor: pointer;
 }

@@ -71,7 +71,7 @@ function Home() {
           </div>
 
           <div className='text2' data-aos="fade-left">
-            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave} >Future Goals</p>
+            <div className='item flex' onMouseEnter={textEnter} onMouseLeave={textLeave}  >Future Goals</div>
             <p className='about-text'>We leverage both research and renowned competitions like IRC, CANSAT, and IROC-U. Sharing research findings expands knowledge and validates student contributions. Competitions hone problem-solving, but in-depth research propels space exploration. These projects push the boundaries of our cosmic understanding and drive cutting-edge technologies beyond space applications. By engaging in research, we not only solve present challenges but lay the groundwork for future innovation with lasting impact.</p>
           </div>
 
