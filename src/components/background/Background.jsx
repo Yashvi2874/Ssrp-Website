@@ -12,7 +12,9 @@ const StarBackground = ({ children }) => {
     cameraRef.current = camera;
 
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, Math.max(window.innerHeight, Math.min(document.querySelector('.relative').clientHeight, document.body.scrollHeight, document.documentElement.scrollHeight)));
+    renderer.setSize(
+      Math.max(window.innerWidth, Math.min(document.querySelector('.relative').clientWidth, document.body.scrollWidth, document.documentElement.scrollWidth)),
+      Math.max(window.innerHeight, Math.min(document.querySelector('.relative').clientHeight, document.body.scrollHeight, document.documentElement.scrollHeight)));
     containerRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer;
 
@@ -47,7 +49,7 @@ const StarBackground = ({ children }) => {
     animate();
 
     const handleWindowResize = () => {
-      const width = window.innerWidth;
+      const width = Math.min(document.querySelector('.relative').clientWidth, Math.max(document.body.scrollWidth, document.documentElement.scrollWidth));
       const height = Math.min(document.querySelector('.relative').clientHeight, Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
 
       camera.aspect = width / height;
@@ -58,7 +60,8 @@ const StarBackground = ({ children }) => {
 
     const handleScroll = () => {
       const height = Math.min(document.querySelector('.relative').clientHeight, Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
-      renderer.setSize(window.innerWidth, height);
+      const width =  Math.min(document.querySelector('.relative').clientWidth, Math.max(document.body.scrollWidth, document.documentElement.scrollWidth));
+      renderer.setSize(width, height);
     };
 
     window.addEventListener('resize', handleWindowResize);
