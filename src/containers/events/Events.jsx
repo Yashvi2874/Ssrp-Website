@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Events.css'
 import './page.module.scss'
 import styles from './page.module.scss'
 import gsap from 'gsap';
 import { useRef } from 'react';
-import { motion } from 'framer-motion';
-import { useCursorContext } from '../../components/cursor/CursorContext';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {motion} from 'framer-motion';
+import {useCursorContext} from '../../components/cursor/CursorContext'
 
 
 function Event() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
     const plane1 = useRef(null);
 
@@ -139,8 +144,8 @@ function Event() {
       </div>
 
       <div ref={plane2} className={styles.plane}>
-        <div className ='Name'>
-          <h1>Astro-Chronicles</h1>
+        <div className ='Name' data-aos = "zoom-in">
+          <h1>AstroChronicles</h1>
           </div>
 
           <img 
@@ -197,8 +202,34 @@ function Event() {
 
           />
 
-      </div>
+          <div className='forphone'>
+            <div>
+            <h2 className='eventname' data-aos="slide-up">Trio Conclave</h2>  
+            <div>
+            <img 
 
+             src='/assets/images/project_images/img7.png'
+
+alt='eventseven'
+
+             width={150}
+
+             /></div>
+             </div>
+             <div>
+            <h2 className='eventname' data-aos="slide-up">Astrogazing</h2>
+            <div>
+              <img className='phoneimg' data-aos="zoom-in"
+
+              src='/assets/images/project_images/img4.png'
+
+              alt='eventone'
+
+              width={300}
+
+              /></div></div>
+          </div>
+      </div>
 
     </main>
     </main>
