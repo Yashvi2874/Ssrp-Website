@@ -30,7 +30,7 @@ function App({ toggleAbsolute }) {
               <img className='navbar-logo'src='/assets/images/Trust_logo/somaiya trust.png' alt='Somaiya_Vidyavihar_University'></img>
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"  onClick={toggleAbsolute} data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+            ☰
             </button>
             <div className="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
@@ -47,7 +47,7 @@ function App({ toggleAbsolute }) {
                   <a className="nav-link active" aria-current="page" href="/events">Events</a>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                  <a className="nav-link active" aria-current="page" href="/croudfunding">Croud-Funding</a>
+                  <a className="nav-link active" aria-current="page" href="/croudfunding">Crowd-Funding</a>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <a className="nav-link active" aria-current="page" href="/contact">Contact US</a>

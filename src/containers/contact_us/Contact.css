@@ -1,3 +1,16 @@
+.gradient-text{
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 3px #f4cc05af;
+    }
+    to {
+      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 4px #f4cc05af;
+  }
+  }
 
 .contact-container{
     max-height: 120vh;
@@ -74,6 +87,10 @@
 @media(max-width: 768px){
     .contact-inputs{
         width: 65vw;
+    }
+
+    .contact-left-title h2{
+        font-size: 8vw;
     }
 
 }
