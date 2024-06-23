@@ -129,6 +129,8 @@
 	transition: 2s all ease-in-out color; */
 }
 
+
+
 .button::before {
 	content: " ";
 	display: block;
@@ -175,3 +177,7 @@ input[type='number']::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+/* .head-contact h4:hover{
+    font-size: 2rem;
+} */

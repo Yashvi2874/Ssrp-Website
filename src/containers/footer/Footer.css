@@ -20,30 +20,29 @@
     height: 5vh;
 }
 
+
+@media screen  and (min-width: 767px)
+{
+    .social-media-img:hover, .ssrp-logo-img:hover
+{
+    height: 10vh;
+    cursor: pointer;
+}
+
+
+    
+}
+
 .ssrp-logo-img
 {
     height: 8vh;
 }
 
-/* @keyframes fade
-{
-    0%
-    {
-        opacity: 0.2;
-    }
 
-    100%
-    {
-        opacity: 0.9;
-    }
+/* .Footer img:hover{
+    scale: 1.2;
 } */
 
-/* Media queries */
 
-@media screen and (max-width: 1295px)
-{
-    footer
-    {
-        width: 95%;
-    }
-}
+
+
