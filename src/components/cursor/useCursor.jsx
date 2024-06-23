@@ -30,7 +30,8 @@ const useCursor = () => {
       x: mousePosition.x - 50,
       y: mousePosition.y - 50,
       backgroundColor: 'white',
-      mixBlendMode: 'difference'
+      mixBlendMode: 'difference',
+      transition: ' all 0s ease-in-out '
     },
   };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'; 
 import Carousel from 'react-bootstrap/Carousel';
 
-export default function info() { 
+export default function Info() { 
 return ( 
 	<div className='Carousel'> 
 	<Carousel> 
@@ -16,5 +16,3 @@ return (
 	</div> 
 ); 
 }
-
-export default info;

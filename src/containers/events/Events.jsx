@@ -1,30 +1,32 @@
 
 import './Events.css'
- import './page.module.scss'
- import styles from './page.module.scss'
- import gsap from 'gsap';
- import { useRef } from 'react';
- import { motion } from 'framer-motion';
- import { useCursorContext } from '../../components/cursor/CursorContext';
+import './page.module.scss'
+import { motion } from 'framer-motion';
+import { useCursorContext } from '../../components/cursor/CursorContext';
 
 
 import React from "react";
 function Event(){
-
+  
+  const { cursorVariant, variants, textEnter, textLeave} = useCursorContext();
   
 
 
   return(
     
     <>
+         <motion.div className="cursor"
+              variants={variants}
+              animate={cursorVariant}
+              transition={{ type: "tween", ease: "backOut", duration:0}}/>
 
-    <div className="eventheading">
-      <h1>Astrochronicles</h1>
+    <div  className="eventheading">
+      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>Astrochronicles</h1>
     </div>
 
     <div className='eventscontainer-mobile'>
       <div className='eventheading'>
-        <h2>Trioconclave</h2>
+        <h2 onMouseEnter={textEnter} onMouseLeave={textLeave}>Trioconclave</h2>
       </div>
       
 
