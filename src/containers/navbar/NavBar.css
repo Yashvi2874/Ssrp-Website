@@ -35,6 +35,10 @@
       }
 }
 
+.navigation:hover{
+  Transform: scale(1.2);
+}
+
 
 
  

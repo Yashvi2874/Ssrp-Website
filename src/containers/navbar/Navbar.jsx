@@ -35,22 +35,34 @@ function App({ toggleAbsolute }) {
             <div className="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mr-lg-6">
                 <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                  <div className="navigation">
                   <a className="nav-link active" aria-current="page" href="/">Home</a>
+                  </div>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <div className="navigation">
                   <a className="nav-link active" aria-current="page" href="/project">Projects</a>
+                </div>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <div className="navigation">
                   <a className="nav-link active" aria-current="page" href="/community">Community</a>
+                </div>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <div className="navigation">
                   <a className="nav-link active" aria-current="page" href="/events">Events</a>
+                </div>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <div className="navigation">
                   <a className="nav-link active" aria-current="page" href="/croudfunding">Crowd-Funding</a>
+                </div>
                 </li>
                 <li className="nav-item mr-lg-6 px-3 target"onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <div className="navigation">
                   <a className="nav-link active" aria-current="page" href="/contact">Contact US</a>
+                </div>
                 </li>
               </ul>
             </div>
