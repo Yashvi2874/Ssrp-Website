@@ -188,3 +188,8 @@
     width: 100%; 
     left: 0; 
   }
+
+   .about-text:hover{
+    color: #f4f005af;
+    scale: 1.1;
+  }

@@ -84,6 +84,7 @@
 
 
 
+
 @media(max-width: 768px){
     .contact-inputs{
         width: 65vw;
@@ -181,3 +182,13 @@ input[type='number'] {
 /* .head-contact h4:hover{
     font-size: 2rem;
 } */
+
+.head-contact h4 {
+    transition: font-size 0.3s ease; /* Smooth transition */
+  }
+  
+  .head-contact h4:hover {
+    font-size: 1.8rem; /* Increase the font size on hover */
+  }
+  
+
