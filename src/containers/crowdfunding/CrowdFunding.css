@@ -1,3 +1,6 @@
+*{
+    cursor: none;
+}
 .crowd-funding-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
