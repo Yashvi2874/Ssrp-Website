@@ -24,8 +24,8 @@ const teamSections = [
           designation: "Operations Director",
           img: "/assets/images/Community/Head/Tanisha_Mukherjee.jpg",
           animation: "slide-up",
-          linkedIn: "",
-          Github:""
+          linkedIn: "https://www.linkedin.com/in/tanisha-mukherjee-333788281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          Github:"https://github.com/tanishamukherjee"
         },
         {
           name: "Aniket Iyer",

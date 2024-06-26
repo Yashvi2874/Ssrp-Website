@@ -2,9 +2,10 @@ import React, { useState, useEffect} from 'react'
 import Footer from '../../containers/footer/Footer';
 import Loading from '../../components/loading/Loading';
 import Team from '../../containers/team/Team';
+import Navbar from '../../containers/navbar/Navbar';
 import { motion } from 'framer-motion';
 import { useCursorContext } from '../../components/cursor/CursorContext';
-
+//import '../../containers/team/Team.css';
 
 function TeamPage() {
   const { cursorVariant, variants} = useCursorContext();

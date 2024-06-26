@@ -1,13 +1,13 @@
 .project-heading{
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: white;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
     font-weight: bolder;
     border-bottom: 2px solid #d278f3a2;
-    margin-left: 25rem;
-    margin-right: 25rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
