@@ -1,0 +1,113 @@
+.crowd-funding-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px;
+}
+
+.crowd-funding-content p{
+    padding: 1rem;
+}
+
+.crowd-funding-investments{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raised, .investors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.crowdfunding-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 3rem;
+    color: white;
+
+}
+
+.crowdfunding-investors .crowdfunding-heading{
+    width: 100vw;
+}
+
+.crowdfunding-investors-list{
+    display: grid;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.investor{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(87, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.crowdfunding-investors{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.investor-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.google-form{
+    width: 100vw;
+    height: 100vh;
+}
+
+.crowd-funding-video{
+    height: 80vh;
+}
+
+
+@media screen and (max-width: 768px){
+    .crowd-funding-container{
+        grid-template-columns: 1fr;
+    }
+
+    .crowd-funding-investments{
+        grid-template-columns: 1fr;
+    }
+
+    .crowdfunding-investors-list{
+        grid-template-columns: 1fr;
+    }
+
+    .crowdfunding-heading{
+        font-size: 2.5rem;
+    }
+
+    .crowd-funding-investments{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}

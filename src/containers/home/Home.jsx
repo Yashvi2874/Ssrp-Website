@@ -53,7 +53,7 @@ function Home() {
                   </Canvas>
                 </Suspense>
                 <Suspense fallback={<div className='image img-fluid position-absolute earth-block' style={{width : '100%', height : '120vh', top:'6vh', right:'-54vw'}}>Loading...</div>}>
-                  <Canvas className='image img-fluid position-absolute earth-block' style={{width : '90%', height : '120vh', top:'6vh', right:'-54vw'}}>
+                  <Canvas className='image img-fluid position-absolute earth-block' style={{width : '90%', height : '120vh', top:'6vh', right:'-50vw'}}>
                     <Earth />
                   </Canvas>
                 </Suspense>

@@ -1,5 +1,5 @@
 .star {
-	position: fixed;
+	position: absolute;
 	pointer-events: none;
 }
 
@@ -9,6 +9,7 @@
 	left: 0;
 	content: '\2726';
 	font-size: 9px;
+	z-index: 9999;
 }
 
 .star:before {

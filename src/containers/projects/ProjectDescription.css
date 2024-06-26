@@ -23,11 +23,7 @@
     cursor: pointer;
 }
 
-/* .details-content:hover{
-    background-color: #2e2c2c;
-    transition: 0.5s;
-    border-bottom: 5px solid #7d7979a2;
-} */
+
 
 
 .details-title, .details-section-heading{
@@ -80,6 +76,10 @@
 
   .details-title{
     text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   
   
