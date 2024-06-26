@@ -13,7 +13,6 @@
   }
 
 .contact-container{
-    max-height: 120vh;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -21,7 +20,7 @@
     justify-content: center;
 }
 
-.contact-left{
+.contact-end{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,17 +29,22 @@
 
 }
 
-.contact-left-title h2{
+.contact-end-title h2{
     font-weight: 600;
     color:white;
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 5px;
     text-align: center;
+    width: 100%;
 }
 
+.combo .contact-inputs{
+    width: 50%;
+    align-items: space-between;
+}
 
 .contact-inputs{
-    width: 40vw;
+    width: 80%;
     height: 50px;
     border: none;
     outline: none;
@@ -51,8 +55,8 @@
     
 }
 
-.contact-left textarea{
-    height: 140px;
+.contact-end textarea{
+    height: 100px;
     padding-top: 15px;
 }
     
@@ -64,11 +68,11 @@
     
 }
     
-.contact-left button{
+.contact-end button{
     display: flex;
     align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
     color: #fff;
     gap: 10px;
     border: 2px solid #fff;
@@ -77,7 +81,7 @@
     cursor: pointer;
 }
 
-.contact-left button img{
+.contact-end button img{
     height : 15px;
 }
 
@@ -90,7 +94,7 @@
         width: 65vw;
     }
 
-    .contact-left-title h2{
+    .contact-end-title h2{
         font-size: 8vw;
     }
 
@@ -116,7 +120,7 @@
 .button {
 	display: inline-block;
 
-	padding: 15px 0;
+	padding: 10px 0;
 	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
@@ -190,5 +194,48 @@ input[type='number'] {
   .head-contact h4:hover {
     font-size: 1.8rem; /* Increase the font size on hover */
   }
-  
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    column-gap: 50px;
+}
+
+.contact-start{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: start;
+}
+
+.details{
+    color: white;
+}
+
+.details img{
+    margin: 24px;
+}
+ 
+.detail{
+    margin-left: 72px;
+    margin-top: -24px;
+    color: white;
+
+}
+
+.combo{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 80%;
+
+}
+
+@media screen and (maxwidth: 768px){
+    .contact-grid{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    
+}
 
