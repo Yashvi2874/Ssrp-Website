@@ -13,11 +13,12 @@
   }
 
 .contact-container{
-    padding: 3rem;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 80vh;
 }
 
 .contact-end{
@@ -179,9 +180,9 @@ input[type='number']::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type='number'] {
+/* input[type='number'] {
   -moz-appearance: textfield;
-}
+} */
 
 /* .head-contact h4:hover{
     font-size: 2rem;
@@ -198,7 +199,6 @@ input[type='number'] {
 .contact-grid{
     display: grid;
     grid-template-columns: 1.5fr 1fr 2fr;
-    column-gap: 50px;
 }
 
 .contact-start{
@@ -231,10 +231,13 @@ input[type='number'] {
 
 }
 
-@media screen and (maxwidth: 768px){
+@media screen and (max-width: 1024px){
     .contact-grid{
-        grid-template-columns: 1fr;
+        display: flex;
         flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
     }
     
 }

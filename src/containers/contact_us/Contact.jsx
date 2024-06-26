@@ -81,7 +81,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact-middle">
-      <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+      <iframe width="500px" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
       </div>
       <form onSubmit={onSubmit} className="contact-end">
         <div className="combo">
