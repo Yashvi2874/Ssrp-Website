@@ -82,20 +82,20 @@ function Team() {
 
   return (
     <div className='Team_Page'>
+      <div className='Nav'><Navbar /></div>
       <div className='Team'>
         <section className='Team_section'>
           <div className='team-container'>
             <img src='/assets/images/Community/Team.jpg' className='team-image' alt='XYZ' />
             <div className='team-overlay'>
               <div className='navbar'><Navbar /></div>
-              
               <h1 className='team-heading' data-aos="zoom-in">
-                <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Team</div>
+                <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Stellar Team</div>
               </h1>
               <div className='team-description' data-aos="zoom-in">
                 With the strength of 30+ students we focus on developing and launching a satellite, the KJSCE StudentSAT, while also combining research projects on space exploration with participation in competitions like Spaceport America, International Rover Challenge and CANSAT.
               </div>
-              <div className='team-description' data-aos="zoom-in">Meet the Team</div>
+              <div className='team-description' data-aos="zoom-in">Meet the Space Visionaries</div>
               <div className='arrow-down' data-aos="fade-down"> ↓ </div>
             </div>
           </div>

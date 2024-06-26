@@ -66,23 +66,23 @@ function Home() {
       <div className='About'>
         <div className='container-about'>
           <div className="text1" data-aos="fade-right">
-            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>What is SSRP?</p>
-            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>The Somaiya Space Research Project (SSRP), a new student-led initiative at KJ Somaiya College of Engineering (established January 16, 2024), focuses on developing and launching a satellite, the KJSCE StudentSAT, while also conducting research projects to advance space exploration. We combine research projects on space exploration with participation in competitions like Spaceport America, International Rover Challenge and CANSAT. Through this, we strive to make a mark in space research.</p>
+            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Cosmic Identity</p>
+            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>The Somaiya Space Research Project (SSRP), a new student-led initiative launched on January 16, 2024, at KJ Somaiya College of Engineering, focuses on developing and launching the KJSCE StudentSAT and advancing space exploration. Our initiatives combine research with participation in competitions like Spaceport America, the International Rover Challenge, and CANSAT, aiming to make a significant impact in space research.</p>
           </div>
 
           <div className='text2' data-aos="fade-left">
-            <div className='item flex' onMouseEnter={textEnter} onMouseLeave={textLeave}  >Future Goals</div>
-            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>We leverage both research and renowned competitions like IRC, CANSAT, and IROC-U. Sharing research findings expands knowledge and validates student contributions. Competitions hone problem-solving, but in-depth research propels space exploration. These projects push the boundaries of our cosmic understanding and drive cutting-edge technologies beyond space applications. By engaging in research, we not only solve present challenges but lay the groundwork for future innovation with lasting impact.</p>
+            <div className='item flex' onMouseEnter={textEnter} onMouseLeave={textLeave}  >Galactic Vision</div>
+            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>We combine research with renowned competitions like IRC, CANSAT, and IROC-U to expand knowledge and validate student contributions. Competitions enhance problem-solving skills, while in-depth research propels space exploration and drives cutting-edge technologies. By tackling present challenges, we lay the groundwork for future innovations with lasting impact.</p>
           </div>
 
           <div className="text3" data-aos="fade-right">
-            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Collaborators</p>
+            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Interstellar Allies</p>
             <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we're set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
           </div>
 
           <div className="text4">
-            <p className='item' data-aos="fade-down-right" onMouseEnter={textEnter} onMouseLeave={textLeave}>Why Sponsor Us?</p>
-            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-down-left">The Somaiya Space Research Project, established this year, is dedicated to pioneering advancements in space exploration through innovative research initiatives, with a primary focus on developing the StudentSAT( satellites developed by students). The team, comprised of passionate and determined individuals, is poised to make significant contributions to the global space community. Potential sponsors are invited to join the project as partners, playing a vital role in supporting its journey to push the boundaries of space exploration. By aligning with the project, sponsors have the opportunity to contribute to cutting-edge innovation and represent their company on an international stage. Together, they embark on a remarkable journey to shape the future of space exploration.</p>
+            <p className='item' data-aos="fade-down-right" onMouseEnter={textEnter} onMouseLeave={textLeave}>Power Our Journey</p>
+            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-down-left">The Somaiya Space Research Project, established this year, pioneers advancements in space exploration through innovative research, focusing on developing the StudentSAT. Our passionate team aims to make significant contributions to the global space community. We invite sponsors to partner with us, supporting our mission to push the boundaries of space exploration. Sponsors will contribute to cutting-edge innovation and gain international recognition. Together, we embark on a remarkable journey to shape the future of space exploration.</p>
           </div>
 
           <div className="text5">
@@ -102,14 +102,14 @@ function Home() {
             <p className='collab' data-aos="fade-left">KJSIT: K.J. Somaiya Institute of Technology</p>
           </div>
           <div className='text8' data-aos="fade-left">
-            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Future Goals</p>
+            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Galactic Vision</p>
           </div>
           <div className='text9' data-aos="fade-right">
-            <p className='item'>Our Collaborators</p>
+            <p className='item'>Interstellar Allies</p>
           </div>
 
           <div className='text10'>
-            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>What is SSRP?</p>
+            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Cosmic Identity</p>
           </div>
         </div>
       </div>

@@ -3,12 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 import Project from './components/project';
 import {  motion } from 'framer-motion';
 import gsap from 'gsap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Img } from 'react-image';
 import '../projects/Projects.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
-
-
-
 
 
 const projects = [
@@ -135,7 +134,7 @@ export default function Home() {
               variants={variants}
               animate={cursorVariant}
               transition={{ type: "tween", ease: "backOut", duration:0}}/>
-    <h1 className='project-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Projects</h1>
+    <h1 className='project-heading' onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="zoom-in">Orbital Endeavors</h1>
   <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
     <div className={styles.body}>
       {
