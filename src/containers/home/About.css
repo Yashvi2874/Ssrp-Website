@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto; /* Allow rows to adjust to content */
     padding: 1rem;
-    margin-top: -15rem;
+    margin-top: 100px;
     /* background: linear-gradient(rgba(6,3,10,1), rgb(20, 10, 37), rgba(2,4,14,1)); */
   }
   
@@ -99,9 +99,6 @@
   @media screen and (min-width: 769px){
     .text8, .text9, .text10{
       display: none;
-    }
-    .container-about{
-      margin-top: -12rem;
     }
   }
   
