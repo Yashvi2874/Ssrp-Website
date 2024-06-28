@@ -52,13 +52,40 @@ export default function Contact() {
               variants={variants}
               animate={cursorVariant}
               transition={{ type: "tween", ease: "backOut", duration:0}}/>
-      <form onSubmit={onSubmit} className="contact-left">
-        <div className="contact-left-title">
+              <div className="contact-end-title">
           <h2 className='gradient-text' data-aos="fade-down" onMouseEnter={textEnter} onMouseLeave={textLeave}>Ignite the stellar exchange 🔥</h2>
           <hr />
         </div>
+    <div className="contact-grid">
+      <div className="contact-start">
+        <div className="contact-start-content">
+          <div className="details"><img src='/assets/location.svg' alt='location icon' />Location </div>
+          <div className='detail'>
+          KJ Somaiya College of Engineering, Vidyanagar, Vidya Vihar East, Vidyavihar, Mumbai, Maharashtra 400077
+          </div>
+
+        </div>
+        <div className="contact-start-content">
+          <div className="details"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
+          <div className='detail'>
+          <a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a>
+          </div>
+          
+        </div>
+        <div className="contact-start-content">
+          <div className="details"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
+          <div className='detail'>
+          Rishikesh Bhintade:<br /> +917056103520
+          </div>
+          
+        </div>
+      </div>
+      <div className="contact-middle">
+      <iframe width="500px" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+      </div>
+      <form onSubmit={onSubmit} className="contact-end">
+        <div className="combo">
         <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-right"  onMouseEnter={textEnter} onMouseLeave={textLeave}/>
-        <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required data-aos="fade-left" onMouseEnter={textEnter} onMouseLeave={textLeave} />
         <input 
           type="text" 
           name="number" 
@@ -72,6 +99,9 @@ export default function Contact() {
           onInput={handleNumberInputChange}
           onMouseEnter={textEnter} onMouseLeave={textLeave}
         />
+        </div>
+        <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required data-aos="fade-left" onMouseEnter={textEnter} onMouseLeave={textLeave} />
+       
         <textarea
           name="message"
           placeholder="Your Purpose of Contact"
@@ -85,11 +115,13 @@ export default function Contact() {
         <button type="submit" data-aos="fade-right" className='button'>Submit 🡲</button>
       </form>
       <span className='verification'>{result}</span>
-      <div className="head-contact" data-aos="fade-up">
+      </div>
+      {/* <div className="head-contact" data-aos="fade-up">
         <h4 onMouseEnter={textEnter} onMouseLeave={textLeave}>Rishikesh Bhintade</h4>
         <h4 onMouseEnter={textEnter} onMouseLeave={textLeave}><span className="material-symbols-outlined">call</span> +917056103520</h4>
         <h4 onMouseEnter={textEnter} onMouseLeave={textLeave}><span className="material-symbols-outlined">mail</span><a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a></h4>
-      </div>
+      </div> */}
+
     </div>
   );
 }

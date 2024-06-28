@@ -95,12 +95,12 @@ export default function Home() {
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
 
-  const xMoveContainer = useRef(null);
-  const yMoveContainer = useRef(null);
-  const xMoveCursor = useRef(null);
-  const yMoveCursor = useRef(null);
-  const xMoveCursorLabel = useRef(null);
-  const yMoveCursorLabel = useRef(null);
+  let xMoveContainer = useRef(null);
+  let yMoveContainer = useRef(null);
+  let xMoveCursor = useRef(null);
+  let yMoveCursor = useRef(null);
+  let xMoveCursorLabel = useRef(null);
+  let yMoveCursorLabel = useRef(null);
 
   useEffect( () => {
     //Move Container
@@ -112,6 +112,8 @@ export default function Home() {
     //Move cursor label
     xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", {duration: 0.45, ease: "power3"})
     yMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "top", {duration: 0.45, ease: "power3"})
+
+    AOS.init({duration: "2000"});
   }, [])
 
   const moveItems = (x, y) => {

@@ -31,11 +31,11 @@ const useCursor = () => {
       x: mousePosition.x - 50,
       y: mousePosition.y - 50,
       backgroundColor: 'white',
-      mixBlendMode: 'difference',
+      mixBlendMode: 'difference'
     },
   };
 
-  const textEnter = () => setCursorVariant('text')
+  const textEnter = () => setCursorVariant('text');
   const textLeave = () => setCursorVariant('default');
 
   return {

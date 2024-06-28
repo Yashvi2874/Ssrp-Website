@@ -2,15 +2,15 @@
     font-size: 3.5vw;
     color: white;
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 0rem;
+    padding: 3rem 4rem 1rem 4rem;
     font-weight: bolder;
     border-bottom: 2px solid #d278f3a2;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    width: fit-content;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
+  mix-blend-mode: difference;
+
 }
 @keyframes glow {
   from {
@@ -30,6 +30,10 @@
     min-height: 100vh;
     padding: 10vw;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -180,4 +184,21 @@
       cursor: none;
     }
   }
+
+  /* .project-container h1{
+    animation: zoom-in 2s ease-in-out;
+    mix-blend-mode: difference;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } */
   
