@@ -103,6 +103,7 @@ export default function Home() {
   let yMoveCursorLabel = useRef(null);
 
   useEffect( () => {
+    if(modalContainer.current) {
     //Move Container
     xMoveContainer.current = gsap.quickTo(modalContainer.current, "left", {duration: 0.8, ease: "power3"})
     yMoveContainer.current = gsap.quickTo(modalContainer.current, "top", {duration: 0.8, ease: "power3"})
@@ -112,17 +113,18 @@ export default function Home() {
     //Move cursor label
     xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", {duration: 0.45, ease: "power3"})
     yMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "top", {duration: 0.45, ease: "power3"})
+    }
 
     AOS.init({duration: "2000"});
   }, [])
 
   const moveItems = (x, y) => {
-    xMoveContainer.current(x)
-    yMoveContainer.current(y)
-    xMoveCursor.current(x)
-    yMoveCursor.current(y)
-    xMoveCursorLabel.current(x)
-    yMoveCursorLabel.current(y)
+    if (xMoveContainer.current) xMoveContainer.current(x);
+    if (xMoveContainer.current) yMoveContainer.current(y);
+    if (xMoveCursor.current) xMoveCursor.current(x);
+    if (xMoveCursor.current) yMoveCursor.current(y);
+    if (xMoveCursorLabel.current) xMoveCursorLabel.current(x);
+    if (xMoveCursorLabel.current) yMoveCursorLabel.current(y);
   }
   const manageModal = (active, index, x, y) => {
     moveItems(x, y)
