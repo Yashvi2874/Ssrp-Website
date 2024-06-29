@@ -12,6 +12,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
     text-align: center;
     width: fit-content;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
@@ -75,6 +76,8 @@
     font-size: 1.2rem;
     text-align: justify;
     color: white;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
 
   .collab{
@@ -172,7 +175,8 @@
     }
 
     .item{
-      font-size: 8vw;
+      font-size: 3rem;
+      padding: 0;
     }
 
     .Carousel{
@@ -181,7 +185,8 @@
   }
 
     .about-text{
-      font-size: 4vw;
+      font-size: 1.5rem;
+      padding: 0;
     }
 
     .text3 .item{
@@ -197,6 +202,16 @@
     }
     
 
+    
+  }
+
+  @media screen and (max-width: 480px) {
+    .item {
+      font-size: 2rem;
+    }
+    .about-text{
+      font-size: 1rem;
+    }
     
   }
   
