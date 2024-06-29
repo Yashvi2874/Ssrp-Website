@@ -81,10 +81,9 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact-middle">
-      <iframe width="500px" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="SSRP" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
       </div>
       <form onSubmit={onSubmit} className="contact-end">
-        <div className="combo">
         <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-right"  onMouseEnter={textEnter} onMouseLeave={textLeave}/>
         <input 
           type="text" 
@@ -99,7 +98,6 @@ export default function Contact() {
           onInput={handleNumberInputChange}
           onMouseEnter={textEnter} onMouseLeave={textLeave}
         />
-        </div>
         <input type="email" name="email" placeholder="Your Email Id" className="contact-inputs" required data-aos="fade-left" onMouseEnter={textEnter} onMouseLeave={textLeave} />
        
         <textarea
@@ -116,11 +114,6 @@ export default function Contact() {
       </form>
       <span className='verification'>{result}</span>
       </div>
-      {/* <div className="head-contact" data-aos="fade-up">
-        <h4 onMouseEnter={textEnter} onMouseLeave={textLeave}>Rishikesh Bhintade</h4>
-        <h4 onMouseEnter={textEnter} onMouseLeave={textLeave}><span className="material-symbols-outlined">call</span> +917056103520</h4>
-        <h4 onMouseEnter={textEnter} onMouseLeave={textLeave}><span className="material-symbols-outlined">mail</span><a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a></h4>
-      </div> */}
 
     </div>
   );
