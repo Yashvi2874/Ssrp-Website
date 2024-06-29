@@ -30,6 +30,8 @@
       position: absolute;
       img{
           position: absolute;
+          object-fit: cover;
+          border-radius: 10px;
       }
       &:nth-of-type(1){
           filter: brightness(0.7);
@@ -37,14 +39,20 @@
               &:nth-of-type(1){
                   left:80%;
                   top: 50%;
+                  height: 30%;
+                  width: 20%;
               }
               &:nth-of-type(2){
-                  left: 12%;
+                  left: 8%;
                   top: 50%;
+                  height: 30%;
+                  width: 20%;
               }
               &:nth-of-type(3){
-                  left: 35%;
-                  top: 10%;
+                  left: 33%;
+                  top: 5%;
+                  height: 30%;
+                  width: 20%;
               }
           }
       }
@@ -53,15 +61,19 @@
           img{
               &:nth-of-type(1){
                   left: 8%;
-                  top: 24%;
+                  top: 15%;
+                  height: 30%;
+                  width: 20%;
               }
               &:nth-of-type(2){
                   left: 78%;
                   top: 25%;
+    
               }
               &:nth-of-type(3){
                   left: 60%;
                   top: 60%;
+                 
               }
           }
       }
@@ -70,12 +82,129 @@
           img{
               &:nth-of-type(1){
                   left: 58%;
-                  top: 2.5%;
+                  top: 5%;
+                  height: 30%;
+                  width: 20%;
               }
               &:nth-of-type(2){
-                  left: 40%;
-                  top: 55%;
+                  left: 30%;
+                  top: 60%;
+                  
               }
           }
       }
   }
+
+  /*.main{  
+  
+    .plane{
+  
+      width: 100%;
+  
+      height: 100%;
+  
+      position: absolute;
+  
+      img{
+  
+          position: absolute;
+  
+      }
+  
+      &:nth-of-type(1){
+  
+          filter: brightness(0.7);
+  
+          img{
+  
+              &:nth-of-type(1){
+  
+                  left:90%;
+  
+                  top: 70%;
+  
+              }
+  
+              &:nth-of-type(2){
+  
+                  left: 5%;
+  
+                  top: 65%;
+  
+              }
+  
+              &:nth-of-type(3){
+  
+                  left: 35%;
+  
+                  top: 0%;
+  
+              }
+  
+          }
+  
+      }
+  
+      &:nth-of-type(2){
+  
+          filter: brightness(0.6);
+  
+          img{
+  
+              &:nth-of-type(1){
+  
+                  left: 5%;
+  
+                  top: 10%;
+  
+              }
+  
+              &:nth-of-type(2){
+  
+                  left: 80%;
+  
+                  top: 5%;
+  
+              }
+  
+              &:nth-of-type(3){
+  
+                  left: 60%;
+  
+                  top: 60%;
+  
+              }
+  
+          }
+  
+      }
+  
+      &:nth-of-type(3){
+  
+          filter: brightness(0.5);
+  
+          img{
+  
+              &:nth-of-type(1){
+  
+                  left: 65%;
+  
+                  top: 2.5%;
+  
+              }
+  
+              &:nth-of-type(2){
+  
+                  left: 40%;
+  
+                  top: 75%;
+  
+              }
+  
+          }
+  
+      }
+  
+  }
+}
+  */

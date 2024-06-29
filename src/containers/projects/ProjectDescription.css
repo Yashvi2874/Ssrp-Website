@@ -76,8 +76,6 @@
     margin: 6rem;
   }
   
-  
-
   @media screen and (max-width: 1024px){
     .details-heading{
         font-size: 3rem;
@@ -87,7 +85,6 @@
         flex-direction: column;
         height: auto;
         margin-bottom: 2rem;
-        
     }
 
     .details-content img{

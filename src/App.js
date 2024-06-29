@@ -11,6 +11,7 @@ import HomePage from './pages/home/HomePage';
 import TeamPage from './pages/team/TeamPage';
 import EventPage from './pages/events/EventPage';
 import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
+import EventDescription from './pages/events/EventDescriptionPage';
 import { CursorProvider } from './components/cursor/CursorContext';
 
 function App() {
@@ -19,10 +20,6 @@ function App() {
       AOS.init({duration:"2000"});
     },[]);
 
-
-    
-    
-    
 
   
   return (
@@ -69,6 +66,21 @@ function App() {
               </div>
             </div>
           </div>} />
+
+
+          <Route path="/event/:eventId" element={
+            <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <EventDescription/>
+              </div>
+            </div>
+          </div>
+          } />
+
 
           <Route path="/project" element={
         
@@ -133,3 +145,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
