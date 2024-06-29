@@ -13,15 +13,15 @@
   }
 
 .contact-container{
-    max-height: 120vh;
-    padding: 3rem;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 80vh;
 }
 
-.contact-left{
+.contact-end{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,17 +30,22 @@
 
 }
 
-.contact-left-title h2{
+.contact-end-title h2{
     font-weight: 600;
     color:white;
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 5px;
     text-align: center;
+    width: 100%;
 }
 
+.combo .contact-inputs{
+    width: 50%;
+    justify-content: space-between;
+}
 
 .contact-inputs{
-    width: 40vw;
+    width: 80%;
     height: 50px;
     border: none;
     outline: none;
@@ -51,8 +56,8 @@
     
 }
 
-.contact-left textarea{
-    height: 140px;
+.contact-end textarea{
+    height: 100px;
     padding-top: 15px;
 }
     
@@ -64,11 +69,11 @@
     
 }
     
-.contact-left button{
+.contact-end button{
     display: flex;
     align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
     color: #fff;
     gap: 10px;
     border: 2px solid #fff;
@@ -77,9 +82,10 @@
     cursor: pointer;
 }
 
-.contact-left button img{
+.contact-end button img{
     height : 15px;
 }
+
 
 
 
@@ -89,7 +95,7 @@
         width: 65vw;
     }
 
-    .contact-left-title h2{
+    .contact-end-title h2{
         font-size: 8vw;
     }
 
@@ -115,7 +121,7 @@
 .button {
 	display: inline-block;
 
-	padding: 15px 0;
+	padding: 10px 0;
 	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
@@ -128,6 +134,8 @@
 /* 
 	transition: 2s all ease-in-out color; */
 }
+
+
 
 .button::before {
 	content: " ";
@@ -172,6 +180,80 @@ input[type='number']::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type='number'] {
+/* input[type='number'] {
   -moz-appearance: textfield;
+} */
+
+/* .head-contact h4:hover{
+    font-size: 2rem;
+} */
+
+.head-contact h4 {
+    transition: font-size 0.3s ease; /* Smooth transition */
+  }
+  
+  .head-contact h4:hover {
+    font-size: 1.8rem; /* Increase the font size on hover */
+  }
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
 }
+
+.contact-start{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: start;
+}
+
+.details{
+    color: white;
+}
+
+.details img{
+    margin: 24px;
+}
+ 
+.detail{
+    margin-left: 72px;
+    margin-top: -24px;
+    color: white;
+
+}
+
+.combo{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 80%;
+
+}
+
+.contact-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    max-height: 300px;
+    max-width: 500px;
+
+}
+
+@media screen and (max-width: 1024px){
+    .contact-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .contact--start{
+        width: 100vw;
+    }
+    
+}
+

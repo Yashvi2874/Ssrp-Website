@@ -3,12 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 import Project from './components/project';
 import {  motion } from 'framer-motion';
 import gsap from 'gsap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Img } from 'react-image';
 import '../projects/Projects.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
-
-
-
 
 
 const projects = [
@@ -96,12 +95,12 @@ export default function Home() {
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
 
-  const xMoveContainer = useRef(null);
-  const yMoveContainer = useRef(null);
-  const xMoveCursor = useRef(null);
-  const yMoveCursor = useRef(null);
-  const xMoveCursorLabel = useRef(null);
-  const yMoveCursorLabel = useRef(null);
+  let xMoveContainer = useRef(null);
+  let yMoveContainer = useRef(null);
+  let xMoveCursor = useRef(null);
+  let yMoveCursor = useRef(null);
+  let xMoveCursorLabel = useRef(null);
+  let yMoveCursorLabel = useRef(null);
 
   useEffect( () => {
     //Move Container
@@ -113,6 +112,8 @@ export default function Home() {
     //Move cursor label
     xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", {duration: 0.45, ease: "power3"})
     yMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "top", {duration: 0.45, ease: "power3"})
+
+    AOS.init({duration: "2000"});
   }, [])
 
   const moveItems = (x, y) => {
@@ -135,7 +136,7 @@ export default function Home() {
               variants={variants}
               animate={cursorVariant}
               transition={{ type: "tween", ease: "backOut", duration:0}}/>
-    <h1 className='project-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Projects</h1>
+    <h1 className='project-heading' onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="zoom-in">Orbital Endeavors</h1>
   <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
     <div className={styles.body}>
       {

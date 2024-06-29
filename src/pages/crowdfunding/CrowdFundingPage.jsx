@@ -2,11 +2,10 @@ import React, { useState, useEffect} from 'react'
 import Navbar from '../../containers/navbar/Navbar';
 import Footer from '../../containers/footer/Footer';
 import Loading from '../../components/loading/Loading';
-import Home from '../../containers/home/Home';
-import Contact from '../../containers/contact_us/Contact';
+import Crowdfunding from '../../containers/crowdfunding/Crowdfunding';
 
 
-function HomePage() {
+function CrowdFundingPage() {
     const[loading, setLoading]=useState(true);
     useEffect(() =>{
     
@@ -19,13 +18,12 @@ function HomePage() {
         return <Loading />;
       }
   return (
-    <>  
+    <>
         <Navbar />
-        <Home />
-        <Contact />
-        <Footer /> 
+        <Crowdfunding />
+        <Footer />
     </>
   )
 }
 
-export default HomePage
+export default CrowdFundingPage

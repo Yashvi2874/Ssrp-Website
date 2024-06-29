@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 
 const useCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -22,7 +22,8 @@ const useCursor = () => {
   const variants = {
     default: {
       x: mousePosition.x - 10,
-      y: mousePosition.y - 10
+      y: mousePosition.y - 10,
+      scale: 1,
     },
     text: {
       height: 100,

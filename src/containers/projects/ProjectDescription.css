@@ -23,11 +23,7 @@
     cursor: pointer;
 }
 
-/* .details-content:hover{
-    background-color: #2e2c2c;
-    transition: 0.5s;
-    border-bottom: 5px solid #7d7979a2;
-} */
+
 
 
 .details-title, .details-section-heading{
@@ -42,6 +38,8 @@
 
 .details-section-heading{
     font-size: 3vw;
+    display: flex;
+    width: fit-content;
 }
 
 .text{
@@ -74,6 +72,14 @@
     height: 36vw;
     animation: fade-in 0.5s ease-in-out forwards;
     margin: 6rem;
+  }
+
+  .details-title{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   
   @media screen and (max-width: 1024px){

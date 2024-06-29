@@ -5,21 +5,24 @@
     top: 0;
     z-index: 3;
     overflow-x:hidden ;
+    
 }
+
 .relative{
     position:relative;
     padding:0;
-    margin:0;
+    margin-top:18vh;
 }
 .stars{
     height: 100%;
 }
 
-/* Canvas{
-    height: 100vh;
-    width: 120vw;
-} */
+Canvas{
+    height: 100%;
+    width: 100vw;
+}
 
 a, input, textarea{
     cursor: pointer;
 }
+

@@ -59,6 +59,7 @@ const ProjectDescription = () => {
         exit={{ opacity: 0, y: 0 }}
         onAnimationComplete={() => setContentVisible(true)} // Set content visible after bg animation completes
       ></motion.div>
+        <div className='details-title' onMouseEnter={textEnter} onMouseLeave={textLeave}>{project.title}</div>
       {contentVisible && (
         <motion.div className='details-content'
           initial={{ opacity: 0, y: 100 }} // Initial animation state
@@ -67,7 +68,7 @@ const ProjectDescription = () => {
         >
           <img src={`/assets/images/project_images/${project.src}`} alt={project.title} />
           <div className='details'>
-            <div className='details-title' onMouseEnter={textEnter} onMouseLeave={textLeave}>{project.title}</div>
+            
             <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
             <div className='details-description text'>{project.description}</div>
             <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>

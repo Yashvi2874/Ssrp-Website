@@ -13,6 +13,7 @@ import EventPage from './pages/events/EventPage';
 import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
 import EventDescription from './pages/events/EventDescriptionPage';
 import { CursorProvider } from './components/cursor/CursorContext';
+import CrowdFundingPage from './pages/crowdfunding/CrowdFundingPage';
 
 function App() {
     
@@ -130,6 +131,19 @@ function App() {
             <div className="absolute">
               <div className="relative">
                 <ContactPage />
+              </div>
+            </div>
+          </div>
+        } />
+
+        <Route path="/crowdfunding" element={
+          <div className="App">
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+              <div className="relative">
+                <CrowdFundingPage />
               </div>
             </div>
           </div>

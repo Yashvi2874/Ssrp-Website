@@ -1,6 +1,7 @@
 *{
   cursor: none;
 }
+
 .cursor{
   background-color: white;
   height: 20px;
@@ -164,13 +165,13 @@
   
 
   .target {
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
   
     display: inline-block;
-    padding: 15px 20px;
+    padding: 15px 5px;
     position: relative;
   }
   .target:after {    
@@ -180,11 +181,16 @@
     display: block;
     height: 2px;
     left: 50%;
-    background: #fff;
+    background: black;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
   .target:hover:after { 
     width: 100%; 
     left: 0; 
+  }
+
+   .about-text:hover{
+    color: #e6abf6;
+    scale: 1.085;
   }
