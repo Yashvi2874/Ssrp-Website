@@ -41,12 +41,12 @@ function Loading() {
         <div className="text-container left">CE</div>
         <div className="text-container right">SP</div>
         <div className="ball-big">
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
         </div>
       </div>
     </div>
