@@ -109,7 +109,7 @@ export default function Contact() {
           onChange={handleTextareaChange}
           data-aos="fade-left"
           onMouseEnter={textEnter} onMouseLeave={textLeave}
-        ></textarea>
+         />
         <button type="submit" data-aos="fade-right" className='button'>Submit 🡲</button>
       </form>
       <span className='verification'>{result}</span>

@@ -20,8 +20,7 @@ function Crowdfunding() {
         </div>
         <div className="crowd-funding-container__right">
             <div className="crowd-funding-video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" />
             </div>
         </div>
     </div>
