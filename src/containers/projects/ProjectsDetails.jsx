@@ -59,7 +59,7 @@ const Projects = [
       objective: 'To gather ozone level data, attach a camera for topographic views, and establish ground station communication.',
       outcomes: "Explores satellite propulsion methods while collecting data in Earth's atmosphere."
     },
-    // Add more projects as needed
+    
   ];
 
     export default Projects;

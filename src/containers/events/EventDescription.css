@@ -1,0 +1,51 @@
+.details-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .details-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+  }
+  
+  .details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .details-content img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .details {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .details-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .details-section-heading {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
