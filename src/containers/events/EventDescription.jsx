@@ -56,7 +56,7 @@ const EventDescription = () => {
         animate={{ opacity: 1, y: -1000, transition:{duration:'0.6'} }} // Animation when component appears
         exit={{ opacity: 0, y: 0 }}
         onAnimationComplete={() => setContentVisible(true)} // Set content visible after bg animation completes
-      ></motion.div>
+       />
       {contentVisible && (
         <motion.div className='details-content'
           initial={{ opacity: 0, y: 100 }} // Initial animation state

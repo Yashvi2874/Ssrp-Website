@@ -74,7 +74,7 @@ const StarBackground = ({ children }) => {
     };
   }, []);
 
-  return <div ref={containerRef}></div>;
+  return <div ref={containerRef} />;
 };
 
 export default StarBackground;
