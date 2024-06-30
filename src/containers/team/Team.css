@@ -349,7 +349,7 @@ h2 {
   }
 }
 
-/* @media screen and (min-width: 990px){
+ @media screen and (min-width: 990px){
   .Nav{
     display: none;
     visibility: hidden;
@@ -460,7 +460,7 @@ h2 {
     }
   }
 
-/* New CSS for hover effect 
+
 .hover-overlay {
   position: absolute;
   top: 0;
@@ -476,7 +476,7 @@ h2 {
   border-radius: 50%;
 }
 
-/* .social-media-img1{
+.social-media-img1{
 background-color: rgb(18, 110, 248);
 }
 .social-media-img2{
@@ -495,5 +495,10 @@ background-color: black;
 
 .hover-icons i {
   color: white;
-  font-size: 24px; /* Adjust the size as needed 
-} */
+  font-size: 24px;  
+}
+
+.social-media-img:hover{
+  height: 5vh;
+}
+
