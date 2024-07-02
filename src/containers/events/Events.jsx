@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Events.css';
 import gsap from 'gsap';
 import { useCursorContext } from '../../components/cursor/CursorContext';
+import { motion } from 'framer-motion';
 
 function Event() {
     const planes = useRef([]);
@@ -11,6 +12,8 @@ function Event() {
     let yForce = 0;
     let requestAnimationFrameId = null;
     const easing = 0.08;
+
+    const { cursorVariant, variants} = useCursorContext();
 
     const manageMouseMove = (e) => {
         const { movementX, movementY } = e;
@@ -72,6 +75,12 @@ function Event() {
 
     return (
         <>
+            <motion.div className="cursor"
+                variants={variants}
+                animate={cursorVariant}
+                transition={{ type: "tween", ease: "backOut", duration:0}}
+            />
+
             <div className="eventheading">
                 <h1>Astrochronicles</h1>
             </div>
