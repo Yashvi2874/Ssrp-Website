@@ -13,7 +13,7 @@ const StarBackground = ({ children }) => {
 
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(
-      Math.max(window.innerWidth, Math.min(document.querySelector('.relative').clientWidth, document.body.scrollWidth, document.documentElement.scrollWidth)),
+      Math.max(window.innerWidth, Math.min(document.querySelector('.relative').clientWidth, document.body.scrollWidth, document.documentElement.scrollWidth) ),
       Math.max(window.innerHeight, Math.min(document.querySelector('.relative').clientHeight, document.body.scrollHeight, document.documentElement.scrollHeight)));
     containerRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer;
@@ -74,7 +74,7 @@ const StarBackground = ({ children }) => {
     };
   }, []);
 
-  return <div ref={containerRef}></div>;
+  return <div ref={containerRef} />;
 };
 
 export default StarBackground;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Team.css';
-import Navbar from '../navbar/Navbar'; 
+//import Navbar from '../navbar/Navbar'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import teamSections from './TeamData';
@@ -29,12 +29,12 @@ function Team() {
                       <div className="hover-icons">
                         <i className="fas fa-info-circle">
                           <a href={executive.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" onMouseEnter={textEnter} onMouseLeave={textLeave} />
                           </a>
                         </i>
                         <i className="fas fa-user-circle">
                           <a href={executive.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" onMouseEnter={textEnter} onMouseLeave={textLeave} />
                           </a>
                         </i>
                       </div>
@@ -58,12 +58,12 @@ function Team() {
                       <div className="hover-icons">
                         <i className="fas fa-info-circle">
                           <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" onMouseEnter={textEnter} onMouseLeave={textLeave} />
                           </a>
                         </i>
                         <i className="fas fa-user-circle">
                           <a href={member.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" onMouseEnter={textEnter} onMouseLeave={textLeave}/>
                           </a>
                         </i>
                       </div>
@@ -82,13 +82,11 @@ function Team() {
 
   return (
     <div className='Team_Page'>
-      <div className='Nav'><Navbar /></div>
       <div className='Team'>
         <section className='Team_section'>
           <div className='team-container'>
             <img src='/assets/images/Community/Team.jpg' className='team-image' alt='XYZ' />
             <div className='team-overlay'>
-              <div className='navbar'><Navbar /></div>
               <h1 className='team-heading' data-aos="zoom-in">
                 <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Stellar Team</div>
               </h1>

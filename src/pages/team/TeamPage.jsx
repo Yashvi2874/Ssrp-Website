@@ -22,6 +22,7 @@ function TeamPage() {
       }
   return (
     <>
+        <Navbar />
         <Team />
         <motion.div className="cursor"
               variants={variants}

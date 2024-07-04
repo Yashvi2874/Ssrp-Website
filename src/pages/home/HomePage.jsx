@@ -23,7 +23,7 @@ function HomePage() {
         <Navbar />
         <Home />
         <Contact />
-        <Footer />
+        <Footer /> 
     </>
   )
 }
