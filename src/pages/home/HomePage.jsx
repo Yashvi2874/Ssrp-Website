@@ -1,9 +1,10 @@
 import React, { useState, useEffect} from 'react'
 import Navbar from '../../containers/navbar/Navbar';
 import Footer from '../../containers/footer/Footer';
-import Loading from '../../components/loading/Loading';
+//import Loading from '../../components/loading/Loading';
 import Home from '../../containers/home/Home';
 import Contact from '../../containers/contact_us/Contact';
+import HomeLoading from '../../components/loading/HomeLoading';
 
 
 function HomePage() {
@@ -12,11 +13,11 @@ function HomePage() {
     
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 3000);
       
     }, []);
     if(loading){
-        return <Loading />;
+        return <HomeLoading />;
       }
   return (
     <>  
