@@ -14,7 +14,7 @@
   pointer-events: none;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .ssrp-absolute {
 
         position: relative;
@@ -24,23 +24,23 @@
 }
 
 @font-face {
-  font-family: 'nulshock bd'; /* Replace with your font's name */
+  font-family: 'nulshock bd'; /* Replace with your font's name *//*
   src: url('/public/assets/fonts/nulshock\ bd.ttf') format('truetype'); /* Replace with the actual path to your .ttf file */
-}
+/*}
 @font-face {
-  font-family: 'dahlia-regular'; /* Replace with your font's name */
+  font-family: 'dahlia-regular'; /* Replace with your font's name *//*
   src: url('/public/assets/fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .ttf file */
-}
+/*}
 
 .typeit-text {
-    font-size: 2vw; /* Adjust size as needed */
+    font-size: 2vw; /* Adjust size as needed *//*
     text-align: left;
     font-family: 'Nulshock bd' !important;
     src: url('/public/assets/fonts/dahlia-font/dahlia-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     /* animation: fade-up 5s; */
-  }
+/*}
 
   .main1{
   animation: fade-up 7s;
@@ -138,7 +138,7 @@
   @media screen and (max-width: 768px) {
     .typeit-text {
       font-size: 6vw; /* Adjust size as needed */
-    }
+    /*}
   
     .astro-block{
       height: 60vh  !important;
@@ -160,7 +160,7 @@
     .Slogan{
       font-size: 6vw;
     }
-  }
+  } */
 
   
 
@@ -296,5 +296,110 @@
     font-size: 0.5rem;
   }
 }
+
+.patterns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: white;
+  font-size: 100px;
+  font-weight: 700;
+  stroke-width: 3;
+  text-anchor: middle;  /* Centers the text horizontally */
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(189, 68%, 75%);
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
+
+.new-home-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+span {
+  text-align: center;
+
+  font: 3rem "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+  background: url('https://i.ibb.co/RDTnNrT/animated-text-fill.png') repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+
+}
+
+
+/* Animate Background Image */
+
+@keyframes aitf {
+0% { background-position: 0% 50%; }
+100% { background-position: 100% 50%; }
+}
+
+video{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .new-home-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .home__left{
+    position: absolute;
+  }
+
+  .home__right{
+    position: absolute;
+  }
+  
+}
+
 
 
