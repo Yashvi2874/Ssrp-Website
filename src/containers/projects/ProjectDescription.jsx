@@ -66,9 +66,9 @@ const ProjectDescription = () => {
               </div>
               </div>
             <div class="box">
-              <span></span>
-              <span></span>
-              <span></span>
+              <span />
+              <span />
+              <span />
               </div>
             </div>
           </div>
