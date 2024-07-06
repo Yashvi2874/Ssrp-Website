@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "./NavBar.css";
 import { useCursorContext } from "../../components/cursor/CursorContext";
 
@@ -9,7 +9,6 @@ const NavBar = () => {
 
   const toggle = () => {
     setIsOpen(!isOpen);
-    console.log("Ok")
   };
 
   useEffect(() => {
@@ -88,7 +87,7 @@ const NavBar = () => {
             </div>
           )
         }
-        <ul className={`nav-links ${isOpen ? "open" : ""}`} data-aos="fade-left">
+        <ul className={`nav-links ${isOpen ? "open" : ""}`} data-aos="fade-down">
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
               <a className="nav-link active" aria-current="page" href="/">Home</a>

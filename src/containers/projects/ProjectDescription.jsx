@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';   
 import Projects from './ProjectsDetails';
@@ -65,10 +65,10 @@ const ProjectDescription = () => {
                 {project.title}
               </div>
               </div>
-            <div class="box">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div className="box">
+              <span />
+              <span />
+              <span />
               </div>
             </div>
           </div>

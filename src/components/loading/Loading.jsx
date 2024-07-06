@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import './Loading.css';
 import './Star.css';
 
@@ -13,8 +13,9 @@ function Loading() {
           const star = document.createElement('div');
 
           star.className = 'star';
-          star.style.top = e.pageY + Math.round(Math.random() * x - x / 2) + 'px';
-          star.style.left = e.pageX + Math.round(Math.random() * x - x / 2) + 'px';
+          star.style.top = `${e.pageY + Math.round(Math.random() * x - x / 2)}px`;
+          star.style.left = `${e.pageX + Math.round(Math.random() * x - x / 2)}px`;
+
 
           document.body.appendChild(star);
 

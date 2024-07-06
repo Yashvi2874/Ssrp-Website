@@ -39,10 +39,6 @@
     width: 100%;
 }
 
-.combo .contact-inputs{
-    width: 50%;
-    justify-content: space-between;
-}
 
 .contact-inputs{
     width: 80%;
@@ -91,9 +87,6 @@
 
 
 @media(max-width: 768px){
-    .contact-inputs{
-        width: 65vw;
-    }
 
     .contact-end-title h2{
         font-size: 8vw;
@@ -208,11 +201,11 @@ input[type='number']::-webkit-inner-spin-button {
     justify-content: start;
 }
 
-.details{
+.icon{
     color: white;
 }
 
-.details img{
+.icon img{
     margin: 24px;
 }
  
@@ -236,8 +229,6 @@ input[type='number']::-webkit-inner-spin-button {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    max-height: 300px;
-    max-width: 500px;
 
 }
 
@@ -250,10 +241,23 @@ input[type='number']::-webkit-inner-spin-button {
         align-items: center;
         width: 100vw;
     }
+    .contact-inputs{
+        width: 100%;
+    }
 
-    .contact--start{
-        width: 100vw;
+    .contact-start, .contact-middle, .contact-end{
+        width: 60%;
+    }
+
+    .contact-middle{
+        height: 40vh;
     }
     
 }
 
+@media screen  and (max-width: 480px){
+    .contact-middle, .contact-start, .contact-end{
+        width: 90%;
+    }
+    
+}

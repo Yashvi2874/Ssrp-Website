@@ -1,6 +1,6 @@
 //import { SpeedInsights } from "@vercel/speed-insights/react";
 import './App.css';
-import React, { useEffect} from 'react';
+import  { useEffect} from 'react';
 import ProjectPage from './pages/project/ProjectPage'
 import StarBackground from './components/background/Background';
 import NotFound from './components/Not found page/NotFound';
@@ -14,7 +14,6 @@ import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
 import EventDescription from './pages/events/EventDescriptionPage';
 import { CursorProvider } from './components/cursor/CursorContext';
 import CrowdFundingPage from './pages/crowdfunding/CrowdFundingPage';
-import NewHomePage from './pages/home/NewHomePage';
 
 function App() {
     
@@ -37,20 +36,6 @@ function App() {
             
               <div className="relative">
                 <HomePage />
-              </div>
-            </div>
-          </div>
-        } />
-
-<Route path="/newhome" element={
-          <div className="App">
-            <div className="stars">
-              <StarBackground />
-            </div>
-            <div className="absolute">
-            
-              <div className="relative">
-                <NewHomePage />
               </div>
             </div>
           </div>

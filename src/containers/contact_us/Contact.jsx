@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 import { motion } from 'framer-motion';
+
+const sanitizeInput = (input) => {
+  // Basic example of sanitizing input
+  return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+};
 
 export default function Contact() {
   const [result, setResult] = useState("");
@@ -15,16 +20,23 @@ export default function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
     formData.append("access_key", "92c28c76-5418-4583-b23c-c91031fa23c1");
+
+    // Sanitize formData before sending
+    const sanitizedFormData = new FormData();
+    for (const [key, value] of formData.entries()) {
+      sanitizedFormData.append(key, sanitizeInput(value));
+    }
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: sanitizedFormData
     });
     const data = await response.json();
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
-      console.log("Error", data);
+      console.log("Error", sanitizedFormData);
       setResult(data.message);
     }
   };
@@ -59,21 +71,21 @@ export default function Contact() {
     <div className="contact-grid">
       <div className="contact-start">
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/location.svg' alt='location icon' />Location </div>
+          <div className="icon"><img src='/assets/location.svg' alt='location icon' />Location </div>
           <div className='detail'>
           KJ Somaiya College of Engineering, Vidyanagar, Vidya Vihar East, Vidyavihar, Mumbai, Maharashtra 400077
           </div>
 
         </div>
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
+          <div className="icon"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
           <div className='detail'>
           <a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a>
           </div>
           
         </div>
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
+          <div className="icon"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
           <div className='detail'>
           Rishikesh Bhintade:<br /> +917056103520
           </div>

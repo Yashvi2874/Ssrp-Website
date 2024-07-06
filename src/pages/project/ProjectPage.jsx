@@ -1,4 +1,4 @@
-import React, { useState , useEffect}  from 'react'
+import  { useState , useEffect}  from 'react'
 import Projects from '../../containers/projects/index';
 import Loading from '../../components/loading/Loading';
 import Navbar from '../../containers/navbar/Navbar';

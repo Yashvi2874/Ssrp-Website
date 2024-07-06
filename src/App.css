@@ -26,3 +26,10 @@ a, input, textarea{
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+    .relative{
+        margin-top: 10vh;
+    }
+    
+}
+

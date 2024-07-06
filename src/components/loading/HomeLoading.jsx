@@ -1,12 +1,11 @@
-import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../loading/HomeLoadingAnimation.json';
+import animationData from './HomeLoadingAnimation.json';
 
 export default function HomeLoading() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: animationData,
+        animationData,
         rendererSettings: {
           preserveAspectRatio: "xMidYMid slice"
         }
@@ -18,7 +17,7 @@ export default function HomeLoading() {
           options={defaultOptions}
           height={'100%'}
           width={'100%'}
-          isClickToPauseDisabled={true}
+          isClickToPauseDisabled
         />
       </div>
     );
