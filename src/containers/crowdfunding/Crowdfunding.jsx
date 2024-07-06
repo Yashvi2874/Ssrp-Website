@@ -1,4 +1,3 @@
-import React from 'react'
 import './CrowdFunding.css'
 import { useCursorContext } from '../../components/cursor/CursorContext';
 import { motion } from 'framer-motion';

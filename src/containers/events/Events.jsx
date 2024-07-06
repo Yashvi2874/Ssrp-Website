@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import  { useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import './Events.css';
 import gsap from 'gsap';
@@ -95,14 +95,14 @@ function Event() {
         </div>
 
         <div className="Events-container">
-          {events.map((event, index) => (
-            <div className="event_images" key={index}>
+          {events.map((event) => (
+            <div className="event_images" key={event.id}>
               <Link to={`/event/${event.id}`}>
                 <img
-                  id={`i${index + 1}`}
+                  id={`i${event.id}`}
                   src={`/assets/images/events_images/${event.src}`}
-                  alt={`event${index}`}
-                  ref={el => setRef(el, index)}
+                  alt={`event${event.id}`}
+                  ref={el => setRef(el, event.id)}
                 />
               </Link>
             </div>

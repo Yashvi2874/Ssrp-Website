@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 import { PerspectiveCamera, WebGLRenderer, Scene, BufferGeometry, PointsMaterial, Points, Float32BufferAttribute, MathUtils } from 'three';
 
-const StarBackground = ({ children }) => {
+const StarBackground = () => {
   const containerRef = useRef();
   const rendererRef = useRef();
   const cameraRef = useRef();
