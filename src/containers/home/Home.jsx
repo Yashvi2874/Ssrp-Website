@@ -1,14 +1,10 @@
-import  {Suspense, useEffect} from 'react';
+import  { useEffect } from 'react';
 import './Home.css';
-// import { Canvas } from '@react-three/fiber';
-// import { Earth } from '../../components/earth/Earth';
-// import Astronaut  from '../../components/astronaut/Astronaut';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ControlledCarousel from './Collaborators_slider';
 import './About.css';
-import NewHome from './NewHome';
 
 function Home() {
   const { textEnter, textLeave } = useCursorContext();
@@ -21,7 +17,41 @@ function Home() {
     <>
       
       
-      <NewHome />
+      <div className='new-home-container' style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gridTemplateRows: 'auto',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+    }}>
+        <video autoPlay loop muted style={{
+            width: '100%',
+        }}>
+            <source src="/assets/earth.mp4" type="video/mp4" />
+        </video>
+        <div className="home-content" style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: 'white',
+            textAlign: 'center',
+            width: '100%',
+        
+        }}> 
+
+        <div className="container">
+            <div className="upper">SSRP</div>
+            <div className="lower">SSRP</div>
+            <div className="inside">Somaiya Space Research Project</div>
+        </div>
+                       
+            <div  className = "Slogan" style={{
+                textAlign: 'center',           
+            }}>Launching dreams into orbits</div>
+            </div>
+        </div>
+    
 
       <div className='About' style={{
         marginTop: '10vh',
@@ -45,7 +75,7 @@ function Home() {
               width: 'fit-content',
             }} data-aos="fade-left"><ControlledCarousel /></div>
             <p className='collab' >KJSIT: K.J. Somaiya Institute of Technology</p>
-            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we're set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
+            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we&apos;re set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
           </div>
           </div>
           <div className="container-about-power">
@@ -54,17 +84,6 @@ function Home() {
               <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>The Somaiya Space Research Project, established this year, pioneers advancements in space exploration through innovative research, focusing on developing the StudentSAT. Our passionate team aims to make significant contributions to the global space community. We invite sponsors to partner with us, supporting our mission to push the boundaries of space exploration. Sponsors will contribute to cutting-edge innovation and gain international recognition. Together, we embark on a remarkable journey to shape the future of space exploration.</p>
             </div>
           </div>
-
-          {/* <div className='text8' data-aos="fade-left">
-            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Galactic Vision</p>
-          </div>
-          <div className='text9' data-aos="fade-right">
-            <p className='item'>Interstellar Allies</p>
-          </div>
-
-          <div className='text10'>
-            <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Cosmic Identity</p>
-          </div> */}
       </div>
     </>
   );

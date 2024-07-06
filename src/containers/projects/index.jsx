@@ -77,7 +77,6 @@ export default function Home() {
         })
       }
     </div>
-    <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
             <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
             {
@@ -97,7 +96,6 @@ export default function Home() {
         </motion.div>
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} />
         <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
-    </>
   </main>
   </div>
   )
