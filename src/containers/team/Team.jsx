@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import './Team.css';
 //import Navbar from '../navbar/Navbar'; 
 import AOS from 'aos';

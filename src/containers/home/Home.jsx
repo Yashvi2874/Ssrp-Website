@@ -1,4 +1,4 @@
-import React, {Suspense, useEffect} from 'react';
+import  {Suspense, useEffect} from 'react';
 import './Home.css';
 // import { Canvas } from '@react-three/fiber';
 // import { Earth } from '../../components/earth/Earth';
