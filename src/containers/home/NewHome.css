@@ -116,13 +116,14 @@
   overflow: hidden;
   z-index: 3;
   animation: moveUp 3s ease-in-out 1;
-  background-color: black;
+  background-color: #000000;
 }
 
 .lower{
-  bottom: -10;
+  position: absolute;
+  top: -100;
   height: 100%;
-  background: linear-gradient(180deg, #121212 50%, #fff 52.5%);
+  background: linear-gradient(180deg, #000000 50%, #fff 52.5%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;

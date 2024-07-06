@@ -20,7 +20,7 @@ function Crowdfunding() {
         </div>
         <div className="crowd-funding-container__right">
             <div className="crowd-funding-video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" />
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="SSRP video" />
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@ function Crowdfunding() {
     <div className="crowdfunding-googleform">
         <div className="crowdfunding-heading"onMouseEnter={textEnter} onMouseLeave={textLeave}>Google Form</div>
         <div className="google-form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLvn9j4LvX4-fnkcxXp89dGAKhJaUJBWF2-0eCat2UGxScTQ/viewform" height={"1700px"} width={"700px"}></iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLvn9j4LvX4-fnkcxXp89dGAKhJaUJBWF2-0eCat2UGxScTQ/viewform" height={"100%"} width={"100%"} title="SSRP Google Form"></iframe>
         </div>
     </div>
     </>

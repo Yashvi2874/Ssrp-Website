@@ -59,21 +59,21 @@ export default function Contact() {
     <div className="contact-grid">
       <div className="contact-start">
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/location.svg' alt='location icon' />Location </div>
+          <div className="icon"><img src='/assets/location.svg' alt='location icon' />Location </div>
           <div className='detail'>
           KJ Somaiya College of Engineering, Vidyanagar, Vidya Vihar East, Vidyavihar, Mumbai, Maharashtra 400077
           </div>
 
         </div>
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
+          <div className="icon"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
           <div className='detail'>
           <a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a>
           </div>
           
         </div>
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
+          <div className="icon"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
           <div className='detail'>
           Rishikesh Bhintade:<br /> +917056103520
           </div>

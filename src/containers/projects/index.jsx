@@ -5,7 +5,6 @@ import {  motion } from 'framer-motion';
 import gsap from 'gsap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Img } from 'react-image';
 import '../projects/Projects.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 import Projects from './ProjectsDetails';
@@ -85,7 +84,7 @@ export default function Home() {
                 Projects.map( (project, index) => {
                 const { src, color } = project
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
-                    <Img 
+                    <img 
                     src={`/assets/images/project_images/${src}`}
                     width={300}
                     height={0}
