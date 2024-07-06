@@ -97,8 +97,8 @@ function Team() {
               <div className='arrow-down' data-aos="fade-down"> ↓ </div>
             </div>
           </div>
-          {teamSections.map((section, index) => (
-            <div key={index} className="team-member-container">
+          {teamSections.map((section) => (
+            <div key={section.id} className="team-member-container">
               <div className='Team-department' data-aos="zoom-in" onMouseEnter={textEnter} onMouseLeave={textLeave}>{section.title}</div>
               <div className='Team-Members'>
                 {renderMembers(section.members, section.executive)}

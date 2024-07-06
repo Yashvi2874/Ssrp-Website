@@ -1,5 +1,6 @@
 const teamSections = [
     {
+      id: 1,
       title: "Projects Leads",
       executive: [
         {
@@ -39,6 +40,7 @@ const teamSections = [
       ]
     },
     {
+      id: 2,
       title: "Computer Systems",
       executive: [
         {
@@ -86,6 +88,7 @@ const teamSections = [
       ]
     },
     {
+      id: 3,
       executive: [
         {
           name: "Mit Mhatre",
@@ -116,6 +119,7 @@ const teamSections = [
       ]
     },
     {
+      id: 4,
       title: "Mechanical Systems",
       executive: [
         
@@ -182,6 +186,7 @@ const teamSections = [
       ]
     },
     {
+      id: 5,
       title: "Electronics Systems",
       executive: [
         {
@@ -231,6 +236,7 @@ const teamSections = [
     },
 
     {
+      id: 6,
       executive: [
         {
           name: "Siya Naulakha",
@@ -261,6 +267,7 @@ const teamSections = [
       ]
     },
     {
+      id: 7,
       title: "Creative Team",
       executive: [
         {
@@ -316,6 +323,7 @@ const teamSections = [
       ]
     },
     {
+      id: 8,
       title: "Business & Logistics",
       executive: [
         {
@@ -347,6 +355,7 @@ const teamSections = [
       ]
     },
     {
+      id: 9,
       title: "Marketing Team",
       executive: [
         {
