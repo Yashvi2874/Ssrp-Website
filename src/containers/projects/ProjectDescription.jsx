@@ -57,18 +57,6 @@ const ProjectDescription = () => {
         animate={cursorVariant}
         transition={{ type: "tween", ease: "backOut", duration:0}}
       />
-      {/* <motion.div className='details-bg'
-        initial={{ opacity: 0, y: 0 }} // Initial animation state
-        animate={{ opacity: 1, y: -1000, transition:{duration:'0.6'} }} // Animation when component appears
-        exit={{ opacity: 0, y: 0 }}
-        onAnimationComplete={() => setContentVisible(true)} // Set content visible after bg animation completes
-       /> */}
-
-        {/* <motion.div className='details-content'
-          initial={{ opacity: 0, y: 100 }} // Initial animation state
-          animate={{ opacity: 1, y: 0 }} // Animation when component appears
-          exit={{ opacity: 0, y: 100 }} // Animation when component exits
-        > */}
         <div className="details-content">
           <img src={`/assets/images/project_images/${project.src}`} alt={project.title} />
           <div className="hero-details">
@@ -82,20 +70,24 @@ const ProjectDescription = () => {
               <span></span>
               <span></span>
               </div>
+            </div>
           </div>
-          <div className='details'>
-            
-            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
-            <div className='details-description text'>{project.description} </div>
-            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>
-            <div className='details-objectives text'>{project.objective}</div>
-            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Outcomes</div>
+          <div className="details-description-box">
+            <div className="description-text" data-aos="fade-up">
+              <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
+              <div className='details-description text'>{project.description} </div>
+
+            </div>
+            <div className="description-text" data-aos="fade-up">
+              <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>
+              <div className='details-objectives text'>{project.objective}</div>
+            </div>
+            <div className="description-text" data-aos="fade-up">
+            <div className='details-section-heading item1' onMouseEnter={textEnter} onMouseLeave={textLeave}>Outcomes</div>
             <div className='details-outcomes text'>{project.outcomes}</div>
-          </div>
-          {/* <img src={`/assets/images/project_images/${project.src}`} alt={project.title} /> */}
-        {/* </motion.div>
-      )} */}
-      </div>
+            </div>
+
+            </div>
     </div>
   );
 };

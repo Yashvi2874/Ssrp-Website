@@ -35,7 +35,7 @@ function Loading() {
   };
 
   return (
-    <div className='Loading'>
+    <div className='Loading' style={{ marginTop: "-15vh"}}>
       <Star /> {/* Render the Star component */}
       <div className="container1">
         <div className="text-container left">CE</div>
