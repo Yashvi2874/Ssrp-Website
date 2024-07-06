@@ -65,7 +65,7 @@ const ProjectDescription = () => {
                 {project.title}
               </div>
               </div>
-            <div class="box">
+            <div className="box">
               <span />
               <span />
               <span />

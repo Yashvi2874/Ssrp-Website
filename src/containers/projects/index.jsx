@@ -5,7 +5,7 @@ import {  motion } from 'framer-motion';
 import gsap from 'gsap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../projects/Projects.css';
+import './Projects.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 import Projects from './ProjectsDetails';
 
@@ -25,12 +25,12 @@ export default function Home() {
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
 
-  let xMoveContainer = useRef(null);
-  let yMoveContainer = useRef(null);
-  let xMoveCursor = useRef(null);
-  let yMoveCursor = useRef(null);
-  let xMoveCursorLabel = useRef(null);
-  let yMoveCursorLabel = useRef(null);
+  const xMoveContainer = useRef(null);
+  const yMoveContainer = useRef(null);
+  const xMoveCursor = useRef(null);
+  const yMoveCursor = useRef(null);
+  const xMoveCursorLabel = useRef(null);
+  const yMoveCursorLabel = useRef(null);
 
   useEffect( () => {
     if(modalContainer.current) {
@@ -78,7 +78,8 @@ export default function Home() {
       }
     </div>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
-            <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
+          <div style={{ top: `${index * -100}%` }} className={styles.modalSlider}>
+
             {
                 Projects.map( (project, index) => {
                 const { src, color } = project

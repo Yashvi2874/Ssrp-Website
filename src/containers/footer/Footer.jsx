@@ -14,7 +14,7 @@ function Footer() {
     
     <div className='Footer'>
          
-            <a href="#" target="_blank" rel="noopener noreferrer"><img className="social-media-img" onMouseEnter={textEnter} onMouseLeave={textLeave} src='/assets/images/socialmedia_images/facebook.svg' alt="Facebook" /></a>
+            <a href="https://ssrp-website-beta.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="social-media-img" onMouseEnter={textEnter} onMouseLeave={textLeave} src='/assets/images/socialmedia_images/facebook.svg' alt="Facebook" /></a>
             <a href="https://github.com/SOMAIYA-SPACE-RESEARCH-PROJECT" target="_blank" rel="noopener noreferrer"><img className="social-media-img" onMouseEnter={textEnter} onMouseLeave={textLeave} src='/assets/images/socialmedia_images/github.svg' alt="GitHub" /></a>
             <a href="https://www.instagram.com/team_ssrp/" target="_blank" rel="noopener noreferrer"><img className="social-media-img" src='/assets/images/socialmedia_images/instagram.svg' onMouseEnter={textEnter} onMouseLeave={textLeave} alt="Instagram" /></a>
  
