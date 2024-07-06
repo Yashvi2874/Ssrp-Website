@@ -1,9 +1,9 @@
   .container-about {
-    min-height: 100vh; /* Minimum height of the container */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto; /* Allow rows to adjust to content */
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
     /* background: linear-gradient(rgba(6,3,10,1), rgb(20, 10, 37), rgba(2,4,14,1)); */
   }
   
@@ -25,26 +25,7 @@
   }
   }
 
-  .item1{
-    font-size: 2.2rem;
-    color: white;
-    padding: 1px;
-    text-align: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
-  }
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 3px #f4cc05af;
-    }
-    to {
-      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 4px #f4cc05af;
-  }
-  }
+  
 
   .Carousel{
     margin: 0 auto;
@@ -54,7 +35,7 @@
     /* margin-bottom: 30px; */
 }
   
-  .text1 {
+  /* .text1 {
     grid-area: 1 / 1/ 2 / 2;
   }
   
@@ -68,14 +49,12 @@
 
   .text2{
     grid-area: 1 / 2 / 2 / 2;
-  }
+  } */
 
   p {
     font-size: 1.2rem;
     text-align: justify;
     color: white;
-    padding-left: 6vw;
-    padding-right: 6vw;
   }
 
   .collab{
@@ -86,7 +65,7 @@
     display: none;
   } */
 
-  .text1, .text2, .text3, .text4{
+  /* .text1, .text2, .text3, .text4{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,97 +76,11 @@
     .text8, .text9, .text10{
       display: none;
     }
-  }
+  } */
   
 
   
-  @media screen and (max-width: 768px) {
-    .container-about {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
-      padding: 1rem; /* Adjust rows to accommodate content */
-      margin-top: 0;
-    }
-  
-    .text1,
-    .text2,
-    .text3,
-    .text4,
-    .text8,
-    .text9,
-    .text10{
-      grid-column: 1; /* Adjust to span all columns */
-    }
-  
-    .text1 {
-      grid-row: 3; /* Position text1 at the top */
-    }
-  
-    .text2 {
-      grid-row: 6; /* Position text2 below text1 */
-    }
-  
-    .text3 {
-      grid-row: 9; /* Position earth at the bottom */
-    }
 
-    .text4 {
-      grid-row: 10; /* Position earth at the bottom */
-    }
-    .text8{
-      grid-row: 4;
-    }
-    .text9{
-      grid-row: 7;
-    }
-    .text10{
-      grid-row: 1;
-      
-    }
-
-    .text8, .text9, .text10{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-
-
-    .about-img{
-      width: 30%;
-      height: auto;
-    }
-
-    .item{
-      font-size: 3rem;
-      padding: 0;
-    }
-
-    .Carousel{
-      width: 90vw;
-      height: auto;
-  }
-
-    .about-text{
-      font-size: 1.5rem;
-      padding: 0;
-    }
-
-    .text3 .item{
-      display: none;
-    }
-
-    .text2 .item{
-      display: none;
-    }
-
-    .text1 .item{
-      display: none;
-    }
-    
-
-    
-  }
 
   @media screen and (max-width: 480px) {
     .item {
@@ -199,55 +92,58 @@
     
   }
 
-  .text1{
-    display: inline-block;
-    width: 380px;
-    height:fit-content;
+  .text1, .text2, .text3, .text4{
     padding: 0;
     margin: 10px;
     background-color:#5e5f5c;
     text-align:justify;
     border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
-  .text2{
-    display: inline-block;
-    width: 380px;
-    height:fit-content;
+  /* .text2{
     padding: 0;
     margin: 10px;
     background-color:#5e5f5c;
     text-align:justify;
     border-radius: 10px;
-    margin-left: -120px;
   }
   .text3{
-    display: inline-block;
-    width: 380px;
-    height:fit-content;
     padding: 0;
     margin: 10px;
     background-color:#5e5f5c;
     text-align:justify;
     border-radius: 10px;
-    margin-left: 300px;
-  }
+  } */
   .about-text{
     padding-left: 20px;
     padding-right: 20px;
   }
   .text4{
-    display: inline-block;
-    width:fit-content;
-    height:fit-content;
     padding: 10px;
     margin: 10px;
     background-color:#5e5f5c;
     border-radius: 10px;
   }
   .about-img{
-    margin-left: 100px;
     width: 50%;
     height: auto;
     margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .container-about {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .text1, .text2, .text3, .text4{
+      width: 60%;
+    }
   }
   
