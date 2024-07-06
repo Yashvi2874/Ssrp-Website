@@ -103,6 +103,7 @@ function Event() {
                   src={`/assets/images/events_images/${event.src}`}
                   alt={`event${event.id}`}
                   ref={el => setRef(el, event.id)}
+                  fetchpriority='high'
                 />
               </Link>
             </div>
