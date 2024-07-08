@@ -12,7 +12,7 @@ export default function HomeLoading() {
       };
     
     return (
-      <div style={{ width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:'-15vh' }}>
+      <div style={{ height:'100vh', width:'100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:'-15vh'}}>
         <Lottie 
           options={defaultOptions}
           height={'100%'}

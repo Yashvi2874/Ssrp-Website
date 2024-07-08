@@ -195,7 +195,7 @@
     scale: 1.03;
   }
 
-  *,
+  /* *,
 :before,
 :after {
   margin: 0;
@@ -319,7 +319,7 @@ svg text {
   font-weight: 700;
   stroke-width: 3;
   text-anchor: middle;  /* Centers the text horizontally */
-  animation: textAnimate 5s infinite alternate;
+  /*animation: textAnimate 5s infinite alternate;
 }
 
 @keyframes textAnimate {
@@ -333,18 +333,15 @@ svg text {
     stroke-dashoffset: -20%;
     fill: hsla(189, 68%, 75%, 0%);
   }
-}
+} */
 
 .new-home-container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  grid-template-columns: 1fr;
 }
 
 
-span {
+/* span {
   text-align: center;
 
   font: 3rem "Oswald", sans-serif;
@@ -356,18 +353,18 @@ span {
 
 /* Clip Background Image */
 
-  background: url('https://i.ibb.co/RDTnNrT/animated-text-fill.png') repeat-y;
+ /* background: url('https://i.ibb.co/RDTnNrT/animated-text-fill.png') repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
 
 /* Animate Background Image */
 
-  -webkit-text-fill-color: transparent;
+  /*-webkit-text-fill-color: transparent;
   -webkit-animation: aitf 80s linear infinite;
 
 /* Activate hardware acceleration for smoother animations */
 
-  -webkit-transform: translate3d(0,0,0);
+  /*-webkit-transform: translate3d(0,0,0);
   -webkit-backface-visibility: hidden;
 
 }
@@ -375,28 +372,25 @@ span {
 
 /* Animate Background Image */
 
-@keyframes aitf {
+/*@keyframes aitf {
 0% { background-position: 0% 50%; }
 100% { background-position: 100% 50%; }
-}
+} */
 
-video{
-  width: 100%;
-}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .new-home-container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
   }
 
   .home__left{
-    position: absolute;
+    position: static;
   }
 
-  .home__right{
-    position: absolute;
+  video{
+    width: 100%;
+    height: 100vh !important;
   }
   
 }
