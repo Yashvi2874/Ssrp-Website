@@ -20,11 +20,11 @@ function Home() {
       <div className='new-home-container'>
         <div className="home__left">
         <video autoPlay muted loop id="myVideo">
-          <source src="/assets/earth.mp4" type="video/mp4" />
+          <source src="/assets/earth2.mp4" type="video/mp4" />
         </video>
         </div>
 
-        <div className="home__right">
+        {/* <div className="home__right">
           <div className="patterns">
             <svg width="100%" height="100%">
               <text x="50%" y="50%">
@@ -36,9 +36,10 @@ function Home() {
             Somaiya Space Research Project
           </span>
         </div>
+      </div> */}
       </div>
 
-      <div className='About' style={{ marginTop: '10vh' }}>
+      <div className='About'>
         <div className='container-about'>
           <div className="text1" data-aos="fade-in">
             <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Cosmic Identity</p>

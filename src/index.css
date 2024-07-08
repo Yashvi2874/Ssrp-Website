@@ -3,7 +3,7 @@
 
 
 *{
-  font-family: "Marcellus", serif;
+  font-family: "Marcellus";
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -28,7 +28,7 @@ body {
 }
 
 code {
-  font-family: "Marcellus", serif;
+  font-family: "Marcellus";
     font-weight: 400;
     font-style: normal;
     font-display: swap;
