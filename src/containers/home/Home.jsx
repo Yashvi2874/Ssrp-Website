@@ -20,7 +20,7 @@ function Home() {
       <div className='new-home-container'>
         <div className="home__left">
         <video autoPlay muted loop id="myVideo">
-          <source src="/assets/earth2.mp4" type="video/mp4" />
+          <source src="/assets/earth1.mp4" type="video/mp4" media = "(min-width : 333px)" />
         </video>
         </div>
 
