@@ -378,7 +378,6 @@ svg text {
 } */
 
 
-@media screen and (max-width: 480px) {
   .new-home-container{
     display: flex;
     flex-direction: column;
@@ -389,11 +388,8 @@ svg text {
   }
 
   video{
-    width: 100%;
-    height: 100vh !important;
+    width: 100vw !important;
   }
-  
-}
 
 
 
