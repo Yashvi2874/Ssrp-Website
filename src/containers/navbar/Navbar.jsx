@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import  { useEffect, useState } from "react";
 import "./NavBar.css";
 import { useCursorContext } from "../../components/cursor/CursorContext";
 
@@ -11,7 +9,6 @@ const NavBar = () => {
 
   const toggle = () => {
     setIsOpen(!isOpen);
-    console.log("Ok")
   };
 
   useEffect(() => {
@@ -35,9 +32,9 @@ const NavBar = () => {
     <nav className={sticky ? "sticky" : ""}>
       <div className="nav-content">
         <div className="logo">
-          <img className='navbar-logo' src='/assets/images/about_images/logo.png' alt='Ssrp-logo'></img>
-          <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya white.png' alt='Somaiya_Vidyavihar'></img>
-          <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya trust.png' alt='Somaiya_Vidyavihar_University'></img>
+          <img className='navbar-logo' src='/assets/images/about_images/logo.png' alt='Ssrp-logo' />
+          <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya white.png' alt='Somaiya_Vidyavihar' />
+          <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya trust.png' alt='Somaiya_Vidyavihar_University' />
         </div>
         <div className="toggle-button" onClick={toggle}>≡</div>
         {
@@ -90,7 +87,7 @@ const NavBar = () => {
             </div>
           )
         }
-        <ul className={`nav-links ${isOpen ? "open" : ""}`} data-aos="fade-left">
+        <ul className={`nav-links ${isOpen ? "open" : ""}`} data-aos="fade-down">
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
               <a className="nav-link active" aria-current="page" href="/">Home</a>

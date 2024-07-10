@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import './Loading.css';
 import './Star.css';
 
@@ -13,8 +13,9 @@ function Loading() {
           const star = document.createElement('div');
 
           star.className = 'star';
-          star.style.top = e.pageY + Math.round(Math.random() * x - x / 2) + 'px';
-          star.style.left = e.pageX + Math.round(Math.random() * x - x / 2) + 'px';
+          star.style.top = `${e.pageY + Math.round(Math.random() * x - x / 2)}px`;
+          star.style.left = `${e.pageX + Math.round(Math.random() * x - x / 2)}px`;
+
 
           document.body.appendChild(star);
 
@@ -35,18 +36,18 @@ function Loading() {
   };
 
   return (
-    <div className='Loading'>
+    <div className='Loading' style={{ marginTop: "-15vh"}}>
       <Star /> {/* Render the Star component */}
       <div className="container1">
         <div className="text-container left">CE</div>
         <div className="text-container right">SP</div>
         <div className="ball-big">
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
-          <div className="plane"></div>
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
+          <div className="plane" />
         </div>
       </div>
     </div>

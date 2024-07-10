@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import './Team.css';
 //import Navbar from '../navbar/Navbar'; 
 import AOS from 'aos';
@@ -29,12 +29,12 @@ function Team() {
                       <div className="hover-icons">
                         <i className="fas fa-info-circle">
                           <a href={executive.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" onMouseEnter={textEnter} onMouseLeave={textLeave} />
                           </a>
                         </i>
                         <i className="fas fa-user-circle">
                           <a href={executive.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" onMouseEnter={textEnter} onMouseLeave={textLeave} />
                           </a>
                         </i>
                       </div>
@@ -58,12 +58,12 @@ function Team() {
                       <div className="hover-icons">
                         <i className="fas fa-info-circle">
                           <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" onMouseEnter={textEnter} onMouseLeave={textLeave} />
                           </a>
                         </i>
                         <i className="fas fa-user-circle">
                           <a href={member.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" onMouseEnter={textEnter} onMouseLeave={textLeave}/>
                           </a>
                         </i>
                       </div>
@@ -97,8 +97,8 @@ function Team() {
               <div className='arrow-down' data-aos="fade-down"> ↓ </div>
             </div>
           </div>
-          {teamSections.map((section, index) => (
-            <div key={index} className="team-member-container">
+          {teamSections.map((section) => (
+            <div key={section.id} className="team-member-container">
               <div className='Team-department' data-aos="zoom-in" onMouseEnter={textEnter} onMouseLeave={textLeave}>{section.title}</div>
               <div className='Team-Members'>
                 {renderMembers(section.members, section.executive)}

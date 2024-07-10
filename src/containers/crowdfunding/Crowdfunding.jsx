@@ -1,4 +1,3 @@
-import React from 'react'
 import './CrowdFunding.css'
 import { useCursorContext } from '../../components/cursor/CursorContext';
 import { motion } from 'framer-motion';
@@ -15,13 +14,12 @@ function Crowdfunding() {
         <div className="crowd-funding-container__left">
             <h1 className="crowdfunding-heading" onMouseEnter={textEnter} onMouseLeave={textLeave}>Introduction</h1>
             <div className="crowd-funding-content">
-                <p>Our crowdfunding campaign is a way to raise funds for our upcoming projects. We are a non-profit organization, and we rely on the generosity of our donors to fund our projects. Our crowdfunding campaign is a way for us to reach out to a wider audience and raise funds for our projects. We are grateful for any support that we receive, and we are committed to using the funds that we raise to make a positive impact in the world.</p>
+                <p>Support the future of space exploration with the Somaiya Space Research Project!Our dedicated team of students at KJSCE is pushing the boundaries of space science and technology. With your contribution to our crowdfunding campaign, we aim to develop innovative solutions, conduct groundbreaking experiments, and participate in prestigious space competitions. Your support will provide us with the necessary resources for advanced equipment, materials, and opportunities to collaborate with industry experts. Join us in our quest to explore the cosmos and inspire the next generation of space scientists and engineers. Donate today and help us reach for the stars!</p>
             </div>
         </div>
         <div className="crowd-funding-container__right">
             <div className="crowd-funding-video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="SSRP video" />
             </div>
         </div>
     </div>
@@ -63,7 +61,7 @@ function Crowdfunding() {
     <div className="crowdfunding-googleform">
         <div className="crowdfunding-heading"onMouseEnter={textEnter} onMouseLeave={textLeave}>Google Form</div>
         <div className="google-form">
-            Google form here
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLvn9j4LvX4-fnkcxXp89dGAKhJaUJBWF2-0eCat2UGxScTQ/viewform" height={"100%"} width={"100%"} title="SSRP Google Form" />
         </div>
     </div>
     </>

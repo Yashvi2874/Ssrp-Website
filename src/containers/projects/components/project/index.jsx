@@ -1,12 +1,9 @@
-import React from 'react'
-import '../../../projects/Projects.css';
-import { useNavigate } from 'react-router-dom';
+import '../../Projects.css';
 
 export default function Index({index, title, author, image, manageModal}) {
 
-    const navigate = useNavigate();
     const handleProjectClick = (id) => {
-        navigate(`/project/${id}`);
+        window.location.href = `/project/${id}`;
     };
 
     return (

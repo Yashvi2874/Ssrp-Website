@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 import { motion } from 'framer-motion';
+
+const sanitizeInput = (input) => {
+  // Basic example of sanitizing input
+  return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+};
 
 export default function Contact() {
   const [result, setResult] = useState("");
@@ -15,16 +20,23 @@ export default function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
     formData.append("access_key", "92c28c76-5418-4583-b23c-c91031fa23c1");
+
+    // Sanitize formData before sending
+    const sanitizedFormData = new FormData();
+    for (const [key, value] of formData.entries()) {
+      sanitizedFormData.append(key, sanitizeInput(value));
+    }
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: sanitizedFormData
     });
     const data = await response.json();
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
-      console.log("Error", data);
+      console.log("Error", sanitizedFormData);
       setResult(data.message);
     }
   };
@@ -59,21 +71,21 @@ export default function Contact() {
     <div className="contact-grid">
       <div className="contact-start">
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/location.svg' alt='location icon' />Location </div>
+          <div className="icon"><img src='/assets/location.svg' alt='location icon' />Location </div>
           <div className='detail'>
           KJ Somaiya College of Engineering, Vidyanagar, Vidya Vihar East, Vidyavihar, Mumbai, Maharashtra 400077
           </div>
 
         </div>
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
+          <div className="icon"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
           <div className='detail'>
           <a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a>
           </div>
           
         </div>
         <div className="contact-start-content">
-          <div className="details"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
+          <div className="icon"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
           <div className='detail'>
           Rishikesh Bhintade:<br /> +917056103520
           </div>
@@ -81,7 +93,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact-middle">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="SSRP" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+      <iframe width="100%" height="100%" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" title="SSRP" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
       </div>
       <form onSubmit={onSubmit} className="contact-end">
         <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-right"  onMouseEnter={textEnter} onMouseLeave={textLeave}/>
@@ -109,7 +121,7 @@ export default function Contact() {
           onChange={handleTextareaChange}
           data-aos="fade-left"
           onMouseEnter={textEnter} onMouseLeave={textLeave}
-        ></textarea>
+         />
         <button type="submit" data-aos="fade-right" className='button'>Submit 🡲</button>
       </form>
       <span className='verification'>{result}</span>

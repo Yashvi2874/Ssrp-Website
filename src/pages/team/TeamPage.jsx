@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import { useState, useEffect} from 'react'
 import Footer from '../../containers/footer/Footer';
 import Loading from '../../components/loading/Loading';
 import Team from '../../containers/team/Team';

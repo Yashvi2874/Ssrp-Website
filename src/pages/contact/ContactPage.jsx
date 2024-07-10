@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import  { useState, useEffect} from 'react'
 import Navbar from '../../containers/navbar/Navbar';
 import Contact from '../../containers/contact_us/Contact';
 import Footer from '../../containers/footer/Footer';

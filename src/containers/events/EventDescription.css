@@ -9,14 +9,14 @@
     z-index: 1000;
   }
   
-  .details-bg {
+  .details-bg-events {
     position: absolute;
     width: 100%;
     height: 100%;
     background: black;
   }
   
-  .details-content {
+  .details-content-events {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,27 +24,27 @@
     color: white;
   }
   
-  .details-content img {
+  .details-content-events img {
     width: 50%;
     height: auto;
   }
   
-  .details {
+  .details-events {
     max-width: 800px;
     padding: 20px;
   }
   
-  .details-title {
+  .details-title-events {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
   
-  .details-section-heading {
+  .details-section-heading-events {
     font-size: 1.5rem;
     margin-top: 1.5rem;
   }
   
-  .text {
+  .text-events {
     font-size: 1.2rem;
     margin-top: 0.5rem;
   }

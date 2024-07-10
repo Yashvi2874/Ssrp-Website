@@ -45,33 +45,33 @@ const EventDescription = () => {
   }
 
   return (
-    <div className='details-container'>
+    <div className='details-container-events'>
       <motion.div className="cursor"
         variants={variants}
         animate={cursorVariant}
         transition={{ type: "tween", ease: "backOut", duration:0}}
       />
-      <motion.div className='details-bg'
+      <motion.div className='details-bg-events'
         initial={{ opacity: 0, y: 0 }} // Initial animation state
         animate={{ opacity: 1, y: -1000, transition:{duration:'0.6'} }} // Animation when component appears
         exit={{ opacity: 0, y: 0 }}
         onAnimationComplete={() => setContentVisible(true)} // Set content visible after bg animation completes
-      ></motion.div>
+       />
       {contentVisible && (
-        <motion.div className='details-content'
+        <motion.div className='details-content-events'
           initial={{ opacity: 0, y: 100 }} // Initial animation state
           animate={{ opacity: 1, y: 0 }} // Animation when component appears
           exit={{ opacity: 0, y: 100 }} // Animation when component exits
         >
           <img src={`/assets/images/event_images/${event.src}`} alt={event.title} />
-          <div className='details'>
-            <div className='details-title' onMouseEnter={textEnter} onMouseLeave={textLeave}>{event.title}</div>
-            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
-            <div className='details-description text'>{event.description}</div>
-            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>
-            <div className='details-objectives text' >{event.objective}</div>
-            <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Outcomes</div>
-            <div className='details-outcomes text'>{event.outcomes}</div>
+          <div className='details-events'>
+            <div className='details-title-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>{event.title}</div>
+            <div className='details-section-heading-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
+            <div className='details-description text-events'>{event.description}</div>
+            <div className='details-section-heading-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>
+            <div className='details-objectives text-events' >{event.objective}</div>
+            <div className='details-section-heading-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>Outcomes</div>
+            <div className='details-outcomes text-events'>{event.outcomes}</div>
           </div>
         </motion.div>
       )}
