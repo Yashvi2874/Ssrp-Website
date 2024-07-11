@@ -8,15 +8,15 @@ const BoxContainer = () => {
       <div id="container2">
         
         
-        <div className="box one">
+        <div className="event-box one">
         
-        <div><img className='button' src='/playButton.svg'></img><img src="/logo192.png" className='img1' alt='img1'></img>Event One</div></div>
-        <div className="box two">
-        <div><img className='button' src='/playButton.svg'></img><img src="/logo192.png" className='img1' alt='img1'></img>Event Two</div></div>
-        <div className="box three">
-        <div><img className='button' src='/playButton.svg'></img><img src="/logo192.png" className='img1' alt='img1'></img>Event Three</div></div>
-        <div className="box four">
-        <div><img className='button' src='/playButton.svg'></img><img src="/logo192.png" className='img1' alt='img1'></img>Event Four</div></div>
+        <div><img className='button' src="/assets/" alt='button' /><img src="/logo192.png" className='img1' alt='img1'></img>Event One</div></div>
+        <div className="event-box two">
+        <div><img className='button' src="/assets/playButton.svg" /><img src="/logo192.png" className='img1' alt='img1'></img>Event Two</div></div>
+        <div className="event-box three">
+        <div><img className='button' src="/assets/playButton.svg" /><img src="/logo192.png" className='img1' alt='img1'></img>Event Three</div></div>
+        <div className="event-box four">
+        <div><img className='button' src="/assets/playButton.svg" /><img src="/logo192.png" className='img1' alt='img1'></img>Event Four</div></div>
       </div>
     </div>
   );
