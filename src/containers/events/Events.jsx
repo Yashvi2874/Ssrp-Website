@@ -126,7 +126,7 @@ import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Events.css';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+//import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function Event() {
     const planes = useRef([]);
