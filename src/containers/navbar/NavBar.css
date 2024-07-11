@@ -55,7 +55,6 @@ nav.sticky .logo a {
 }
 
 .nav-links li a:hover {
-  text-decoration: underline;
   color: white;
   font-weight: bolder;
 }
