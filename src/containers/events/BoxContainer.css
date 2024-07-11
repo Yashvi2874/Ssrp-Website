@@ -1,11 +1,11 @@
-#container24 .box {
+#container24 .event-box {
   width:100vw;
   height:100vh;
   display:inline-block;
   position:relative;
   
 }
-#container24 .box > div {
+#container24 .event-box > div {
  padding:24px;
   font-size:96px;
   color:#FFF;
