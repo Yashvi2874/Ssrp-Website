@@ -1,7 +1,10 @@
 #container24 .event-box {
   width:100vw;
   height:100vh;
-  display:inline-block;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+
   position:relative;
   
 }
@@ -10,9 +13,7 @@
   font-size:96px;
   color:#FFF;
   position:absolute;
-  top:50%;
-  left:30%;
-  margin:0 0 0 -50px;
+  margin:0px;
   line-height:.7;
   font-weight:bold;
   background-color: black;
