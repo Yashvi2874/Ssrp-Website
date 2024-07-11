@@ -73,7 +73,7 @@ export default function Contact() {
         <div className="contact-start-content">
           <div className="icon"><img src='/assets/location.svg' alt='location icon' />Location </div>
           <div className='detail'>
-          KJ Somaiya College of Engineering, Vidyanagar, Vidya Vihar East, Vidyavihar, Mumbai, Maharashtra 400077
+          KJ Somaiya College of Engineering,<br /> Vidyanagar, Vidya Vihar East, Vidyavihar, <br />Mumbai, Maharashtra 400077
           </div>
 
         </div>
@@ -122,7 +122,7 @@ export default function Contact() {
           data-aos="fade-left"
           onMouseEnter={textEnter} onMouseLeave={textLeave}
          />
-        <button type="submit" data-aos="fade-right" className='button'>Submit 🡲</button>
+        <button type="submit" data-aos="fade-right" className='submit-button' onMouseEnter={textEnter} onMouseLeave={textLeave}>Submit 🡲</button>
       </form>
       <span className='verification'>{result}</span>
       </div>

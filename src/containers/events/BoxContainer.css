@@ -1,9 +1,10 @@
-#container24 .event-box {
-  width:100vw;
-  height:100vh;
+.event-box {
+  width:115vw;
+  height:115vh;
   display:inline-flex;
   justify-content:center;
   align-items:center;
+  margin-left: -7vw;
 
   position:relative;
   
@@ -29,20 +30,21 @@
   transform-origin: top left;
   background-color:#999;
   position:absolute;
-  width:100vh;
-  height:100vw;
+  width:115vh;
+  height:115vw;
 }
 #container2 {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   white-space:nowrap;
   font-size:0;
-  height:100vh;
-  width:100vw;
+  height:115vh;
+  width:115vw;
 }
 
 .one {
   background-color: palevioletred;
+  height: 115vh;
 }
 .two {
   background-color: #49E83E;

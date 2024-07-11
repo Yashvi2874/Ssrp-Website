@@ -9,6 +9,7 @@
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
   mix-blend-mode: difference;
+  padding: 0px 24px;
 
 }
 @keyframes glow {

@@ -34,7 +34,7 @@ function App() {
             </div>
             <div className="absolute">
             
-              <div className="relative">
+              <div className="relative" style={{ marginTop: "-15vh"}}>
                 <HomePage />
               </div>
             </div>
@@ -58,13 +58,11 @@ function App() {
           <Route path="/events" element={
         
         <div className="App">
-            <div className="stars">
-              <StarBackground />
-            </div>
-            <div className="absolute">
-              <div className="relative">
+              <div className="relative" style={{
+                marginTop: "-15vh"
+              }}>
                 <EventPage />
-              </div>
+                
             </div>
           </div>} />
 

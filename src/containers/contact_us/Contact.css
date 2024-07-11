@@ -41,7 +41,7 @@
 
 
 .contact-inputs{
-    width: 80%;
+    width: 60%;
     height: 50px;
     border: none;
     outline: none;
@@ -111,7 +111,7 @@
     
 }
 
-.button {
+.submit-button {
 	display: inline-block;
 
 	padding: 10px 0;
@@ -130,7 +130,7 @@
 
 
 
-.button::before {
+.submit-button::before {
 	content: " ";
 	display: block;
 	width: 250px;
@@ -151,17 +151,17 @@
 	transition: 0.4s ease-in-out transform;
 }
 
-.button:hover {
+.submit-button:hover {
 	color: black;
     font-weight: 900;
 }
 
-.button:hover::before {
+.submit-button:hover::before {
 	transform: scale(1.5);
     font-weight: 900;
 }
 
-.button{
+.submit-button{
     width: fit-content;
     height: auto;
 }
@@ -229,6 +229,7 @@ input[type='number']::-webkit-inner-spin-button {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    aspect-ratio: 1/1;
 
 }
 
