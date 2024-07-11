@@ -20,7 +20,6 @@ function EventPage() {
     <>
         <Navbar />
         <BoxContainer />
-        <Footer />
     </>
   )
 }
