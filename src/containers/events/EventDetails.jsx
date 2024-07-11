@@ -32,13 +32,14 @@ const Events = [
 export default Events;
 */
 
+
 import React, { useLayoutEffect, useRef } from 'react';
-import styles from './intro/style.module.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useParams } from 'react-router-dom';
-import Image from 'next/image';
-import SmoothScroll from '../../components/SmoothScroll';
+//import Image from './Events';
+import styles from './page.module.scss';
+
 
 export default function EventDetails() {
     const { id } = useParams();
@@ -64,11 +65,11 @@ export default function EventDetails() {
     }, []);
 
     return (
-        <SmoothScroll>
+       
             <div ref={homeHeader} className={styles.homeHeader}>
                 <div className={styles.backgroundImage} ref={background}>
-                    <Image
-                        src={`/assets/images/events_images/${id}.jpg`}
+                    <img
+                        src={`/assets/images/events_images/T1.jpg`}
                         fill={true}
                         alt="background image"
                         priority={true}
@@ -76,8 +77,8 @@ export default function EventDetails() {
                 </div>
                 <div className={styles.intro}>
                     <div ref={introImage} data-scroll data-scroll-speed="0.3" className={styles.introImage}>
-                        <Image
-                            src={`/assets/images/events_images/${id}.jpg`}
+                        <img
+                            src={`/assets/images/events_images/T2.jpg`}
                             alt="intro image"
                             fill={true}
                             priority={true}
@@ -86,6 +87,61 @@ export default function EventDetails() {
                     <h1 data-scroll data-scroll-speed="0.7">TRIO-CONCLAVE</h1>
                 </div>
             </div>
-        </SmoothScroll>
+        
     );
 }
+
+
+/*
+import React, { useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useParams } from 'react-router-dom';
+import styles from './page.module.scss';
+
+export default function EventDetails() {
+    const { id } = useParams();
+    const background = useRef(null);
+    const introImage = useRef(null);
+    const homeHeader = useRef(null);
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: document.documentElement,
+                scrub: true,
+                start: "top",
+                end: "+=500px",
+            },
+        });
+
+        timeline
+            .from(background.current, { clipPath: `inset(15%)` })
+            .to(introImage.current, { height: "200px" }, 0);
+    }, []);
+
+    return (
+        <div ref={homeHeader} className={styles.homeHeader}>
+            <div className={styles.backgroundImage} ref={background}>
+                <img
+                    src={`/assets/images/events_images/${id}.jpg`}
+                    alt="background image"
+                    className={styles.backgroundImage}
+                />
+            </div>
+            <div className={styles.intro}>
+                <div ref={introImage} data-scroll data-scroll-speed="0.3" className={styles.introImage}>
+                    <img
+                        src={`/assets/images/events_images/${id}.jpg`}
+                        alt="intro image"
+                        className={styles.introImage}
+                    />
+                </div>
+                <h1 data-scroll data-scroll-speed="0.7">TRIO-CONCLAVE</h1>
+            </div>
+        </div>
+    );
+}
+*/

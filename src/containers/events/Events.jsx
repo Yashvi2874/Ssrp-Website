@@ -122,11 +122,15 @@ function Event() {
 export default Event;
 */
 
+/*
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Events.css';
+import './page.module.scss';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useCursorContext } from '../../components/cursor/CursorContext';
+import { motion } from 'framer-motion';
 
 function Event() {
     const planes = useRef([]);
@@ -224,4 +228,51 @@ function Event() {
 }
 
 export default Event;
+*/
 
+// Events.js or Events.jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Events.css';
+import './page.module.scss';
+
+const events = [
+    { id: 1, src: 'T1.jpg', title: 'Event One' },
+    { id: 2, src: 'T2.jpg', title: 'Event Two' },
+    { id: 3, src: 'group.jpeg', title: 'Event Three' },
+    { id: 4, src: 'moon.jpg', title: 'Event Four' },
+    { id: 5, src: 'Image_10.jpg', title: 'Event Five' },
+    { id: 6, src: 'start.jpg', title: 'Event Six' },
+    { id: 7, src: 'eve.jpg', title: 'Event Seven' },
+    { id: 8, src: 'red.jpg', title: 'Event Eight' },
+];
+
+export default function Event() {
+    return (
+        <>
+            <div className="eventheading">
+                <h1>Astrochronicles</h1>
+            </div>
+
+            <div className="eventscontainer-mobile">
+                <div className="eventheading">
+                    <h2>Trioconclave</h2>
+                </div>
+
+                <div className="Events-container">
+                    {events.map((event, index) => (
+                        <div className="event_images" key={index}>
+                            <Link to={`/event/${event.id}`}>
+                                <img
+                                    id={`i${index + 1}`}
+                                    src={`/assets/images/events_images/${event.src}`}
+                                    alt={`event${index}`}
+                                />
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </>
+    );
+}
