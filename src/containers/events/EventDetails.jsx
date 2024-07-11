@@ -1,4 +1,4 @@
-// EventDetails.js
+/* EventDetails.js
 const Events = [
   {
     id: 1,
@@ -30,3 +30,62 @@ const Events = [
 ];
 
 export default Events;
+*/
+
+import React, { useLayoutEffect, useRef } from 'react';
+import styles from './intro/style.module.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useParams } from 'react-router-dom';
+import Image from 'next/image';
+import SmoothScroll from '../../components/SmoothScroll';
+
+export default function EventDetails() {
+    const { id } = useParams();
+    const background = useRef(null);
+    const introImage = useRef(null);
+    const homeHeader = useRef(null);
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: document.documentElement,
+                scrub: true,
+                start: "top",
+                end: "+=500px",
+            },
+        });
+
+        timeline
+            .from(background.current, { clipPath: `inset(15%)` })
+            .to(introImage.current, { height: "200px" }, 0);
+    }, []);
+
+    return (
+        <SmoothScroll>
+            <div ref={homeHeader} className={styles.homeHeader}>
+                <div className={styles.backgroundImage} ref={background}>
+                    <Image
+                        src={`/assets/images/events_images/${id}.jpg`}
+                        fill={true}
+                        alt="background image"
+                        priority={true}
+                    />
+                </div>
+                <div className={styles.intro}>
+                    <div ref={introImage} data-scroll data-scroll-speed="0.3" className={styles.introImage}>
+                        <Image
+                            src={`/assets/images/events_images/${id}.jpg`}
+                            alt="intro image"
+                            fill={true}
+                            priority={true}
+                        />
+                    </div>
+                    <h1 data-scroll data-scroll-speed="0.7">TRIO-CONCLAVE</h1>
+                </div>
+            </div>
+        </SmoothScroll>
+    );
+}
