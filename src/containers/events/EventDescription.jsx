@@ -1,7 +1,7 @@
-/*import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';   
-import Events from './EventDetails';
+import Events from './EventDetails.jsx';
 import './EventDescription.css';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 
@@ -80,4 +80,4 @@ const EventDescription = () => {
 };
 
 export default EventDescription;
-*/
+
