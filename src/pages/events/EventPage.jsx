@@ -5,6 +5,7 @@ import Loading from '../../components/loading/Loading';
 //import Event from '../../containers/events/Events';
 import BoxContainer from '../../containers/events/BoxContainer';
 
+
 function EventPage() {
     const[loading, setLoading]=useState(true);
     useEffect(() =>{

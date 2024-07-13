@@ -71,3 +71,14 @@
   z-index: 3;
   border-radius: 50%;
 }
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+/* src/BoxContainer.css */

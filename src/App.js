@@ -14,6 +14,7 @@ import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
 import EventDescription from './pages/events/EventDescriptionPage';
 import { CursorProvider } from './components/cursor/CursorContext';
 import CrowdFundingPage from './pages/crowdfunding/CrowdFundingPage';
+import DetailsPage from './containers/events/DetailsPage';
 
 function App() {
     
