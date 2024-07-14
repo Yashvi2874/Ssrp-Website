@@ -48,3 +48,43 @@ const BoxContainer = () => {
 };
 
 export default BoxContainer;
+*/
+
+// src/components/BoxContainer/BoxContainer.js
+
+import React from 'react';
+import './BoxContainer.css';
+import { Link } from 'react-router-dom';
+
+const events = [
+  { id: 1, name: 'Event One', imgSrc: '/assets/images/events_images/cloud.jpg' },
+  { id: 2, name: 'Event Two', imgSrc: '/assets/images/events_images/cloud.jpg' },
+  { id: 3, name: 'Event Three', imgSrc: '/assets/images/events_images/cloud.jpg' },
+  { id: 4, name: 'Event Four', imgSrc: '/assets/images/events_images/cloud.jpg' }
+];
+
+const BoxContainer = () => {
+  return (
+    <div id="container24">
+      <div id="container2">
+        {events.map(event => (
+          <div key={event.id} className={`event-box ${event.id}`}>
+            <div>
+              <Link to={`/event/${event.id}`}>
+                <img
+                  src="/assets/images/events_images/playButton.svg"
+                  className='button'
+                  alt='button'
+                />
+              </Link>
+              <img src={event.imgSrc} className='img1' alt='img1' />
+              {event.name}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default BoxContainer;
