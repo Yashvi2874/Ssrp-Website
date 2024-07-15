@@ -1,178 +1,307 @@
+@font-face {
+  font-family: 'nulshock bd'; /* Replace with your font's name */
+  src: url('/public/assets/fonts/nulshock\ bd.ttf') format('truetype'); /* Replace with the actual path to your .ttf file */
+}
+@font-face {
+  font-family: 'dahlia-regular'; /* Replace with your font's name */
+  src: url('/public/assets/fonts/dahlia-regular.otf') format('truetype'); /* Replace with the actual path to your .otf file */
+}
+
 .Loading {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: black;
-      font-family: 'Inter', sans-serif;
-}
-
-.container1 {
-  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
+  font-family: 'Inter', sans-serif;
 }
-
+.container1 {
+position: relative;
+display: flex;
+align-items: center;
+}
 .text-container {
-  color: silver;
-  font-size: 8vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 0 0 50px rgba(240, 240, 17, 0.979), 2px 2px 4px rgba(0, 0, 0, 0.3);
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+color: silver;
+font-size: 8vw;
+font-weight: bold;
+text-transform: uppercase;
+text-shadow: 0 0 50px rgba(240, 240, 17, 0.979), 2px 2px 4px rgba(0, 0, 0, 0.3);
+margin: 0;
+padding: 0;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
 }
-
 .text-container.left {
-  left: 90%;
-  transform-origin: right center;
+left: 90%;
+transform-origin: right center;
+}
+.text-container.right {
+right: 91%;
+transform-origin: left center;
+}
+.ball-big {
+position: relative;
+width: 8vw;
+height: 8vw; 
+animation: rotator 3s ease-in-out infinite;
+transform-style: preserve-3d;
+}
+.plane {
+position: absolute;
+width: 8vw;
+height: 8vw;
+border-radius: 50%;
+background-color: white;
+opacity: .3;
+}
+.plane:nth-child(1) {
+transform: rotateY(30deg);
+}
+.plane:nth-child(2) {
+transform: rotateY(60deg);
+}
+.plane:nth-child(3) {
+transform: rotateY(90deg);
+}
+.plane:nth-child(4) {
+transform: rotateY(120deg);
+}
+.plane:nth-child(5) {
+transform: rotateY(150deg);
+}
+.plane:nth-child(6) {
+transform: rotateY(180deg);
+}
+@keyframes rotator {
+0% {
+transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+25% {
+transform: rotateX(80deg) rotateY(180deg) rotateZ(-45deg);
+}
+50% {
+transform: rotateX(80deg) rotateY(180deg) rotateZ(90deg);
+}
+75% {
+transform: rotateX(125deg) rotateY(180deg) rotateZ(135deg);
+}
+100% {
+transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+}
+@media screen and (max-width: 768px){
+.text-container {
+font-size: 20vw;
+}
+.ball-big {
+width: 30vw;
+height: 30vw;
+}
+.plane {
+width: 30vw;
+height: 30vw;
+}
+.text-container.left {
+left: 100%;
+transform-origin: right center;
+padding: 0;
+margin: 0;
 }
 
 .text-container.right {
-  right: 91%;
-  transform-origin: left center;
+right: 100%;
+transform-origin: left center;
+padding: 0;
+margin: 0;
 }
 
-.ball-big {
+}
+
+.loading-img{
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+.container-title{
+  position: absolute;
+
+}
+
+
+.text-title{
+  
+  text-align: left;
+  font-family: 'Nulshock bd' !important; 
+  font-weight: normal;
+  font-style: normal;
+  font-size: 8rem;
+  color: white;
   position: relative;
-  width: 8vw;
-  height: 8vw; 
-  animation: rotator 3s ease-in-out infinite;
-  transform-style: preserve-3d;
 }
 
-.plane {
+#one, #loadingone, #homeone{
+  color: #06F5FD;
   position: absolute;
-  width: 8vw;
-  height: 8vw;
-  border-radius: 50%;
-  background-color: white;
-  opacity: .3;
+  margin-top: -5px;
 }
 
-.plane:nth-child(1) {
-  transform: rotateY(30deg);
+#two, #loadingtwo, #hometwo{
+  color: #FF0EF6;
+  position: absolute;
+  margin-top: 6px;
 }
 
-.plane:nth-child(2) {
-  transform: rotateY(60deg);
-}
-
-.plane:nth-child(3) {
-  transform: rotateY(90deg);
-}
-
-.plane:nth-child(4) {
-  transform: rotateY(120deg);
-}
-
-.plane:nth-child(5) {
-  transform: rotateY(150deg);
-}
-
-.plane:nth-child(6) {
-  transform: rotateY(180deg);
-}
-
-@keyframes rotator {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  25% {
-    transform: rotateX(80deg) rotateY(180deg) rotateZ(-45deg);
-  }
-  50% {
-    transform: rotateX(80deg) rotateY(180deg) rotateZ(90deg);
-  }
-  75% {
-    transform: rotateX(125deg) rotateY(180deg) rotateZ(135deg);
-  }
-  100% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-}
-
-@media screen and (max-width: 768px){
-  .text-container {
-    font-size: 20vw;
-  }
-  .ball-big {
-    width: 30vw;
-    height: 30vw;
-  }
-  .plane {
-    width: 30vw;
-    height: 30vw;
-  }
-  .text-container.left {
-    left: 100%;
-    transform-origin: right center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .text-container.right {
-    right: 100%;
-    transform-origin: left center;
-    padding: 0;
-    margin: 0;
-  }
+#three{
+  background: linear-gradient(to right, #7f7e7e 0, white 10%, #7f7e7e 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
   
 }
 
-
-.shootingStarContainer {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: 10;
+#loadingone{
+  color: blue;
 }
+
+#loadingtwo{
+  color: purple;
+}
+
+#homeone{
+  color: blue;
+
+}
+
+#hometwo{
+  color: purple;
+}
+
+@keyframes shine{
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 400px;
+  }
+  100%{
+    background-position: 400px;
+  }
+}
+
+.subtitle{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+  margin-top: 200px;
+  font-family: 'dahlia-regular';
+  
+}
+
 
 .shootingStar {
-  position: absolute;
-  height: 1px;
-  background: linear-gradient(-70deg, rgba(255, 235, 235, 1), rgba(0, 0, 0, 1));
-  animation: shootingFrames 1.5s ease-in-out infinite;
-  opacity: 0.5;
+	position: absolute;
+	top: calc(50% - -55px);
+	left: calc(50% - 66px);
+	height: 2px;
+	border-radius: 50%;
+	background: linear-gradient(-45deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+	filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+	animation: starTrail 5s ease-in-out infinite, starTranslate 5s ease-in-out infinite;
+	animation-delay: 0.8s;
 }
 
-@keyframes shootingFrames {
-  0% {
-      transform: translateX(0);
-      width: 0;
-  }
-  30% {
-      width: 200px;
-  }
-  100% {
-      width: 0;
-      transform: translateX(1000px);
-  }
+.shootingStar::before,
+.shootingStar::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	height: 1px;
+	border-radius: 100%;
+	background: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	transform: translateX(50%) rotateZ(45deg);
+	animation: starShine 5s ease-in-out infinite;
+	animation-delay: 1s;
 }
 
-.stars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
+.shootingStar::after {
+	transform: translateX(50%) rotateZ(-45deg);
 }
 
-.stars {
-  background: #000 url('https://wolf.drjm.co.uk/nightsky/stars.jpg') repeat top center;
-  z-index: 0;
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
 }
 
-@media screen and (min-width: 768px){
-  .shootingStarContainer {
-    display: none;
+@keyframes starTrail {
+	0% {
+		width: 0;
+	}
+
+	3% {
+		width: 100px;
+	}
+
+	10% {
+		width: 0;
+	}
+
+	100% {
+		width: 0;
+	}
+}
+
+@keyframes starShine {
+	0% {
+		width: 0;
+	}
+
+	5% {
+		width: 30px;
+	}
+
+	10% {
+		width: 0;
+	}
+
+	100% {
+		width: 0;
+	}
+}
+
+@keyframes starTranslate {
+	0% {
+		transform: translateX(0);
+	}
+
+	10% {
+		transform: translateX(200px);
+	}
+
+	100% {
+		transform: translateX(200px);
+	}
+}
+
+@media screen and (max-width: 480px) {
+  .text-title{
+    font-size: 4rem;
   }
+  #one, #homeone, #loadingone{
+    margin-top: -2px;
+  }
+  #two, #hometwo, #loadingtwo{
+    margin-top: 3px;
+  }
+  .subtitle{
+    font-size: 1.2rem;
+    margin-top: 100px;
+  }
+
+
+  
   
 }

@@ -74,7 +74,6 @@
     gap: 10px;
     border: 2px solid #fff;
     background: transparent;
-    /*background: linear-gradient(270deg, #040539, #010115);*/
     cursor: pointer;
 }
 
@@ -124,8 +123,6 @@
 	position: relative;
 
 	margin: 10px 5px 0 5px;
-/* 
-	transition: 2s all ease-in-out color; */
 }
 
 
@@ -173,20 +170,12 @@ input[type='number']::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* input[type='number'] {
-  -moz-appearance: textfield;
-} */
-
-/* .head-contact h4:hover{
-    font-size: 2rem;
-} */
-
 .head-contact h4 {
-    transition: font-size 0.3s ease; /* Smooth transition */
+    transition: font-size 0.3s ease; 
   }
   
   .head-contact h4:hover {
-    font-size: 1.8rem; /* Increase the font size on hover */
+    font-size: 1.8rem; 
   }
 
 .contact-grid{
