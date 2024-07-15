@@ -33,6 +33,7 @@
   position:absolute;
   width:115vh;
   height:115vw;
+  display:inline-block;
 }
 #container2 {
   transform: rotate(90deg) translateY(-100vh);

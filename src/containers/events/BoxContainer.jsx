@@ -55,6 +55,8 @@ export default BoxContainer;
 import React from 'react';
 import './BoxContainer.css';
 import { Link } from 'react-router-dom';
+import './Particle';
+
 
 const events = [
   { id: 1, name: 'Event One', imgSrc: '/assets/images/events_images/cloud.jpg' },
