@@ -5,8 +5,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ControlledCarousel from './Collaborators_slider';
 import './About.css';
-// import { Canvas } from '@react-three/fiber';
-// import { Experience } from '../../components/earth/Experience';
 
 function Home() {
   const { textEnter, textLeave } = useCursorContext();
