@@ -59,6 +59,7 @@ import './Particle';
 
 
 const events = [
+  { id: 0, name: 'Astrochronicles'},
   { id: 1, name: 'Event One', imgSrc: '/assets/images/events_images/cloud.jpg' },
   { id: 2, name: 'Event Two', imgSrc: '/assets/images/events_images/cloud.jpg' },
   { id: 3, name: 'Event Three', imgSrc: '/assets/images/events_images/cloud.jpg' },
