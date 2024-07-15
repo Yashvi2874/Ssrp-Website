@@ -6,7 +6,6 @@ import { useCursorContext } from '../../components/cursor/CursorContext';
 import { motion } from 'framer-motion';
 
 const sanitizeInput = (input) => {
-  // Basic example of sanitizing input
   return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 };
 
@@ -46,7 +45,7 @@ export default function Contact() {
   }, []);
 
   const handleTextareaChange = (event) => {
-    const textareaLineHeight = 16; // Adjust this value as per your textarea's line-height
+    const textareaLineHeight = 16; 
     const rows = Math.ceil(event.target.scrollHeight / textareaLineHeight);
     setTextareaRows(rows);
   };

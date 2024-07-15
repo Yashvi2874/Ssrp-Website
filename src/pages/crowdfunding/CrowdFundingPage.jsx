@@ -11,7 +11,7 @@ function CrowdFundingPage() {
     
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 5000);
       
     }, []);
     if(loading){

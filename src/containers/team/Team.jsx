@@ -1,6 +1,5 @@
 import  { useEffect } from 'react';
 import './Team.css';
-//import Navbar from '../navbar/Navbar'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import teamSections from './TeamData';

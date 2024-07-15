@@ -10,11 +10,14 @@ function EventPage() {
     
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 5000);
       
     }, []);
     if(loading){
-        return <Loading />;
+        return (
+        <div style={{marginTop:"15vh"}}>
+        <Loading />
+        </div>);
       }
   return (
     <>
