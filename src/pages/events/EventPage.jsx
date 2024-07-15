@@ -3,6 +3,7 @@ import Navbar from '../../containers/navbar/Navbar';
 import Loading from '../../components/loading/Loading';
 import BoxContainer from '../../containers/events/BoxContainer';
 
+
 function EventPage() {
     const[loading, setLoading]=useState(true);
     useEffect(() =>{
