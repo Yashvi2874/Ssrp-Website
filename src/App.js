@@ -4,18 +4,19 @@ import  { useEffect} from 'react';
 import ProjectPage from './pages/project/ProjectPage'
 import StarBackground from './components/background/Background';
 import NotFound from './components/Not found page/NotFound';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,  Router } from "react-router-dom";
 import AOS from 'aos';
 import ContactPage from './pages/contact/ContactPage';
 import HomePage from './pages/home/HomePage';
 import TeamPage from './pages/team/TeamPage';
 import EventPage from './pages/events/EventPage';
 import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
-import EventDescription from './pages/events/EventDescriptionPage';
+//import EventDescription from './pages/events/EventDescriptionPage';
 import { CursorProvider } from './components/cursor/CursorContext';
 import CrowdFundingPage from './pages/crowdfunding/CrowdFundingPage';
 import NewEventPage from './pages/events/NewEventpage4';
 import DetailsPage from './containers/events/DetailsPage';
+import BoxContainer from './containers/events/BoxContainer';
 
 function App() {
     
@@ -69,18 +70,27 @@ function App() {
           </div>} />
 
 
-          <Route path="/event/:eventId" element={
+          
+            <Route path="/event/:eventId" element={
             <div className="App">
             <div className="stars">
               <StarBackground />
             </div>
+            <Routes> 
+        <Route path="/" element={<BoxContainer />} />
+        <Route path="/event/:id" element={<DetailsPage />} />
+        </Routes> 
+      
             <div className="absolute">
               <div className="relative">
-                <EventDescription/>
+                <BoxContainer/>
               </div>
             </div>
           </div>
           } />
+          
+
+    
 
 <Route path="/com" element={
         
