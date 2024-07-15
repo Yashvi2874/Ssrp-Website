@@ -4,7 +4,7 @@ import  { useEffect} from 'react';
 import ProjectPage from './pages/project/ProjectPage'
 import StarBackground from './components/background/Background';
 import NotFound from './components/Not found page/NotFound';
-import { BrowserRouter, Routes, Route,  Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from 'aos';
 import ContactPage from './pages/contact/ContactPage';
 import HomePage from './pages/home/HomePage';
