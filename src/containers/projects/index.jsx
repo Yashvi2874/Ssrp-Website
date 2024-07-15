@@ -85,8 +85,8 @@ export default function Home() {
           {
             Projects.map((project) => (
               <Project
-                key={project.id-1}  // Changed from index to project.id
-                index={project.id-1}  // Pass unique id instead of index if needed
+                key={project.id-1}  
+                index={project.id-1}  
                 title={project.title}
                 author={project.author}
                 manageModal={manageModal}
@@ -111,7 +111,7 @@ export default function Home() {
                 <div
                   className={styles.modal}
                   style={{ backgroundColor: project.color }}
-                  key={`modal_${project.id}`}  // Changed from index to project.id
+                  key={`modal_${project.id}`}  
                 >
                   <img
                     src={`/assets/images/project_images/${project.src}`}

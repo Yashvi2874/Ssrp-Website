@@ -19,11 +19,14 @@ function Crowdfunding() {
         </div>
         <div className="crowd-funding-container__right">
             <div className="crowd-funding-video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="SSRP video" />
+                <video autoPlay loop id="myVideo">
+                    <source src="/assets/crowdfundingvideo.mp4" type="video/mp4" />
+                </video>
             </div>
         </div>
     </div>
-    <div className='crowd-funding-investments'>
+    {/*For future purposes */}
+    {/* <div className='crowd-funding-investments'>
         <div className='raised'>
             <div className='money'>₹100K</div>
             <div className='raised-text'onMouseEnter={textEnter} onMouseLeave={textLeave}>Raised</div>
@@ -32,7 +35,7 @@ function Crowdfunding() {
             <div className='investors-count'>100</div>
             <div className='investors-text'onMouseEnter={textEnter} onMouseLeave={textLeave}>Investors</div>
         </div>
-    </div>
+    </div> */}
     {/* <div className="crowdfunding-investors">
         <div className="crowdfunding-heading">Our Investors</div>
         <div className="crowdfunding-investors-list">

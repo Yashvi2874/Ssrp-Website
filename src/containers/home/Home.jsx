@@ -5,7 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ControlledCarousel from './Collaborators_slider';
 import './About.css';
-
+// import { Canvas } from '@react-three/fiber';
+// import { Experience } from '../../components/earth/Experience';
 
 function Home() {
   const { textEnter, textLeave } = useCursorContext();
@@ -17,43 +18,45 @@ function Home() {
 
   return (
     <>
-      <div className='new-home-container'>
         <div className="home__left">
-        <video autoPlay muted loop id="myVideo">
-          <source src="/assets/earth1.mp4" type="video/mp4" media = "(min-width : 333px)" />
-        </video>
-        </div>
-
-        {/* <div className="home__right">
-          <div className="patterns">
-            <svg width="100%" height="100%">
-              <text x="50%" y="50%">
-                SSRP
-              </text>
-            </svg>
+          <video autoPlay muted loop className='back-video'>
+            <source src="/assets/earth5.mp4" type="video/mp4" />
+          </video>
+          
+          <div className="home-content">
+          <div className="container-title" style={{
+            position:'relative',
+            display:'flex',
+            alignItems:'center',
+            justifyContent:'center',
+          }}>
+            <div className="text-title" id='homeone'>SSRP</div>
+            <div className="text-title" id='hometwo'>SSRP</div>
+            <div className="text-title" id='three'>SSRP</div>
           </div>
-          <span>
-            Somaiya Space Research Project
-          </span>
+
+            <div className='home-subtitle'>Somaiya Space Research Project</div>
+            <div className='home-slogan' data-aos="zoom-in">Launching Dreams into Orbits</div>
+          </div>
         </div>
-      </div> */}
-      </div>
 
       <div className='About'>
         <div className='container-about'>
-          <div className="text1" data-aos="flip-down">
+          <div className="text1" data-aos="flip-right">
             <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Cosmic Identity</p>
             <img className='about-img' src='/assets/images/about_images/logo.png' alt='ssrp logo' width="300" height="200" />
-            <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>The Somaiya Space Research Project (SSRP), a new student-led initiative launched on January 16, 2024, at KJ Somaiya College of Engineering, focuses on developing and launching the KJSCE StudentSAT and advancing space exploration. Our initiatives combine research with participation in competitions like Spaceport America, the International Rover Challenge, and CANSAT, aiming to make a significant impact in space research.</p>
+              <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>The Somaiya Space Research Project (SSRP), a new student-led initiative launched on January 16, 2024, at KJ Somaiya College of Engineering, focuses on developing and launching the KJSCE StudentSAT and advancing space exploration. Our initiatives combine research with participation in competitions like Spaceport America, the International Rover Challenge, and CANSAT, aiming to make a significant impact in space research.</p>
+
+
           </div>
 
-          <div className='text2' data-aos="flip-down">
+          <div className='text2' data-aos="zoom-in">
             <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Galactic Vision</p>
             <img className='about-img' src='/assets/images/about_images/futuregoalsnew.png' alt='ssrp future goals images' width="300" height="200" />
             <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>We combine research with renowned competitions like IRC, CANSAT, and IROC-U to expand knowledge and validate student contributions. Competitions enhance problem-solving skills, while in-depth research propels space exploration and drives cutting-edge technologies. By tackling present challenges, we lay the groundwork for future innovations with lasting impact.</p>
           </div>
 
-          <div className="text3" data-aos="flip-down">
+          <div className="text3" data-aos="flip-left">
             <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Interstellar Allies</p>
             <div className='about-img' style={{ width: 'fit-content' }} data-aos="fade-left"><ControlledCarousel /></div>
             <p className='collab'>KJSIT: K.J. Somaiya Institute of Technology</p>
