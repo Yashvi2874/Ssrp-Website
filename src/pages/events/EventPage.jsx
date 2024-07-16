@@ -32,7 +32,8 @@ function EventPage() {
             <motion.div className="cursor"
               variants={variants}
               animate={cursorVariant}
-              transition={{ type: "tween", ease: "backOut", duration:0}}/>
+              transition={{ type: "tween", ease: "backOut", duration:0}}
+              style={{ zIndex:"1"}}/>
         <Navbar />
         <BoxContainer />
     </>
