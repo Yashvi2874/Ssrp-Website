@@ -119,6 +119,7 @@ margin: 0;
 }
 
 .loading-img{
+  width: 100%;
   height: 100%;
   aspect-ratio: 16/9;
 }
@@ -141,13 +142,13 @@ margin: 0;
 }
 
 #one, #loadingone, #homeone{
-  color: #06F5FD;
+  color: rgb(55, 55, 247);
   position: absolute;
   margin-top: -5px;
 }
 
 #two, #loadingtwo, #hometwo{
-  color: #FF0EF6;
+  color: purple;
   position: absolute;
   margin-top: 6px;
 }
@@ -163,11 +164,15 @@ margin: 0;
 }
 
 #loadingone{
-  color: blue;
+  color: rgb(91, 91, 247);
+  position: absolute;
+  margin-top: -5px;
 }
 
 #loadingtwo{
   color: purple;
+  position: absolute;
+  margin-top: 6px;
 }
 
 #homeone{

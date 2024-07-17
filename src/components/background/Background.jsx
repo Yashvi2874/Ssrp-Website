@@ -37,7 +37,7 @@ const StarBackground = () => {
     });
 
     const positions = [];
-    for (let i = 0; i < 800; i++) {
+    for (let i = 0; i < 200; i++) {
       const x = MathUtils.randFloatSpread(2000);
       const y = MathUtils.randFloatSpread(2000);
       const z = MathUtils.randFloatSpread(2000);

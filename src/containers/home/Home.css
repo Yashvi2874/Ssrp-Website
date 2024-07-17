@@ -13,16 +13,22 @@
   left: 0;
   pointer-events: none;
 }
+
+.about-text{
+  color: rgb(226, 224, 224);
+  /* scale: 1.03; */
+}
+
    .about-text:hover{
-    color: #e6abf6;
-    scale: 1.03;
+    color: white;
+    /* scale: 1.03; */
   }
   .home__left{
     width: 100vw;
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     margin-top: 15vh;
   }
@@ -34,7 +40,16 @@
 
   .home-title, .home-subtitle, .home-slogan{
     color: white;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 3px #f4cc05af;
+    }
+    to {
+      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 4px #f4cc05af;
+  }
   }
 
   .home-title{
@@ -94,7 +109,7 @@
     z-index: -1;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     .home__left video{
       width: 100vw;
       

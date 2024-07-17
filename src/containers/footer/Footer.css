@@ -14,24 +14,26 @@
 {
     animation: fade 0.3s ease;
     opacity: 0.9;
-} */
+}  */
+
+@media screen  and (min-width: 767px)
+{
+    .social-media-img:hover
+    {
+        height: 7vh;
+        cursor: pointer;
+    }  
+    
+    .ssrp-logo-img:hover
+{
+    height: 10vh;
+    cursor: pointer;
+}   
+}
 
 .social-media-img
 {
     height: 5vh;
-}
-
-
-@media screen  and (min-width: 767px)
-{
-    .social-media-img:hover, .ssrp-logo-img:hover
-{
-    height: 10vh;
-    cursor: pointer;
-}
-
-
-    
 }
 
 .ssrp-logo-img
