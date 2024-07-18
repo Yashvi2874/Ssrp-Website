@@ -69,40 +69,40 @@ export default function Contact() {
         </div>
     <div className="contact-grid">
       <div className="contact-start">
-        <div className="contact-start-content">
-          <div className="icon"><img src='/assets/location.svg' alt='location icon' />Location </div>
+        <div className="contact-start-content" data-aos="fade-right">
+          <div className="icon" onMouseEnter={textEnter} onMouseLeave={textLeave}><img src='/assets/location.svg' alt='location icon' />Location </div>
           <div className='detail'>
           KJ Somaiya College of Engineering,<br /> Vidyanagar, Vidya Vihar East, Vidyavihar, <br />Mumbai, Maharashtra 400077
           </div>
 
         </div>
-        <div className="contact-start-content">
-          <div className="icon"><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
+        <div className="contact-start-content" data-aos="fade-right">
+          <div className="icon" onMouseEnter={textEnter} onMouseLeave={textLeave}><img src='/assets/mail.svg' alt='mail icon' />Mail</div>
           <div className='detail'>
           <a href="mailto:ssrp.somaiya.edu" style={{ color: 'white' }}>ssrp.somaiya.edu</a>
           </div>
           
         </div>
-        <div className="contact-start-content">
-          <div className="icon"><img src='/assets/phone.svg' alt='phone icon' />Call</div>
+        <div className="contact-start-content" data-aos="fade-right">
+          <div className="icon" onMouseEnter={textEnter} onMouseLeave={textLeave}><img src='/assets/phone.svg' alt='phone icon' />Call</div>
           <div className='detail'>
           Rishikesh Bhintade:<br /> +917056103520
           </div>
           
         </div>
       </div>
-      <div className="contact-middle">
+      <div className="contact-middle" data-aos="zoom-in">
       <iframe width="100%" height="100%" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" title="SSRP" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=KJ%20Somaiya%20College%20of%20Engineering%20Vidyanagar,%20Vidya%20Vihar%20East,%20Vidyavihar,%20Mumbai,%20Maharashtra%20400077+(SSRP)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
       </div>
-      <form onSubmit={onSubmit} className="contact-end">
-        <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-right"  onMouseEnter={textEnter} onMouseLeave={textLeave}/>
+      <form onSubmit={onSubmit} className="contact-end" >
+        <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required data-aos="fade-left"  onMouseEnter={textEnter} onMouseLeave={textLeave}/>
         <input 
           type="text" 
           name="number" 
           placeholder="Your Mobile No" 
           className="contact-inputs" 
           required 
-          data-aos="fade-right" 
+          data-aos="fade-left" 
           inputMode="numeric" 
           pattern="\d{10}" 
           maxLength={10}
@@ -121,7 +121,7 @@ export default function Contact() {
           data-aos="fade-left"
           onMouseEnter={textEnter} onMouseLeave={textLeave}
          />
-        <button type="submit" data-aos="fade-right" className='submit-button' onMouseEnter={textEnter} onMouseLeave={textLeave}>Submit 🡲</button>
+        <button type="submit" data-aos="fade-left" className='submit-button' onMouseEnter={textEnter} onMouseLeave={textLeave}>Submit 🡲</button>
       </form>
       <span className='verification'>{result}</span>
       </div>

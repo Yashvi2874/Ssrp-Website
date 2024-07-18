@@ -476,13 +476,6 @@ h2 {
   border-radius: 50%;
 }
 
-.social-media-img1{
-background-color: rgb(18, 110, 248);
-}
-.social-media-img2{
-background-color: black;
-} 
-
 .flip-box:hover .hover-overlay {
   opacity: 1;
 }
@@ -499,6 +492,6 @@ background-color: black;
 }
 
 .social-media-img:hover{
-  height: 5vh;
+  height: 6.5vh;
 }
 

@@ -12,6 +12,7 @@
     font-size: 2.2rem;
     color: white;
     padding: 1rem;
+    padding-bottom: 0;
     text-align: center;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
@@ -30,8 +31,8 @@
 
   .Carousel{
     margin: 0 auto;
-    margin-top: -20px;
-    width: 75%;
+    margin-top: 0px;
+    width: 60%;
     height: auto;
 }
 
@@ -47,12 +48,13 @@
   }
 
   .text1, .text2, .text3{
-    padding: 0;
-    margin: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 0px;
     background-color:#5e5f5c;
     text-align:justify;
     border-radius: 30px;
-    height: 100%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -65,16 +67,19 @@
     font-size: 20px;
   }
   .text4{
-    padding: 10px;
-    margin: 10px;
+    align-items: center;
+    text-align:justify;
+    padding: 0px;
+    margin-top: 0px;
     background-color:#5e5f5c;
     border-radius: 30px;
-    margin: 12px 256px;
+    margin: 12px 270px;
   }
   .about-img{
-    width: 50%;
-    height: auto;
-    margin-bottom: 30px;
+    /* width: 55%;
+    height: auto; */
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   .container-about-power {
@@ -111,9 +116,5 @@
     }
     p{
       font-size: 1rem;
-    }
-    
+    } 
   }
-
-
-  
