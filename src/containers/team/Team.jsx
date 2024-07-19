@@ -28,12 +28,12 @@ function Team() {
                       <div className="hover-icons">
                         <i className="fas fa-info-circle">
                           <a href={executive.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" onMouseEnter={textEnter} onMouseLeave={textLeave} />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
                           </a>
                         </i>
                         <i className="fas fa-user-circle">
                           <a href={executive.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" onMouseEnter={textEnter} onMouseLeave={textLeave} />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub"  />
                           </a>
                         </i>
                       </div>
@@ -57,12 +57,12 @@ function Team() {
                       <div className="hover-icons">
                         <i className="fas fa-info-circle">
                           <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" onMouseEnter={textEnter} onMouseLeave={textLeave} />
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
                           </a>
                         </i>
                         <i className="fas fa-user-circle">
                           <a href={member.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" onMouseEnter={textEnter} onMouseLeave={textLeave}/>
+                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
                           </a>
                         </i>
                       </div>

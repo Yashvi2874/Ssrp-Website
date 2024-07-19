@@ -42,22 +42,22 @@ function Home() {
         <div className='container-about'>
           <div className="text1" data-aos="flip-right">
             <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Cosmic Identity</p>
-            <img className='about-img' src='/assets/images/about_images/logo.png' alt='ssrp logo' width="300" height="200" />
-              <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>The Somaiya Space Research Project (SSRP), a new student-led initiative launched on January 16, 2024, at KJ Somaiya College of Engineering, focuses on developing and launching the KJSCE StudentSAT and advancing space exploration. Our initiatives combine research with participation in competitions like Spaceport America, the International Rover Challenge, and CANSAT, aiming to make a significant impact in space research.</p>
+            <img className='about-img' data-aos="zoom-in" src='/assets/images/about_images/logo.png' alt='ssrp logo' width='250' height='250'/>
+              <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>The Somaiya Space Research Project (SSRP), a new student-led initiative launched on January 16, 2024, at KJ Somaiya College of Engineering, focuses on developing and launching the KJSCE StudentSAT and advancing space exploration. Our initiatives combine research with participation in competitions like Spaceport America, International Rover Challenge, CANSAT, aiming to make a significant impact.</p>
 
 
           </div>
 
           <div className='text2' data-aos="zoom-in">
             <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Galactic Vision</p>
-            <img className='about-img' src='/assets/images/about_images/futuregoalsnew.png' alt='ssrp future goals images' width="300" height="200" />
+            <img className='about-img' data-aos="zoom-in" src='/assets/images/about_images/futuregoalsnew.png' alt='ssrp future goals images' width='280' height='260' />
             <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>We combine research with renowned competitions like IRC, CANSAT, and IROC-U to expand knowledge and validate student contributions. Competitions enhance problem-solving skills, while in-depth research propels space exploration and drives cutting-edge technologies. By tackling present challenges, we lay the groundwork for future innovations with lasting impact.</p>
           </div>
 
           <div className="text3" data-aos="flip-left">
             <p className='item' onMouseEnter={textEnter} onMouseLeave={textLeave}>Interstellar Allies</p>
-            <div className='about-img' style={{ width: 'fit-content' }} data-aos="fade-left"><ControlledCarousel /></div>
-            <p className='collab'>KJSIT: K.J. Somaiya Institute of Technology</p>
+            <div className='about-img' style={{ width: 'fit-content' }} data-aos="zoom-in" ><ControlledCarousel /></div>
+            <p className='collab' onMouseEnter={textEnter} onMouseLeave={textLeave}>KJSIT: K.J. Somaiya Institute of Technology</p>
             <p className='about-text' onMouseEnter={textEnter} onMouseLeave={textLeave}>Our partnership with KJSIT for the HAMSAT project is now solidified, marking a significant step forward in our collaboration. Together, we're set to innovate in satellite technology, pooling our expertise and resources for groundbreaking solutions. This alliance reflects our shared commitment to pushing technological boundaries.</p>
           </div>
         </div>
