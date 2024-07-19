@@ -3,12 +3,12 @@ const Projects = [
     id: 1,
     title: 'STUDENT SAT',
     author: 'SSRP',
-    src: "img01.png",
+    src: "img001.jpg",
     url: '/project/{id}',
     description: 'Our inaugural StudentSat, guided by ISRO and leading space startups, aims to elevate educational opportunities and expand the horizons of space research. Join us as we inspire future engineers and students to turn their dreams into reality ',
     objective: 'Data collection, communications and conducting experiments.',
     outcomes: 'Our showcase of technological expertise in propulsion and communications will garner nationwide recognition, fostering valuable connections and collaboration opportunities with startups and organizations. This event will positively impact student communities and encourage more colleges to venture into outer space.',
-    color: "#ffffff"
+    color: "black"
   },
   {
     id:2,
@@ -18,7 +18,7 @@ const Projects = [
     url: '/project/{id}',
     description: 'The ground station is a device which will be built and used for the purpose of satellite communication, data acquisition, and space research endeavors and to connect with the ham community(Amateur Radio community).',
     objective: 'To receive and transmit data to satellites and for tracking our satellite. It will be used to remotely interact with the ham community (Amateur Radio community).',
-    color: "#ffffff",
+    color: "#222a35",
     outcomes: 'This enables stable communication with satellites, facilitates satellite tracking for students, and allows us to become an active member of the ham community(Amateur Radio community).'
   },
   {
@@ -29,13 +29,13 @@ const Projects = [
     url: '/project/{id}',
     description: 'The CanSat competition allows students to design, build, and launch miniature satellites resembling canisters. It provides practical experience in space science, progressing through design, construction, testing, and launch stages. CanSats are deployed via rockets to gather data during descent, with teams evaluated on design, functionality, data accuracy, and presentation.',
     objective: 'Components: Container, Probe Altitude Range: 670m - 725m  Deployment: Peak altitude Orientation: Uncontrolled Survivability: Launch and deployment forces Objective: Collect and transmit data from peak altitude.',
-    color: "#ffffff",
+    color: "#222a35",
     outcomes: 'Students learn to develop optimized systems under extreme space constraints, including mechanical space-grade systems that endure forces and vibrations.'
   },
   {
     id:4,
     title: 'SPACEPORT AMERICA',
-    color: "#ffffff",
+    color: "#222a35",
     author: 'SSRP',
     src: "img4.png",
     url: '/project/{id}',
@@ -47,7 +47,7 @@ const Projects = [
     id:5,
     title: 'INTERNATIONAL ROVER CHALLENGE',
     author: 'SSRP',
-    color: "#ffffff",
+    color: "#222a35",
     src: "img5.avif",
     url: '/project/{id}',
     description: 'To conceptualize, design, develop and operate an extraterrestrial rover and perform specific missions in simulated conditions.',
@@ -58,7 +58,7 @@ const Projects = [
     id:6,
     title: 'BALLOON SAT',
     author: 'SSRP',
-    color: "#ffffff",
+    color: "#222a35",
     src: "img6.jpg",
     url: '/project/{id}',
     description: 'Experiment involves a meteorological balloon ascending to 50 km above sea level. Equipped with a UV sensor, it measures UV levels across regions to assess ozone levels.',
