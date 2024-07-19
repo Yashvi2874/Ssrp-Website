@@ -3,7 +3,7 @@ const Projects = [
     id: 1,
     title: 'STUDENT SAT',
     author: 'SSRP',
-    src: "img1.png",
+    src: "img01.png",
     url: '/project/{id}',
     description: 'Our inaugural StudentSat, guided by ISRO and leading space startups, aims to elevate educational opportunities and expand the horizons of space research. Join us as we inspire future engineers and students to turn their dreams into reality ',
     objective: 'Data collection, communications and conducting experiments.',
