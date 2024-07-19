@@ -58,7 +58,7 @@ const ProjectDescription = () => {
         transition={{ type: "tween", ease: "backOut", duration:0}}
       />
         <div className="details-content">
-          <img src={`/assets/images/project_images/${project.src}`} data-aos="zoom-in-right" alt={project.title} />
+          <img src={`/assets/images/project_images/${project.src}`} data-aos="zoom-in-right" alt={project.title} style={{zIndex:"-1"}}/>
           <div className="hero-details">
             <div className='details-title' data-aos="zoom-in">
               <div onMouseEnter={textEnter} onMouseLeave={textLeave} >
