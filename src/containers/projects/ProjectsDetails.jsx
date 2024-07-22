@@ -59,7 +59,7 @@ const Projects = [
     title: 'BALLOON SAT',
     author: 'SSRP',
     color: "black",
-    src: "img6.webp",
+    src: "img6.jpg",
     url: '/project/{id}',
     description: 'Experiment involves a meteorological balloon ascending to 50 km above sea level. Equipped with a UV sensor, it measures UV levels across regions to assess ozone levels.',
     objective: 'To gather ozone level data, attach a camera for topographic views, and establish ground station communication.',
