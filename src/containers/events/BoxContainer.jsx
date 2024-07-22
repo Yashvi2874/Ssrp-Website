@@ -238,7 +238,7 @@ const BoxContainer = () => {
 };
 
 export default BoxContainer;
-*/
+
 /*
 import React from 'react';
 import './BoxContainer.css';
@@ -307,7 +307,7 @@ const BoxContainer = () => {
 
 export default BoxContainer;
 */
-
+/*
 import React from 'react';
 import './BoxContainer.css';
 import { Link } from 'react-router-dom';
@@ -363,4 +363,4 @@ const BoxContainer = () => {
   );
 };
 
-export default BoxContainer;
+export default BoxContainer;*/
