@@ -24,20 +24,19 @@
 
 
 .details-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4vw;
-    color: white;
-    font-weight: bolder;
-    text-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
+  font-size: 3.5vw;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+-moz-animation: glow 2s ease-in-out infinite alternate;
+animation: glow 2s ease-in-out infinite alternate;
+mix-blend-mode: difference;
+padding: 0px 24px;
 
 }
+
 
 @keyframes glow {
   from {
