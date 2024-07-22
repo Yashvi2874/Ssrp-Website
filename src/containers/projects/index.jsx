@@ -115,7 +115,7 @@ export default function Home() {
                 >
                   <img
                     src={`/assets/images/project_images/${project.src}`}
-                    width={300}
+                    width={250}
                     height={0}
                     alt={project.title}
                   />
