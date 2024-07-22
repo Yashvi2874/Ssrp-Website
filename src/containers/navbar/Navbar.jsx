@@ -62,13 +62,13 @@ const NavBar = () => {
                     </a>
                   </div>
                 </li>
-                {/*<li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
                     <a className="nav-link active" aria-current="page" href="/events">
                       Events
                     </a>
                   </div>
-                </li>*/}
+                </li>
                 <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
                     <a className="nav-link active" aria-current="page" href="/crowdfunding">
@@ -103,11 +103,11 @@ const NavBar = () => {
               <a className="nav-link active" aria-current="page" href="/community">Community</a>
             </div>
           </li>
-          {/*<li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
               <a className="nav-link active" aria-current="page" href="/events">Events</a>
             </div>
-          </li>*/}
+          </li>
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
               <a className="nav-link active" aria-current="page" href="/crowdfunding">Crowd-Funding</a>

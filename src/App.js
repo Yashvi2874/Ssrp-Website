@@ -9,14 +9,14 @@ import AOS from 'aos';
 import ContactPage from './pages/contact/ContactPage';
 import HomePage from './pages/home/HomePage';
 import TeamPage from './pages/team/TeamPage';
-//import EventPage from './pages/events/EventPage';
+import EventPage from './pages/events/EventPage';
 import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
 //import EventDescription from './pages/events/EventDescriptionPage';
 import { CursorProvider } from './components/cursor/CursorContext';
 import CrowdFundingPage from './pages/crowdfunding/CrowdFundingPage';
 import NewEventPage from './pages/events/NewEventpage4';
-//import DetailsPage from './containers/events/DetailsPage';
-//import BoxContainer from './containers/events/BoxContainer';
+import DetailsPage from './containers/events/DetailsPage';
+import BoxContainer from './containers/events/BoxContainer';
 
 function App() {
     
@@ -58,7 +58,7 @@ function App() {
             </div>
           </div>} />
 
-          {/*<Route path="/events" element={
+          <Route path="/events" element={
         
         <div className="App">
               <div className="relative" style={{
@@ -67,11 +67,11 @@ function App() {
                 <EventPage />
                 
             </div>
-          </div>} />*/}
+          </div>} />
 
 
           
-            {/*<Route path="/event/:eventId" element={
+            <Route path="/event/:eventId" element={
             <div className="App">
             <div className="stars">
               <StarBackground />
@@ -87,7 +87,7 @@ function App() {
               </div>
             </div>
           </div>
-          } />*/}
+          } />
           
 
     
