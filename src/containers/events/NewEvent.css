@@ -27,6 +27,7 @@
   }
   .orange {
     background: orange;
+    
   }
   .purple {
     background: purple;
@@ -34,3 +35,341 @@
   .blue {
     background-color: blue;
   }
+  .Eventtitle{
+    
+    font-weight:bolder;
+    background:black;
+    color:white;
+    font-size: 72px;
+    padding:24px;
+    
+  }
+
+  .Eventtitle div{
+    border-radius: 10px solid white;
+  }
+
+  .Eventtitle div span{
+    font-family: 'Nulshock bd';
+  }
+
+  @keyframes dance{
+    0%{transform:translateY(0)}
+    25%{transform:translateY(5%)}
+    50%{transform:translateY(0)}
+    75%{transform:translateY(-5%)}
+    100%{transform:translateY(0)}
+  }
+.Eventtitle >div:hover{
+  animation: dance 0.1s linear;
+}
+.Eventtitle:hover{
+  span:nth-child(1) {
+    color: red;
+}
+
+span:nth-child(2) {
+    color: blue;
+}
+
+span:nth-child(3) {
+    color: green;
+}
+
+span:nth-child(4) {
+    color: orange;
+}
+
+span:nth-child(5) {
+    color: purple;
+}
+
+span:nth-child(6) {
+    color: pink;
+}
+
+span:nth-child(7) {
+    color: brown;
+}
+
+span:nth-child(8) {
+    color: teal;
+}
+span:nth-child(9) {
+  color: magenta;
+}
+
+span:nth-child(10) {
+  color: cyan;
+}
+
+span:nth-child(11) {
+  color: lime;
+}
+
+span:nth-child(12) {
+  color: navy;
+}
+
+span:nth-child(13) {
+  color: gold;
+}
+
+}
+ 
+
+
+.name{
+  
+  position:absolute;
+  left:15vw;
+  top:20vh;
+}
+
+.last-name, .first-name{
+  font-size: 5vw;
+  font-weight:bolder;
+  line-height: 1;
+
+}
+.first-name{
+  position: relative;
+  left:0vw;
+
+}
+.last-name{
+  position: relative;
+  left:2vw;
+  margin-left:-80px;
+}
+
+.first-name::after, .last-name::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: white;
+  position:absolute;
+  left: -100px;
+  bottom: 0px;
+  transition: width 0.3s;
+}
+
+.first-name:hover::after {
+  margin-inline-start:10vw;
+  width: 85%;
+}
+.last-name:hover::after{
+  margin-inline-start:8vw;
+  width: 110%;
+}
+
+
+.bottom-text {
+  margin: 50px;
+  font-size: 1.5vw;
+  position: absolute;
+  bottom:0vh;
+  left:0;
+}
+
+.bottom-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow a {
+  position: absolute;
+  bottom: 0vw;
+  margin-bottom: 50px;
+  right: 10vw;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.arrow a::before {
+  
+  content: '→';
+  font-size: 1rem;
+}
+
+
+
+.ball-container .ball { 
+  position: absolute; 
+  height: 10px; 
+  width: 10px; 
+  border-radius: 50%; 
+  background: rgb(0, 0, 0); 
+} 
+
+.ball-container .ball:nth-child(1) { 
+  top: -50%; 
+  left: 5%; 
+  width: 20px; 
+  height: 20px; 
+  animation: snowball-animation 10s linear 1s infinite; 
+} 
+
+.ball-container .ball:nth-child(2) { 
+  top: -20%; 
+  left: 10%;
+  width: 30px; 
+  height: 30px; 
+  animation: snowball-animation 10s linear 2s infinite; 
+} 
+
+.ball-container .ball:nth-child(3) { 
+  top: -50%; 
+  left: 15%;
+  width: 15px; 
+  height: 15px;  
+  animation: snowball-animation 10s linear 3s infinite; 
+} 
+
+.ball-container .ball:nth-child(4) { 
+  top: -10%; 
+  left: 20%;
+  width: 20px; 
+  height: 20px; 
+  animation: snowball-animation 10s linear 4s infinite;  
+} 
+
+.ball-container .ball:nth-child(5) { 
+  top: -20%; 
+  left: 25%; 
+  width: 30px; 
+  height: 30px; 
+  animation: snowball-animation 10s linear 5s infinite; 
+} 
+
+.ball-container .ball:nth-child(6) { 
+  top: -40%; 
+  left: 30%;
+  width: 10px; 
+  height: 10px; 
+  animation: snowball-animation 10s linear 6s infinite; 
+} 
+
+.ball-container .ball:nth-child(7) { 
+  top: -30%; 
+  left: 35%; 
+  width: 15px; 
+  height: 15px; 
+  animation: snowball-animation 10s linear 7s infinite; 
+} 
+
+.ball-container .ball:nth-child(8) { 
+  top: -20%; 
+  left: 40%;
+  width: 20px; 
+  height: 20px; 
+  animation: snowball-animation 10s linear 8s infinite;  
+} 
+
+.ball-container .ball:nth-child(9) { 
+  top: -50%; 
+  left: 45%; 
+  width: 25px; 
+  height: 25px; 
+  animation: snowball-animation 10s linear 9s infinite; 
+} 
+
+.ball-container .ball:nth-child(10) { 
+  top: -5%; 
+  left: 50%;
+  width: 10px; 
+  height: 10px; 
+  animation: snowball-animation 10s linear 10s infinite;  
+} 
+
+.ball-container .ball:nth-child(11) { 
+  top: -20%; 
+  left: 60%;
+  width: 20px; 
+  height: 20px;
+  animation: snowball-animation 10s linear 11s infinite; 
+} 
+
+.ball-container .ball:nth-child(12) { 
+  top: -10%; 
+  left: 70%;
+  width: 30px; 
+  height: 30px; 
+  animation: snowball-animation 10s linear 12s infinite;  
+} 
+
+.ball-container .ball:nth-child(13) { 
+  top: -50%; 
+  left: 80%; 
+  width: 20px; 
+  height: 20px; 
+  animation: snowball-animation 10s linear 13s infinite; 
+} 
+
+.ball-container .ball:nth-child(14) { 
+  top: -20%; 
+  left: 90%;
+  width: 10px; 
+  height: 10px; 
+  animation: snowball-animation 10s linear 14s infinite;  
+} 
+
+.ball-container .ball:nth-child(15) { 
+  top: -50%; 
+  left: 95%; 
+  width: 30px; 
+  height: 30px; 
+  animation: snowball-animation 10s linear 15s infinite; 
+} 
+
+/* Define animations of ball */
+
+@keyframes snowball-animation { 
+  0% { 
+      transform: translate(0); 
+      opacity: 1; 
+  } 
+
+  20% { 
+      transform: translate(4px, 100px); 
+      opacity: 1; 
+  } 
+
+  40% { 
+      transform: translate(-7px, 200px); 
+      opacity: 1; 
+  } 
+
+  60% { 
+      transform: translate(10px, 400px); 
+      opacity: 1; 
+  } 
+
+  80% { 
+      transform: translate(-14px, 700px); 
+      opacity: 1; 
+  } 
+
+  100% { 
+      transform: translate(16px, 900px); 
+      opacity: 1; 
+  } 
+} 
+
+.img1{
+  background-color: black;
+  height:200px;
+  width:200px;
+  position: absolute;
+  top:85px;
+  border: 10px solid white;
+  z-index: -1;
+}

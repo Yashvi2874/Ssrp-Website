@@ -1,9 +1,9 @@
 import  { useState, useEffect} from 'react'
 import Navbar from '../../containers/navbar/Navbar';
 import Loading from '../../components/loading/Loading';
-import BoxContainer from '../../containers/events/BoxContainer';
 import { motion } from 'framer-motion';
 import { useCursorContext } from '../../components/cursor/CursorContext';
+import Scene from '../../containers/events/NewEvent';
 
 
 function EventPage() {
@@ -35,7 +35,7 @@ function EventPage() {
               transition={{ type: "tween", ease: "backOut", duration:0}}
               style={{ zIndex:"1"}}/>
         <Navbar />
-        <BoxContainer />
+        <Scene />
     </>
   )
 }
