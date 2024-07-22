@@ -19,7 +19,7 @@ function Crowdfunding() {
         </div>
         <div className="crowd-funding-container__right">
             <div className="crowd-funding-video">
-                <video autoPlay loop id="myVideo">
+                <video loop controls id="myVideo">
                     <source src="/assets/crowdfundingvideo.mp4" type="video/mp4" />
                 </video>
             </div>

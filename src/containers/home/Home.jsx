@@ -33,8 +33,8 @@ function Home() {
             <div className="text-title" id='three'>SSRP</div>
           </div>
 
-            <div className='home-subtitle'>Somaiya Space Research Project</div>
-            <div className='home-slogan' data-aos="zoom-in">Launching Dreams into Orbits</div>
+            <div className='home-subtitle' onMouseEnter={textEnter} onMouseLeave={textLeave}>Somaiya Space Research Project</div>
+            <div className='home-slogan' data-aos="zoom-in" onMouseEnter={textEnter} onMouseLeave={textLeave}>Launching Dreams into Orbits</div>
           </div>
         </div>
 
