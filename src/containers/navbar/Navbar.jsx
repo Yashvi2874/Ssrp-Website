@@ -43,42 +43,42 @@ const NavBar = () => {
               <ul>
                 <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
-                    <a className="nav-link active" aria-current="page" href="/">
+                    <a className="nav-link1 active" aria-current="page" href="/">
                       Home
                     </a>
                   </div>
                 </li>
                 <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
-                    <a className="nav-link active" aria-current="page" href="/project">
+                    <a className="nav-link1 active" aria-current="page" href="/project">
                       Projects
                     </a>
                   </div>
                 </li>
                 <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
-                    <a className="nav-link active" aria-current="page" href="/community">
+                    <a className="nav-link1 active" aria-current="page" href="/community">
                       Community
                     </a>
                   </div>
                 </li>
                 <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
-                    <a className="nav-link active" aria-current="page" href="/events">
+                    <a className="nav-link1 active" aria-current="page" href="/events">
                       Events
                     </a>
                   </div>
                 </li>
                 <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
-                    <a className="nav-link active" aria-current="page" href="/crowdfunding">
+                    <a className="nav-link1 active" aria-current="page" href="/crowdfunding">
                       Crowd-Funding
                     </a>
                   </div>
                 </li>
                 <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   <div className="navigation">
-                    <a className="nav-link active" aria-current="page" href="/contact">
+                    <a className="nav-link1 active" aria-current="page" href="/contact">
                       Contact US
                     </a>
                   </div>
@@ -90,32 +90,32 @@ const NavBar = () => {
         <ul className={`nav-links ${isOpen ? "open" : ""}`} data-aos="fade-down">
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
-              <a className="nav-link active" aria-current="page" href="/">Home</a>
+              <a className="nav-link1 active" aria-current="page" href="/">Home</a>
             </div>
           </li>
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
-              <a className="nav-link active" aria-current="page" href="/project">Projects</a>
+              <a className="nav-link1 active" aria-current="page" href="/project">Projects</a>
             </div>
           </li>
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
-              <a className="nav-link active" aria-current="page" href="/community">Community</a>
+              <a className="nav-link1 active" aria-current="page" href="/community">Community</a>
             </div>
           </li>
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
-              <a className="nav-link active" aria-current="page" href="/events">Events</a>
+              <a className="nav-link1 active" aria-current="page" href="/events">Events</a>
             </div>
           </li>
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
-              <a className="nav-link active" aria-current="page" href="/crowdfunding">Crowd-Funding</a>
+              <a className="nav-link1 active" aria-current="page" href="/crowdfunding">Crowd-Funding</a>
             </div>
           </li>
           <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="navigation">
-              <a className="nav-link active" aria-current="page" href="/contact">Contact US</a>
+              <a className="nav-link1 active" aria-current="page" href="/contact">Contact US</a>
             </div>
           </li>
         </ul>
