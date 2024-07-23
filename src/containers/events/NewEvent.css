@@ -1,22 +1,6 @@
-.container18 {
-    width: 600vw;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .firstContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: yellow;
-  }
-  
-  
+
   .panel {
-    width: 103vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,6 +8,8 @@
   }
   .red {
     background: red;
+    justify-content: start;
+    align-items: start;
   }
   .orange {
     background: orange;
@@ -42,6 +28,7 @@
     color:white;
     font-size: 72px;
     padding:24px;
+    z-index: 1;
     
   }
 
@@ -121,26 +108,18 @@ span:nth-child(13) {
 
 .name{
   
-  position:absolute;
-  left:15vw;
-  top:20vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  padding: 0px 24px;
 }
 
 .last-name, .first-name{
-  font-size: 5vw;
+  font-size: 72px;
   font-weight:bolder;
   line-height: 1;
-
-}
-.first-name{
   position: relative;
-  left:0vw;
 
-}
-.last-name{
-  position: relative;
-  left:2vw;
-  margin-left:-80px;
 }
 
 .first-name::after, .last-name::after {
@@ -171,6 +150,13 @@ span:nth-child(13) {
   position: absolute;
   bottom:0vh;
   left:0;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.bottom-text div{
+  font-size: 48px;
 }
 
 .bottom-text a {
@@ -181,7 +167,6 @@ span:nth-child(13) {
 .arrow a {
   position: absolute;
   bottom: 0vw;
-  margin-bottom: 50px;
   right: 10vw;
   width: 30px;
   height: 30px;
@@ -199,6 +184,7 @@ span:nth-child(13) {
   content: '→';
   font-size: 1rem;
 }
+
 
 
 
@@ -371,5 +357,140 @@ span:nth-child(13) {
   position: absolute;
   top:85px;
   border: 10px solid white;
-  z-index: -1;
+  z-index: 0;
 }
+
+.Eventcontainer {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+/*  note vh and vw switched  */
+  width: 100vh; 
+  height: 100vw;
+/*    */
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100vh);
+  overflow-x: hidden;
+  overflow-y: scroll;
+/*   scroll-snap-type: y mandatory; */
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-100vh);
+}
+
+.down-arrow-box{
+  position: relative;
+  top: 50%;
+
+}
+
+.down-arrow-box span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.down-arrow-box span:nth-child(2)
+{
+  animation-delay: -0.2s;
+}
+
+.down-arrow-box span:nth-child(3)
+{
+  animation-delay: -0.4s;
+}
+
+@keyframes animate{
+  
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    transform-origin: top left;
+    transform: none;
+  }
+
+  .main{
+    width: 100vw;
+    height: 100vh;
+    transform: none;
+  }
+
+  .Eventtitle{
+    font-size: 24px;
+  }
+  .img1{
+    position: relative;
+    top: 0;
+  }
+  .panel{
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-text div{
+    font-size: 24px;
+  }
+
+  
+}
+
+@media screen and (max-width:480px){
+  .bottom-text{
+    margin: 50px 0px ;
+  }
+  .bottom-text div{
+    font-size: 16px;
+    text-align: center;
+    width: 100vw;
+    font-family: 'Nulshock bd';
+  }
+  .arrow{
+    display: none;
+  }
+  .red{
+    justify-content: center;
+    align-items: center;
+  }
+  .name{
+    margin-top: 0;
+  }
+  .last-name, .first-name{
+    font-size: 48px;
+  }
+}
+

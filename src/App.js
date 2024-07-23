@@ -11,10 +11,8 @@ import HomePage from './pages/home/HomePage';
 import TeamPage from './pages/team/TeamPage';
 import EventPage from './pages/events/EventPage';
 import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
-//import EventDescription from './pages/events/EventDescriptionPage';
 import { CursorProvider } from './components/cursor/CursorContext';
 import CrowdFundingPage from './pages/crowdfunding/CrowdFundingPage';
-import NewEventPage from './pages/events/NewEventpage4';
 import EventDescriptionPage from './pages/events/EventDescriptionPage';
 
 
@@ -84,23 +82,6 @@ function App() {
             </div>
           </div>
           } />
-          
-
-    
-
-<Route path="/com" element={
-        
-        <div className="App">
-            <div className="stars">
-              <StarBackground />
-            </div>
-            <div className="absolute">
-              <div className="relative">
-                <NewEventPage />
-              </div>
-            </div>
-          </div>} />
-
 
           <Route path="/project" element={
         

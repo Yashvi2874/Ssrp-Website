@@ -104,8 +104,7 @@ nav.sticky .nav-links li a:hover {
 }
 .target:hover:after { 
   width: 100%; 
-  left: 0; 
-  background-color: black;
+  left: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -165,7 +164,7 @@ nav.sticky .nav-links li a:hover {
   margin: 0;
   padding: 0;
   justify-content: start;
-
+  background-color: black;
   animation: fadeLeft 0.5s ease-out forwards;
   
 }
@@ -185,4 +184,5 @@ nav.sticky .nav-links li a:hover {
     transform: translateX(0);
   }
 }
+
 
