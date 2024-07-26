@@ -265,6 +265,22 @@ h2 {
 
 
 /* Additional media queries for smaller screens */
+@media screen and (max-width: 1024px){
+  .team-image{
+    max-height: 90vh;
+    max-width: 100vw;
+  }
+  .team-heading{
+    font-size: 50px;
+  }
+  .team-description{
+    font-size: 20px;
+  }
+  .arrow-down{
+    font-size: 40px;
+  }
+  }
+
 @media screen and (max-width: 768px) {
   .Nav{
     visibility: visible;

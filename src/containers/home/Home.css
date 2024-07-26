@@ -2,6 +2,10 @@
   cursor: none;
 }
 
+.container-title{
+  margin: 0;
+}
+
 .cursor{
   background-color: white;
   height: 20px;
