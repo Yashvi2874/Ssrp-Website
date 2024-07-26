@@ -28,7 +28,14 @@ a, input, textarea{
 
 @media screen and (max-width: 768px){
     .relative{
-        margin-top: 10vh;
+        margin-top: 15vh;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .relative{
+        margin-top: 13vh;
     }
     
 }
