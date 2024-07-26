@@ -33,7 +33,7 @@
 }
 
 .contact-end-title h2{
-    margin-top: 15vh;
+    margin-top: 8vh;
     font-weight: 600;
     color:white;
     font-size: 3.5vw;
@@ -295,6 +295,11 @@ input[type='number']::-webkit-inner-spin-button {
         width: 60%;
     }
     
+}
+@media screen and (max-width: 768px){
+    .contact-end-title h2{
+        margin-left: 0.8vh;
+    }
 }
 
 @media screen  and (max-width: 480px){

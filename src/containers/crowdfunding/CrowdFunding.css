@@ -12,7 +12,7 @@
     text-align:justify;
     background-color:#2e2e2e;
     border-radius: 25px;
-    margin: 0 400px;
+    margin: 0 360px;
     padding: 1rem;
 }
 
@@ -122,6 +122,9 @@
 }
 
 @media screen and (max-width: 1280px){
+    .crowd-funding-content{
+        margin: 0 200px;
+    }
     #myVideo{
         height: auto;
         width: 85vw;
@@ -130,6 +133,9 @@
 }
 
 @media screen and (max-width: 1024px){
+    .crowd-funding-content{
+        margin: 0 120px;
+    }
     #myVideo{
         height: auto;
         width: 90vw;
@@ -138,6 +144,9 @@
 }
 
 @media screen and (max-width: 768px){
+    .crowd-funding-content{
+        margin: 0 70px;
+    }
     .crowd-funding-investments{
         grid-template-columns: 1fr;
     }
