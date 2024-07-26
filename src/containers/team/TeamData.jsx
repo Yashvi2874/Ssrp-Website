@@ -47,33 +47,33 @@ const teamSections = [
           name: "Yashasvi Gupta",
           designation: "Web-Dev Executive",
           img: "/assets/images/Community/Members/Comps/Yashasvi_Gupta.jpg",
-          animation: "slide-up",
+          animation: "slide-right",
           linkedIn: "https://www.linkedin.com/in/gupta-yashasvi/",
           Github:"https://github.com/Yashvi2874/"
+        },
+        {
+          name: "Om Thanage",
+          designation: "Web-Dev Executive",
+          img: "/assets/images/Community/Members/Comps/Om_Thanage.jpeg",
+          animation: "slide-left",
+          linkedIn: "https://www.linkedin.com/in/omthanage/",
+          Github:"https://github.com/Om-Thanage"
         }
       ],
       members: [
-        {
-          name: "Om Thanage",
-          designation: "Web-Dev & ODHS",
-          img: "/assets/images/Community/Members/Comps/Om_Thanage.jpeg",
-          animation: "slide-right",
-          linkedIn: "https://www.linkedin.com/in/omthanage/",
-          Github:"https://github.com/Om-Thanage"
-        },
-        {
-          name: "Piyush Chaudhary",
-          designation: "Web-Dev & ODHS",
-          img: "/assets/images/Community/Members/Comps/Piyush_Chaudhary.jpg",
-          animation: "slide-right",
-          linkedIn: "",
-          Github:""
-        },
+        // {
+        //   name: "Piyush Chaudhary",
+        //   designation: "Web-Dev & ODHS",
+        //   img: "/assets/images/Community/Members/Comps/Piyush_Chaudhary.jpg",
+        //   animation: "slide-right",
+        //   linkedIn: "",
+        //   Github:""
+        // },
         {
           name: "Swarni Chouhan",
-          designation: "Web-Dev & ODHS",
+          designation: "Web-Dev",
           img: "/assets/images/Community/Members/Comps/Swarni_Chouhan.jpg",
-          animation: "slide-left",
+          animation: "slide-right",
           linkedIn: "",
           Github:""
         },
@@ -219,7 +219,7 @@ const teamSections = [
         {
           name: "Siddarth Patel",
           designation: "Avionics",
-          img: "https://dummyimage.com/300",
+          img: "/assets/images/Community/Members/Electronics/Siddharth_Patel.jpg",
           animation: "slide-left",
           linkedIn: "",
           Github:""

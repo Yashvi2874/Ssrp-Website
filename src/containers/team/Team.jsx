@@ -3,6 +3,7 @@ import './Team.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import teamSections from './TeamData';
+import Navbar from '../../containers/navbar/Navbar';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 
 function Team() {
@@ -40,7 +41,14 @@ function Team() {
                     </div>
                   </div>
                 </div>
+                <div className="hover-overlay-phone">
+                  <i className="fas fa-info-circle">
+                    <a href={executive.linkedIn} target="_blank" rel="noopener noreferrer">
+                      <img className="social-media-img-phone" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                    </a>
+                  </i>
                 <h2 className='name'>{executive.name}</h2>
+                </div>
                 <h5 className='designation'>{executive.designation}</h5>
               </div>
             ))}
@@ -69,7 +77,14 @@ function Team() {
                     </div>
                   </div>
                 </div>
+                <div className="hover-overlay-phone">
+                  <i className="fas fa-info-circle">
+                    <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
+                      <img className="social-media-img-phone" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                    </a>
+                  </i>
                 <h2 className='name'>{member.name}</h2>
+                </div>
                 <h5 className='designation'>{member.designation}</h5>
               </div>
             ))}
@@ -84,8 +99,11 @@ function Team() {
       <div className='Team'>
         <section className='Team_section'>
           <div className='team-container'>
+          <Navbar />
             <img src='/assets/images/Community/Team.jpg' className='team-image' alt='XYZ' />
+            
             <div className='team-overlay'>
+              
               <h1 className='team-heading' data-aos="zoom-in">
                 <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Stellar Team</div>
               </h1>

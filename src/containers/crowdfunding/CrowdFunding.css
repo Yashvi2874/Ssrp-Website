@@ -2,12 +2,17 @@
     cursor: none;
 }
 .crowd-funding-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 24px;
+    margin-top: 12vh;
+    display:block;
+    padding: 0 24px;
 }
 
-.crowd-funding-content p{
+.crowd-funding-content{
+    align-items: center;
+    text-align:justify;
+    background-color:#2e2e2e;
+    border-radius: 25px;
+    margin: 0 360px;
     padding: 1rem;
 }
 
@@ -31,14 +36,27 @@
     color: white;
 }
 
-.crowdfunding-heading{
+.crowdfunding-heading1, .crowdfunding-heading2{
+    margin-bottom: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 5vh;
     font-size: 3rem;
     color: white;
-
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  mix-blend-mode: difference;
+  padding: 0px 24px;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 3px #f4f005af;
+  }
+  to {
+    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 4px #f4f005af;
+}
 }
 
 .crowdfunding-investors .crowdfunding-heading{
@@ -80,6 +98,7 @@
 }
 
 .crowdfunding-googleform{
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,16 +113,40 @@
     height: 100%;
 }
 
-.crowd-funding-video{
-    height: 80vh;
+@media screen and (min-width: 1280px){
+    #myVideo{
+        height: auto;
+        width: 80vw;
+        padding-left: 17vw;
+    }
 }
 
+@media screen and (max-width: 1280px){
+    .crowd-funding-content{
+        margin: 0 200px;
+    }
+    #myVideo{
+        height: auto;
+        width: 85vw;
+        padding-left: 11vw;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .crowd-funding-content{
+        margin: 0 120px;
+    }
+    #myVideo{
+        height: auto;
+        width: 90vw;
+        padding-left: 4.5vw;
+    }
+}
 
 @media screen and (max-width: 768px){
-    .crowd-funding-container{
-        grid-template-columns: 1fr;
+    .crowd-funding-content{
+        margin: 0 70px;
     }
-
     .crowd-funding-investments{
         grid-template-columns: 1fr;
     }
@@ -112,8 +155,12 @@
         grid-template-columns: 1fr;
     }
 
-    .crowdfunding-heading{
-        font-size: 2.5rem;
+    .crowdfunding-heading1{
+        font-size: 3rem;
+    }
+    .crowdfunding-heading2{
+        font-size: 3rem;
+        margin-bottom: 4vh;
     }
 
     .crowd-funding-investments{
@@ -126,5 +173,24 @@
     .google-form{
         width: 100%;
     }
-    
+    #myVideo{
+        height: auto;
+        width: 90vw;
+        padding-left: 4vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .crowdfunding-heading1{
+        font-size: 2rem;
+    }
+    .crowdfunding-heading2{
+        font-size: 2rem;
+        margin-bottom: 4vh;
+    }
+    #myVideo{
+        height: auto;
+        width: 90vw;
+        padding-left: 0vw;
+    }
 }

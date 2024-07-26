@@ -1,4 +1,6 @@
 .project-heading{
+  margin-top: 20vh;
+  margin-bottom: 0;
     font-size: 3.5vw;
     color: white;
     text-align: center;
@@ -10,7 +12,6 @@
   animation: glow 2s ease-in-out infinite alternate;
   mix-blend-mode: difference;
   padding: 0px 24px;
-
 }
 @keyframes glow {
   from {

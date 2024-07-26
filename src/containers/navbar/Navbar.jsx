@@ -31,7 +31,7 @@ const NavBar = () => {
   return (
     <nav className={sticky ? "sticky" : ""}>
       <div className="nav-content">
-        <div className="logo">
+        <div className="logo" data-aos="fade-down">
           <img className='navbar-logo' src='/assets/images/about_images/logo.png' alt='Ssrp-logo' />
           <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya white.png' alt='Somaiya_Vidyavihar' />
           <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya trust.png' alt='Somaiya_Vidyavihar_University' />

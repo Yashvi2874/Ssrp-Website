@@ -72,17 +72,17 @@ const ProjectDescription = () => {
               </div>
             </div>
           </div>
-          <div className="details-description-box">
-            <div className="description-text" data-aos="flip-right">
-              <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
+          <div className="details-description-box" >
+            <div className="description-text" data-aos="flip-right" style={{zIndex:"-1"}}>
+              <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave} >Description</div>
               <div className='details-description text'>{project.description} </div>
 
             </div>
-            <div className="description-text" data-aos="zoom-in">
+            <div className="description-text" data-aos="zoom-in" style={{zIndex:"-1"}}>
               <div className='details-section-heading' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>
               <div className='details-objectives text'>{project.objective}</div>
             </div>
-            <div className="description-text" data-aos="flip-left">
+            <div className="description-text" data-aos="flip-left" style={{zIndex:"-1"}}>
             <div className='details-section-heading item1' onMouseEnter={textEnter} onMouseLeave={textLeave}>Outcomes</div>
             <div className='details-outcomes text'>{project.outcomes}</div>
             </div>

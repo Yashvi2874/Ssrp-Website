@@ -37,7 +37,7 @@ export default function Scene() {
         <div className="article">
         <div className="panel red">
           
-          <div className='name'>
+          <div className='Event-heading'>
             <div className='first-name'>Astro</div>
             <div className='last-name'>Chronicles</div>
           </div>

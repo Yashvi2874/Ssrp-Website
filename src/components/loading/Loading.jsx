@@ -21,7 +21,7 @@ function Loading() {
 
           window.setTimeout(() => {
             document.body.removeChild(star);
-          }, Math.round(Math.random() * i * 600));
+          }, Math.round(Math.random() * i * 800));
         });
       };
 
