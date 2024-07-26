@@ -60,7 +60,7 @@ const ProjectDescription = () => {
         <div className="details-content">
           <img src={`/assets/images/project_images/${project.src}`} data-aos="zoom-in-right" alt={project.title} style={{zIndex:"-1"}}/>
           <div className="hero-details">
-            <div className='details-title' data-aos="zoom-in">
+            <div className='home-slogan' style={{display:"flex", position:"relative", justifyContent:"center", alignItems:"center"}} data-aos="zoom-in">
               <div onMouseEnter={textEnter} onMouseLeave={textLeave} >
                 {project.title}
               </div>

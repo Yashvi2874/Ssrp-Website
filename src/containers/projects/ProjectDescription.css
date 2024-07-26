@@ -169,6 +169,11 @@ padding: 0px 24px;
     align-items: center;
     border-radius: 20px;
   }
+
+  .hero-details .home-slogan{
+    font-size: 72px;
+  }
+
   @media screen and (max-width: 768px){
     .details-heading{
         font-size: 3rem;
@@ -224,7 +229,12 @@ padding: 0px 24px;
       font-size: 1rem;
       margin: 0px 16px 16px 16px;
     }
+    .hero-details .home-slogan{
+      font-size: 36px;
+    }
   }
+
+  
 
   
   
