@@ -3,6 +3,7 @@ import './Team.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import teamSections from './TeamData';
+import Navbar from '../../containers/navbar/Navbar';
 import { useCursorContext } from '../../components/cursor/CursorContext';
 
 function Team() {
@@ -84,8 +85,11 @@ function Team() {
       <div className='Team'>
         <section className='Team_section'>
           <div className='team-container'>
+          <Navbar />
             <img src='/assets/images/Community/Team.jpg' className='team-image' alt='XYZ' />
+            
             <div className='team-overlay'>
+              
               <h1 className='team-heading' data-aos="zoom-in">
                 <div className="flex" onMouseEnter={textEnter} onMouseLeave={textLeave}>Stellar Team</div>
               </h1>

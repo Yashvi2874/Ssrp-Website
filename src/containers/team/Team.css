@@ -1,20 +1,25 @@
+ .relative{
+  margin: 0;
+ }
+ 
  .Team-Page{
     opacity: 1;
     z-index: 1;
     position: absolute;
     display: flex;
  }
+
  .team-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   justify-content: start;
   align-items: center;
 }
 
 .team-heading {
+  margin-top: 15vh;
   font-size: 5rem;
-  color: #fff;
+  color: #ffffff;
   font-weight: bolder;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
@@ -38,22 +43,22 @@
 
 .arrow-down {
   font-size: 90px;
+  color: #ffffffce;
 }
-
 
 .team-overlay {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.477);
+  color: #ffffffce;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: justify;
   align-items: center;
   text-decoration: none;
-  padding: 5px;
+  padding: 0;
 }
 
 .team-image {
@@ -261,8 +266,8 @@ h2 {
 
 /* Additional media queries for smaller screens */
 @media screen and (max-width: 768px) {
-  .flex {
-    margin-top: 0vh;
+  .Nav{
+    visibility: visible;
   }
   .team-image {
     max-height: 60vh;
@@ -277,7 +282,6 @@ h2 {
     text-align: center;
   }
   .team-heading {
-    margin-top: 2vw;
     font-size: 8vw;
     text-align: center;
   }
@@ -310,26 +314,6 @@ h2 {
   .Team-head {
     margin-top: 3vw;
   }
-}
-
-@media screen and (max-width: 480px) {
-
-  .team-image {
-    max-height: 40vh;
-    max-width: 100vw;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  
-  .team-image {
-    max-height: 48vh;
-    max-width: 100vw;
-  }
-}
-
-/* Additional styles for larger screens */
-@media screen and (min-width: 768px) {
   .card-container {
     max-height: 200px;
     max-width: 200px;
@@ -349,6 +333,28 @@ h2 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .team-heading{
+    margin-top: 10vh;
+  }
+
+  .team-image {
+    height: 35vh;
+    max-height: 40vh;
+    max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+  .team-image {
+    max-height: 48vh;
+    max-width: 100vw;
+  }
+}
+
+/* Additional styles for larger screens */
+
  @media screen and (min-width: 990px){
   .Nav{
     display: none;
@@ -363,61 +369,6 @@ h2 {
   }
   .navbar{
     visibility: hidden;  
-  }
-}
-
-@media screen and (max-width: 768px){
-  .Nav{
-    visibility: visible;
-  }
-  .flex{
-    margin-top: 0vh;
-  }
-  .team-image{
-    max-height: 60vh;
-    max-width: 100vw;
-  }
-  .Team-department{
-    margin-top: 2vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    margin-bottom: 3vw;
-    font-size: 6vw;
-    text-align: center;
-  }
-  .team-heading{
-    margin-top: 2vw;
-    font-size: 8vw;
-    text-align: center;
-  }
-  .arrow-down{
-    font-size: 5vw;
-  }
-  .team-description{
-    margin-top: 1vw;
-    margin-bottom:1vw ;
-    font-size: 2vw;
-    text-align: center;
-  }
-  .name{
-    font-size: 2vw;
-    margin-top: 0.5vw;
-  text-align: center;
-  margin-bottom: 0.5vw;
-  }
-  .designation{
-    font-size: 1.5vw;
-    margin-top: 1vw;
-  text-align: center;
-  color: #a2a0a0ad;
-  margin-bottom: 0.5vw;
-  }
-  .flip-box{
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-  }
-  .Team-head{
-    margin-top:3vw;
   }
 }
 
@@ -440,26 +391,6 @@ h2 {
     max-width: 100vw;
   }
   }
-
-@media screen and (min-width: 768px) {
-  .card-container {
-    max-height: 200px;
-    max-width: 200px;
-  }
-
-  .flip-box {
-    max-height: 300px;
-    max-width: 300px;
-  }
-
-   h2{
-      font-size: 2rem;
-    }
-    .name,.description{
-      font-size: 1.5rem;
-    }
-  }
-
 
 .hover-overlay {
   position: absolute;
