@@ -17,7 +17,11 @@ function ProjectPage() {
       
     }, []);
     if(loading){
-        return <Loading />;
+      return (
+        <div style={{marginTop:"15vh"}}>
+        <Loading />
+        </div>
+        );
       }
   return (
     <>

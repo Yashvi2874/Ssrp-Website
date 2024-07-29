@@ -22,7 +22,7 @@ function Home() {
           </video>
           
           <div className="home-content">
-          <div className="container-title" style={{
+          <div className="home-container-title" style={{
             position:'relative',
             display:'flex',
             alignItems:'center',
