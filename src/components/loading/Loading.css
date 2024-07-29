@@ -15,9 +15,12 @@
   align-items: center;
   font-family: 'Inter', sans-serif;
 }
+
 .container-title{
-  padding-top: 20vh;
-  margin: 20vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .subtitle{
   font-size: 2rem;
@@ -25,7 +28,7 @@
   position: absolute;
   width: 100vw;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 40px;
   font-family: 'dahlia-regular';
   padding-top: 15vh;
   -webkit-animation: glow2 2s ease-in-out infinite alternate;
@@ -149,10 +152,7 @@ margin: 0;
   aspect-ratio: 16/9;
 }
 
-.container-title{
-  position: absolute;
 
-}
 
 
 .text-title{

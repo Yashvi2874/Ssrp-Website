@@ -17,10 +17,11 @@ function EventPage() {
       
     }, []);
     if(loading){
-        return (
-        <div>
+      return (
+        <div style={{marginTop:"15vh"}}>
         <Loading />
-        </div>);
+        </div>
+        );
       }
 
       

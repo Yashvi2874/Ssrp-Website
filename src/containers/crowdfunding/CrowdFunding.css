@@ -36,7 +36,7 @@
     color: white;
 }
 
-.crowdfunding-heading1, .crowdfunding-heading2{
+.crowdfunding-heading{
     margin-bottom: 3vh;
     display: flex;
     justify-content: center;
@@ -155,10 +155,7 @@
         grid-template-columns: 1fr;
     }
 
-    .crowdfunding-heading1{
-        font-size: 3rem;
-    }
-    .crowdfunding-heading2{
+    .crowdfunding-heading{
         font-size: 3rem;
         margin-bottom: 4vh;
     }
@@ -181,10 +178,7 @@
 }
 
 @media screen and (max-width: 480px){
-    .crowdfunding-heading1{
-        font-size: 2rem;
-    }
-    .crowdfunding-heading2{
+    .crowdfunding-heading{
         font-size: 2rem;
         margin-bottom: 4vh;
     }
