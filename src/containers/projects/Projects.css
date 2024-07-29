@@ -1,4 +1,4 @@
-.project-heading{
+/* .project-heading{
   margin-top: 20vh;
   margin-bottom: 0;
     font-size: 3.5vw;
@@ -180,7 +180,7 @@
     }
     
     /* Hide the default cursor when hovering over .popup-content */
-    .popup-content:hover {
+    /*.popup-content:hover {
       cursor: none;
     }
   }
@@ -190,4 +190,4 @@
         width: 90%;
     }
   }
-  
+   */

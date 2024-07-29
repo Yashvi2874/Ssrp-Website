@@ -18,7 +18,7 @@ function EventPage() {
     }, []);
     if(loading){
         return (
-        <div style={{marginTop:"15vh"}}>
+        <div>
         <Loading />
         </div>);
       }

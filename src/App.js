@@ -59,11 +59,16 @@ function App() {
           <Route path="/events" element={
         
         <div className="App">
-              <div className="relative" style={{
+            <div className="stars">
+              <StarBackground />
+            </div>
+            <div className="absolute">
+            <div className="relative" style={{
                 marginTop: "-15vh"
               }}>
                 <EventPage />
                 
+            </div>
             </div>
           </div>} />
 
