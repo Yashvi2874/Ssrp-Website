@@ -14,19 +14,11 @@
     text-align: center;
     font-weight: bolder;
     border-bottom: 2px solid #d278f3a2;
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-    -moz-animation: glow 2s ease-in-out infinite alternate;
-    animation: glow 2s ease-in-out infinite alternate;
+    -webkit-animation: glow2 2s ease-in-out infinite alternate;
+    -moz-animation: glow2 2s ease-in-out infinite alternate;
+    animation: glow2 2s ease-in-out infinite alternate;
     mix-blend-mode: difference;
     padding: 0px 24px;
-}
-@keyframes glow {
-  from {
-    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 3px #f4f005af;
-  }
-  to {
-    text-shadow: 0 0 3px #f4f005af, 0 0 3px #f4f005af, 0 0 4px #f4f005af;
-}
 }
 
 .project-container {
@@ -51,7 +43,7 @@
 
 .project-title, .project-author {
     margin-top: 10px;
-    font-size: 36px;
+    font-size: 2vw;
     font-weight: bold;
     font-family: 'Nulshock Bd';
     color: white;
@@ -60,14 +52,76 @@
 .project-button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
     color: white;
-    border: none;
+    border: 2px solid white;
     border-radius: 4px;
     cursor: pointer;
+    background: transparent;
 }
 
 .project-button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
+.project-heading .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+    .project-author, .project-title {
+        font-size: 4vw;
+    }
+    
+}
+
+@media  screen and (max-width: 480px) {
+    .project-heading {
+        font-size: 48px;
+    }
+    
+    .project-title, .project-author {
+        font-size: 24px;
+    }
+    
+    .project-button {
+        padding: 8px 16px;
+    }
+    
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-30px);
+  }
+	60% {
+    transform: translateY(-15px);
+  }
+}
+
+.middle, .go-here {
+  position: relative;
+  height: 30em;
+}
+.fa-circle { color: #cddc39; }
+.arrow-down { 
+  color: white; 
+  .fa-stack {
+      animation: bounce 2s infinite;
+    &:hover {
+      animation: none; 
+    }
+  }
+}
