@@ -316,10 +316,13 @@ margin: 0;
   }
   .subtitle{
     font-size: 1.2rem;
-    margin-top: 100px;
+    margin-top: 0px;
   }
 
+}
 
-  
-  
+@media screen and (max-width: 242px) {
+  .text-title{
+    font-size: 2rem;
+  }
 }

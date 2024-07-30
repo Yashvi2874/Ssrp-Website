@@ -100,7 +100,7 @@ function Team() {
         <section className='Team_section'>
           <div className='team-container'>
           <Navbar />
-            <img src='/assets/images/Community/Team.jpg' className='team-image' alt='XYZ' />
+            <img src='/assets/images/Community/Team.webp' className='team-image' alt='XYZ' />
             
             <div className='team-overlay'>
               

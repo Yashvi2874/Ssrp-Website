@@ -6,7 +6,7 @@ const teamSections = [
         {
           name: "Riaan Jain",
           designation: "Associate Director",
-          img: "/assets/images/Community/Head/Riaan_jain.jpg",
+          img: "/assets/images/Community/Head/Riaan_jain.webp",
           animation: "slide-right",
           linkedIn: "",
           Github:""
@@ -15,7 +15,7 @@ const teamSections = [
         {
           name: "Rishikesh Bhintade",
           designation: "Founder & Project Director",
-          img: "/assets/images/Community/Head/Rishikesh_Bhintade.jpg",
+          img: "/assets/images/Community/Head/Rishikesh_Bhintade.webp",
           animation: "slide-up",
           linkedIn: "",
           Github:""
@@ -23,7 +23,7 @@ const teamSections = [
         {
           name: "Tanisha Mukherjee",
           designation: "Operations Director",
-          img: "/assets/images/Community/Head/Tanisha_Mukherjee.jpg",
+          img: "/assets/images/Community/Head/Tanisha_Mukherjee.webp",
           animation: "slide-up",
           linkedIn: "https://www.linkedin.com/in/tanisha-mukherjee-333788281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           Github:"https://github.com/tanishamukherjee"
@@ -31,7 +31,7 @@ const teamSections = [
         {
           name: "Aniket Iyer",
           designation: "Associate Operations Director",
-          img: "/assets/images/Community/Head/Aniket_Iyer.jpg",
+          img: "/assets/images/Community/Head/Aniket_Iyer.webp",
           animation: "slide-left",
           linkedIn: "",
           Github:""

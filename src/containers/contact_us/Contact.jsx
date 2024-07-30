@@ -121,7 +121,7 @@ export default function Contact() {
           data-aos="fade-left"
           onMouseEnter={textEnter} onMouseLeave={textLeave}
          />
-        <button type="submit" data-aos="fade-left" className='submit-button' onMouseEnter={textEnter} onMouseLeave={textLeave}>Submit 🡲</button>
+        <button type="submit" data-aos="fade-left" className='project-button' onMouseEnter={textEnter} onMouseLeave={textLeave}>Submit 🡲</button>
       </form>
       <span className='verification'>{result}</span>
       </div>
