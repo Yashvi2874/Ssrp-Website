@@ -18,7 +18,7 @@ function NewProject() {
               animate={cursorVariant}
               transition={{ type: "tween", ease: "backOut", duration:0}}/>
       <div className="project-heading">
-        <div onMouseEnter={textEnter} onMouseLeave={textLeave}>Orbital Endeavors</div>      </div>
+        <div onMouseEnter={textEnter} onMouseLeave={textLeave}>Orbital Endeavors</div></div>
       <div className="project-container">
         {Projects.map((project) => (
           <div key={project.id} className="project-card">

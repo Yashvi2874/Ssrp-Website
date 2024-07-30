@@ -32,9 +32,9 @@ const NavBar = () => {
     <nav className={sticky ? "sticky" : ""}>
       <div className="nav-content">
         <div className="logo" data-aos="fade-down">
-          <img className='navbar-logo' src='/assets/images/about_images/logo.png' alt='Ssrp-logo' />
-          <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya white.png' alt='Somaiya_Vidyavihar' />
-          <img className='navbar-logo' src='/assets/images/Trust_logo/somaiya trust.png' alt='Somaiya_Vidyavihar_University' />
+          <a href="/"><img className='navbar-logo' src='/assets/images/about_images/logo.png' alt='Ssrp-logo' /></a>
+          <a href="https://kjsce.somaiya.edu/en/"><img className='navbar-logo' src='/assets/images/Trust_logo/somaiya white.png' alt='KJSCE-logo' /></a>
+          <a href="https://www.somaiya.edu/en/"><img className='navbar-logo' src='/assets/images/Trust_logo/somaiya trust.png' alt='Somaiya_Vidyavihar_University-logo' /></a>
         </div>
         <div className="toggle-button" onClick={toggle}>≡</div>
         {
