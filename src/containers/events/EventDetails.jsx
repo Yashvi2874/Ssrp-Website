@@ -69,7 +69,7 @@ export default function EventDetails() {
             <div ref={homeHeader} className={styles.homeHeader}>
                 <div className={styles.backgroundImage} ref={background}>
                     <img
-                        src={`/assets/images/events_images/T1.jpg`}
+                        src={`/assets/images/events_images/moon.jpg`}
                         fill={true}
                         alt="background image"
                         priority={true}
@@ -78,7 +78,7 @@ export default function EventDetails() {
                 <div className={styles.intro}>
                     <div ref={introImage} data-scroll data-scroll-speed="0.3" className={styles.introImage}>
                         <img
-                            src={`/assets/images/events_images/T2.jpg`}
+                            src={`/assets/images/events_images/eve.jpg`}
                             alt="intro image"
                             fill={true}
                             priority={true}
