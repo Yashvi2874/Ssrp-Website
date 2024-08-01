@@ -12,6 +12,7 @@
   }
   .orange {
     background: orange;
+    z-index: 2;
     
   }
   .purple {
@@ -105,41 +106,9 @@ span:nth-child(13) {
 }
  
 
-@keyframes wave {
-  0%, 100% {
-    width: 0;
-  }
-  25% {
-    width: 25%;
-  }
-  50% {
-    width: 50%;
-  }
-  75% {
-    width: 75%;
-  }
-}
-
-
-.Event-heading::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 5px;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: width 0.3s;
-}
-
-.Event-heading:hover::after {
-  animation: wave 1s linear forwards;
-}
-
 
 .Event-heading{
-  text-decoration: white solid underline;
+  
   display: flex;
   flex-direction: column;
   margin-top: 15vh;
@@ -169,12 +138,11 @@ span:nth-child(13) {
 }
 
 .first-name:hover::after {
-  text-decoration: underline;
-  text-decoration-style:wavy;
+  margin-inline-start: 5vw;
+  width: calc(100% + 5vw);
 }
 .last-name:hover::after{
-  text-decoration: underline;
-  text-decoration-style:wavy;
+  width: 100%;
 }
 
 */
@@ -469,6 +437,38 @@ span:nth-child(13) {
   }
 }
 
+.dark-circles{
+  aspect-ratio: 1/1;
+  background-color: black;
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+#circle-one{
+  top: -10%;
+  left: 14%;
+  height: 600px;
+}
+
+#circle-two{
+  top: 10%;
+  left: 30%;
+  height: 300px;
+  z-index: 0;
+}
+
+#circle-three{
+  bottom: -5%;
+  left: 26%;
+  height: 150px;
+}
+
+#circle-four{
+  bottom: 10%;
+  left: 20%;
+  height: 100px;
+}
 @media screen and (max-width: 768px) {
   .article {
     display: flex;

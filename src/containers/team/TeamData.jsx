@@ -6,7 +6,7 @@ const teamSections = [
         {
           name: "Riaan Jain",
           designation: "Associate Director",
-          img: "/assets/images/Community/Head/Riaan_jain.jpg",
+          img: "/assets/images/Community/Head/Riaan_jain.webp",
           animation: "slide-right",
           linkedIn: "",
           Github:""
@@ -15,7 +15,7 @@ const teamSections = [
         {
           name: "Rishikesh Bhintade",
           designation: "Founder & Project Director",
-          img: "/assets/images/Community/Head/Rishikesh_Bhintade.jpg",
+          img: "/assets/images/Community/Head/Rishikesh_Bhintade.webp",
           animation: "slide-up",
           linkedIn: "",
           Github:""
@@ -23,7 +23,7 @@ const teamSections = [
         {
           name: "Tanisha Mukherjee",
           designation: "Operations Director",
-          img: "/assets/images/Community/Head/Tanisha_Mukherjee.jpg",
+          img: "/assets/images/Community/Head/Tanisha_Mukherjee.webp",
           animation: "slide-up",
           linkedIn: "https://www.linkedin.com/in/tanisha-mukherjee-333788281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           Github:"https://github.com/tanishamukherjee"
@@ -31,7 +31,7 @@ const teamSections = [
         {
           name: "Aniket Iyer",
           designation: "Associate Operations Director",
-          img: "/assets/images/Community/Head/Aniket_Iyer.jpg",
+          img: "/assets/images/Community/Head/Aniket_Iyer.webp",
           animation: "slide-left",
           linkedIn: "",
           Github:""
@@ -47,33 +47,33 @@ const teamSections = [
           name: "Yashasvi Gupta",
           designation: "Web-Dev Executive",
           img: "/assets/images/Community/Members/Comps/Yashasvi_Gupta.jpg",
-          animation: "slide-up",
+          animation: "slide-right",
           linkedIn: "https://www.linkedin.com/in/gupta-yashasvi/",
           Github:"https://github.com/Yashvi2874/"
+        },
+        {
+          name: "Om Thanage",
+          designation: "Web-Dev Executive",
+          img: "/assets/images/Community/Members/Comps/Om_Thanage.jpeg",
+          animation: "slide-left",
+          linkedIn: "https://www.linkedin.com/in/omthanage/",
+          Github:"https://github.com/Om-Thanage"
         }
       ],
       members: [
-        {
-          name: "Om Thanage",
-          designation: "Web-Dev & ODHS",
-          img: "/assets/images/Community/Members/Comps/Om_Thanage.jpeg",
-          animation: "slide-right",
-          linkedIn: "https://www.linkedin.com/in/omthanage/",
-          Github:"https://github.com/Om-Thanage"
-        },
-        {
-          name: "Piyush Chaudhary",
-          designation: "Web-Dev & ODHS",
-          img: "/assets/images/Community/Members/Comps/Piyush_Chaudhary.jpg",
-          animation: "slide-right",
-          linkedIn: "",
-          Github:""
-        },
+        // {
+        //   name: "Piyush Chaudhary",
+        //   designation: "Web-Dev & ODHS",
+        //   img: "/assets/images/Community/Members/Comps/Piyush_Chaudhary.jpg",
+        //   animation: "slide-right",
+        //   linkedIn: "",
+        //   Github:""
+        // },
         {
           name: "Swarni Chouhan",
-          designation: "Web-Dev & ODHS",
+          designation: "Web-Dev",
           img: "/assets/images/Community/Members/Comps/Swarni_Chouhan.jpg",
-          animation: "slide-left",
+          animation: "slide-right",
           linkedIn: "",
           Github:""
         },
@@ -219,7 +219,7 @@ const teamSections = [
         {
           name: "Siddarth Patel",
           designation: "Avionics",
-          img: "https://dummyimage.com/300",
+          img: "/assets/images/Community/Members/Electronics/Siddharth_Patel.jpg",
           animation: "slide-left",
           linkedIn: "",
           Github:""

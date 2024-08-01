@@ -182,8 +182,12 @@ export default function Scene() {
               <span />
               <span />
           </div>
+          <div className="dark-circles" id="circle-one"></div>
+          <div className="dark-circles" id="circle-two"></div>
+          <div className="dark-circles" id="circle-three"></div>
+          <div className="dark-circles" id="circle-four"></div>
+          
           <div className="bottom-text">
-            <div>Launching Dreams into Orbits</div>
             <div className="arrow">
               <Link to="#"></Link>
             </div>

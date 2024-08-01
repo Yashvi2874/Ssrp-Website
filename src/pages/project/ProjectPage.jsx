@@ -1,8 +1,9 @@
 import  { useState , useEffect}  from 'react'
-import Projects from '../../containers/projects/index';
+//import Projects from '../../containers/projects/index';
 import Loading from '../../components/loading/Loading';
 import Navbar from '../../containers/navbar/Navbar';
 import Footer from '../../containers/footer/Footer';
+import NewProject from '../../containers/projects/NewProject';
 
 function ProjectPage() {
     const[loading, setLoading]=useState(true);
@@ -16,12 +17,16 @@ function ProjectPage() {
       
     }, []);
     if(loading){
-        return <Loading />;
+      return (
+        <div style={{marginTop:"15vh"}}>
+        <Loading />
+        </div>
+        );
       }
   return (
     <>
     <Navbar />
-    <Projects />
+    <NewProject />
     <Footer />
     </>
   )
