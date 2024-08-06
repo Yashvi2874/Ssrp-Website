@@ -1,83 +1,49 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';   
-import Events from './EventDetails.jsx';
+import Events from './EventDetailsData';
 import './EventDescription.css';
-import { useCursorContext } from '../../components/cursor/CursorContext';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const EventDescription = () => {
   const { eventId } = useParams();
-  const [loading, setLoading] = useState(true);
   const [event, setEvent] = useState(false);
-  const [contentVisible, setContentVisible] = useState(false);
-  const { cursorVariant, variants, textEnter, textLeave } = useCursorContext();
 
   useEffect(() => {
-    const foundEvent = Events.find(e => e.id === parseInt(eventId));
+    const foundEvent = Events.find(p => p.id === parseInt(eventId));
 
     if (foundEvent) {
       setEvent(foundEvent);
     }
 
-    // Introduce a delay of 1 second before setting the loading state to false
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-
-    // Cleanup timeout if the component unmounts
-    return () => clearTimeout(timer);
+    AOS.init({ duration: "2000" });
   }, [eventId]);
 
-  if (loading) {
-    return (
-      <motion.div className='event-loading' style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-10vw' }}
-        initial={{ opacity: 0, y: 100}} // Initial animation state
-        animate={{ opacity: 1, y: 0}} // Animation when component appears
-        exit={{ opacity: 1, y: -800 }} // Animation when component exits
-      >
-        <div className='event-title'>{event.title}</div>
-      </motion.div>
-    );
-  }
-
-  if (!event) {
-    return <div style={{height:'80vh', width:'100vw', display:'flex', justifyContent:'center', alignItems:'center', color:'white', fontSize:'4rem'}}> 404 Page Not Found</div>;
-  }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className='details-container-events'>
-      <motion.div className="cursor"
-        variants={variants}
-        animate={cursorVariant}
-        transition={{ type: "tween", ease: "backOut", duration:0}}
-      />
-      <motion.div className='details-bg-events'
-        initial={{ opacity: 0, y: 0 }} // Initial animation state
-        animate={{ opacity: 1, y: -1000, transition:{duration:'0.6'} }} // Animation when component appears
-        exit={{ opacity: 0, y: 0 }}
-        onAnimationComplete={() => setContentVisible(true)} // Set content visible after bg animation completes
-       />
-      {contentVisible && (
-        <motion.div className='details-content-events'
-          initial={{ opacity: 0, y: 100 }} // Initial animation state
-          animate={{ opacity: 1, y: 0 }} // Animation when component appears
-          exit={{ opacity: 0, y: 100 }} // Animation when component exits
-        >
-          <img src={`/assets/images/event_images/${event.src}`} alt={event.title} />
-          <div className='details-events'>
-            <div className='details-title-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>{event.title}</div>
-            <div className='details-section-heading-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>Description</div>
-            <div className='details-description text-events'>{event.description}</div>
-            <div className='details-section-heading-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>Objective</div>
-            <div className='details-objectives text-events' >{event.objective}</div>
-            <div className='details-section-heading-events' onMouseEnter={textEnter} onMouseLeave={textLeave}>Outcomes</div>
-            <div className='details-outcomes text-events'>{event.outcomes}</div>
+    <div className='events-details-container'>      
+      <div className="video-left">
+        <video src={`/assets/images/events_images/${event.src}`} controls autoPlay muted loop></video>
+      </div>
+      <div className="event-description">
+          <div className="close-button">
+            <a href="/events">X</a>
           </div>
-        </motion.div>
-      )}
+          <div className='event-title' data-aos="zoom-in">
+            {event.title}
+          </div>
+          <video src={`/assets/images/events_images/${event.src}`} controls autoPlay muted loop></video>
+          <div className='event-description-text' data-aos="fade-left">
+            
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, est vel mollis eleifend, urna eros auctor enim, a tempus felis nisi viverra leo. Mauris ut lorem venenatis, tempor ante vel, semper est. Donec facilisis venenatis tincidunt. Donec ultrices libero vel leo molestie accumsan. Suspendisse justo metus, venenatis nec nisl.
+          </div>
+      </div>
+
     </div>
   );
 };
 
 export default EventDescription;
-

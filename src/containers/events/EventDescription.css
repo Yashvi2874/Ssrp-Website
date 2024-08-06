@@ -1,51 +1,143 @@
-.details-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .cursor {
-    position: fixed;
-    pointer-events: none;
-    z-index: 1000;
-  }
-  
-  .details-bg-events {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: black;
-  }
-  
-  .details-content-events {
+.events-details-container{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.event-description{
+    background-color: #FDAD14;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    color: white;
-  }
-  
-  .details-content-events img {
-    width: 50%;
-    height: auto;
-  }
-  
-  .details-events {
-    max-width: 800px;
-    padding: 20px;
-  }
-  
-  .details-title-events {
+    align-items: start;
+    margin: 48px;
+    
+    padding: 24px;
+    margin-top: 15vh;
+}
+
+.video-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    z-index: -1;
+    position: relative;
+    margin-left: 48px;
+    border: 10px solid white;
+    margin-top: 25vh;
+}
+
+.video-left video{
+    width: 50vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.close-button{
+    position: absolute;
+    top: 10vh;
+    right: 24px;
     font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .details-section-heading-events {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-  }
-  
-  .text-events {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-  
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.close-button a{
+    color: white;
+    text-decoration: none;
+    padding: 24px 16px;
+}
+
+.event-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    position: relative;
+    font-family: 'Nulshock Bd';
+    margin-bottom: 2rem;
+}
+
+.event-title::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    margin-left: 12px;
+    animation: appear 1.5s forwards;
+
+}
+
+@keyframes appear{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.event-description video{
+    display: none;
+}
+
+
+
+@media screen  and (max-width: 992px) {
+    .events-details-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .video-left{
+        display: none;
+    }
+
+    .close-button{
+        display: none;
+    }
+
+    .event-description video{
+        display: block;
+        width: 60vw;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+    .event-title::before{
+        margin-left : 0px;
+    }
+
+    
+
+    
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    .event-title{
+        font-size: 1.5rem;
+    }
+
+    
+    
+}
+
+
+
