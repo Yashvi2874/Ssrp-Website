@@ -12,7 +12,7 @@ import ProjectPage from './pages/project/ProjectPage';
 import ProjectDescriptionPage from './pages/project/ProjectDescriptionPage';
 import ContactPage from './pages/contact/ContactPage';
 import CrowdFundingPage from './pages/crowdfunding/CrowdFundingPage';
-import EventDescriptionPage from './pages/events/EventDescriptionPage'; // Import your EventDescriptionPage
+import EventDescriptionPage from './pages/events/EventDescriptionPage';
 
 function App() {
   useEffect(() => {
@@ -95,6 +95,18 @@ function App() {
               </div>
             </div>
           } />
+          <Route path="/event/:eventId" element={
+            <div className="App">
+              <div className="stars">
+                <StarBackground />
+              </div>
+              <div className="absolute">
+                <div className="relative">
+                  <EventDescriptionPage />
+                </div>
+              </div>
+            </div>
+          } />
           <Route path="/contact" element={
             <div className="App">
               <div className="stars">
@@ -119,18 +131,7 @@ function App() {
               </div>
             </div>
           } />
-          <Route path="/event/:eventId" element={ // Add this route
-            <div className="App">
-              <div className="stars">
-                <StarBackground />
-              </div>
-              <div className="absolute">
-                <div className="relative">
-                  <EventDescriptionPage />
-                </div>
-              </div>
-            </div>
-          } />
+          
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

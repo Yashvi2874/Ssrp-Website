@@ -2,7 +2,8 @@ import "./NewEvent.css";
 import Footer from "../footer/Footer";
 import { Link } from 'react-router-dom';
 import './Particle';
-import Events from './EventDetails';
+import Events from './EventDetailsData';
+import { useNavigate } from 'react-router-dom';
 
 export default function Scene() {
 
@@ -10,6 +11,10 @@ export default function Scene() {
   for (let i = 0; i < 15; i++) {
     balls.push(<div key={i} className="ball"></div>);
   }
+    const navigate = useNavigate();
+    const handleEventClick = (id) => {
+        navigate(`/event/${id}`);
+    }
 
   return (
     <div className="Eventcontainer">
@@ -38,16 +43,16 @@ export default function Scene() {
               {balls}
             </div>
           </div>
-          {Events.map((event, index) => {
+          {Events.map((event) => {
             const titleSpans = [];
             for (let i = 0; i < event.title.length; i++) {
               titleSpans.push(<span key={i}>{event.title[i]}</span>);
             }
             return (
-              <div key={index} className={`panel ${event.color}`}>
+              <div key={event.id} className={`panel ${event.color}`}>
                 <img src={`/assets/images/events_images/${event.src}`} className='img1' alt={event.title} />
                 <div className="Eventtitle">
-                  <div>
+                  <div onClick={()=> handleEventClick(event.id)}>
                     {titleSpans}
                   </div>
                 </div>
