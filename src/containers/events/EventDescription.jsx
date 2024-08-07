@@ -38,7 +38,7 @@ const EventDescription = () => {
           <video src={`/assets/images/events_images/${event.src}`} controls autoPlay muted loop></video>
           <div className='event-description-text' data-aos="fade-left">
             
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, est vel mollis eleifend, urna eros auctor enim, a tempus felis nisi viverra leo. Mauris ut lorem venenatis, tempor ante vel, semper est. Donec facilisis venenatis tincidunt. Donec ultrices libero vel leo molestie accumsan. Suspendisse justo metus, venenatis nec nisl.
+          {event.description}
           </div>
       </div>
 
