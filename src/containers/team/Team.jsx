@@ -21,24 +21,24 @@ function Team() {
         {executives && executives.length > 0 && (
           <div className='Team-head'>
             {executives.map((executive) => (
-              <div className="flip-box" data-aos={executive.animation} key={executive.name}>
-                <div className="flip-box-inner">
-                  <div className="flip-box-front">
-                    <img className='head-photo' src={executive.img} alt={executive.name} />
-                    <div className="hover-overlay">
-                      <div className="hover-icons">
-                        <i className="fas fa-info-circle">
-                          <a href={executive.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
-                          </a>
-                        </i>
-                        <i className="fas fa-user-circle">
-                          <a href={executive.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub"  />
-                          </a>
-                        </i>
-                      </div>
-                    </div>
+              <div className="head-card" data-aos={executive.animation} key={executive.name}>
+                <div className="head-card-photo">
+                  <img className='head-photo' src={executive.img} alt={executive.name} />
+                </div>
+                <h2 className='name'>{executive.name}</h2>
+                <h5 className='designation'>{executive.designation}</h5>
+                <div className="hover-overlay">
+                  <div className="hover-icons">
+                    <i className="fas fa-info-circle">
+                      <a href={executive.linkedIn} target="_blank" rel="noopener noreferrer">
+                        <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                      </a>
+                    </i>
+                    <i className="fas fa-user-circle">
+                      <a href={executive.Github} target="_blank" rel="noopener noreferrer">
+                        <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub"  />
+                      </a>
+                    </i>
                   </div>
                 </div>
                 <div className="hover-overlay-phone">
@@ -47,46 +47,33 @@ function Team() {
                       <img className="social-media-img-phone" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
                     </a>
                   </i>
-                <h2 className='name'>{executive.name}</h2>
                 </div>
-                <h5 className='designation'>{executive.designation}</h5>
               </div>
             ))}
           </div>
         )}
         {members && members.length > 0 && (
-          <div className="Team-members">
+          <div className='Team-head'>
             {members.map((member) => (
-              <div className="flip-box" data-aos={member.animation} key={member.name}>
-                <div className="flip-box-inner">
-                  <div className="flip-box-front">
-                    <img className='head-photo' src={member.img} alt={member.name} />
-                    <div className="hover-overlay">
-                      <div className="hover-icons">
-                        <i className="fas fa-info-circle">
-                          <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
-                          </a>
-                        </i>
-                        <i className="fas fa-user-circle">
-                          <a href={member.Github} target="_blank" rel="noopener noreferrer">
-                            <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub" />
-                          </a>
-                        </i>
-                      </div>
-                    </div>
-                  </div>
+              <div className="head-card" data-aos={member.animation} key={member.name}>
+                <div className="head-card-photo">
+                  <img className='head-photo' src={member.img} alt={member.name} />
                 </div>
-                <div className="hover-overlay-phone">
-                  <i className="fas fa-info-circle">
-                    <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
-                      <img className="social-media-img-phone" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
-                    </a>
-                  </i>
                 <h2 className='name'>{member.name}</h2>
-                </div>
                 <h5 className='designation'>{member.designation}</h5>
-              </div>
+                  <div className="hover-icons">
+                    <i className="fas fa-info-circle">
+                      <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
+                        <img className="social-media-img" src='/assets/images/socialmedia_images/linkedin.svg' alt="LinkedIn" />
+                      </a>
+                    </i>
+                    <i className="fas fa-user-circle">
+                      <a href={member.Github} target="_blank" rel="noopener noreferrer">
+                        <img className="social-media-img" src='/assets/images/socialmedia_images/github.svg' alt="GitHub"  />
+                      </a>
+                    </i>
+                </div>
+                </div>
             ))}
           </div>
         )}
@@ -116,7 +103,9 @@ function Team() {
           </div>
           {teamSections.map((section) => (
             <div key={section.id} className="team-member-container">
-              <div className='Team-department' data-aos="zoom-in" onMouseEnter={textEnter} onMouseLeave={textLeave}>{section.title}</div>
+              <div className='section-title-container' data-aos="zoom-in">
+                <div className='Team-department' data-aos="zoom-in" onMouseEnter={textEnter} onMouseLeave={textLeave}>{section.title}</div>
+              </div>
               <div className='Team-Members'>
                 {renderMembers(section.members, section.executive)}
               </div>
